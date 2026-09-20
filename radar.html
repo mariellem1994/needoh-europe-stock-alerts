@@ -146,7 +146,7 @@ async function loadRadar() {
     try {
 
         const response = await fetch(
-            "radar.json?t=" + Date.now()
+            "./radar.json?t=" + Date.now()
         );
 
         const data = await response.json();
