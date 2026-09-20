@@ -3,29 +3,39 @@ import urllib.request
 import urllib.parse
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-
-# This will be filled in automatically in the next step
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-message = """🐿️ Needoh Europe Stock Alerts is online!
 
-🇪🇺 Ready to hunt for Needohs!
+def send_telegram(message):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
-🎃 Halloween
-🎄 Christmas
-✨ New releases
-🛍️ European shops
-🇬🇧 UK shops
-"""
+    data = urllib.parse.urlencode({
+        "chat_id": CHAT_ID,
+        "text": message
+    }).encode()
 
-url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    request = urllib.request.Request(url, data=data)
 
-data = urllib.parse.urlencode({
-    "chat_id": CHAT_ID,
-    "text": message
-}).encode()
+    with urllib.request.urlopen(request) as response:
+        print(response.read().decode())
 
-request = urllib.request.Request(url, data=data)
 
-with urllib.request.urlopen(request) as response:
-    print(response.read().decode())
+def check_stock(url):
+    try:
+        with urllib.request.urlopen(url, timeout=15) as response:
+            page = response.read().decode("utf-8", errors="ignore")
+
+        return page
+
+    except Exception as e:
+        print(f"Error checking {url}: {e}")
+        return None
+
+
+# TEST
+test_url = test_url = "https://www.intertoys.nl/needoh"
+
+page = check_stock(test_url)
+
+if page:
+    send_telegram("🐿️ Needoh Europe Stock Alerts is working!\n\n🔎 Stock checker successfully checked a shop.")
