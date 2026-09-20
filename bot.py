@@ -541,11 +541,13 @@ def get_drukke_mamas_needoh_products(page):
             ]
         ):
             continue
-if text.lower().strip() == "needoh":
-    continue
 
-if len(text) < 5 or len(text) > 150:
-    continue
+        if text.lower().strip() == "needoh":
+            continue
+
+        if len(text) < 5 or len(text) > 150:
+            continue
+
         if url.startswith("/"):
             full_url = "https://drukkemamas.be" + url
 
@@ -561,6 +563,17 @@ if len(text) < 5 or len(text) > 150:
         })
 
     unique_products = []
+
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
 
     seen_urls = set()
 
