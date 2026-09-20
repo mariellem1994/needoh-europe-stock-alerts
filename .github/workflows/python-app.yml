@@ -2,6 +2,10 @@ name: Needoh Europe Stock Alert Bot Europe
 
 on:
   workflow_dispatch:
+
+  schedule:
+    - cron: "*/10 * * * *"
+
   push:
     branches:
       - main
