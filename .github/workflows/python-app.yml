@@ -1,4 +1,4 @@
-name: Needoh Europe Stock Alert Bot
+name: Needoh Europe Stock Alert Bot Europe
 
 on:
   workflow_dispatch:
