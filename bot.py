@@ -65,11 +65,23 @@ def check_lobbes_stock():
 
         results = []
 
-        for product in lobbes_products:
+        # These are the actual product names as displayed by Lobbes
+        lobbes_names = [
+            "needoh - niceberg needoh",
+            "needoh - gumdrop needoh",
+            "needoh cool cats kat",
+            "needoh color change",
+            "needoh - nice cube glow needoh",
+            "needoh nice cube - sensorisch stressspeeltje met goo-vulling",
+            "needoh teenie glob kleur, 3-pack",
+            "needoh - dream pop needoh",
+            "needoh - fuzz ball wonder waves needoh",
+            "needoh - mello mallo needoh"
+        ]
 
-            name = product["name"].lower()
+        for product, lobbes_name in zip(lobbes_products, lobbes_names):
 
-            start = html_lower.find(name)
+            start = html_lower.find(lobbes_name)
 
             if start == -1:
                 results.append({
@@ -79,18 +91,20 @@ def check_lobbes_stock():
                 })
                 continue
 
-            # Find the next product card.
-            next_product = html_lower.find("needoh", start + len(name))
+            # The next product starts after this product's status.
+            next_start = html_lower.find(
+                "needoh",
+                start + len(lobbes_name)
+            )
 
-            if next_product == -1:
+            if next_start == -1:
                 section = html_lower[start:]
             else:
-                section = html_lower[start:next_product]
+                section = html_lower[start:next_start]
 
             if (
                 "uitverkocht" in section
                 or "dit artikel is nu niet leverbaar" in section
-                or "momenteel niet leverbaar" in section
             ):
                 status = "out_of_stock"
             else:
