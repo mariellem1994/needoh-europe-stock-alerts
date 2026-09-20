@@ -543,13 +543,13 @@ def get_drukke_mamas_needoh_products(page):
             continue
 
         if text.lower().strip() == "needoh":
-            continue
+    continue
 
-        if text.lower().strip() == "wissen":
-            continue
+if "wis alle filters" in text.lower():
+    continue
 
-        if len(text) < 5:
-            continue
+if len(text) < 5:
+    continue
 
         if len(text) > 150:
             continue
