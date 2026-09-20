@@ -1,5 +1,5 @@
 {
-  "last_checked": "20 Sep 2026, 16:07",
+  "last_checked": "20 Sep 2026, 16:21",
   "shops": [
     {
       "name": "Toys42Hands",
@@ -158,7 +158,7 @@
         {
           "name": "NeeDoh Funky Pup",
           "url": "https://www.toys42hands.nl/en/products/schylling-funky-pup-kneading-ball",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Shaggy NeeDoh",
@@ -208,7 +208,7 @@
         {
           "name": "Ramen Noodlies",
           "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Jack-Glow Lantern",
