@@ -364,3 +364,4 @@ send_telegram(
 
 print("📡 Radar sent to Telegram!")
 print("✅ Stock check completed!")
+print("🧪 Lobbes test:", check_lobbes_stock())
