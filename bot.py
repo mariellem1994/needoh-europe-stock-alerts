@@ -5,11 +5,16 @@ import json
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 
+RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
+
+
 def send_telegram(message, button_url=None):
+
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
     data = {
@@ -18,6 +23,7 @@ def send_telegram(message, button_url=None):
     }
 
     if button_url:
+
         data["reply_markup"] = json.dumps({
             "inline_keyboard": [[
                 {
@@ -38,16 +44,61 @@ def send_telegram(message, button_url=None):
     with urllib.request.urlopen(request) as response:
         return response.read()
 
-    request = urllib.request.Request(url, data=data)
 
-    with urllib.request.urlopen(request) as response:
-        print(response.read().decode())
+def load_previous_radar():
+
+    try:
+
+        with open(
+            "radar.json",
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            return json.load(file)
+
+    except Exception:
+
+        print("ℹ️ No previous radar data found.")
+
+        return None
+
+
+def get_previous_status(
+    previous_radar,
+    shop_name,
+    product_name
+):
+
+    if not previous_radar:
+        return None
+
+    for shop in previous_radar.get(
+        "shops",
+        []
+    ):
+
+        if shop.get("name") != shop_name:
+            continue
+
+        for product in shop.get(
+            "products",
+            []
+        ):
+
+            if product.get("name") == product_name:
+
+                return product.get("status")
+
+    return None
+
 
 def check_lobbes_stock():
 
     url = "https://www.lobbes.nl/merken/needoh"
 
     try:
+
         req = urllib.request.Request(
             url,
             headers={
@@ -58,14 +109,20 @@ def check_lobbes_stock():
             }
         )
 
-        with urllib.request.urlopen(req, timeout=20) as response:
-            html = response.read().decode("utf-8", errors="ignore")
+        with urllib.request.urlopen(
+            req,
+            timeout=20
+        ) as response:
+
+            html = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
 
         html_lower = html.lower()
 
         results = []
 
-        # Find every product's actual link in the page
         product_positions = []
 
         for product in lobbes_products:
@@ -74,52 +131,88 @@ def check_lobbes_stock():
                 product["url"]
             ).path.lower()
 
-            position = html_lower.find(product_path)
+            position = html_lower.find(
+                product_path
+            )
 
             product_positions.append({
                 "product": product,
                 "position": position
             })
 
-        # Sort products in the same order as they appear on Lobbes
+
         product_positions.sort(
-            key=lambda item: item["position"]
-            if item["position"] != -1
-            else 999999999
+            key=lambda item:
+                item["position"]
+                if item["position"] != -1
+                else 999999999
         )
 
-        for i, item in enumerate(product_positions):
+
+        for i, item in enumerate(
+            product_positions
+        ):
 
             product = item["product"]
             start = item["position"]
 
+
             if start == -1:
+
                 results.append({
                     "name": product["name"],
                     "url": product["url"],
                     "status": "error"
                 })
+
                 continue
 
-            # Stop at the next product's actual link
-            if i + 1 < len(product_positions):
-                next_position = product_positions[i + 1]["position"]
+
+            if i + 1 < len(
+                product_positions
+            ):
+
+                next_position = (
+                    product_positions[
+                        i + 1
+                    ]["position"]
+                )
 
                 if next_position != -1:
-                    section = html_lower[start:next_position]
+
+                    section = html_lower[
+                        start:next_position
+                    ]
+
                 else:
-                    section = html_lower[start:]
+
+                    section = html_lower[
+                        start:
+                    ]
+
             else:
-                section = html_lower[start:]
+
+                section = html_lower[
+                    start:
+                ]
+
 
             if (
                 "uitverkocht" in section
-                or "dit artikel is nu niet leverbaar" in section
-                or "momenteel niet leverbaar" in section
+                or
+                "dit artikel is nu niet leverbaar"
+                in section
+                or
+                "momenteel niet leverbaar"
+                in section
             ):
+
                 status = "out_of_stock"
+
             else:
+
                 status = "in_stock"
+
 
             results.append({
                 "name": product["name"],
@@ -127,16 +220,23 @@ def check_lobbes_stock():
                 "status": status
             })
 
+
         return results
+
 
     except Exception as e:
 
-        print(f"⚠️ Lobbes error: {e}")
+        print(
+            f"⚠️ Lobbes error: {e}"
+        )
 
         return []
-        
+
+
 def check_stock(url):
+
     try:
+
         request = urllib.request.Request(
             url,
             headers={
@@ -144,7 +244,11 @@ def check_stock(url):
             }
         )
 
-        with urllib.request.urlopen(request, timeout=20) as response:
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
             page = response.read().decode(
                 "utf-8",
                 errors="ignore"
@@ -152,8 +256,13 @@ def check_stock(url):
 
         return page
 
+
     except Exception as e:
-        print(f"❌ Error checking {url}: {e}")
+
+        print(
+            f"❌ Error checking {url}: {e}"
+        )
+
         return None
 
 
@@ -330,7 +439,9 @@ products = [
 
 ]
 
+
 lobbes_products = [
+
     {
         "name": "Niceberg",
         "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh"
@@ -371,111 +482,258 @@ lobbes_products = [
         "name": "Mello Mallo",
         "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh"
     }
+
 ]
 
-print(f"🔎 Checking {len(products)} Needoh products...")
+
+previous_radar = load_previous_radar()
+
+
+print(
+    f"🔎 Checking {len(products)} Needoh products..."
+)
+
 
 statuses = []
 
+
 for product in products:
 
-    print(f"Checking: {product['name']}")
+    print(
+        f"Checking: {product['name']}"
+    )
 
-    page = check_stock(product["url"])
+    page = check_stock(
+        product["url"]
+    )
+
 
     if page:
 
-        if '"available":true' in page or '"available": true' in page:
+        if (
+            '"available":true'
+            in page
+            or
+            '"available": true'
+            in page
+        ):
+
+            current_status = "in_stock"
 
             statuses.append(
                 f"🟢 {product['name']}"
             )
 
-            send_telegram(
-                f"🚨 NEEDOH STOCK ALERT!\n\n"
-                f"➡️ {product['name']}\n"
-                f"🛍️ Toys42Hands\n"
-                f"🇳🇱 Netherlands\n\n"
-                f"🟢 IN STOCK!\n\n"
-                f"🔗 {product['url']}"
+            previous_status = get_previous_status(
+                previous_radar,
+                "Toys42Hands",
+                product["name"]
             )
 
-            print(f"🟢 IN STOCK: {product['name']}")
+
+            if (
+                previous_status == "out_of_stock"
+            ):
+
+                send_telegram(
+
+                    f"🚨 NEEDOH STOCK ALERT!\n\n"
+
+                    f"➡️ {product['name']}\n"
+
+                    f"🛍️ Toys42Hands\n"
+
+                    f"🇳🇱 Netherlands\n\n"
+
+                    f"🟢 IN STOCK!\n\n"
+
+                    f"🔗 {product['url']}"
+                )
+
+                print(
+                    f"🚨 NEW STOCK: {product['name']}"
+                )
+
+            else:
+
+                print(
+                    f"🟢 In stock: {product['name']} "
+                    f"(no new alert)"
+                )
+
 
         else:
+
+            current_status = "out_of_stock"
 
             statuses.append(
                 f"🔴 {product['name']}"
             )
 
-            print(f"🔴 Out of stock: {product['name']}")
+            print(
+                f"🔴 Out of stock: {product['name']}"
+            )
+
 
     else:
+
+        current_status = "error"
 
         statuses.append(
             f"⚠️ {product['name']} — could not check"
         )
 
-        print(f"⚠️ Could not check: {product['name']}")
+        print(
+            f"⚠️ Could not check: {product['name']}"
+        )
 
 
-in_stock = sum(1 for status in statuses if status.startswith("🟢"))
-out_of_stock = sum(1 for status in statuses if status.startswith("🔴"))
-errors = sum(1 for status in statuses if status.startswith("⚠️"))
+in_stock = sum(
+    1
+    for status in statuses
+    if status.startswith("🟢")
+)
 
-current_time = datetime.now(ZoneInfo("Europe/Amsterdam")).strftime("%d %b %Y, %H:%M")
+
+out_of_stock = sum(
+    1
+    for status in statuses
+    if status.startswith("🔴")
+)
+
+
+errors = sum(
+    1
+    for status in statuses
+    if status.startswith("⚠️")
+)
+
+
+current_time = datetime.now(
+    ZoneInfo("Europe/Amsterdam")
+).strftime(
+    "%d %b %Y, %H:%M"
+)
+
 
 lobbes_results = check_lobbes_stock()
 
+
 radar_data = {
+
     "last_checked": current_time,
 
     "shops": [
+
         {
+
             "name": "Toys42Hands",
+
             "country": "🇳🇱 Netherlands",
+
             "products": [
+
                 {
+
                     "name": product["name"],
+
                     "url": product["url"],
+
                     "status": (
+
                         "in_stock"
+
                         if statuses[i].startswith("🟢")
-                        else "out_of_stock"
+
+                        else
+
+                        "out_of_stock"
+
                         if statuses[i].startswith("🔴")
-                        else "error"
+
+                        else
+
+                        "error"
+
                     )
+
                 }
-                for i, product in enumerate(products)
+
+                for i, product
+                in enumerate(products)
+
             ]
+
         },
 
+
         {
+
             "name": "Lobbes",
+
             "country": "🇳🇱 Netherlands",
+
             "products": lobbes_results
+
         }
+
     ]
+
 }
-with open("radar.json", "w", encoding="utf-8") as file:
-    json.dump(radar_data, file, indent=2, ensure_ascii=False)
+
+
+with open(
+    "radar.json",
+    "w",
+    encoding="utf-8"
+) as file:
+
+    json.dump(
+        radar_data,
+        file,
+        indent=2,
+        ensure_ascii=False
+    )
+
 
 radar_message = (
+
     "📡 NEEDOH LIVE RADAR\n\n"
+
     "🛍️ Toys42Hands 🇳🇱\n\n"
+
     + "\n".join(statuses)
+
     + "\n\n"
+
     + f"🟢 In stock: {in_stock}\n"
+
     + f"🔴 Out of stock: {out_of_stock}\n"
+
     + f"⚠️ Could not check: {errors}\n\n"
+
     + f"🕐 Last checked: {current_time}"
+
 )
+
 
 send_telegram(
+
     radar_message,
-    "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
+
+    RADAR_URL
+
 )
 
-print("📡 Radar sent to Telegram!")
-print("✅ Stock check completed!")
-print("🧪 Lobbes test:", check_lobbes_stock())
+
+print(
+    "📡 Radar sent to Telegram!"
+)
+
+print(
+    "✅ Stock check completed!"
+)
+
+print(
+    "ℹ️ Duplicate-alert protection is active."
+)
