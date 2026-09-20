@@ -542,8 +542,8 @@ def get_drukke_mamas_needoh_products(page):
         ):
             continue
 
-        if text.lower().strip() in "needoh", "wissen"):
-            continue
+        if text.lower().strip() == "wissen":
+    continue
 
         if len(text) < 5 or len(text) > 150:
             continue
