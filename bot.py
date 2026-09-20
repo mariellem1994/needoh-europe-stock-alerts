@@ -518,41 +518,41 @@ def get_drukke_mamas_needoh_products(page):
 
     for url, content in matches:
 
-        text = re.sub("<.*?>", " ", content)
-        text = unescape(text)
-        text = " ".join(text.split())
+            text = re.sub("<.*?>", " ", content)
+    text = unescape(text)
+    text = " ".join(text.split())
 
-        combined_text = (text + " " + url).lower()
+    combined_text = (text + " " + url).lower()
 
-        if "needoh" not in combined_text:
-            continue
+    if "needoh" not in combined_text:
+        continue
 
-        if "section-template" in text.lower():
-            continue
+    if "section-template" in text.lower():
+        continue
 
-        if "filter-container" in text.lower():
-            continue
+    if "filter-container" in text.lower():
+        continue
 
-        if "air_reviews" in text.lower():
-            continue
+    if "air_reviews" in text.lower():
+        continue
 
-        if "javascript" in text.lower():
-            continue
+    if "javascript" in text.lower():
+        continue
 
-        if "stylesheet" in text.lower():
-            continue
+    if "stylesheet" in text.lower():
+        continue
 
-                if text.lower().strip() == "needoh":
-            continue
+    if text.lower().strip() == "needoh":
+        continue
 
-        if "wis alle filters" in text.lower():
-            continue
+    if "wis alle filters" in text.lower():
+        continue
 
-        if len(text) < 5:
-            continue
+    if len(text) < 5:
+        continue
 
-        if len(text) > 150:
-            continue
+    if len(text) > 150:
+        continue
 
         if url.startswith("/"):
             full_url = "https://drukkemamas.be" + url
