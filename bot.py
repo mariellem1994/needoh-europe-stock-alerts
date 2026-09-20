@@ -1644,7 +1644,11 @@ for product in mamiee_products:
         f"Checking Mamiee: {product['name']}"
     )
 
-        if current_status == "in_stock":
+    current_status = check_mamiee_product_stock(
+        product["url"]
+    )
+
+    if current_status == "in_stock":
         print(
             f"🟢 In stock: {product['name']}"
         )
