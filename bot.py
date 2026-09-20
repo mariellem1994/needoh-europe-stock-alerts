@@ -421,6 +421,54 @@ def check_dreamland_stock(url):
 
         return "error"
 
+def check_houten_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        # Shopify usually exposes availability in the product page
+        if (
+            '"available":true' in page_lower
+            or
+            '"available": true' in page_lower
+        ):
+            return "in_stock"
+
+        if (
+            "uitverkocht" in page_lower
+            or
+            "sold out" in page_lower
+        ):
+            return "out_of_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(f"⚠️ Houten Onderwijsmateriaal error: {e}")
+
+        return "error"
+
 products = [
 
     {
@@ -722,6 +770,37 @@ dreamland_products = [
     }
 ]
 
+houten_products = [
+    {
+        "name": "Dream Drop NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/dream-drop-needoh"
+    },
+    {
+        "name": "Verkleurende NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/verkleurende-needoh"
+    },
+    {
+        "name": "Gumdrop NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/gumdrop-needoh"
+    },
+    {
+        "name": "Nice Cube NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/nice-cube-needoh"
+    },
+    {
+        "name": "Donut NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/donut-needoh"
+    },
+    {
+        "name": "Marbleez NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/marbleez-needoh"
+    },
+    {
+        "name": "Sploot Splat NeeDoh",
+        "url": "https://houtenonderwijsmateriaal.be/products/sploot-splat-needoh"
+    }
+]
+
 lobbes_products = [
 
     {
@@ -960,6 +1039,69 @@ for product in dreamland_products:
         "url": product["url"],
         "status": current_status
     })
+
+houten_results = []
+
+for product in houten_products:
+
+    print(
+        f"Checking Houten Onderwijsmateriaal: {product['name']}"
+    )
+
+    current_status = check_houten_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Houten Onderwijsmateriaal",
+        product["name"]
+    )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Houten Onderwijsmateriaal\n"
+            f"🇧🇪 Belgium\n\n"
+            f"🟢 IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW HOUTEN STOCK: {product['name']}"
+        )
+
+    else:
+
+        if current_status == "in_stock":
+
+            print(
+                f"🟢 In stock online: {product['name']} "
+                f"(no new alert)"
+            )
+
+        elif current_status == "out_of_stock":
+
+            print(
+                f"🔴 Out of stock online: {product['name']}"
+            )
+
+        else:
+
+            print(
+                f"⚠️ Could not check: {product['name']}"
+            )
+
+    houten_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": current_status
+    })
     
 print(
     f"🔎 Checking {len(products)} Needoh products..."
@@ -1096,6 +1238,11 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+        {
+    "name": "Houten Onderwijsmateriaal",
+    "country": "🇧🇪 Belgium",
+    "products": houten_results
+},
         {
     "name": "DreamLand",
     "country": "🇳🇱 Netherlands",
