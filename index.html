@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>NeeDoh Europe Live Radar</title>
-
 <style>
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,27 +15,77 @@ body {
     background: #f5f5f5;
     color: #222;
 }
-
 .container {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
 }
-
 h1 {
     text-align: center;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    font-size: 30px;
 }
-
 .subtitle {
     text-align: center;
     color: #666;
     margin-bottom: 20px;
 }
-
-.shop {
-    margin-top: 30px;
+/* SUMMARY */
+.summary {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
-
+.summary div {
+    flex: 1;
+    padding: 14px 8px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+/* SEARCH */
+.controls {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.search {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.filters {
+    display: flex;
+    gap: 8px;
+}
+.filter {
+    flex: 1;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+}
+.filter.active {
+    background: #222;
+    color: white;
+}
+/* SHOP */
+.shop {
+    margin-top: 25px;
+}
 .shop-title {
     background: white;
     padding: 15px;
@@ -43,33 +93,11 @@ h1 {
     margin-bottom: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
 .shop-title h2 {
     margin: 0;
+    font-size: 20px;
 }
-
-.summary {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.summary div {
-    flex: 1;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.number {
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
+/* PRODUCT */
 .product {
     background: white;
     padding: 15px;
@@ -78,336 +106,194 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-
+.product-info {
+    min-width: 0;
+}
 .product-name {
     font-weight: bold;
+    font-size: 16px;
 }
-
 .status {
-    margin-top: 5px;
+    margin-top: 6px;
     font-size: 14px;
 }
-
 .in-stock {
     color: green;
     font-weight: bold;
 }
-
 .out-stock {
     color: #d11;
 }
-
 .error {
     color: #d88a00;
 }
-
-a {
+/* BUY BUTTON */
+.buy-button {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 9px 13px;
+    border-radius: 8px;
     text-decoration: none;
-    color: inherit;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
 }
-
+.buy-button:hover {
+    opacity: 0.8;
+}
+.buy-button.stock {
+    background: #16823b;
+}
+/* EMPTY */
+.empty {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    color: #666;
+}
+/* LAST CHECKED */
 .last-checked {
     text-align: center;
     color: #666;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 14px;
+    margin-bottom: 20px;
 }
-
-.loading {
+.refresh-note {
     text-align: center;
-    padding: 20px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
 }
-
+/* MOBILE */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .summary {
+        gap: 6px;
+    }
+    .summary div {
+        padding: 12px 4px;
+        font-size: 13px;
+    }
+    .number {
+        font-size: 21px;
+    }
+    .product {
+        padding: 13px;
+    }
+    .product-name {
+        font-size: 15px;
+    }
+    .filters {
+        flex-wrap: wrap;
+    }
+    .filter {
+        min-width: 30%;
+    }
+}
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
-
-    <h1>📡 NeeDoh LIVE RADAR</h1>
-
-    <div class="subtitle">
-        Europe Stock Tracker
-    </div>
-
-    <div class="summary">
-
-        <div>
-            <span class="number" id="inStock">0</span>
-            🟢 In stock
-        </div>
-
-        <div>
-            <span class="number" id="outStock">0</span>
-            🔴 Out of stock
-        </div>
-
-        <div>
-            <span class="number" id="errors">0</span>
-            ⚠️ Errors
-        </div>
-
-    </div>
-
-    <div id="products">
-
-        <div class="loading">
-            Loading radar...
-        </div>
-
-    </div>
-
-    <div class="last-checked">
-
-        Last checked:
-        <span id="lastChecked">...</span>
-
-    </div>
-
+<h1>📡 NeeDoh LIVE RADAR</h1>
+<div class="subtitle">
+    🇪🇺 Europe Stock Tracker
 </div>
-
-
+<!-- SUMMARY -->
+<div class="summary">
+    <div>
+        <span class="number" id="inStock">0</span>
+        🟢 In stock
+    </div>
+    <div>
+        <span class="number" id="outStock">0</span>
+        🔴 Out of stock
+    </div>
+    <div>
+        <span class="number" id="errors">0</span>
+        ⚠️ Errors
+    </div>
+</div>
+<!-- SEARCH + FILTERS -->
+<div class="controls">
+    <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="🔎 Search Needoh..."
+    >
+    <div class="filters">
+        <button
+            class="filter active"
+            data-filter="all"
+        >
+            All
+        </button>
+        <button
+            class="filter"
+            data-filter="in_stock"
+        >
+            🟢 In Stock
+        </button>
+        <button
+            class="filter"
+            data-filter="out_of_stock"
+        >
+            🔴 Out of Stock
+        </button>
+    </div>
+</div>
+<!-- PRODUCTS -->
+<div id="products">
+    <div class="empty">
+        Loading radar...
+    </div>
+</div>
+<!-- LAST CHECKED -->
+<div class="last-checked">
+    🕐 Last checked:
+    <span id="lastChecked">...</span>
+    <div class="refresh-note">
+        Radar automatically refreshes every minute
+    </div>
+</div>
+</div>
 <script>
-
+let radarData = null;
+let currentFilter = "all";
+/* LOAD RADAR */
 async function loadRadar() {
-
     try {
-
         const response = await fetch(
             "./radar.json?t=" + Date.now()
         );
-
         if (!response.ok) {
             throw new Error(
                 "Could not load radar.json"
             );
         }
-
-        const data = await response.json();
-
-        const container =
-            document.getElementById("products");
-
-        container.innerHTML = "";
-
-        let inStock = 0;
-        let outStock = 0;
-        let errors = 0;
-
-
-        /*
-         * Get shops.
-         *
-         * New format:
-         * data.shops
-         *
-         * Old format:
-         * data.products
-         */
-
-        let shops = [];
-
-        if (Array.isArray(data.shops)) {
-
-            shops = data.shops;
-
-        }
-
-        else if (Array.isArray(data.products)) {
-
-            shops = [
-                {
-                    name: "Toys42Hands",
-                    country: "🇳🇱 Netherlands",
-                    products: data.products
-                }
-            ];
-
-        }
-
-        else {
-
-            throw new Error(
-                "No products or shops found in radar.json"
-            );
-
-        }
-
-
-        /*
-         * Display every shop
-         */
-
-        shops.forEach(shop => {
-
-            const shopSection =
-                document.createElement("div");
-
-            shopSection.className = "shop";
-
-
-            const shopTitle =
-                document.createElement("div");
-
-            shopTitle.className = "shop-title";
-
-            shopTitle.innerHTML = `
-                <h2>
-                    🛍️ ${shop.name}
-                    ${shop.country || ""}
-                </h2>
-            `;
-
-            shopSection.appendChild(shopTitle);
-
-
-            /*
-             * Display products
-             */
-
-            if (Array.isArray(shop.products)) {
-
-                shop.products.forEach(product => {
-
-                    const item =
-                        document.createElement("div");
-
-                    item.className = "product";
-
-
-                    let statusText = "";
-                    let statusClass = "";
-
-
-                    if (
-                        product.status === "in_stock"
-                    ) {
-
-                        statusText =
-                            "🟢 IN STOCK";
-
-                        statusClass =
-                            "in-stock";
-
-                        inStock++;
-
-                    }
-
-                    else if (
-                        product.status === "out_of_stock"
-                    ) {
-
-                        statusText =
-                            "🔴 Out of stock";
-
-                        statusClass =
-                            "out-stock";
-
-                        outStock++;
-
-                    }
-
-                    else {
-
-                        statusText =
-                            "⚠️ Could not check";
-
-                        statusClass =
-                            "error";
-
-                        errors++;
-
-                    }
-
-
-                    item.innerHTML = `
-
-                        <div>
-
-                            <div class="product-name">
-                                ${product.name}
-                            </div>
-
-                            <div class="status ${statusClass}">
-                                ${statusText}
-                            </div>
-
-                        </div>
-
-                        <div>
-
-                            <a
-                                href="${product.url}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                🔗
-                            </a>
-
-                        </div>
-
-                    `;
-
-
-                    shopSection.appendChild(item);
-
-                });
-
-            }
-
-
-            container.appendChild(shopSection);
-
-        });
-
-
-        /*
-         * Update totals
-         */
-
-        document.getElementById(
-            "inStock"
-        ).textContent = inStock;
-
-
-        document.getElementById(
-            "outStock"
-        ).textContent = outStock;
-
-
-        document.getElementById(
-            "errors"
-        ).textContent = errors;
-
-
-        /*
-         * Update last checked time
-         */
-
-        document.getElementById(
-            "lastChecked"
-        ).textContent =
-            data.last_checked || "Unknown";
-
-
+        radarData = await response.json();
+        renderRadar();
     }
-
     catch (error) {
-
         console.error(
             "RADAR ERROR:",
             error
         );
-
         document.getElementById(
             "products"
         ).innerHTML = `
-            <div class="product">
+            <div class="empty">
                 ⚠️ Unable to load radar data.
                 <br><br>
                 <small>
@@ -415,30 +301,234 @@ async function loadRadar() {
                 </small>
             </div>
         `;
-
     }
-
 }
-
-
-/*
- * Load immediately
- */
-
+/* RENDER RADAR */
+function renderRadar() {
+    if (!radarData) {
+        return;
+    }
+    const container =
+        document.getElementById("products");
+    container.innerHTML = "";
+    let inStock = 0;
+    let outStock = 0;
+    let errors = 0;
+    /* GET SHOPS */
+    let shops = [];
+    if (Array.isArray(radarData.shops)) {
+        shops = radarData.shops;
+    }
+    else if (Array.isArray(radarData.products)) {
+        shops = [
+            {
+                name: "Toys42Hands",
+                country: "🇳🇱 Netherlands",
+                products: radarData.products
+            }
+        ];
+    }
+    else {
+        throw new Error(
+            "No products or shops found in radar.json"
+        );
+    }
+    /* COUNT TOTALS */
+    shops.forEach(shop => {
+        if (!Array.isArray(shop.products)) {
+            return;
+        }
+        shop.products.forEach(product => {
+            if (product.status === "in_stock") {
+                inStock++;
+            }
+            else if (
+                product.status === "out_of_stock"
+            ) {
+                outStock++;
+            }
+            else {
+                errors++;
+            }
+        });
+    });
+    /* UPDATE SUMMARY */
+    document.getElementById(
+        "inStock"
+    ).textContent = inStock;
+    document.getElementById(
+        "outStock"
+    ).textContent = outStock;
+    document.getElementById(
+        "errors"
+    ).textContent = errors;
+    /* SEARCH */
+    const searchValue =
+        document.getElementById(
+            "search"
+        ).value
+        .toLowerCase()
+        .trim();
+    /* DISPLAY SHOPS */
+    shops.forEach(shop => {
+        if (!Array.isArray(shop.products)) {
+            return;
+        }
+        const matchingProducts =
+            shop.products.filter(product => {
+                const matchesSearch =
+                    product.name
+                        .toLowerCase()
+                        .includes(searchValue);
+                const matchesFilter =
+                    currentFilter === "all"
+                    ||
+                    product.status === currentFilter;
+                return (
+                    matchesSearch
+                    &&
+                    matchesFilter
+                );
+            });
+        if (
+            matchingProducts.length === 0
+        ) {
+            return;
+        }
+        /* SHOP SECTION */
+        const shopSection =
+            document.createElement("div");
+        shopSection.className = "shop";
+        /* SHOP TITLE */
+        const shopTitle =
+            document.createElement("div");
+        shopTitle.className = "shop-title";
+        shopTitle.innerHTML = `
+            <h2>
+                🛍️ ${shop.name}
+                ${shop.country || ""}
+            </h2>
+        `;
+        shopSection.appendChild(
+            shopTitle
+        );
+        /* PRODUCTS */
+        matchingProducts.forEach(product => {
+            const item =
+                document.createElement("div");
+            item.className = "product";
+            let statusText = "";
+            let statusClass = "";
+            let buttonClass = "";
+            if (
+                product.status === "in_stock"
+            ) {
+                statusText =
+                    "🟢 IN STOCK";
+                statusClass =
+                    "in-stock";
+                buttonClass =
+                    "stock";
+            }
+            else if (
+                product.status === "out_of_stock"
+            ) {
+                statusText =
+                    "🔴 Out of stock";
+                statusClass =
+                    "out-stock";
+            }
+            else {
+                statusText =
+                    "⚠️ Could not check";
+                statusClass =
+                    "error";
+            }
+            item.innerHTML = `
+                <div class="product-info">
+                    <div class="product-name">
+                        ${product.name}
+                    </div>
+                    <div class="status ${statusClass}">
+                        ${statusText}
+                    </div>
+                </div>
+                <div>
+                    <a
+                        class="buy-button ${buttonClass}"
+                        href="${product.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ${product.status === "in_stock"
+                            ? "BUY NOW"
+                            : "VIEW"}
+                    </a>
+                </div>
+            `;
+            shopSection.appendChild(
+                item
+            );
+        });
+        container.appendChild(
+            shopSection
+        );
+    });
+    /* NOTHING FOUND */
+    if (
+        container.innerHTML.trim() === ""
+    ) {
+        container.innerHTML = `
+            <div class="empty">
+                🔎 No Needohs found.
+                <br><br>
+                Try another search or filter.
+            </div>
+        `;
+    }
+    /* LAST CHECKED */
+    document.getElementById(
+        "lastChecked"
+    ).textContent =
+        radarData.last_checked || "Unknown";
+}
+/* SEARCH */
+document.getElementById(
+    "search"
+).addEventListener(
+    "input",
+    renderRadar
+);
+/* FILTER BUTTONS */
+document.querySelectorAll(
+    ".filter"
+).forEach(button => {
+    button.addEventListener(
+        "click",
+        function() {
+            document.querySelectorAll(
+                ".filter"
+            ).forEach(
+                b => b.classList.remove(
+                    "active"
+                )
+            );
+            this.classList.add(
+                "active"
+            );
+            currentFilter =
+                this.dataset.filter;
+            renderRadar();
+        }
+    );
+});
+/* INITIAL LOAD */
 loadRadar();
-
-
-/*
- * Refresh every minute
- */
-
+/* REFRESH EVERY MINUTE */
 setInterval(
     loadRadar,
     60000
 );
-
 </script>
-
 </body>
-
 </html>
