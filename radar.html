@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NeeDoh Europe Live Radar</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .summary {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .summary div {
+        flex: 1;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .number {
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .product {
+        background: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .product-name {
+        font-weight: bold;
+    }
+
+    .status {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .in-stock {
+        color: green;
+        font-weight: bold;
+    }
+
+    .out-stock {
+        color: #d11;
+    }
+
+    .error {
+        color: #d88a00;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .last-checked {
+        text-align: center;
+        color: #666;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📡 NeeDoh LIVE RADAR</h1>
+
+    <div class="subtitle">
+        Toys42Hands 🇳🇱
+    </div>
+
+    <div class="summary">
+
+        <div>
+            <span class="number" id="inStock">0</span>
+            🟢 In stock
+        </div>
+
+        <div>
+            <span class="number" id="outStock">0</span>
+            🔴 Out of stock
+        </div>
+
+        <div>
+            <span class="number" id="errors">0</span>
+            ⚠️ Errors
+        </div>
+
+    </div>
+
+    <div id="products">
+        Loading radar...
+    </div>
+
+    <div class="last-checked">
+        Last checked: <span id="lastChecked">...</span>
+    </div>
+
+</div>
+
+<script>
+
+async function loadRadar() {
+
+    try {
+
+        const response = await fetch(
+            "radar.json?t=" + Date.now()
+        );
+
+        const data = await response.json();
+
+        let inStock = 0;
+        let outStock = 0;
+        let errors = 0;
+
+        const container = document.getElementById("products");
+
+        container.innerHTML = "";
+
+        data.products.forEach(product => {
+
+            const item = document.createElement("div");
+
+            item.className = "product";
+
+            let statusText = "";
+            let statusClass = "";
+
+            if (product.status === "in_stock") {
+
+                statusText = "🟢 IN STOCK";
+                statusClass = "in-stock";
+                inStock++;
+
+            } else if (product.status === "out_of_stock") {
+
+                statusText = "🔴 Out of stock";
+                statusClass = "out-stock";
+                outStock++;
+
+            } else {
+
+                statusText = "⚠️ Could not check";
+                statusClass = "error";
+                errors++;
+
+            }
+
+            item.innerHTML = `
+                <div>
+                    <div class="product-name">
+                        ${product.name}
+                    </div>
+
+                    <div class="status ${statusClass}">
+                        ${statusText}
+                    </div>
+                </div>
+
+                <div>
+                    <a href="${product.url}" target="_blank">
+                        🔗
+                    </a>
+                </div>
+            `;
+
+            container.appendChild(item);
+
+        });
+
+        document.getElementById("inStock").textContent = inStock;
+        document.getElementById("outStock").textContent = outStock;
+        document.getElementById("errors").textContent = errors;
+
+        document.getElementById("lastChecked").textContent =
+            data.last_checked;
+
+    } catch (error) {
+
+        document.getElementById("products").innerHTML =
+            "⚠️ Unable to load radar data.";
+
+        console.error(error);
+
+    }
+
+}
+
+loadRadar();
+
+setInterval(loadRadar, 60000);
+
+</script>
+
+</body>
+</html>
