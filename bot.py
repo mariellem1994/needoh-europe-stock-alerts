@@ -1644,9 +1644,20 @@ for product in mamiee_products:
         f"Checking Mamiee: {product['name']}"
     )
 
-    current_status = check_mamiee_product_stock(
-        product["url"]
-    )
+        if current_status == "in_stock":
+        print(
+            f"🟢 In stock: {product['name']}"
+        )
+
+    elif current_status == "out_of_stock":
+        print(
+            f"🔴 Out of stock: {product['name']}"
+        )
+
+    else:
+        print(
+            f"⚠️ Could not check: {product['name']}"
+        )
 
     previous_status = get_previous_status(
         previous_radar,
