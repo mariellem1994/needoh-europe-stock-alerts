@@ -1,6 +1,7 @@
 import os
 import urllib.request
 import urllib.parse
+from datetime import datetime
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -218,6 +219,8 @@ products = [
 
 print(f"🔎 Checking {len(products)} Needoh products...")
 
+statuses = []
+
 for product in products:
 
     print(f"Checking: {product['name']}")
@@ -227,6 +230,10 @@ for product in products:
     if page:
 
         if '"available":true' in page or '"available": true' in page:
+
+            statuses.append(
+                f"🟢 {product['name']}"
+            )
 
             send_telegram(
                 f"🚨 NEEDOH STOCK ALERT!\n\n"
@@ -241,10 +248,39 @@ for product in products:
 
         else:
 
+            statuses.append(
+                f"🔴 {product['name']}"
+            )
+
             print(f"🔴 Out of stock: {product['name']}")
 
     else:
 
+        statuses.append(
+            f"⚠️ {product['name']} — could not check"
+        )
+
         print(f"⚠️ Could not check: {product['name']}")
 
+
+in_stock = sum(1 for status in statuses if status.startswith("🟢"))
+out_of_stock = sum(1 for status in statuses if status.startswith("🔴"))
+errors = sum(1 for status in statuses if status.startswith("⚠️"))
+
+current_time = datetime.now().strftime("%H:%M")
+
+radar_message = (
+    "📡 NEEDOH LIVE RADAR\n\n"
+    "🛍️ Toys42Hands 🇳🇱\n\n"
+    + "\n".join(statuses)
+    + "\n\n"
+    + f"🟢 In stock: {in_stock}\n"
+    + f"🔴 Out of stock: {out_of_stock}\n"
+    + f"⚠️ Could not check: {errors}\n\n"
+    + f"🕐 Last checked: {current_time}"
+)
+
+send_telegram(radar_message)
+
+print("📡 Radar sent to Telegram!")
 print("✅ Stock check completed!")
