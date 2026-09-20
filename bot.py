@@ -1573,20 +1573,6 @@ for product in mamiee_products:
         "status": "unknown"
     })
     
-        send_telegram(
-            f"🚨 NEW NEEDOH FOUND!\n\n"
-            f"➡️ {product['name']}\n"
-            f"🛍️ Spadt\n"
-            f"🇧🇪 Belgium\n\n"
-            f"🆕 NEW PRODUCT FOUND!\n\n"
-            f"🔗 {product['url']}"
-        )
-
-        print(
-            f"🚨 NEW SPADT NEEDOH: "
-            f"{product['name']}"
-        )
-    
 houten_results = []
 
 for product in houten_products:
