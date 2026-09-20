@@ -1,6 +1,47 @@
 {
-  "last_checked": "20 Sep 2026, 20:35",
+  "last_checked": "20 Sep 2026, 20:40",
   "shops": [
+    {
+      "name": "Houten Onderwijsmateriaal",
+      "country": "🇧🇪 Belgium",
+      "products": [
+        {
+          "name": "Dream Drop NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/dream-drop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Verkleurende NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/verkleurende-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Gumdrop NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/gumdrop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/nice-cube-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Donut NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/donut-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Marbleez NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/marbleez-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Sploot Splat NeeDoh",
+          "url": "https://houtenonderwijsmateriaal.be/products/sploot-splat-needoh",
+          "status": "out_of_stock"
+        }
+      ]
+    },
     {
       "name": "DreamLand",
       "country": "🇳🇱 Netherlands",
