@@ -1,5 +1,5 @@
 {
-  "last_checked": "20 Sep 2026, 14:08",
+  "last_checked": "20 Sep 2026, 14:21",
   "products": [
     {
       "name": "Squisher the Reindoh",
@@ -24,7 +24,7 @@
     {
       "name": "NeeDoh Nice Cube",
       "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube",
-      "status": "out_of_stock"
+      "status": "error"
     },
     {
       "name": "NeeDoh Squishmas Fidget Advent Calendar",
@@ -54,7 +54,7 @@
     {
       "name": "NeeDoh Wonder Wave Fuzz",
       "url": "https://www.toys42hands.nl/en/products/needoh-wonder-wave-fuzz",
-      "status": "out_of_stock"
+      "status": "error"
     },
     {
       "name": "NeeDoh Mello Mallo",
