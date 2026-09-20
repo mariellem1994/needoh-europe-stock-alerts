@@ -1,6 +1,7 @@
 import os
 import urllib.request
 import urllib.parse
+import json
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -20,33 +21,56 @@ def send_telegram(message):
         print(response.read().decode())
 
 
-def check_stock(url):
+def check_toys42hands(url, product_name):
     try:
-        with urllib.request.urlopen(url, timeout=15) as response:
+        with urllib.request.urlopen(url, timeout=20) as response:
             page = response.read().decode("utf-8", errors="ignore")
 
-        return page
+        # Shopify product data
+        marker = '"available":'
+        available_positions = []
+
+        start = 0
+        while True:
+            position = page.find(marker, start)
+
+            if position == -1:
+                break
+
+            value_start = position + len(marker)
+            value = page[value_start:value_start + 10].strip()
+
+            available_positions.append(value.startswith("true"))
+            start = value_start
+
+        if any(available_positions):
+            send_telegram(
+                f"🚨 NEEDOH STOCK ALERT!\n\n"
+                f"🐿️ {product_name}\n"
+                f"🛍️ Toys42Hands\n"
+                f"🇳🇱 Netherlands\n\n"
+                f"🟢 IN STOCK!\n\n"
+                f"🔗 {url}"
+            )
+
+            print(f"🟢 {product_name} appears to be IN STOCK!")
+
+        else:
+            print(f"🔴 {product_name} appears to be SOLD OUT.")
 
     except Exception as e:
-        print(f"Error checking {url}: {e}")
-        return None
+        print(f"❌ Error checking {product_name}: {e}")
 
 
-# TEST PRODUCT
-product_name = "NeeDoh Mega Niceberg"
-test_url = "https://www.intertoys.nl/needoh-mega-niceberg"
+# ==========================================
+# TOYS42HANDS
+# ==========================================
 
-page = check_stock(test_url)
+product_name = "NeeDoh Jack-Glow Lantern"
 
-if page:
-    send_telegram(
-        f"🔎 Successfully checked:\n\n"
-        f"🐿️ {product_name}\n"
-        f"🛍️ Intertoys\n"
-        f"🇳🇱 Netherlands\n\n"
-        f"✅ Product page downloaded successfully."
-    )
-else:
-    send_telegram(
-        "❌ The bot could not download the Intertoys product page."
-    )
+product_url = (
+    "https://www.toys42hands.nl/en/products/"
+    "needoh-jack-glow-latern"
+)
+
+check_toys42hands(product_url, product_name)
