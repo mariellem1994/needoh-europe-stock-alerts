@@ -807,6 +807,17 @@ def get_mamiee_needoh_products(page):
         if "needoh" not in combined_text:
             continue
 
+        if (
+            "opět v nabídce" in text.lower()
+            or
+            "koupit radost" in text.lower()
+            or
+            "popis:" in text.lower()
+            or
+            "výrobce:" in text.lower()
+        ):
+            continue
+
         if text.lower().strip() in (
             "needoh",
             "search",
