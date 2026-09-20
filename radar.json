@@ -1,6 +1,17 @@
 {
-  "last_checked": "20 Sep 2026, 20:47",
+  "last_checked": "20 Sep 2026, 20:56",
   "shops": [
+    {
+      "name": "Drukke Mama's",
+      "country": "🇧🇪 Belgium",
+      "products": [
+        {
+          "name": "NeeDoh Jack-Glow Lantern - Glow in the dark",
+          "url": "https://drukkemamas.be/products/needoh-jack-glow-lantern",
+          "status": "unknown"
+        }
+      ]
+    },
     {
       "name": "Houten Onderwijsmateriaal",
       "country": "🇧🇪 Belgium",
@@ -121,62 +132,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "error"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -399,58 +410,7 @@
     {
       "name": "Lobbes",
       "country": "🇳🇱 Netherlands",
-      "products": [
-        {
-          "name": "Niceberg",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Gumdrop",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Cool Cats",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650672-needoh-cool-cats-kat",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Color Change",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650673-needoh-color-change",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Nice Cube Glow",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Nice Cube",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650669-needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Teenie Glob",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650674-needoh-teenie-glob-kleur-3-pack",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Dream Pop",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650675-needoh-dream-pop-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Wonder Waves",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650687-needoh-fuzz-ball-wonder-waves-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Mello Mallo",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh",
-          "status": "out_of_stock"
-        }
-      ]
+      "products": []
     }
   ]
 }
