@@ -265,6 +265,64 @@ def check_stock(url):
 
         return None
 
+def check_intertoys_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+
+        # Intertoys explicitly says these products
+        # are only available in physical stores.
+        if (
+            "alleen in de winkel te koop"
+            in page_lower
+        ):
+
+            return "out_of_stock"
+
+
+        # We ONLY count the product as online stock
+        # when Intertoys offers home delivery.
+        if (
+            "thuisbezorgen"
+            in page_lower
+        ):
+
+            return "in_stock"
+
+
+        # Store stock / Click & Collect alone
+        # does NOT count as online stock.
+        return "out_of_stock"
+
+
+    except Exception as e:
+
+        print(
+            f"⚠️ Intertoys error: {e}"
+        )
+
+        return "error"
 
 products = [
 
@@ -439,6 +497,69 @@ products = [
 
 ]
 
+intertoys_products = [
+
+    {
+        "name": "NeeDoh Mega Niceberg",
+        "url": "https://www.intertoys.nl/needoh-mega-niceberg"
+    },
+
+    {
+        "name": "NeeDoh Nice Cube Swirl",
+        "url": "https://www.intertoys.nl/needoh-nice-cube-swirl"
+    },
+
+    {
+        "name": "NeeDoh Dream Drop",
+        "url": "https://www.intertoys.nl/needoh-dream-drop"
+    },
+
+    {
+        "name": "NeeDoh Teenie NeeDoh 3-pack",
+        "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack"
+    },
+
+    {
+        "name": "NeeDoh Sugar Skull Cats",
+        "url": "https://www.intertoys.nl/needoh-sugar-skull-cats"
+    },
+
+    {
+        "name": "NeeDoh glow in the dark",
+        "url": "https://www.intertoys.nl/needoh-glow-in-the-dark"
+    },
+
+    {
+        "name": "NeeDoh Hot Shots voetbal",
+        "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal"
+    },
+
+    {
+        "name": "NeeDoh Teenie Fab Four multipack",
+        "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen"
+    },
+
+    {
+        "name": "NeeDoh coole kat",
+        "url": "https://www.intertoys.nl/needoh-coole-kat"
+    },
+
+    {
+        "name": "NeeDoh Color Change",
+        "url": "https://www.intertoys.nl/needoh-color-change"
+    },
+
+    {
+        "name": "NeeDoh Nice Cube",
+        "url": "https://www.intertoys.nl/needoh-nice-cube"
+    },
+
+    {
+        "name": "Needoh Classic Needoh stressbal",
+        "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal"
+    }
+
+]
 
 lobbes_products = [
 
@@ -488,7 +609,59 @@ lobbes_products = [
 
 previous_radar = load_previous_radar()
 
+intertoys_results = []
 
+for product in intertoys_products:
+
+    print(
+        f"Checking Intertoys: {product['name']}"
+    )
+
+    current_status = check_intertoys_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Intertoys",
+        product["name"]
+    )
+
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+
+            f"➡️ {product['name']}\n"
+
+            f"🛍️ Intertoys\n"
+
+            f"🇳🇱 Netherlands\n\n"
+
+            f"🟢 IN STOCK ONLINE!\n\n"
+
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW INTERTOYS STOCK: {product['name']}"
+        )
+
+
+    intertoys_results.append({
+
+        "name": product["name"],
+
+        "url": product["url"],
+
+        "status": current_status
+
+    })
 print(
     f"🔎 Checking {len(products)} Needoh products..."
 )
@@ -624,6 +797,14 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+                {
+            "name": "Intertoys",
+
+            "country": "🇳🇱 Netherlands",
+
+            "products": intertoys_results
+
+        },
 
         {
 
