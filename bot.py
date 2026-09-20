@@ -39,18 +39,14 @@ test_url = "https://www.intertoys.nl/needoh-mega-niceberg"
 page = check_stock(test_url)
 
 if page:
-    if "In winkelmandje" in page:
-        send_telegram(
-            f"🚨 NEEDOH STOCK ALERT! 🚨\n\n"
-            f"🐿️ {product_name}\n"
-            f"🛍️ Intertoys\n"
-            f"🇳🇱 Netherlands\n\n"
-            f"🟢 IN STOCK!\n\n"
-            f"{test_url}"
-        )
-    else:
-        send_telegram(
-            f"🔎 Checked:\n"
-            f"{product_name}\n\n"
-            f"⚪ No online stock detected."
-        )
+    send_telegram(
+        f"🔎 Successfully checked:\n\n"
+        f"🐿️ {product_name}\n"
+        f"🛍️ Intertoys\n"
+        f"🇳🇱 Netherlands\n\n"
+        f"✅ Product page downloaded successfully."
+    )
+else:
+    send_telegram(
+        "❌ The bot could not download the Intertoys product page."
+    )
