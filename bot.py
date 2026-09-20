@@ -425,24 +425,38 @@ errors = sum(1 for status in statuses if status.startswith("⚠️"))
 
 current_time = datetime.now(ZoneInfo("Europe/Amsterdam")).strftime("%d %b %Y, %H:%M")
 
+lobbes_results = check_lobbes_stock()
+
 radar_data = {
     "last_checked": current_time,
-    "products": [
+
+    "shops": [
         {
-            "name": product["name"],
-            "url": product["url"],
-            "status": (
-                "in_stock"
-                if statuses[i].startswith("🟢")
-                else "out_of_stock"
-                if statuses[i].startswith("🔴")
-                else "error"
-            )
+            "name": "Toys42Hands",
+            "country": "🇳🇱 Netherlands",
+            "products": [
+                {
+                    "name": product["name"],
+                    "url": product["url"],
+                    "status": (
+                        "in_stock"
+                        if statuses[i].startswith("🟢")
+                        else "out_of_stock"
+                        if statuses[i].startswith("🔴")
+                        else "error"
+                    )
+                }
+                for i, product in enumerate(products)
+            ]
+        },
+
+        {
+            "name": "Lobbes",
+            "country": "🇳🇱 Netherlands",
+            "products": lobbes_results
         }
-        for i, product in enumerate(products)
     ]
 }
-
 with open("radar.json", "w", encoding="utf-8") as file:
     json.dump(radar_data, file, indent=2, ensure_ascii=False)
 
