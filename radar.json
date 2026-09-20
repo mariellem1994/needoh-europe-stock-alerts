@@ -1,5 +1,5 @@
 {
-  "last_checked": "20 Sep 2026, 23:44",
+  "last_checked": "20 Sep 2026, 23:47",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -60,6 +60,87 @@
           "name": "Uit stock Teenie Needoh Cool Cats (3) Schylling € 6,99",
           "url": "https://spadt.be/webshop/schylling-teenie-needoh-cool-cats-3-speelgoed-hebbedingen-en-minispeeltjes-fidgetssycctnd-6153/",
           "status": "out_of_stock"
+        }
+      ]
+    },
+    {
+      "name": "Mamiee",
+      "country": "🇨🇿 Czech Republic",
+      "products": [
+        {
+          "name": "Schylling NeeDoh Mačkací medúza",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-meduza",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresová kapka",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresova-kapka",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míček",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-mini-micek-ruze-barvy-antistres",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Adventní kalendář 2026",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-adventni-kalendar-2026",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací texturovaný - různé barvy",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-texturovany",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Duhové mačkací míčky 6 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-duhove-mackaci-micky-6-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball-strapate-trojbaleni",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací maxi míček Fuzz Ball",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Nice Cube - střední",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresova-kostka-nice-cube-stredni",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-kostka-teenie-nice-ice-baby",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací míčky Fuzz Ball 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-micky-fuzz-ball-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
+          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "status": "in_stock"
         }
       ]
     },
@@ -461,58 +542,7 @@
     {
       "name": "Lobbes",
       "country": "🇳🇱 Netherlands",
-      "products": [
-        {
-          "name": "Niceberg",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Gumdrop",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Cool Cats",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650672-needoh-cool-cats-kat",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Color Change",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650673-needoh-color-change",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Nice Cube Glow",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Nice Cube",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650669-needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Teenie Glob",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650674-needoh-teenie-glob-kleur-3-pack",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Dream Pop",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650675-needoh-dream-pop-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Wonder Waves",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650687-needoh-fuzz-ball-wonder-waves-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Mello Mallo",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh",
-          "status": "out_of_stock"
-        }
-      ]
+      "products": []
     }
   ]
 }
