@@ -65,23 +65,33 @@ def check_lobbes_stock():
 
         results = []
 
-        # These are the actual product names as displayed by Lobbes
-        lobbes_names = [
-            "needoh - niceberg needoh",
-            "needoh - gumdrop needoh",
-            "needoh cool cats kat",
-            "needoh color change",
-            "needoh - nice cube glow needoh",
-            "needoh nice cube - sensorisch stressspeeltje met goo-vulling",
-            "needoh teenie glob kleur, 3-pack",
-            "needoh - dream pop needoh",
-            "needoh - fuzz ball wonder waves needoh",
-            "needoh - mello mallo needoh"
-        ]
+        # Find every product's actual link in the page
+        product_positions = []
 
-        for product, lobbes_name in zip(lobbes_products, lobbes_names):
+        for product in lobbes_products:
 
-            start = html_lower.find(lobbes_name)
+            product_path = urllib.parse.urlparse(
+                product["url"]
+            ).path.lower()
+
+            position = html_lower.find(product_path)
+
+            product_positions.append({
+                "product": product,
+                "position": position
+            })
+
+        # Sort products in the same order as they appear on Lobbes
+        product_positions.sort(
+            key=lambda item: item["position"]
+            if item["position"] != -1
+            else 999999999
+        )
+
+        for i, item in enumerate(product_positions):
+
+            product = item["product"]
+            start = item["position"]
 
             if start == -1:
                 results.append({
@@ -91,20 +101,21 @@ def check_lobbes_stock():
                 })
                 continue
 
-            # The next product starts after this product's status.
-            next_start = html_lower.find(
-                "needoh",
-                start + len(lobbes_name)
-            )
+            # Stop at the next product's actual link
+            if i + 1 < len(product_positions):
+                next_position = product_positions[i + 1]["position"]
 
-            if next_start == -1:
-                section = html_lower[start:]
+                if next_position != -1:
+                    section = html_lower[start:next_position]
+                else:
+                    section = html_lower[start:]
             else:
-                section = html_lower[start:next_start]
+                section = html_lower[start:]
 
             if (
                 "uitverkocht" in section
                 or "dit artikel is nu niet leverbaar" in section
+                or "momenteel niet leverbaar" in section
             ):
                 status = "out_of_stock"
             else:
