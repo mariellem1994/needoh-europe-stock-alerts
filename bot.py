@@ -301,7 +301,7 @@ lobbes_products = [
         "url": "https://www.lobbes.nl/merken/needoh"
     },
     {
-        "name": "Teenie Glob 3-pack",
+        "name": "Teenie Glob",
         "url": "https://www.lobbes.nl/merken/needoh"
     },
     {
@@ -309,7 +309,7 @@ lobbes_products = [
         "url": "https://www.lobbes.nl/merken/needoh"
     },
     {
-        "name": "Wonder Waves Fuzz",
+        "name": "Wonder Waves",
         "url": "https://www.lobbes.nl/merken/needoh"
     },
     {
