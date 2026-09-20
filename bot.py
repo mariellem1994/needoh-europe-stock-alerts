@@ -542,14 +542,14 @@ def get_drukke_mamas_needoh_products(page):
         if "stylesheet" in text.lower():
             continue
 
-        if text.lower().strip() == "needoh":
-    continue
+                if text.lower().strip() == "needoh":
+            continue
 
-if "wis alle filters" in text.lower():
-    continue
+        if "wis alle filters" in text.lower():
+            continue
 
-if len(text) < 5:
-    continue
+        if len(text) < 5:
+            continue
 
         if len(text) > 150:
             continue
