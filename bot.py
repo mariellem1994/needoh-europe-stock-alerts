@@ -8,13 +8,23 @@ TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 
-def send_telegram(message):
+def send_telegram(message, button_url=None):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
-    data = urllib.parse.urlencode({
+        data = {
         "chat_id": CHAT_ID,
         "text": message
-    }).encode()
+    }
+
+    if button_url:
+        data["reply_markup"] = json.dumps({
+            "inline_keyboard": [[
+                {
+                    "text": "📡 OPEN LIVE RADAR",
+                    "url": button_url
+                }
+            ]]
+        }).encode()
 
     request = urllib.request.Request(url, data=data)
 
@@ -302,7 +312,10 @@ radar_message = (
     + f"🕐 Last checked: {current_time}"
 )
 
-send_telegram(radar_message)
+send_telegram(
+    radar_message,
+    "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
+)
 
 print("📡 Radar sent to Telegram!")
 print("✅ Stock check completed!")
