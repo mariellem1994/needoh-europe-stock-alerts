@@ -293,43 +293,43 @@ products = [
 lobbes_products = [
     {
         "name": "Niceberg",
-        "url": "https://www.lobbes.nl/product/needoh-niceberg-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh"
     },
     {
         "name": "Gumdrop",
-        "url": "https://www.lobbes.nl/product/needoh-gumdrop-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh"
     },
     {
         "name": "Cool Cats",
-        "url": "https://www.lobbes.nl/product/needoh-cool-cats-kat"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650672-needoh-cool-cats-kat"
     },
     {
         "name": "Color Change",
-        "url": "https://www.lobbes.nl/product/needoh-color-change"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650673-needoh-color-change"
     },
     {
         "name": "Nice Cube Glow",
-        "url": "https://www.lobbes.nl/product/needoh-nice-cube-glow-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh"
     },
     {
         "name": "Nice Cube",
-        "url": "https://www.lobbes.nl/product/needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650669-needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling"
     },
     {
         "name": "Teenie Glob",
-        "url": "https://www.lobbes.nl/product/needoh-teenie-glob-kleur-3-pack"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650674-needoh-teenie-glob-kleur-3-pack"
     },
     {
         "name": "Dream Pop",
-        "url": "https://www.lobbes.nl/product/needoh-dream-pop-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650675-needoh-dream-pop-needoh"
     },
     {
         "name": "Wonder Waves",
-        "url": "https://www.lobbes.nl/product/needoh-fuzz-ball-wonder-waves-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650687-needoh-fuzz-ball-wonder-waves-needoh"
     },
     {
         "name": "Mello Mallo",
-        "url": "https://www.lobbes.nl/product/needoh-mello-mallo-needoh"
+        "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh"
     }
 ]
 
