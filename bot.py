@@ -1,6 +1,7 @@
 import os
 import urllib.request
 import urllib.parse
+import json
 from datetime import datetime
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -268,6 +269,27 @@ out_of_stock = sum(1 for status in statuses if status.startswith("🔴"))
 errors = sum(1 for status in statuses if status.startswith("⚠️"))
 
 current_time = datetime.now().strftime("%H:%M")
+
+radar_data = {
+    "last_checked": current_time,
+    "products": [
+        {
+            "name": product["name"],
+            "url": product["url"],
+            "status": (
+                "in_stock"
+                if statuses[i].startswith("🟢")
+                else "out_of_stock"
+                if statuses[i].startswith("🔴")
+                else "error"
+            )
+        }
+        for i, product in enumerate(products)
+    ]
+}
+
+with open("radar.json", "w", encoding="utf-8") as file:
+    json.dump(radar_data, file, indent=2, ensure_ascii=False)
 
 radar_message = (
     "📡 NEEDOH LIVE RADAR\n\n"
