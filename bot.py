@@ -605,8 +605,12 @@ def get_spadt_needoh_products(page):
 
         combined_text = (text + " " + url).lower()
 
-                if "needoh" not in combined_text and "squishmas" not in combined_text:
+        if (
+            "needoh" not in combined_text
+            and "squishmas" not in combined_text
+        ):
             continue
+
         if url.rstrip("/") in (
             "/merken/schylling",
             "/merken/schylling/"
@@ -635,27 +639,6 @@ def get_spadt_needoh_products(page):
         })
 
     unique_products = []
-
-    seen_urls = set()
-
-    for product in products:
-
-        if product["url"] not in seen_urls:
-
-            seen_urls.add(product["url"])
-            unique_products.append(product)
-
-    return unique_products
-    seen_urls = set()
-
-    for product in products:
-
-        if product["url"] not in seen_urls:
-
-            seen_urls.add(product["url"])
-            unique_products.append(product)
-
-    return unique_products
 
     seen_urls = set()
 
