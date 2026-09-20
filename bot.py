@@ -469,6 +469,79 @@ def check_houten_stock(url):
 
         return "error"
 
+def check_drukke_mamas_collection():
+
+    try:
+
+        request = urllib.request.Request(
+            drukke_mamas_collection_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        return page
+
+    except Exception as e:
+
+        print(f"⚠️ Drukke Mama's error: {e}")
+
+        return None
+
+def get_drukke_mamas_needoh_products(page):
+
+    if not page:
+        return []
+
+    import re
+
+    products = []
+
+    matches = re.findall(
+        r'href="(/products/[^"]+)"[^>]*>(.*?)</a>',
+        page,
+        re.IGNORECASE | re.DOTALL
+    )
+
+    for url, content in matches:
+
+        text = re.sub("<.*?>", " ", content)
+        text = " ".join(text.split())
+
+        if "needoh" in text.lower():
+
+            full_url = "https://drukkemamas.be" + url
+
+            products.append({
+                "name": text,
+                "url": full_url
+            })
+
+    unique_products = []
+
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
+
 products = [
 
     {
@@ -801,6 +874,8 @@ houten_products = [
     }
 ]
 
+drukke_mamas_collection_url = "https://drukkemamas.be/collections/needoh"
+
 lobbes_products = [
 
     {
@@ -1040,6 +1115,61 @@ for product in dreamland_products:
         "status": current_status
     })
 
+drukke_mamas_results = []
+
+drukke_mamas_page = check_drukke_mamas_collection()
+
+drukke_mamas_products = get_drukke_mamas_needoh_products(
+    drukke_mamas_page
+)
+
+print(
+    f"Found {len(drukke_mamas_products)} NeeDoh products "
+    f"at Drukke Mama's"
+)
+
+for product in drukke_mamas_products:
+
+    print(
+        f"Drukke Mama's: {product['name']}"
+    )
+
+    drukke_mamas_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": "unknown"
+    })
+
+for product in drukke_mamas_products:
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Drukke Mama's",
+        product["name"]
+    )
+
+if (
+    previous_status is None
+    and any(
+        shop["name"] == "Drukke Mama's"
+        for shop in previous_radar.get("shops", [])
+    )
+):
+
+        send_telegram(
+            f"🚨 NEW NEEDOH FOUND!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Drukke Mama's\n"
+            f"🇧🇪 Belgium\n\n"
+            f"🆕 NEW PRODUCT FOUND!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW DRUKKE MAMA'S NEEDOH: "
+            f"{product['name']}"
+        )
+    
 houten_results = []
 
 for product in houten_products:
@@ -1238,6 +1368,11 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+        {
+    "name": "Drukke Mama's",
+    "country": "🇧🇪 Belgium",
+    "products": drukke_mamas_results
+},
         {
     "name": "Houten Onderwijsmateriaal",
     "country": "🇧🇪 Belgium",
