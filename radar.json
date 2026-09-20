@@ -1,5 +1,5 @@
 {
-  "last_checked": "10:55",
+  "last_checked": "10:58",
   "products": [
     {
       "name": "Squisher the Reindoh",
@@ -184,7 +184,7 @@
     {
       "name": "NeeDoh Flower Power Fuzz",
       "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
-      "status": "error"
+      "status": "out_of_stock"
     },
     {
       "name": "Teenie Funky Pup NeeDoh",
@@ -209,7 +209,7 @@
     {
       "name": "NeeDoh Jack-Glow Lantern",
       "url": "https://www.toys42hands.nl/en/products/needoh-jack-glow-latern",
-      "status": "error"
+      "status": "in_stock"
     }
   ]
 }
