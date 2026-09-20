@@ -542,6 +542,138 @@ def get_drukke_mamas_needoh_products(page):
 
     return unique_products
 
+def check_spadt_collection():
+
+    try:
+
+        request = urllib.request.Request(
+            spadt_collection_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        return page
+
+    except Exception as e:
+
+        print(f"⚠️ Spadt error: {e}")
+
+        return None
+def get_spadt_needoh_products(page):
+
+    if not page:
+        return []
+
+    import re
+
+    products = []
+
+    matches = re.findall(
+        r'href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',
+        page,
+        re.IGNORECASE | re.DOTALL
+    )
+
+    for url, content in matches:
+
+        text = re.sub("<.*?>", " ", content)
+        text = " ".join(text.split())
+
+        combined_text = (text + " " + url).lower()
+
+        if "needoh" in combined_text:
+
+            if url.startswith("/"):
+                full_url = "https://spadt.be" + url
+            elif url.startswith("http"):
+                full_url = url
+            else:
+                continue
+
+            products.append({
+                "name": text,
+                "url": full_url
+            })
+
+    unique_products = []
+
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
+
+def check_spadt_product_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        if (
+            "uitverkocht" in page_lower
+            or
+            "tijdelijk uitverkocht" in page_lower
+            or
+            "niet beschikbaar" in page_lower
+            or
+            "out of stock" in page_lower
+        ):
+            return "out_of_stock"
+
+        if (
+            "in winkelwagen" in page_lower
+            or
+            "toevoegen aan winkelwagen" in page_lower
+            or
+            "add to cart" in page_lower
+        ):
+            return "in_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(f"⚠️ Spadt product error: {e}")
+
+        return "error"
+
 products = [
 
     {
@@ -876,6 +1008,8 @@ houten_products = [
 
 drukke_mamas_collection_url = "https://drukkemamas.be/collections/needoh"
 
+spadt_collection_url = "https://spadt.be/merken/schylling/"
+
 lobbes_products = [
 
     {
@@ -1169,6 +1303,89 @@ if (
             f"🚨 NEW DRUKKE MAMA'S NEEDOH: "
             f"{product['name']}"
         )
+
+spadt_results = []
+
+spadt_page = check_spadt_collection()
+
+spadt_products = get_spadt_needoh_products(
+    spadt_page
+)
+
+print(
+    f"Found {len(spadt_products)} NeeDoh products "
+    f"at Spadt"
+)
+
+for product in spadt_products:
+
+    print(
+        f"Checking Spadt: {product['name']}"
+    )
+
+    current_status = check_spadt_product_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Spadt",
+        product["name"]
+    )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Spadt\n"
+            f"🇧🇪 Belgium\n\n"
+            f"🟢 BACK IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW SPADT STOCK: {product['name']}"
+        )
+
+    spadt_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": current_status
+    })
+
+for product in spadt_products:
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Spadt",
+        product["name"]
+    )
+
+    if (
+        previous_status is None
+        and any(
+            shop["name"] == "Spadt"
+            for shop in previous_radar.get("shops", [])
+        )
+    ):
+
+        send_telegram(
+            f"🚨 NEW NEEDOH FOUND!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Spadt\n"
+            f"🇧🇪 Belgium\n\n"
+            f"🆕 NEW PRODUCT FOUND!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW SPADT NEEDOH: "
+            f"{product['name']}"
+        )
     
 houten_results = []
 
@@ -1372,6 +1589,11 @@ radar_data = {
     "name": "Drukke Mama's",
     "country": "🇧🇪 Belgium",
     "products": drukke_mamas_results
+},
+        {
+    "name": "Spadt",
+    "country": "🇧🇪 Belgium",
+    "products": spadt_results
 },
         {
     "name": "Houten Onderwijsmateriaal",
