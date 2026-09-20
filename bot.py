@@ -506,11 +506,12 @@ def get_drukke_mamas_needoh_products(page):
         return []
 
     import re
+    from html import unescape
 
     products = []
 
     matches = re.findall(
-        r'href="(/products/[^"]+)"[^>]*>(.*?)</a>',
+        r'href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',
         page,
         re.IGNORECASE | re.DOTALL
     )
@@ -518,16 +519,40 @@ def get_drukke_mamas_needoh_products(page):
     for url, content in matches:
 
         text = re.sub("<.*?>", " ", content)
+        text = unescape(text)
         text = " ".join(text.split())
 
-        if "needoh" in text.lower():
+        combined_text = (text + " " + url).lower()
 
+        if "needoh" not in combined_text:
+            continue
+
+        if url.startswith("/"):
             full_url = "https://drukkemamas.be" + url
 
-            products.append({
-                "name": text,
-                "url": full_url
-            })
+        elif url.startswith("http"):
+            full_url = url
+
+        else:
+            continue
+
+        products.append({
+            "name": text,
+            "url": full_url
+        })
+
+    unique_products = []
+
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
 
 def get_spadt_needoh_products(page):
 
