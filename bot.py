@@ -59,23 +59,23 @@ def check_lobbes_stock():
 
         html_lower = html.lower()
 
-        # Lobbes currently uses these messages when a Needoh
-        # cannot be ordered.
-        unavailable_count = (
-            html_lower.count("uitverkocht")
-            + html_lower.count("dit artikel is nu niet leverbaar")
-        )
+        results = []
 
-        # There are currently 10 Needoh products on the page.
-        # If fewer than 10 are unavailable, at least one is potentially available.
-        if unavailable_count < 10:
-            return True
+        for product in lobbes_products:
+            name = product["name"]
 
-        return False
+            if name.lower() in html_lower:
+                results.append({
+                    "name": name,
+                    "url": product["url"],
+                    "status": "out_of_stock"
+                })
+
+        return results
 
     except Exception as e:
         print(f"⚠️ Lobbes error: {e}")
-        return None
+        return []
         
 def check_stock(url):
     try:
