@@ -974,6 +974,11 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+        {
+    "name": "Smyths Toys",
+    "country": "🇳🇱 Netherlands",
+    "products": smyths_results
+},
                 {
             "name": "Intertoys",
 
