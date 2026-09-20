@@ -11,7 +11,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 def send_telegram(message, button_url=None):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
-        data = {
+    data = {
         "chat_id": CHAT_ID,
         "text": message
     }
@@ -24,7 +24,18 @@ def send_telegram(message, button_url=None):
                     "url": button_url
                 }
             ]]
-        }).encode()
+        })
+
+    data = urllib.parse.urlencode(data).encode()
+
+    request = urllib.request.Request(
+        url,
+        data=data,
+        method="POST"
+    )
+
+    with urllib.request.urlopen(request) as response:
+        return response.read()
 
     request = urllib.request.Request(url, data=data)
 
