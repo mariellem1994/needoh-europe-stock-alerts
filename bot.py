@@ -765,6 +765,80 @@ for product in intertoys_products:
         "status": current_status
 
     })
+    smyths_results = []
+
+for product in smyths_products:
+
+    print(
+        f"Checking Smyths: {product['name']}"
+    )
+
+    current_status = check_smyths_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Smyths",
+        product["name"]
+    )
+
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+
+            f"➡️ {product['name']}\n"
+
+            f"🛍️ Smyths Toys\n"
+
+            f"🇳🇱 Netherlands\n\n"
+
+            f"🟢 IN STOCK ONLINE!\n\n"
+
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW SMYTHS STOCK: {product['name']}"
+        )
+
+    else:
+
+        if current_status == "in_stock":
+
+            print(
+                f"🟢 In stock online: {product['name']} "
+                f"(no new alert)"
+            )
+
+        elif current_status == "out_of_stock":
+
+            print(
+                f"🔴 Out of stock online: {product['name']}"
+            )
+
+        else:
+
+            print(
+                f"⚠️ Could not check: {product['name']}"
+            )
+
+
+    smyths_results.append({
+
+        "name": product["name"],
+
+        "url": product["url"],
+
+        "status": current_status
+
+    })
 print(
     f"🔎 Checking {len(products)} Needoh products..."
 )
