@@ -3,6 +3,7 @@ import urllib.request
 import urllib.parse
 import json
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -289,7 +290,7 @@ in_stock = sum(1 for status in statuses if status.startswith("🟢"))
 out_of_stock = sum(1 for status in statuses if status.startswith("🔴"))
 errors = sum(1 for status in statuses if status.startswith("⚠️"))
 
-current_time = datetime.now().strftime("%H:%M")
+current_time = datetime.now(ZoneInfo("Europe/Amsterdam")).strftime("%d %b %Y, %H:%M")
 
 radar_data = {
     "last_checked": current_time,
