@@ -1,12 +1,12 @@
 {
-  "last_checked": "20 Sep 2026, 21:58",
+  "last_checked": "20 Sep 2026, 22:14",
   "shops": [
     {
       "name": "Drukke Mama's",
       "country": "🇧🇪 Belgium",
       "products": [
         {
-          "name": "Wis alle filters",
+          "name": "Wissen",
           "url": "https://drukkemamas.be/collections/needoh",
           "status": "unknown"
         },
