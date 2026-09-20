@@ -1927,10 +1927,15 @@ radar_data = {
     "country": "🇧🇪 Belgium",
     "products": drukke_mamas_results
 },
-        {
+                {
     "name": "Spadt",
     "country": "🇧🇪 Belgium",
     "products": spadt_results
+},
+        {
+    "name": "Mamiee",
+    "country": "🇨🇿 Czech Republic",
+    "products": mamiee_results
 },
         {
     "name": "Houten Onderwijsmateriaal",
