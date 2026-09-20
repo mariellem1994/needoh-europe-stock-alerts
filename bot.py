@@ -748,6 +748,37 @@ def check_spadt_product_stock(url):
 
         return "error"
 
+def check_mamiee_collection():
+
+    try:
+
+        request = urllib.request.Request(
+            mamiee_collection_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        return page
+
+    except Exception as e:
+
+        print(f"⚠️ Mamiee error: {e}")
+
+        return None
+
 products = [
 
     {
