@@ -650,6 +650,7 @@ def get_spadt_needoh_products(page):
             unique_products.append(product)
 
     return unique_products
+    
 
 def check_spadt_collection():
 
@@ -778,6 +779,73 @@ def check_mamiee_collection():
         print(f"⚠️ Mamiee error: {e}")
 
         return None
+
+def get_mamiee_needoh_products(page):
+
+    if not page:
+        return []
+
+    import re
+    from html import unescape
+
+    products = []
+
+    matches = re.findall(
+        r'href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',
+        page,
+        re.IGNORECASE | re.DOTALL
+    )
+
+    for url, content in matches:
+
+        text = re.sub("<.*?>", " ", content)
+        text = unescape(text)
+        text = " ".join(text.split())
+
+        combined_text = (text + " " + url).lower()
+
+        if "needoh" not in combined_text:
+            continue
+
+        if text.lower().strip() in (
+            "needoh",
+            "search",
+            "hledat"
+        ):
+            continue
+
+        if len(text) < 5:
+            continue
+
+        if len(text) > 150:
+            continue
+
+        if url.startswith("/"):
+            full_url = "https://www.mamiee.cz" + url
+
+        elif url.startswith("http"):
+            full_url = url
+
+        else:
+            continue
+
+        products.append({
+            "name": text,
+            "url": full_url
+        })
+
+    unique_products = []
+
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
 
 products = [
 
