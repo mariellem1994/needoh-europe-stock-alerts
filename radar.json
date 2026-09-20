@@ -1,5 +1,5 @@
 {
-  "last_checked": "20 Sep 2026, 14:52",
+  "last_checked": "20 Sep 2026, 14:54",
   "products": [
     {
       "name": "Squisher the Reindoh",
@@ -24,7 +24,7 @@
     {
       "name": "NeeDoh Nice Cube",
       "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube",
-      "status": "out_of_stock"
+      "status": "error"
     },
     {
       "name": "NeeDoh Squishmas Fidget Advent Calendar",
@@ -79,7 +79,7 @@
     {
       "name": "NeeDoh Cool Cat",
       "url": "https://www.toys42hands.nl/en/products/needoh-cool-cat",
-      "status": "out_of_stock"
+      "status": "error"
     },
     {
       "name": "Super NeeDoh Ripples",
