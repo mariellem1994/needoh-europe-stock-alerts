@@ -272,6 +272,48 @@ products = [
 
 ]
 
+lobbes_products = [
+    {
+        "name": "Niceberg",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Gumdrop",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Cool Cats",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Color Change",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Nice Cube Glow",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Nice Cube",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Teenie Glob 3-pack",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Dream Pop",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Wonder Waves Fuzz",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    },
+    {
+        "name": "Mello Mallo",
+        "url": "https://www.lobbes.nl/merken/needoh"
+    }
+]
 
 print(f"🔎 Checking {len(products)} Needoh products...")
 
