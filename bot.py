@@ -324,6 +324,60 @@ def check_intertoys_stock(url):
 
         return "error"
 
+def check_smyths_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+
+        # Smyths distinguishes online/home delivery
+        # from local store availability.
+        #
+        # We only want genuine online purchasing.
+        # Store-only availability must NOT trigger an alert.
+
+        if (
+            "home delivery"
+            in page_lower
+            or
+            "thuisbezorgen"
+            in page_lower
+        ):
+
+            return "in_stock"
+
+
+        return "out_of_stock"
+
+
+    except Exception as e:
+
+        print(
+            f"⚠️ Smyths error: {e}"
+        )
+
+        return "error"
+
 products = [
 
     {
@@ -557,6 +611,55 @@ intertoys_products = [
     {
         "name": "Needoh Classic Needoh stressbal",
         "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal"
+    }
+
+]
+
+smyths_products = [
+
+    {
+        "name": "NeeDoh Nice Cube",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-stressbal-assorti/p/246112"
+    },
+
+    {
+        "name": "NeeDoh Snow Ball Crunch",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressbal-snow-ball-crunch/p/246113"
+    },
+
+    {
+        "name": "NeeDoh Mello Mallo",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressball-mello-mallo-met-kleureffect-assorti/p/255806"
+    },
+
+    {
+        "name": "NeeDoh Wonder Waves",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressbal-fuzz-bal-wonder-waves-assorti/p/255807"
+    },
+
+    {
+        "name": "NeeDoh Cool Cats",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-cool-cats-stressbal-assorti/p/255826"
+    },
+
+    {
+        "name": "NeeDoh Advent Calendar",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/adventskalender/needoh-adventskalender/p/258225"
+    },
+
+    {
+        "name": "NeeDoh Color Changer",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-color-changer-stressbal-met-kleurverandering-assorti/p/258939"
+    },
+
+    {
+        "name": "NeeDoh Nice Cube Glow",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-fidget-speelgoed-assorti/p/257976"
+    },
+
+    {
+        "name": "NeeDoh Nice Cube Glitter & Glow",
+        "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-stressbal-glitter-en-glow-assorti/p/259966"
     }
 
 ]
