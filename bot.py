@@ -60,23 +60,24 @@ def check_lobbes_stock():
         with urllib.request.urlopen(req, timeout=20) as response:
             html = response.read().decode("utf-8", errors="ignore")
 
+        html_lower = html.lower()
+
         results = []
 
         for product in lobbes_products:
             name = product["name"].lower()
 
-            # Find the product name in the page
-            position = html.lower().find(name)
+            start = html_lower.find(name)
 
-            if position == -1:
+            if start == -1:
                 continue
 
-            # Look at the surrounding part of the product card
-            section = html.lower()[position:position + 2500]
+            # Only inspect the section immediately following this product.
+            section = html_lower[start:start + 1200]
 
             if (
-                "uitverkocht" in section
-                or "dit artikel is nu niet leverbaar" in section
+                "dit artikel is nu niet leverbaar" in section
+                or "uitverkocht" in section
             ):
                 status = "out_of_stock"
             else:
