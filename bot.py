@@ -1641,13 +1641,42 @@ print(
 for product in mamiee_products:
 
     print(
-        f"Mamiee: {product['name']}"
+        f"Checking Mamiee: {product['name']}"
     )
+
+    current_status = check_mamiee_product_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Mamiee",
+        product["name"]
+    )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Mamiee\n"
+            f"🇨🇿 Czech Republic\n\n"
+            f"🟢 BACK IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW MAMIEE STOCK: "
+            f"{product['name']}"
+        )
 
     mamiee_results.append({
         "name": product["name"],
         "url": product["url"],
-        "status": "unknown"
+        "status": current_status
     })
     
 houten_results = []
