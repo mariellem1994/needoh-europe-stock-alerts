@@ -410,7 +410,58 @@
     {
       "name": "Lobbes",
       "country": "🇳🇱 Netherlands",
-      "products": []
+      "products": [
+        {
+          "name": "Niceberg",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Gumdrop",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Cool Cats",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650672-needoh-cool-cats-kat",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Color Change",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650673-needoh-color-change",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube Glow",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650669-needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Glob",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650674-needoh-teenie-glob-kleur-3-pack",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Dream Pop",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650675-needoh-dream-pop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Wonder Waves",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650687-needoh-fuzz-ball-wonder-waves-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Mello Mallo",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh",
+          "status": "out_of_stock"
+        }
+      ]
     }
   ]
 }
