@@ -1,7 +1,8 @@
 import os
 import urllib.request
 import urllib.parse
-import json
+import re
+from html import unescape
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -21,56 +22,100 @@ def send_telegram(message):
         print(response.read().decode())
 
 
-def check_toys42hands(url, product_name):
+def get_page(url):
     try:
-        with urllib.request.urlopen(url, timeout=20) as response:
-            page = response.read().decode("utf-8", errors="ignore")
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0"
+            }
+        )
 
-        # Shopify product data
-        marker = '"available":'
-        available_positions = []
+        with urllib.request.urlopen(request, timeout=20) as response:
+            return response.read().decode("utf-8", errors="ignore")
 
-        start = 0
-        while True:
-            position = page.find(marker, start)
+    except Exception as e:
+        print(f"❌ Could not open {url}: {e}")
+        return None
 
-            if position == -1:
-                break
 
-            value_start = position + len(marker)
-            value = page[value_start:value_start + 10].strip()
+def check_toys42hands_collection():
 
-            available_positions.append(value.startswith("true"))
-            start = value_start
+    collection_url = (
+        "https://www.toys42hands.nl/en/collections/needoh"
+    )
 
-        if any(available_positions):
+    page = get_page(collection_url)
+
+    if not page:
+        send_telegram(
+            "❌ Toys42Hands could not be checked."
+        )
+        return
+
+    print("✅ Toys42Hands collection downloaded.")
+
+    # Find product links in the collection
+    pattern = r'href="(/en/products/[^"]+)"'
+    links = re.findall(pattern, page)
+
+    # Remove duplicates
+    links = list(dict.fromkeys(links))
+
+    print(f"🔎 Found {len(links)} product links.")
+
+    found_stock = False
+
+    for link in links:
+
+        product_url = "https://www.toys42hands.nl" + unescape(link)
+
+        product_page = get_page(product_url)
+
+        if not product_page:
+            continue
+
+        # Shopify product pages contain "available":true
+        if '"available":true' in product_page:
+
+            # Try to find the product title
+            title_match = re.search(
+                r'<title[^>]*>(.*?)</title>',
+                product_page,
+                re.IGNORECASE | re.DOTALL
+            )
+
+            if title_match:
+                product_name = re.sub(
+                    r'\s+',
+                    ' ',
+                    unescape(title_match.group(1))
+                ).strip()
+
+                # Remove shop name from title if present
+                product_name = product_name.split("–")[0].strip()
+            else:
+                product_name = "NeeDoh"
+
             send_telegram(
                 f"🚨 NEEDOH STOCK ALERT!\n\n"
-                f"🐿️ {product_name}\n"
+                f"➡️ {product_name}\n"
                 f"🛍️ Toys42Hands\n"
                 f"🇳🇱 Netherlands\n\n"
                 f"🟢 IN STOCK!\n\n"
-                f"🔗 {url}"
+                f"🔗 {product_url}"
             )
 
-            print(f"🟢 {product_name} appears to be IN STOCK!")
+            print(f"🟢 IN STOCK: {product_name}")
 
-        else:
-            print(f"🔴 {product_name} appears to be SOLD OUT.")
+            found_stock = True
 
-    except Exception as e:
-        print(f"❌ Error checking {product_name}: {e}")
+    if not found_stock:
+        print("🔴 No in-stock Needohs found.")
 
 
 # ==========================================
-# TOYS42HANDS
+# RUN TOYS42HANDS CHECK
 # ==========================================
 
-product_name = "NeeDoh Jack-Glow Lantern"
-
-product_url = (
-    "https://www.toys42hands.nl/en/products/"
-    "needoh-jack-glow-latern"
-)
-
-check_toys42hands(product_url, product_name)
+check_toys42hands_collection()
