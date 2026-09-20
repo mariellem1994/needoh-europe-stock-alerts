@@ -1548,6 +1548,31 @@ for product in spadt_products:
         )
     ):
 
+        mamiee_results = []
+
+mamiee_page = check_mamiee_collection()
+
+mamiee_products = get_mamiee_needoh_products(
+    mamiee_page
+)
+
+print(
+    f"Found {len(mamiee_products)} NeeDoh products "
+    f"at Mamiee"
+)
+
+for product in mamiee_products:
+
+    print(
+        f"Mamiee: {product['name']}"
+    )
+
+    mamiee_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": "unknown"
+    })
+    
         send_telegram(
             f"🚨 NEW NEEDOH FOUND!\n\n"
             f"➡️ {product['name']}\n"
