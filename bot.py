@@ -21,7 +21,6 @@ def send_telegram(message):
 
 
 def check_stock(url):
-
     try:
         request = urllib.request.Request(
             url,
@@ -39,45 +38,213 @@ def check_stock(url):
         return page
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"❌ Error checking {url}: {e}")
         return None
 
 
-product_name = "NeeDoh Jack-Glow Lantern"
+products = [
 
-product_url = (
-    "https://www.toys42hands.nl/en/products/"
-    "needoh-jack-glow-latern"
-)
+    {
+        "name": "Squisher the Reindoh",
+        "url": "https://www.toys42hands.nl/en/products/squisher-the-reindoh"
+    },
+    {
+        "name": "Teenie Jack-Glow Lantern",
+        "url": "https://www.toys42hands.nl/en/products/needoh-teenie-jack-glow-latern"
+    },
+    {
+        "name": "Knittens",
+        "url": "https://www.toys42hands.nl/en/products/knittens"
+    },
+    {
+        "name": "Teenie Singles Needoh",
+        "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh"
+    },
+    {
+        "name": "NeeDoh Nice Cube",
+        "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube"
+    },
+    {
+        "name": "NeeDoh Squishmas Fidget Advent Calendar",
+        "url": "https://www.toys42hands.nl/en/products/needoh-sqishmas-fidget-adventskalender"
+    },
+    {
+        "name": "NeeDoh Ice Baby Teenie 6-pack",
+        "url": "https://www.toys42hands.nl/en/products/needoh-ice-baby-teenie-6-stuks"
+    },
+    {
+        "name": "NeeDoh Jelly Squish",
+        "url": "https://www.toys42hands.nl/en/products/needoh-jelly-squish"
+    },
+    {
+        "name": "Teenie NeeDoh Fuzz Balls 3-pack",
+        "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks"
+    },
+    {
+        "name": "NeeDoh Nice Berg Swirl",
+        "url": "https://www.toys42hands.nl/en/products/needoh-nice-berg-swirl"
+    },
+    {
+        "name": "NeeDoh Wonder Wave Fuzz",
+        "url": "https://www.toys42hands.nl/en/products/needoh-wonder-wave-fuzz"
+    },
+    {
+        "name": "NeeDoh Mello Mallo",
+        "url": "https://www.toys42hands.nl/en/products/needoh-mello-mallo"
+    },
+    {
+        "name": "NeeDoh Snow Ball Crunch",
+        "url": "https://www.toys42hands.nl/en/products/schylling-snow-ball-crunch-en"
+    },
+    {
+        "name": "NeeDoh Super Fuzz",
+        "url": "https://www.toys42hands.nl/en/products/needoh-super-fuzz-antistressball"
+    },
+    {
+        "name": "Teenie Nice Ice Baby NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/teenie-nice-ice-baby-needoh"
+    },
+    {
+        "name": "NeeDoh Cool Cat",
+        "url": "https://www.toys42hands.nl/en/products/needoh-cool-cat"
+    },
+    {
+        "name": "Super NeeDoh Ripples",
+        "url": "https://www.toys42hands.nl/en/products/super-needoh-ripples"
+    },
+    {
+        "name": "NeeDoh Dream Drop",
+        "url": "https://www.toys42hands.nl/en/products/needoh-dream-drop"
+    },
+    {
+        "name": "NeeDoh Gumdrop",
+        "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop"
+    },
+    {
+        "name": "NeeDoh Swirl Teenie 6-pack",
+        "url": "https://www.toys42hands.nl/en/products/needoh-swirl-teenie-6-stuks"
+    },
+    {
+        "name": "NeeDoh Nice Cube Glow",
+        "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube-glow"
+    },
+    {
+        "name": "NeeDoh Sploot Splat",
+        "url": "https://www.toys42hands.nl/en/products/needoh-sploot-splat"
+    },
+    {
+        "name": "Atomic NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal"
+    },
+    {
+        "name": "Color Changing NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/color-changing-needoh"
+    },
+    {
+        "name": "Swirl NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/schylling-swirl-needoh-en"
+    },
+    {
+        "name": "NeeDoh Booper",
+        "url": "https://www.toys42hands.nl/en/products/schylling-needoh-booper-en"
+    },
+    {
+        "name": "Teenie NeeDoh Fuzz Ball",
+        "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-bal"
+    },
+    {
+        "name": "NeeDoh Nice Berg",
+        "url": "https://www.toys42hands.nl/en/products/needoh-niceberg"
+    },
+    {
+        "name": "Teenie NeeDoh 3-pack",
+        "url": "https://www.toys42hands.nl/en/products/needoh-teenie-3-stuks"
+    },
+    {
+        "name": "NeeDoh Groovy Glob",
+        "url": "https://www.toys42hands.nl/en/products/needoh-groovy-glob"
+    },
+    {
+        "name": "NeeDoh Funky Pup",
+        "url": "https://www.toys42hands.nl/en/products/schylling-funky-pup-kneading-ball"
+    },
+    {
+        "name": "Shaggy NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/shaggy-needoh"
+    },
+    {
+        "name": "NeeDoh Glitter Glow Nice Cube",
+        "url": "https://www.toys42hands.nl/en/products/needoh-glitter-glow-nice-cube"
+    },
+    {
+        "name": "Nice Cube Swirl NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/nice-cube-swirl-needoh"
+    },
+    {
+        "name": "Lava Slime",
+        "url": "https://www.toys42hands.nl/en/products/lava-slime"
+    },
+    {
+        "name": "Teenie Cool Cat NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/teenie-cool-cat-needoh"
+    },
+    {
+        "name": "NeeDoh Flower Power Fuzz",
+        "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz"
+    },
+    {
+        "name": "Teenie Funky Pup NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh"
+    },
+    {
+        "name": "Mac N Squeeze NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/schylling-mac-n-squeeze-needoh-en"
+    },
+    {
+        "name": "Rainbow NeeDoh",
+        "url": "https://www.toys42hands.nl/en/products/regenboog-needoh"
+    },
+    {
+        "name": "Ramen Noodlies",
+        "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en"
+    },
+    {
+        "name": "NeeDoh Jack-Glow Lantern",
+        "url": "https://www.toys42hands.nl/en/products/needoh-jack-glow-latern"
+    }
 
-page = check_stock(product_url)
+]
 
-if page:
 
-    if '"available":true' in page or '"available": true' in page:
+print(f"🔎 Checking {len(products)} Needoh products...")
 
-        send_telegram(
-            f"🚨 NEEDOH STOCK ALERT!\n\n"
-            f"🐿️ {product_name}\n"
-            f"🛍️ Toys42Hands\n"
-            f"🇳🇱 Netherlands\n\n"
-            f"🟢 IN STOCK!\n\n"
-            f"🔗 {product_url}"
-        )
+for product in products:
 
-        print("🟢 Jack-Glow Lantern is IN STOCK!")
+    print(f"Checking: {product['name']}")
+
+    page = check_stock(product["url"])
+
+    if page:
+
+        if '"available":true' in page or '"available": true' in page:
+
+            send_telegram(
+                f"🚨 NEEDOH STOCK ALERT!\n\n"
+                f"➡️ {product['name']}\n"
+                f"🛍️ Toys42Hands\n"
+                f"🇳🇱 Netherlands\n\n"
+                f"🟢 IN STOCK!\n\n"
+                f"🔗 {product['url']}"
+            )
+
+            print(f"🟢 IN STOCK: {product['name']}")
+
+        else:
+
+            print(f"🔴 Out of stock: {product['name']}")
 
     else:
 
-        send_telegram(
-            f"🔎 Needoh stock check completed.\n\n"
-            f"🐿️ {product_name}\n"
-            f"🛍️ Toys42Hands\n\n"
-            f"🔴 No stock detected."
-        )
+        print(f"⚠️ Could not check: {product['name']}")
 
-else:
-
-    send_telegram(
-        "❌ Toys42Hands product page could not be checked."
-    )
+print("✅ Stock check completed!")
