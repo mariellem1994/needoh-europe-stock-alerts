@@ -3,7 +3,11 @@ name: Needoh Europe Stock Alert Bot Europe
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   run-bot:
@@ -29,16 +33,16 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -z "$TELEGRAM_BOT_TOKEN" ]; then
-            echo "❌ TELEGRAM_BOT_TOKEN is missing"
-          else
-            echo "✅ TELEGRAM_BOT_TOKEN is present"
+            echo "TELEGRAM_BOT_TOKEN is missing"
+            exit 1
           fi
 
           if [ -z "$TELEGRAM_CHAT_ID" ]; then
-            echo "❌ TELEGRAM_CHAT_ID is missing"
-          else
-            echo "✅ TELEGRAM_CHAT_ID is present"
+            echo "TELEGRAM_CHAT_ID is missing"
+            exit 1
           fi
+
+          echo "Telegram secrets are present"
 
       - name: Run Telegram bot
         env:
@@ -46,16 +50,16 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
 
-                - name: Save stock status
-          run: |
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Save stock status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-            git add stock_status.json
+          git add stock_status.json
 
-            if git diff --cached --quiet; then
-              echo "No stock status changes."
-            else
-              git commit -m "Update stock status"
-              git push
-            fi
+          if git diff --cached --quiet; then
+            echo "No stock status changes."
+          else
+            git commit -m "Update stock status"
+            git push
+          fi
