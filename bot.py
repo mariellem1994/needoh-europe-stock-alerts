@@ -378,6 +378,49 @@ def check_smyths_stock(url):
 
         return "error"
 
+def check_dreamland_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        # DreamLand uses this wording when home delivery is available
+        if (
+            "levering aan huis"
+            in page_lower
+            and
+            "tijdelijk uitverkocht"
+            not in page_lower
+        ):
+            return "in_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(f"⚠️ DreamLand error: {e}")
+
+        return "error"
+
 products = [
 
     {
@@ -664,6 +707,21 @@ smyths_products = [
 
 ]
 
+dreamland_products = [
+    {
+        "name": "NeeDoh Niceberg",
+        "url": "https://www.dreamland.nl/producten/needoh-niceberg-needoh/01857931"
+    },
+    {
+        "name": "NeeDoh Nice Berg Swirl",
+        "url": "https://www.dreamland.nl/producten/needoh-nice-berg-swirl/02356846"
+    },
+    {
+        "name": "NeeDoh Nice Berg Glitter & Glow",
+        "url": "https://www.dreamland.nl/producten/needoh-nice-berg-glitter-glow/02356860"
+    }
+]
+
 lobbes_products = [
 
     {
@@ -839,6 +897,70 @@ for product in smyths_products:
         "status": current_status
 
     })
+
+dreamland_results = []
+
+for product in dreamland_products:
+
+    print(
+        f"Checking DreamLand: {product['name']}"
+    )
+
+    current_status = check_dreamland_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "DreamLand",
+        product["name"]
+    )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ DreamLand\n"
+            f"🇳🇱 Netherlands\n\n"
+            f"🟢 IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW DREAMLAND STOCK: {product['name']}"
+        )
+
+    else:
+
+        if current_status == "in_stock":
+
+            print(
+                f"🟢 In stock online: {product['name']} "
+                f"(no new alert)"
+            )
+
+        elif current_status == "out_of_stock":
+
+            print(
+                f"🔴 Out of stock online: {product['name']}"
+            )
+
+        else:
+
+            print(
+                f"⚠️ Could not check: {product['name']}"
+            )
+
+    dreamland_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": current_status
+    })
+    
 print(
     f"🔎 Checking {len(products)} Needoh products..."
 )
@@ -974,6 +1096,11 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+        {
+    "name": "DreamLand",
+    "country": "🇳🇱 Netherlands",
+    "products": dreamland_results
+},
         {
     "name": "Smyths Toys",
     "country": "🇳🇱 Netherlands",
