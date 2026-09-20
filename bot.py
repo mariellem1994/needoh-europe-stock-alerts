@@ -1693,7 +1693,37 @@ for product in mamiee_products:
         "url": product["url"],
         "status": current_status
     })
-    
+
+for product in mamiee_products:
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Mamiee",
+        product["name"]
+    )
+
+    if (
+        previous_status is None
+        and any(
+            shop["name"] == "Mamiee"
+            for shop in previous_radar.get("shops", [])
+        )
+    ):
+
+        send_telegram(
+            f"🚨 NEW NEEDOH FOUND!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Mamiee\n"
+            f"🇨🇿 Czech Republic\n\n"
+            f"🆕 NEW PRODUCT FOUND!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW MAMIEE NEEDOH: "
+            f"{product['name']}"
+        )
+        
 houten_results = []
 
 for product in houten_products:
