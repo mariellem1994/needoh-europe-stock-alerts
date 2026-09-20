@@ -182,6 +182,12 @@ async function loadRadar() {
             "./radar.json?t=" + Date.now()
         );
 
+        if (!response.ok) {
+            throw new Error(
+                "Could not load radar.json"
+            );
+        }
+
         const data = await response.json();
 
         const container =
@@ -195,20 +201,55 @@ async function loadRadar() {
 
 
         /*
-         * Loop through every shop
+         * Get shops.
+         *
+         * New format:
+         * data.shops
+         *
+         * Old format:
+         * data.products
          */
 
-        data.shops.forEach(shop => {
+        let shops = [];
+
+        if (Array.isArray(data.shops)) {
+
+            shops = data.shops;
+
+        }
+
+        else if (Array.isArray(data.products)) {
+
+            shops = [
+                {
+                    name: "Toys42Hands",
+                    country: "🇳🇱 Netherlands",
+                    products: data.products
+                }
+            ];
+
+        }
+
+        else {
+
+            throw new Error(
+                "No products or shops found in radar.json"
+            );
+
+        }
+
+
+        /*
+         * Display every shop
+         */
+
+        shops.forEach(shop => {
 
             const shopSection =
                 document.createElement("div");
 
             shopSection.className = "shop";
 
-
-            /*
-             * Shop heading
-             */
 
             const shopTitle =
                 document.createElement("div");
@@ -218,7 +259,7 @@ async function loadRadar() {
             shopTitle.innerHTML = `
                 <h2>
                     🛍️ ${shop.name}
-                    ${shop.country}
+                    ${shop.country || ""}
                 </h2>
             `;
 
@@ -226,86 +267,98 @@ async function loadRadar() {
 
 
             /*
-             * Products
+             * Display products
              */
 
-            shop.products.forEach(product => {
+            if (Array.isArray(shop.products)) {
 
-                const item =
-                    document.createElement("div");
+                shop.products.forEach(product => {
 
-                item.className = "product";
+                    const item =
+                        document.createElement("div");
 
-
-                let statusText = "";
-                let statusClass = "";
+                    item.className = "product";
 
 
-                if (product.status === "in_stock") {
-
-                    statusText = "🟢 IN STOCK";
-                    statusClass = "in-stock";
-
-                    inStock++;
-
-                }
-
-                else if (
-                    product.status === "out_of_stock"
-                ) {
-
-                    statusText = "🔴 Out of stock";
-                    statusClass = "out-stock";
-
-                    outStock++;
-
-                }
-
-                else {
-
-                    statusText =
-                        "⚠️ Could not check";
-
-                    statusClass = "error";
-
-                    errors++;
-
-                }
+                    let statusText = "";
+                    let statusClass = "";
 
 
-                item.innerHTML = `
+                    if (
+                        product.status === "in_stock"
+                    ) {
 
-                    <div>
+                        statusText =
+                            "🟢 IN STOCK";
 
-                        <div class="product-name">
-                            ${product.name}
+                        statusClass =
+                            "in-stock";
+
+                        inStock++;
+
+                    }
+
+                    else if (
+                        product.status === "out_of_stock"
+                    ) {
+
+                        statusText =
+                            "🔴 Out of stock";
+
+                        statusClass =
+                            "out-stock";
+
+                        outStock++;
+
+                    }
+
+                    else {
+
+                        statusText =
+                            "⚠️ Could not check";
+
+                        statusClass =
+                            "error";
+
+                        errors++;
+
+                    }
+
+
+                    item.innerHTML = `
+
+                        <div>
+
+                            <div class="product-name">
+                                ${product.name}
+                            </div>
+
+                            <div class="status ${statusClass}">
+                                ${statusText}
+                            </div>
+
                         </div>
 
-                        <div class="status ${statusClass}">
-                            ${statusText}
+                        <div>
+
+                            <a
+                                href="${product.url}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                🔗
+                            </a>
+
                         </div>
 
-                    </div>
+                    `;
 
 
-                    <div>
+                    shopSection.appendChild(item);
 
-                        <a
-                            href="${product.url}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            🔗
-                        </a>
+                });
 
-                    </div>
-
-                `;
-
-
-                shopSection.appendChild(item);
-
-            });
+            }
 
 
             container.appendChild(shopSection);
@@ -333,24 +386,35 @@ async function loadRadar() {
 
 
         /*
-         * Update timestamp
+         * Update last checked time
          */
 
         document.getElementById(
             "lastChecked"
-        ).textContent = data.last_checked;
+        ).textContent =
+            data.last_checked || "Unknown";
 
 
     }
 
     catch (error) {
 
+        console.error(
+            "RADAR ERROR:",
+            error
+        );
+
         document.getElementById(
             "products"
-        ).innerHTML =
-            "⚠️ Unable to load radar data.";
-
-        console.error(error);
+        ).innerHTML = `
+            <div class="product">
+                ⚠️ Unable to load radar data.
+                <br><br>
+                <small>
+                    ${error.message}
+                </small>
+            </div>
+        `;
 
     }
 
@@ -358,7 +422,7 @@ async function loadRadar() {
 
 
 /*
- * Load radar immediately
+ * Load immediately
  */
 
 loadRadar();
