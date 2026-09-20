@@ -43,7 +43,40 @@ def send_telegram(message, button_url=None):
     with urllib.request.urlopen(request) as response:
         print(response.read().decode())
 
+def check_lobbes_stock():
+    url = "https://www.lobbes.nl/merken/needoh"
 
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0"
+            }
+        )
+
+        with urllib.request.urlopen(req, timeout=20) as response:
+            html = response.read().decode("utf-8", errors="ignore")
+
+        html_lower = html.lower()
+
+        # Lobbes currently uses these messages when a Needoh
+        # cannot be ordered.
+        unavailable_count = (
+            html_lower.count("uitverkocht")
+            + html_lower.count("dit artikel is nu niet leverbaar")
+        )
+
+        # There are currently 10 Needoh products on the page.
+        # If fewer than 10 are unavailable, at least one is potentially available.
+        if unavailable_count < 10:
+            return True
+
+        return False
+
+    except Exception as e:
+        print(f"⚠️ Lobbes error: {e}")
+        return None
+        
 def check_stock(url):
     try:
         request = urllib.request.Request(
