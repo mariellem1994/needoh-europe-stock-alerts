@@ -1548,7 +1548,22 @@ for product in spadt_products:
         )
     ):
 
-        mamiee_results = []
+        send_telegram(
+            f"🚨 NEW NEEDOH FOUND!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Spadt\n"
+            f"🇧🇪 Belgium\n\n"
+            f"🆕 NEW PRODUCT FOUND!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW SPADT NEEDOH: "
+            f"{product['name']}"
+        )
+
+
+mamiee_results = []
 
 mamiee_page = check_mamiee_collection()
 
