@@ -529,7 +529,7 @@ def get_drukke_mamas_needoh_products(page):
                 "url": full_url
             })
 
-    def get_spadt_needoh_products(page):
+def get_spadt_needoh_products(page):
 
     if not page:
         return []
@@ -556,14 +556,12 @@ def get_drukke_mamas_needoh_products(page):
         if "needoh" not in combined_text:
             continue
 
-        # Ignore the main NeeDoh category/brand page
         if url.rstrip("/") in (
             "/merken/schylling",
             "/merken/schylling/"
         ):
             continue
 
-        # Ignore generic/category links
         if text.lower().strip() in (
             "needoh",
             "schylling",
@@ -573,8 +571,10 @@ def get_drukke_mamas_needoh_products(page):
 
         if url.startswith("/"):
             full_url = "https://spadt.be" + url
+
         elif url.startswith("http"):
             full_url = url
+
         else:
             continue
 
@@ -585,6 +585,16 @@ def get_drukke_mamas_needoh_products(page):
 
     unique_products = []
 
+    seen_urls = set()
+
+    for product in products:
+
+        if product["url"] not in seen_urls:
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+    return unique_products
     seen_urls = set()
 
     for product in products:
