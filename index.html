@@ -145,9 +145,7 @@ async function loadRadar() {
 
     try {
 
-        const response = await fetch(
-            "./radar.json?t=" + Date.now()
-        );
+        const response = await fetch("./radar.json?t=" + Date.now());
 
         const data = await response.json();
 
@@ -159,34 +157,90 @@ async function loadRadar() {
 
         container.innerHTML = "";
 
-        data.products.forEach(product => {
+        data.shops.forEach(shop => {
 
-            const item = document.createElement("div");
+            const shopTitle = document.createElement("h2");
 
-            item.className = "product";
+            shopTitle.textContent =
+                shop.country + " " + shop.name;
 
-            let statusText = "";
-            let statusClass = "";
+            shopTitle.style.marginTop = "30px";
 
-            if (product.status === "in_stock") {
+            container.appendChild(shopTitle);
 
-                statusText = "🟢 IN STOCK";
-                statusClass = "in-stock";
-                inStock++;
+            shop.products.forEach(product => {
 
-            } else if (product.status === "out_of_stock") {
+                const item = document.createElement("div");
 
-                statusText = "🔴 Out of stock";
-                statusClass = "out-stock";
-                outStock++;
+                item.className = "product";
 
-            } else {
+                let statusText = "";
+                let statusClass = "";
 
-                statusText = "⚠️ Could not check";
-                statusClass = "error";
-                errors++;
+                if (product.status === "in_stock") {
 
-            }
+                    statusText = "🟢 IN STOCK";
+                    statusClass = "in-stock";
+
+                    inStock++;
+
+                } else if (product.status === "out_of_stock") {
+
+                    statusText = "🔴 Out of stock";
+                    statusClass = "out-stock";
+
+                    outStock++;
+
+                } else {
+
+                    statusText = "⚠️ Could not check";
+                    statusClass = "error";
+
+                    errors++;
+                }
+
+                item.innerHTML = `
+                    <div>
+                        <div class="product-name">
+                            ${product.name}
+                        </div>
+
+                        <div class="status ${statusClass}">
+                            ${statusText}
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="${product.url}" target="_blank">
+                            🔗
+                        </a>
+                    </div>
+                `;
+
+                container.appendChild(item);
+
+            });
+
+        });
+
+        document.getElementById("inStock").textContent = inStock;
+
+        document.getElementById("outStock").textContent = outStock;
+
+        document.getElementById("errors").textContent = errors;
+
+        document.getElementById("lastChecked").textContent =
+            data.last_checked;
+
+    } catch (error) {
+
+        document.getElementById("products").innerHTML =
+            "⚠️ Unable to load radar data.";
+
+        console.error(error);
+
+    }
+}
 
             item.innerHTML = `
                 <div>
