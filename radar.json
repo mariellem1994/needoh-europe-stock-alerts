@@ -1,6 +1,57 @@
 {
-  "last_checked": "20 Sep 2026, 18:34",
+  "last_checked": "20 Sep 2026, 18:39",
   "shops": [
+    {
+      "name": "Smyths Toys",
+      "country": "🇳🇱 Netherlands",
+      "products": [
+        {
+          "name": "NeeDoh Nice Cube",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-stressbal-assorti/p/246112",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Snow Ball Crunch",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressbal-snow-ball-crunch/p/246113",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Mello Mallo",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressball-mello-mallo-met-kleureffect-assorti/p/255806",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Wonder Waves",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-stressbal-fuzz-bal-wonder-waves-assorti/p/255807",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Cool Cats",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-cool-cats-stressbal-assorti/p/255826",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Advent Calendar",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/adventskalender/needoh-adventskalender/p/258225",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Color Changer",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-color-changer-stressbal-met-kleurverandering-assorti/p/258939",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube Glow",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-fidget-speelgoed-assorti/p/257976",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube Glitter & Glow",
+          "url": "https://www.smythstoys.com/nl/nl-nl/speelgoed/zakgeld/needoh-nice-cube-stressbal-glitter-en-glow-assorti/p/259966",
+          "status": "out_of_stock"
+        }
+      ]
+    },
     {
       "name": "Intertoys",
       "country": "🇳🇱 Netherlands",
