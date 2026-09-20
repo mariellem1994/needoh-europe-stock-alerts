@@ -780,6 +780,57 @@ def check_mamiee_collection():
 
         return None
 
+def check_mamiee_product_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        if (
+            "vyprodáno" in page_lower
+            or
+            "není skladem" in page_lower
+            or
+            "out of stock" in page_lower
+        ):
+            return "out_of_stock"
+
+        if (
+            "do košíku" in page_lower
+            or
+            "koupit" in page_lower
+            or
+            "přidat do košíku" in page_lower
+        ):
+            return "in_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(f"⚠️ Mamiee product error: {e}")
+
+        return "error"
+
 def get_mamiee_needoh_products(page):
 
     if not page:
