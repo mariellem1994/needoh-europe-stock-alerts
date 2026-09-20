@@ -1084,6 +1084,8 @@ drukke_mamas_collection_url = "https://drukkemamas.be/collections/needoh"
 
 spadt_collection_url = "https://spadt.be/merken/schylling/"
 
+mamiee_collection_url = "https://www.mamiee.cz/search?phrase=Needoh"
+
 lobbes_products = [
 
     {
