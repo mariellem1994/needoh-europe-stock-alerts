@@ -2,6 +2,27 @@
   "last_checked": "20 Sep 2026, 20:21",
   "shops": [
     {
+      "name": "DreamLand",
+      "country": "🇳🇱 Netherlands",
+      "products": [
+        {
+          "name": "NeeDoh Niceberg",
+          "url": "https://www.dreamland.nl/producten/needoh-niceberg-needoh/01857931",
+          "status": "error"
+        },
+        {
+          "name": "NeeDoh Nice Berg Swirl",
+          "url": "https://www.dreamland.nl/producten/needoh-nice-berg-swirl/02356846",
+          "status": "error"
+        },
+        {
+          "name": "NeeDoh Nice Berg Glitter & Glow",
+          "url": "https://www.dreamland.nl/producten/needoh-nice-berg-glitter-glow/02356860",
+          "status": "error"
+        }
+      ]
+    },
+    {
       "name": "Smyths Toys",
       "country": "🇳🇱 Netherlands",
       "products": [
