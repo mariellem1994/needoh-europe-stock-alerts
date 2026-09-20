@@ -50,9 +50,9 @@ def check_lobbes_stock():
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-                "Accept-Language": "nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
                 "Referer": "https://www.lobbes.nl/"
             }
         )
@@ -60,19 +60,33 @@ def check_lobbes_stock():
         with urllib.request.urlopen(req, timeout=20) as response:
             html = response.read().decode("utf-8", errors="ignore")
 
-        html_lower = html.lower()
-
         results = []
 
         for product in lobbes_products:
-            name = product["name"]
+            name = product["name"].lower()
 
-            if name.lower() in html_lower:
-                results.append({
-                    "name": name,
-                    "url": product["url"],
-                    "status": "out_of_stock"
-                })
+            # Find the product name in the page
+            position = html.lower().find(name)
+
+            if position == -1:
+                continue
+
+            # Look at the surrounding part of the product card
+            section = html.lower()[position:position + 2500]
+
+            if (
+                "uitverkocht" in section
+                or "dit artikel is nu niet leverbaar" in section
+            ):
+                status = "out_of_stock"
+            else:
+                status = "in_stock"
+
+            results.append({
+                "name": product["name"],
+                "url": product["url"],
+                "status": status
+            })
 
         return results
 
