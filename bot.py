@@ -32,10 +32,25 @@ def check_stock(url):
         return None
 
 
-# TEST
-test_url = test_url = "https://www.intertoys.nl/needoh"
+# TEST PRODUCT
+product_name = "NeeDoh Mega Niceberg"
+test_url = "https://www.intertoys.nl/needoh-mega-niceberg"
 
 page = check_stock(test_url)
 
 if page:
-    send_telegram("🐿️ Needoh Europe Stock Alerts is working!\n\n🔎 Stock checker successfully checked a shop.")
+    if "In winkelmandje" in page:
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT! 🚨\n\n"
+            f"🐿️ {product_name}\n"
+            f"🛍️ Intertoys\n"
+            f"🇳🇱 Netherlands\n\n"
+            f"🟢 IN STOCK!\n\n"
+            f"{test_url}"
+        )
+    else:
+        send_telegram(
+            f"🔎 Checked:\n"
+            f"{product_name}\n\n"
+            f"⚪ No online stock detected."
+        )
