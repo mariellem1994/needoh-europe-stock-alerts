@@ -770,18 +770,7 @@ radar_message = (
 
 )
 
-send_telegram(
 
-    radar_message,
-
-    RADAR_URL
-
-)
-
-
-print(
-    "📡 Radar sent to Telegram!"
-)
 
 print(
     "✅ Stock check completed!"
