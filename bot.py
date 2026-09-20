@@ -696,6 +696,48 @@ with open(
     )
 
 
+lobbes_in_stock = sum(
+    1
+    for product in lobbes_results
+    if product["status"] == "in_stock"
+)
+
+lobbes_out_of_stock = sum(
+    1
+    for product in lobbes_results
+    if product["status"] == "out_of_stock"
+)
+
+lobbes_errors = sum(
+    1
+    for product in lobbes_results
+    if product["status"] == "error"
+)
+
+
+lobbes_statuses = []
+
+for product in lobbes_results:
+
+    if product["status"] == "in_stock":
+
+        lobbes_statuses.append(
+            f"🟢 {product['name']}"
+        )
+
+    elif product["status"] == "out_of_stock":
+
+        lobbes_statuses.append(
+            f"🔴 {product['name']}"
+        )
+
+    else:
+
+        lobbes_statuses.append(
+            f"⚠️ {product['name']}"
+        )
+
+
 radar_message = (
 
     "📡 NEEDOH LIVE RADAR\n\n"
@@ -712,10 +754,21 @@ radar_message = (
 
     + f"⚠️ Could not check: {errors}\n\n"
 
+    "🛍️ Lobbes 🇳🇱\n\n"
+
+    + "\n".join(lobbes_statuses)
+
+    + "\n\n"
+
+    + f"🟢 In stock: {lobbes_in_stock}\n"
+
+    + f"🔴 Out of stock: {lobbes_out_of_stock}\n"
+
+    + f"⚠️ Could not check: {lobbes_errors}\n\n"
+
     + f"🕐 Last checked: {current_time}"
 
 )
-
 
 send_telegram(
 
