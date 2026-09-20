@@ -1,215 +1,277 @@
 {
-  "last_checked": "20 Sep 2026, 15:13",
-  "products": [
+  "last_checked": "20 Sep 2026, 15:17",
+  "shops": [
     {
-      "name": "Squisher the Reindoh",
-      "url": "https://www.toys42hands.nl/en/products/squisher-the-reindoh",
-      "status": "out_of_stock"
+      "name": "Toys42Hands",
+      "country": "🇳🇱 Netherlands",
+      "products": [
+        {
+          "name": "Squisher the Reindoh",
+          "url": "https://www.toys42hands.nl/en/products/squisher-the-reindoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Jack-Glow Lantern",
+          "url": "https://www.toys42hands.nl/en/products/needoh-teenie-jack-glow-latern",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Knittens",
+          "url": "https://www.toys42hands.nl/en/products/knittens",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Singles Needoh",
+          "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube",
+          "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Squishmas Fidget Advent Calendar",
+          "url": "https://www.toys42hands.nl/en/products/needoh-sqishmas-fidget-adventskalender",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Ice Baby Teenie 6-pack",
+          "url": "https://www.toys42hands.nl/en/products/needoh-ice-baby-teenie-6-stuks",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Jelly Squish",
+          "url": "https://www.toys42hands.nl/en/products/needoh-jelly-squish",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie NeeDoh Fuzz Balls 3-pack",
+          "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Berg Swirl",
+          "url": "https://www.toys42hands.nl/en/products/needoh-nice-berg-swirl",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Wonder Wave Fuzz",
+          "url": "https://www.toys42hands.nl/en/products/needoh-wonder-wave-fuzz",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Mello Mallo",
+          "url": "https://www.toys42hands.nl/en/products/needoh-mello-mallo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Snow Ball Crunch",
+          "url": "https://www.toys42hands.nl/en/products/schylling-snow-ball-crunch-en",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Super Fuzz",
+          "url": "https://www.toys42hands.nl/en/products/needoh-super-fuzz-antistressball",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Nice Ice Baby NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/teenie-nice-ice-baby-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Cool Cat",
+          "url": "https://www.toys42hands.nl/en/products/needoh-cool-cat",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Super NeeDoh Ripples",
+          "url": "https://www.toys42hands.nl/en/products/super-needoh-ripples",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Dream Drop",
+          "url": "https://www.toys42hands.nl/en/products/needoh-dream-drop",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Gumdrop",
+          "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Swirl Teenie 6-pack",
+          "url": "https://www.toys42hands.nl/en/products/needoh-swirl-teenie-6-stuks",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube Glow",
+          "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube-glow",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Sploot Splat",
+          "url": "https://www.toys42hands.nl/en/products/needoh-sploot-splat",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Atomic NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Color Changing NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/color-changing-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Swirl NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/schylling-swirl-needoh-en",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Booper",
+          "url": "https://www.toys42hands.nl/en/products/schylling-needoh-booper-en",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie NeeDoh Fuzz Ball",
+          "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-bal",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Berg",
+          "url": "https://www.toys42hands.nl/en/products/needoh-niceberg",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie NeeDoh 3-pack",
+          "url": "https://www.toys42hands.nl/en/products/needoh-teenie-3-stuks",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Groovy Glob",
+          "url": "https://www.toys42hands.nl/en/products/needoh-groovy-glob",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Funky Pup",
+          "url": "https://www.toys42hands.nl/en/products/schylling-funky-pup-kneading-ball",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Shaggy NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/shaggy-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Glitter Glow Nice Cube",
+          "url": "https://www.toys42hands.nl/en/products/needoh-glitter-glow-nice-cube",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube Swirl NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/nice-cube-swirl-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Lava Slime",
+          "url": "https://www.toys42hands.nl/en/products/lava-slime",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Cool Cat NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/teenie-cool-cat-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Flower Power Fuzz",
+          "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Funky Pup NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Mac N Squeeze NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/schylling-mac-n-squeeze-needoh-en",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Rainbow NeeDoh",
+          "url": "https://www.toys42hands.nl/en/products/regenboog-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Ramen Noodlies",
+          "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Jack-Glow Lantern",
+          "url": "https://www.toys42hands.nl/en/products/needoh-jack-glow-latern",
+          "status": "in_stock"
+        }
+      ]
     },
     {
-      "name": "Teenie Jack-Glow Lantern",
-      "url": "https://www.toys42hands.nl/en/products/needoh-teenie-jack-glow-latern",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Knittens",
-      "url": "https://www.toys42hands.nl/en/products/knittens",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie Singles Needoh",
-      "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Nice Cube",
-      "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Squishmas Fidget Advent Calendar",
-      "url": "https://www.toys42hands.nl/en/products/needoh-sqishmas-fidget-adventskalender",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Ice Baby Teenie 6-pack",
-      "url": "https://www.toys42hands.nl/en/products/needoh-ice-baby-teenie-6-stuks",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Jelly Squish",
-      "url": "https://www.toys42hands.nl/en/products/needoh-jelly-squish",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie NeeDoh Fuzz Balls 3-pack",
-      "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Nice Berg Swirl",
-      "url": "https://www.toys42hands.nl/en/products/needoh-nice-berg-swirl",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Wonder Wave Fuzz",
-      "url": "https://www.toys42hands.nl/en/products/needoh-wonder-wave-fuzz",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Mello Mallo",
-      "url": "https://www.toys42hands.nl/en/products/needoh-mello-mallo",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Snow Ball Crunch",
-      "url": "https://www.toys42hands.nl/en/products/schylling-snow-ball-crunch-en",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Super Fuzz",
-      "url": "https://www.toys42hands.nl/en/products/needoh-super-fuzz-antistressball",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie Nice Ice Baby NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/teenie-nice-ice-baby-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Cool Cat",
-      "url": "https://www.toys42hands.nl/en/products/needoh-cool-cat",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Super NeeDoh Ripples",
-      "url": "https://www.toys42hands.nl/en/products/super-needoh-ripples",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Dream Drop",
-      "url": "https://www.toys42hands.nl/en/products/needoh-dream-drop",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Gumdrop",
-      "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Swirl Teenie 6-pack",
-      "url": "https://www.toys42hands.nl/en/products/needoh-swirl-teenie-6-stuks",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Nice Cube Glow",
-      "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube-glow",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Sploot Splat",
-      "url": "https://www.toys42hands.nl/en/products/needoh-sploot-splat",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Atomic NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Color Changing NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/color-changing-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Swirl NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/schylling-swirl-needoh-en",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Booper",
-      "url": "https://www.toys42hands.nl/en/products/schylling-needoh-booper-en",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie NeeDoh Fuzz Ball",
-      "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-bal",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Nice Berg",
-      "url": "https://www.toys42hands.nl/en/products/needoh-niceberg",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie NeeDoh 3-pack",
-      "url": "https://www.toys42hands.nl/en/products/needoh-teenie-3-stuks",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Groovy Glob",
-      "url": "https://www.toys42hands.nl/en/products/needoh-groovy-glob",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Funky Pup",
-      "url": "https://www.toys42hands.nl/en/products/schylling-funky-pup-kneading-ball",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Shaggy NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/shaggy-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Glitter Glow Nice Cube",
-      "url": "https://www.toys42hands.nl/en/products/needoh-glitter-glow-nice-cube",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Nice Cube Swirl NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/nice-cube-swirl-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Lava Slime",
-      "url": "https://www.toys42hands.nl/en/products/lava-slime",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie Cool Cat NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/teenie-cool-cat-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Flower Power Fuzz",
-      "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Teenie Funky Pup NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Mac N Squeeze NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/schylling-mac-n-squeeze-needoh-en",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Rainbow NeeDoh",
-      "url": "https://www.toys42hands.nl/en/products/regenboog-needoh",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "Ramen Noodlies",
-      "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en",
-      "status": "out_of_stock"
-    },
-    {
-      "name": "NeeDoh Jack-Glow Lantern",
-      "url": "https://www.toys42hands.nl/en/products/needoh-jack-glow-latern",
-      "status": "in_stock"
+      "name": "Lobbes",
+      "country": "🇳🇱 Netherlands",
+      "products": [
+        {
+          "name": "Niceberg",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Gumdrop",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Cool Cats",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650672-needoh-cool-cats-kat",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Color Change",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650673-needoh-color-change",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube Glow",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650669-needoh-nice-cube-sensorisch-stressspeeltje-met-goo-vulling",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Glob",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650674-needoh-teenie-glob-kleur-3-pack",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Dream Pop",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650675-needoh-dream-pop-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Wonder Waves",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650687-needoh-fuzz-ball-wonder-waves-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Mello Mallo",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650689-needoh-mello-mallo-needoh",
+          "status": "out_of_stock"
+        }
+      ]
     }
   ]
 }
