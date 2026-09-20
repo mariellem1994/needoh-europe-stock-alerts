@@ -1,4 +1,4 @@
-no name: Needoh Europe Stock Alert Bot Europe
+name: Needoh Europe Stock Alert Bot Europe
 
 on:
   workflow_dispatch:
@@ -29,10 +29,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
 
-          - name: Save radar data
+      - name: Save radar data
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add radar.json
           git commit -m "Update radar data" || echo "No changes to commit"
           git pull --rebase origin main
