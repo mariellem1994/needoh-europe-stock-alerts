@@ -605,9 +605,8 @@ def get_spadt_needoh_products(page):
 
         combined_text = (text + " " + url).lower()
 
-        if "needoh" not in combined_text:
-            continue
-
+        if "needoh" not in combined_text and "squishmas" not in combined_text:
+    continue
         if url.rstrip("/") in (
             "/merken/schylling",
             "/merken/schylling/"
