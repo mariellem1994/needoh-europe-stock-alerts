@@ -45,29 +45,52 @@ def send_telegram(message, button_url=None):
 
 def check_lobbes_stock():
 
-    results = []
+    url = "https://www.lobbes.nl/merken/needoh"
 
-    for product in lobbes_products:
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
+                "Referer": "https://www.lobbes.nl/"
+            }
+        )
 
-        try:
-            req = urllib.request.Request(
-                product["url"],
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                    "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
-                    "Referer": "https://www.lobbes.nl/"
-                }
-            )
+        with urllib.request.urlopen(req, timeout=20) as response:
+            html = response.read().decode("utf-8", errors="ignore")
 
-            with urllib.request.urlopen(req, timeout=20) as response:
-                html = response.read().decode("utf-8", errors="ignore")
+        html_lower = html.lower()
 
-            html_lower = html.lower()
+        results = []
+
+        for product in lobbes_products:
+
+            name = product["name"].lower()
+
+            start = html_lower.find(name)
+
+            if start == -1:
+                results.append({
+                    "name": product["name"],
+                    "url": product["url"],
+                    "status": "error"
+                })
+                continue
+
+            # Find the next product card.
+            next_product = html_lower.find("needoh", start + len(name))
+
+            if next_product == -1:
+                section = html_lower[start:]
+            else:
+                section = html_lower[start:next_product]
 
             if (
-                "uitverkocht" in html_lower
-                or "dit artikel is nu niet leverbaar" in html_lower
+                "uitverkocht" in section
+                or "dit artikel is nu niet leverbaar" in section
+                or "momenteel niet leverbaar" in section
             ):
                 status = "out_of_stock"
             else:
@@ -79,17 +102,13 @@ def check_lobbes_stock():
                 "status": status
             })
 
-        except Exception as e:
+        return results
 
-            print(f"⚠️ Lobbes error for {product['name']}: {e}")
+    except Exception as e:
 
-            results.append({
-                "name": product["name"],
-                "url": product["url"],
-                "status": "error"
-            })
+        print(f"⚠️ Lobbes error: {e}")
 
-    return results
+        return []
         
 def check_stock(url):
     try:
