@@ -7,97 +7,122 @@
 <title>NeeDoh Europe Live Radar</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background: #f5f5f5;
-        color: #222;
-    }
 
-    .container {
-        max-width: 700px;
-        margin: auto;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+    color: #222;
+}
 
-    h1 {
-        text-align: center;
-        margin-bottom: 5px;
-    }
+.container {
+    max-width: 700px;
+    margin: auto;
+}
 
-    .subtitle {
-        text-align: center;
-        color: #666;
-        margin-bottom: 20px;
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
 
-    .summary {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
 
-    .summary div {
-        flex: 1;
-        padding: 15px;
-        border-radius: 12px;
-        text-align: center;
-        background: white;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
+.shop {
+    margin-top: 30px;
+}
 
-    .number {
-        font-size: 24px;
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-    }
+.shop-title {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-    .product {
-        background: white;
-        padding: 15px;
-        margin-bottom: 10px;
-        border-radius: 12px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
+.shop-title h2 {
+    margin: 0;
+}
 
-    .product-name {
-        font-weight: bold;
-    }
+.summary {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-    .status {
-        margin-top: 5px;
-        font-size: 14px;
-    }
+.summary div {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-    .in-stock {
-        color: green;
-        font-weight: bold;
-    }
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 
-    .out-stock {
-        color: #d11;
-    }
+.product {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
 
-    .error {
-        color: #d88a00;
-    }
+.product-name {
+    font-weight: bold;
+}
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+.status {
+    margin-top: 5px;
+    font-size: 14px;
+}
 
-    .last-checked {
-        text-align: center;
-        color: #666;
-        margin-top: 20px;
-        font-size: 14px;
-    }
+.in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+.out-stock {
+    color: #d11;
+}
+
+.error {
+    color: #d88a00;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.last-checked {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -107,7 +132,7 @@
     <h1>📡 NeeDoh LIVE RADAR</h1>
 
     <div class="subtitle">
-        Toys42Hands 🇳🇱
+        Europe Stock Tracker
     </div>
 
     <div class="summary">
@@ -130,14 +155,22 @@
     </div>
 
     <div id="products">
-        Loading radar...
+
+        <div class="loading">
+            Loading radar...
+        </div>
+
     </div>
 
     <div class="last-checked">
-        Last checked: <span id="lastChecked">...</span>
+
+        Last checked:
+        <span id="lastChecked">...</span>
+
     </div>
 
 </div>
+
 
 <script>
 
@@ -145,37 +178,68 @@ async function loadRadar() {
 
     try {
 
-        const response = await fetch("./radar.json?t=" + Date.now());
+        const response = await fetch(
+            "./radar.json?t=" + Date.now()
+        );
 
         const data = await response.json();
+
+        const container =
+            document.getElementById("products");
+
+        container.innerHTML = "";
 
         let inStock = 0;
         let outStock = 0;
         let errors = 0;
 
-        const container = document.getElementById("products");
 
-        container.innerHTML = "";
+        /*
+         * Loop through every shop
+         */
 
         data.shops.forEach(shop => {
 
-            const shopTitle = document.createElement("h2");
+            const shopSection =
+                document.createElement("div");
 
-            shopTitle.textContent =
-                shop.country + " " + shop.name;
+            shopSection.className = "shop";
 
-            shopTitle.style.marginTop = "30px";
 
-            container.appendChild(shopTitle);
+            /*
+             * Shop heading
+             */
+
+            const shopTitle =
+                document.createElement("div");
+
+            shopTitle.className = "shop-title";
+
+            shopTitle.innerHTML = `
+                <h2>
+                    🛍️ ${shop.name}
+                    ${shop.country}
+                </h2>
+            `;
+
+            shopSection.appendChild(shopTitle);
+
+
+            /*
+             * Products
+             */
 
             shop.products.forEach(product => {
 
-                const item = document.createElement("div");
+                const item =
+                    document.createElement("div");
 
                 item.className = "product";
 
+
                 let statusText = "";
                 let statusClass = "";
+
 
                 if (product.status === "in_stock") {
 
@@ -184,23 +248,35 @@ async function loadRadar() {
 
                     inStock++;
 
-                } else if (product.status === "out_of_stock") {
+                }
+
+                else if (
+                    product.status === "out_of_stock"
+                ) {
 
                     statusText = "🔴 Out of stock";
                     statusClass = "out-stock";
 
                     outStock++;
 
-                } else {
+                }
 
-                    statusText = "⚠️ Could not check";
+                else {
+
+                    statusText =
+                        "⚠️ Could not check";
+
                     statusClass = "error";
 
                     errors++;
+
                 }
 
+
                 item.innerHTML = `
+
                     <div>
+
                         <div class="product-name">
                             ${product.name}
                         </div>
@@ -208,72 +284,70 @@ async function loadRadar() {
                         <div class="status ${statusClass}">
                             ${statusText}
                         </div>
+
                     </div>
+
 
                     <div>
-                        <a href="${product.url}" target="_blank">
+
+                        <a
+                            href="${product.url}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             🔗
                         </a>
+
                     </div>
+
                 `;
 
-                container.appendChild(item);
+
+                shopSection.appendChild(item);
 
             });
 
+
+            container.appendChild(shopSection);
+
         });
 
-        document.getElementById("inStock").textContent = inStock;
 
-        document.getElementById("outStock").textContent = outStock;
+        /*
+         * Update totals
+         */
 
-        document.getElementById("errors").textContent = errors;
+        document.getElementById(
+            "inStock"
+        ).textContent = inStock;
 
-        document.getElementById("lastChecked").textContent =
-            data.last_checked;
 
-    } catch (error) {
+        document.getElementById(
+            "outStock"
+        ).textContent = outStock;
 
-        document.getElementById("products").innerHTML =
-            "⚠️ Unable to load radar data.";
 
-        console.error(error);
+        document.getElementById(
+            "errors"
+        ).textContent = errors;
+
+
+        /*
+         * Update timestamp
+         */
+
+        document.getElementById(
+            "lastChecked"
+        ).textContent = data.last_checked;
+
 
     }
-}
 
-            item.innerHTML = `
-                <div>
-                    <div class="product-name">
-                        ${product.name}
-                    </div>
+    catch (error) {
 
-                    <div class="status ${statusClass}">
-                        ${statusText}
-                    </div>
-                </div>
-
-                <div>
-                    <a href="${product.url}" target="_blank">
-                        🔗
-                    </a>
-                </div>
-            `;
-
-            container.appendChild(item);
-
-        });
-
-        document.getElementById("inStock").textContent = inStock;
-        document.getElementById("outStock").textContent = outStock;
-        document.getElementById("errors").textContent = errors;
-
-        document.getElementById("lastChecked").textContent =
-            data.last_checked;
-
-    } catch (error) {
-
-        document.getElementById("products").innerHTML =
+        document.getElementById(
+            "products"
+        ).innerHTML =
             "⚠️ Unable to load radar data.";
 
         console.error(error);
@@ -281,12 +355,26 @@ async function loadRadar() {
     }
 
 }
+
+
+/*
+ * Load radar immediately
+ */
 
 loadRadar();
 
-setInterval(loadRadar, 60000);
+
+/*
+ * Refresh every minute
+ */
+
+setInterval(
+    loadRadar,
+    60000
+);
 
 </script>
 
 </body>
+
 </html>
