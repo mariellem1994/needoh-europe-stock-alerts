@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Sep 2026, 16:02",
+  "last_checked": "21 Sep 2026, 16:09",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -370,7 +370,7 @@
         {
           "name": "Teenie NeeDoh Fuzz Balls 3-pack",
           "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Berg Swirl",
