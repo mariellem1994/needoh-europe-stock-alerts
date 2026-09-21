@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Sep 2026, 16:09",
+  "last_checked": "21 Sep 2026, 16:18",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -141,6 +141,72 @@
           "name": "Schylling NeeDoh Mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
           "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
           "status": "in_stock"
+        }
+      ]
+    },
+    {
+      "name": "Dráček",
+      "country": "🇨🇿 Czech Republic",
+      "products": [
+        {
+          "name": "Schylling NeeDoh Adventní kalendář 2026",
+          "url": "https://www.dracek.cz/schylling-needoh-adventni-kalendar-2026",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling Needoh mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací maxi míček FuzzBall",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-maxi-micek-fuzzball",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací míčky FuzzBall 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-micky-fuzzball-4-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball 3ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-mini-micky-fuzz-ball-3ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací medúza",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-meduza",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresová kapka 1 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-antistresova-kapka-1-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling, Mačkací texturovaný Needoh Gumdrop",
+          "url": "https://www.dracek.cz/schylling-mackaci-texturovany-needoh-gumdrop",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling Needoh mačkací kostka Nice Cube",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling, Needoh Sněhová křupavá koule",
+          "url": "https://www.dracek.cz/schylling-needoh-snehova-krupava-koule",
+          "status": "unknown"
         }
       ]
     },
@@ -370,7 +436,7 @@
         {
           "name": "Teenie NeeDoh Fuzz Balls 3-pack",
           "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Berg Swirl",
@@ -440,7 +506,7 @@
         {
           "name": "Atomic NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Color Changing NeeDoh",
