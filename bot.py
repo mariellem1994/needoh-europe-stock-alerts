@@ -943,6 +943,50 @@ def check_dracek_collection():
 
         return None
 
+def check_dracek_product_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        if "není skladem" in page_lower:
+            return "out_of_stock"
+
+        if "vyprodáno" in page_lower:
+            return "out_of_stock"
+
+        if "skladem" in page_lower:
+            return "in_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(
+            f"⚠️ Dráček product error: {e}"
+        )
+
+        return "error"
+
 def get_dracek_needoh_products(page):
 
     if not page:
@@ -2063,6 +2107,11 @@ radar_data = {
     "name": "Mamiee",
     "country": "🇨🇿 Czech Republic",
     "products": mamiee_results
+},
+        {
+    "name": "Dráček",
+    "country": "🇨🇿 Czech Republic",
+    "products": dracek_results
 },
         {
     "name": "Houten Onderwijsmateriaal",
