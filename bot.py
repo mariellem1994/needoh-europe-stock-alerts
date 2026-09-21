@@ -909,6 +909,40 @@ def get_mamiee_needoh_products(page):
 
     return unique_products
 
+dracek_collection_url = "https://www.dracek.cz/vyhledavani?search=Needoh"
+
+
+def check_dracek_collection():
+
+    try:
+
+        request = urllib.request.Request(
+            dracek_collection_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        return page
+
+    except Exception as e:
+
+        print(f"⚠️ Dráček error: {e}")
+
+        return None
+
 products = [
 
     {
