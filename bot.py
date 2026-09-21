@@ -971,10 +971,12 @@ def get_dracek_needoh_products(page):
             continue
 
         if text.lower().strip() in (
-            "needoh",
-            "search",
-            "hledat"
-        ):
+    "needoh",
+    "search",
+    "hledat",
+    "vyhledávání - needoh"
+):
+    continue
             continue
 
         if len(text) < 5:
