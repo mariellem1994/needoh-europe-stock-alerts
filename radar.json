@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Sep 2026, 19:45",
+  "last_checked": "21 Sep 2026, 19:55",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -176,7 +176,7 @@
         {
           "name": "Donut NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/donut-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Marbleez NeeDoh",
