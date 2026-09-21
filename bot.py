@@ -1890,32 +1890,32 @@ for product in dracek_products:
     )
 
     current_status = check_dracek_product_stock(
-    product["url"]
-)
-
-previous_status = get_previous_status(
-    previous_radar,
-    "Dráček",
-    product["name"]
-)
-
-if (
-    current_status == "in_stock"
-    and previous_status == "out_of_stock"
-):
-
-    send_telegram(
-        f"🚨 NEEDOH STOCK ALERT!\n\n"
-        f"➡️ {product['name']}\n"
-        f"🛍️ Dráček\n"
-        f"🇨🇿 Czech Republic\n\n"
-        f"🟢 BACK IN STOCK ONLINE!\n\n"
-        f"🔗 {product['url']}"
+        product["url"]
     )
 
-    print(
-        f"🚨 NEW DRÁČEK STOCK: {product['name']}"
+    previous_status = get_previous_status(
+        previous_radar,
+        "Dráček",
+        product["name"]
     )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Dráček\n"
+            f"🇨🇿 Czech Republic\n\n"
+            f"🟢 BACK IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW DRÁČEK STOCK: {product['name']}"
+        )
 
     if current_status == "in_stock":
         print(
