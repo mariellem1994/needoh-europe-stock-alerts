@@ -1886,13 +1886,32 @@ print(
 for product in dracek_products:
 
     print(
-        f"Dráček: {product['name']}"
+        f"Checking Dráček: {product['name']}"
     )
+
+    current_status = check_dracek_product_stock(
+        product["url"]
+    )
+
+    if current_status == "in_stock":
+        print(
+            f"🟢 In stock: {product['name']}"
+        )
+
+    elif current_status == "out_of_stock":
+        print(
+            f"🔴 Out of stock: {product['name']}"
+        )
+
+    else:
+        print(
+            f"⚠️ Could not check: {product['name']}"
+        )
 
     dracek_results.append({
         "name": product["name"],
         "url": product["url"],
-        "status": "unknown"
+        "status": current_status
     })
     
 houten_results = []
