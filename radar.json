@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Sep 2026, 23:09",
+  "last_checked": "21 Sep 2026, 23:24",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -435,7 +435,7 @@
         {
           "name": "NeeDoh Nice Cube Glow",
           "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube-glow",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat",
