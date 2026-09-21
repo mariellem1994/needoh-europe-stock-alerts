@@ -1824,7 +1824,32 @@ for product in mamiee_products:
             f"🚨 NEW MAMIEE NEEDOH: "
             f"{product['name']}"
         )
-        
+
+dracek_results = []
+
+dracek_page = check_dracek_collection()
+
+dracek_products = get_dracek_needoh_products(
+    dracek_page
+)
+
+print(
+    f"Found {len(dracek_products)} NeeDoh products "
+    f"at Dráček"
+)
+
+for product in dracek_products:
+
+    print(
+        f"Dráček: {product['name']}"
+    )
+
+    dracek_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": "unknown"
+    })
+    
 houten_results = []
 
 for product in houten_products:
