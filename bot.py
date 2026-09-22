@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V6 active — product-page confirmation required for non-Shopify stock alerts.")
+print("🛡️ VERIFIED STOCK MODE V7 active — clean product links + product-page stock confirmation.")
 
 
 sent_alert_keys = set()
@@ -1659,7 +1659,7 @@ extra_needoh_shops = [
 ]
 
 
-def fetch_extra_shop_page(url):
+def fetch_extra_shop_page(url, quiet=False):
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
@@ -2166,6 +2166,87 @@ def find_previous_extra_product(
 
 
 
+
+def is_real_product_page_url(shop, url):
+    """
+    Reject images/assets/search/navigation links before stock verification.
+    This prevents the verifier from opening JPG/PNG files as if they were products.
+    """
+    if not url:
+        return False
+
+    try:
+        parsed = urlparse(url)
+        path = (parsed.path or "").lower()
+    except Exception:
+        return False
+
+    asset_extensions = (
+        ".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg",
+        ".css", ".js", ".ico", ".pdf", ".xml", ".json"
+    )
+
+    if path.endswith(asset_extensions):
+        return False
+
+    asset_path_markers = (
+        "/data/product/",
+        "/images/",
+        "/image/",
+        "/img/",
+        "/media/",
+        "/assets/",
+        "/static/",
+        "/upload/",
+        "/uploads/",
+    )
+
+    if any(marker in path for marker in asset_path_markers):
+        return False
+
+    # Store-specific product URL rules for the high-volume Czech/Slovak shops.
+    shop_name = shop.get("name")
+
+    if shop_name in {"Dvě děti CZ", "Dve Deti SK"}:
+        # Their real product pages are root-level slugs; images live under /data/product/.
+        parts = [part for part in path.split("/") if part]
+        return len(parts) == 1 and "needoh" in parts[0] or (
+            len(parts) == 1 and parts[0].startswith("schylling-")
+        )
+
+    # For MimiMarket / 2KidsToys, generic asset filtering is safer than
+    # over-restricting valid product URL structures.
+    return True
+
+
+def filter_real_product_links(shop, products):
+    kept = []
+    skipped = 0
+    seen_urls = set()
+
+    for product in products:
+        url = product.get("url", "")
+
+        if not is_real_product_page_url(shop, url):
+            skipped += 1
+            continue
+
+        normalized = url.split("#", 1)[0]
+        if normalized in seen_urls:
+            continue
+
+        seen_urls.add(normalized)
+        kept.append(product)
+
+    if skipped:
+        print(
+            f"🧹 {shop['name']}: ignored {skipped} image/asset/non-product links "
+            f"before stock verification"
+        )
+
+    return kept
+
+
 def verify_non_shopify_product_stock(shop, product):
     """
     Conservative product-page stock verifier for selected non-Shopify shops.
@@ -2189,7 +2270,7 @@ def verify_non_shopify_product_stock(shop, product):
         return "unknown"
 
     try:
-        page = fetch_extra_shop_page(url)
+        page = fetch_extra_shop_page(url, quiet=True)
     except Exception as error:
         print(
             f"⚠️ {shop['name']}: product-page verification failed for "
@@ -2278,6 +2359,11 @@ def apply_verified_extra_stock(shop, products):
 
     if shop.get("shopify"):
         return products
+
+    products = filter_real_product_links(
+        shop,
+        products
+    )
 
     verified = []
 
