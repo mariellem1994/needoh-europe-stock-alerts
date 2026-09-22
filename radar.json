@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 04:23",
+  "last_checked": "22 Sep 2026, 04:37",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -73,6 +73,11 @@
           "status": "in_stock"
         },
         {
+          "name": "Schylling NeeDoh Adventní kalendář 2026",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-adventni-kalendar-2026",
+          "status": "in_stock"
+        },
+        {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresova-kapka",
           "status": "in_stock"
@@ -83,23 +88,8 @@
           "status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Adventní kalendář 2026",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-adventni-kalendar-2026",
-          "status": "in_stock"
-        },
-        {
           "name": "Schylling NeeDoh Mačkací texturovaný - různé barvy",
           "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-texturovany",
-          "status": "in_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Duhové mačkací míčky 6 ks",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-duhove-mackaci-micky-6-ks",
-          "status": "in_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
           "status": "in_stock"
         },
         {
@@ -110,6 +100,16 @@
         {
           "name": "Schylling NeeDoh Mačkací maxi míček Fuzz Ball",
           "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Duhové mačkací míčky 6 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-duhove-mackaci-micky-6-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
           "status": "in_stock"
         },
         {
