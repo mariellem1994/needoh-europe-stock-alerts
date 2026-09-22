@@ -1822,13 +1822,11 @@ dracek_results = []
 
 dracek_page = check_dracek_collection()
 
-dracek_products = get_dracek_needoh_products(
-    dracek_page
-)
+dracek_products = []
 
 print(
-    f"Found {len(dracek_products)} NeeDoh products "
-    f"at Dráček"
+    "⚠️ Dráček checker temporarily disabled: "
+    "get_dracek_needoh_products() is missing."
 )
 
 for product in dracek_products:
