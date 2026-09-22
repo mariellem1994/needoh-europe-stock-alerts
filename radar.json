@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 18:55",
+  "last_checked": "22 Sep 2026, 19:17",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1347,7 +1347,7 @@
         {
           "name": "Schylling NeeDoh Donut",
           "url": "http://www.2kidstoys.com/schylling-needoh-donut",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh FSDU Cardboard advertising display",
