@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 17:50",
+  "last_checked": "22 Sep 2026, 18:09",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -183,12 +183,12 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -892,22 +892,22 @@
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Berg trblietavá",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-berg-trblietava",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube",
           "url": "http://www.dvedeti.sk/schylling-mackacia-kocka-needo",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Candy Swirl",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-candy-swirl",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Swirl",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-swirl",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Teenie Nice Ice Baby",
@@ -1086,7 +1086,7 @@
         {
           "name": "Schylling NeeDoh Cat anti-stress heart",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-heart",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Mini Ball 3 pcs",
@@ -1096,12 +1096,12 @@
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Puppies 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-puppies-3-pcs",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat Ball Flower Power",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-ball-flower-power",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat Cube Nice Berg Swirl",
@@ -1111,12 +1111,12 @@
         {
           "name": "Schylling NeeDoh Cat Fruit",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-fruit",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat Sugar Skull glow-in-the-dark cat",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-sugar-skull-glow-in-the-dark-cat",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat Textured",
@@ -1126,12 +1126,12 @@
         {
           "name": "Schylling NeeDoh Cat's Cube Nice Berg",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-s-cube-nice-berg",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cat's Cube Teenie Nice Ice Baby",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-s-cube-teenie-nice-ice-baby",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Catnip anti-stress cats 3 pcs",
@@ -1141,17 +1141,17 @@
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-nice-cube",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Catnip Sploot Splat",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-sploot-splat",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Chicken Deedos",
@@ -1186,7 +1186,7 @@
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-anti-stress-ball",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Cuddle Ball Stardust",
@@ -1246,7 +1246,7 @@
         {
           "name": "Schylling NeeDoh Glow-in-the-dark penguin",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-penguin",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh",
