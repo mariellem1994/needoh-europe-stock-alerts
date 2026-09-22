@@ -2193,11 +2193,55 @@ def check_extra_needoh_shop(
 
         return previous_products
 
-    # If a shop is brand-new to radar.json, its first run becomes the
-    # baseline. This prevents dozens of Telegram alerts on setup day.
+    # Baseline protection:
+    # If an improved checker suddenly discovers a large catalogue that the
+    # previous radar did not know about, silently learn that catalogue rather
+    # than sending dozens of "new product" Telegram messages.
+    previous_count = (
+        len(previous_products)
+        if previous_products
+        else 0
+    )
+
+    newly_discovered = []
+
+    for product in products_found:
+
+        previous_product = find_previous_extra_product(
+            previous_products,
+            product
+        )
+
+        if previous_product is None:
+            newly_discovered.append(
+                product
+            )
+
     first_baseline_run = (
         previous_products is None
     )
+
+    catalogue_baseline_run = (
+        first_baseline_run
+        or (
+            len(newly_discovered) >= 5
+            and (
+                previous_count == 0
+                or len(newly_discovered) >= max(
+                    5,
+                    previous_count
+                )
+            )
+        )
+    )
+
+    if catalogue_baseline_run and newly_discovered:
+
+        print(
+            f"ℹ️ {shop['name']}: silently baselining "
+            f"{len(newly_discovered)} newly discovered products "
+            f"(checker/catalogue expansion)"
+        )
 
     for product in products_found:
 
@@ -2207,7 +2251,7 @@ def check_extra_needoh_shop(
         )
 
         if (
-            not first_baseline_run
+            not catalogue_baseline_run
             and previous_product is None
         ):
 
