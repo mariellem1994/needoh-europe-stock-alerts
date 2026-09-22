@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V8 active — product links separated from image links.")
+print("🛡️ VERIFIED STOCK MODE V8.1 active — product links separated from image links.")
 
 
 sent_alert_keys = set()
@@ -2075,7 +2075,7 @@ def get_extra_needoh_products(shop):
             "/data/product/", "/images/", "/image/", "/img/",
             "/media/", "/assets/", "/static/", "/upload/", "/uploads/"
         )
-        parsed_asset_path = urlparse(absolute_url).path.lower()
+        parsed_asset_path = urllib.parse.urlparse(absolute_url).path.lower()
 
         if (
             parsed_asset_path.endswith(asset_extensions)
@@ -2193,7 +2193,7 @@ def is_real_product_page_url(shop, url):
         return False
 
     try:
-        parsed = urlparse(url)
+        parsed = urllib.parse.urlparse(url)
         path = (parsed.path or "").lower()
     except Exception:
         return False
