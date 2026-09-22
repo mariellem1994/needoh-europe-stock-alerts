@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 15:03",
+  "last_checked": "22 Sep 2026, 15:11",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -209,7 +209,7 @@
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks2",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks2",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling ve tme svitici micek needoh2",
@@ -294,17 +294,17 @@
         {
           "name": "schylling needoh mackaci antistresove kocicky fialova oranzova ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresove-kocicky-fialova-oranzova-ruzova",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh mackaci antistresova stenatka oranzova zelena ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresova-stenatka-oranzova-zelena-ruzova",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh mackaci antistresova stenatka fialova zelena ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresova-stenatka-fialova-zelena-ruzova",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling mackaci texturovany needoh 1 ks2",
@@ -329,12 +329,12 @@
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks ruzova oranzova zelena",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks-ruzova-oranzova-zelena",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks modra ruzova zelena",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks-modra-ruzova-zelena",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh strasidelny dum se 4 mackacimi micky2",
@@ -344,7 +344,7 @@
         {
           "name": "schylling needoh vanocni stromecek s 15 mackacimi ozdobami2",
           "url": "https://www.mimimarket.cz/schylling-needoh-vanocni-stromecek-s-15-mackacimi-ozdobami2",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh mackaci antistresova kapka modra",
@@ -369,7 +369,7 @@
         {
           "name": "schylling needoh mackaci antistresove kocicky ruzova zelena fialova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresove-kocicky-ruzova-zelena-fialova",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh mackaci ovoce",
@@ -530,7 +530,7 @@
         {
           "name": "schylling needoh fuzz ball sensory toy syfzbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-sensory-toy-syfzbnd.html",
-          "status": "in_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh super fuzz ball stress ball sysfzbnd.html",
@@ -675,12 +675,12 @@
         {
           "name": "schylling needoh ramen noodlies sensory fidget toy syrnl.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-ramen-noodlies-sensory-fidget-toy-syrnl.html",
-          "status": "in_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh polar glow penguin sysqmpnd25.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-polar-glow-penguin-sysqmpnd25.html",
-          "status": "in_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh jelly hops scented glitter bunny syjhnd26.html",
@@ -724,124 +724,14 @@
       "country": "🇦🇹 Austria",
       "products": [
         {
-          "name": "schylling adventskalender needoh set mit 24 bunten knautschb llen",
-          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen?_pos=1&_sid=483b98a20&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling sensorischer knete glowy ghost needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glowy-ghost-needoh?_pos=2&_sid=483b98a20&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling sensorischer knete jack glow lantern needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-jack-glow-lantern-needoh?_pos=3&_sid=483b98a20&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-berg-needoh?_pos=4&_sid=483b98a20&_ss=r",
+          "name": "Sensorik-Knautschball - Squishy Reindeer Needoh",
+          "url": "https://tublu.at/products/schylling-sensorik-knautschball-squishy-reindeer-needoh",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-needoh-adventskalender-set-mit-24-knetfiguren?_pos=5&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorik-knautschball-squishy-reindeer-needoh?_pos=6&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Stressball Fidget Spielzeug - Squeezy Peezy",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-squeezy-peezy?_pos=7&_sid=483b98a20&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-donut-holes?_pos=8&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-shaggy-needoh?_pos=9&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-chicka-deedos?_pos=10&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-stressball-snow-globe-needoh?_pos=11&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-stickums-needoh?_pos=12&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-teenie-squeeze-hearts?_pos=13&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glow-in-the-dark-needoh-asst?_pos=14&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sinnliches-quetschen-nice-ice-baby-needoh?_pos=15&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-super-needoh-ripples?_pos=16&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-cube-needoh?_pos=17&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-klassischer-needoh?_pos=18&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-hot-shots-football-needoh?_pos=19&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-squeeze-hearts?_pos=20&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-color-changing-needoh?_pos=21&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-gumdrop-needoh?_pos=22&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-polar-glow-penguin-needoh?_pos=23&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-rainbow-teenie-needoh-6-stueck?_pos=24&_sid=483b98a20&_ss=r",
-          "status": "out_of_stock"
+          "name": "Adventskalender - NeeDoh - Set mit 24 bunten Knautschbällen",
+          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen",
+          "status": "in_stock"
         }
       ]
     },
@@ -1041,9 +931,129 @@
       "country": "🇮🇪 Ireland",
       "products": [
         {
-          "name": "NeeDoh",
-          "url": "https://kenblack.ie/collections/needoh",
-          "status": "unknown"
+          "name": "Needoh Nice Berg Swirl - Giant Marbled Fidget Cube, Squishy Toy Cubes For Kids",
+          "url": "https://kenblack.ie/products/needoh-nice-berg-swirl-giant-marbled-fidget-cube-squishy-toy-cubes-for-kids",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Nice Ice Baby Teenie Multipack - Fidget Cube Toys, Kids Sensory Ice Cubes",
+          "url": "https://kenblack.ie/products/needoh-nice-ice-baby-teenie-multipack-fidget-cube-toys-kids-sensory-ice-cubes",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Nice Berg Glitter & Glow Squishy Toy Cube, Big Glow In The Dark Fidget",
+          "url": "https://kenblack.ie/products/needoh-nice-berg-glitter-glow-squishy-toy-cube-big-glow-in-the-dark-fidget",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh - Nice Cube",
+          "url": "https://kenblack.ie/products/needoh-nice-cube",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Jelly Squish - Stretchy Jellyfish Toy With Glitter Filling, Sensory Toys",
+          "url": "https://kenblack.ie/products/needoh-jelly-squish-stretchy-jellyfish-toy-with-glitter-filling-sensory-toys",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Nice Cream Cone Assortment",
+          "url": "https://kenblack.ie/products/needoh-nice-cream-cone",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh - Niceberg",
+          "url": "https://kenblack.ie/products/needoh-niceberg",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh - Dream Drop",
+          "url": "https://kenblack.ie/products/needoh-dream-drop",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh - Gumdrop",
+          "url": "https://kenblack.ie/products/needoh-gumdrop",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Nice-Icicle Ice Sensory Squish Toy",
+          "url": "https://kenblack.ie/products/needoh-nice-icicle-ice-sensory-squish-toy",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Jelly Hops Scented Bunny Squishy Fidget Toys",
+          "url": "https://kenblack.ie/products/needoh-jelly-hops-scented-bunny-squishy-fidget-toys",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Candy Swirl Nice Cube",
+          "url": "https://kenblack.ie/products/schylling-needoh-candy-swirl-nice-cube",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Mello Mallo Squishy Colour-Changing Marshmallow Fidget Toy",
+          "url": "https://kenblack.ie/products/needoh-mello-mallo-squishy-colour-changing-marshmallow-fidget-toy",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Sugar Skull Cats Squishy Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-sugar-skull-cats-squishy-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Glow In The Dark Nee-Doh Assortment",
+          "url": "https://kenblack.ie/products/glow-in-the-dark-nee-doh-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Teenie Hot Shots Fidget Toy 4 Pack",
+          "url": "https://kenblack.ie/products/needoh-teenie-hot-shots-fidget-toy-4-pack",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Peace O'Cake Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-peace-ocake-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Fuzz Ball Flower Power Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-fuzz-ball-flower-power-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh The Groovy Glob Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-the-groovy-glob-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Colour Change Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-colour-change-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Teenie 3 Pack Assortment",
+          "url": "https://kenblack.ie/products/needoh-teenie-3-pack-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Teenies Single Assortment",
+          "url": "https://kenblack.ie/products/needoh-teenies-single-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Hot Shots Football Assortment",
+          "url": "https://kenblack.ie/products/needoh-hot-shots-football-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Sploot Splat Fidget Toy Assortment",
+          "url": "https://kenblack.ie/products/needoh-sploot-splat-fidget-toy-assortment",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Rainbow Teenie 6 Pack",
+          "url": "https://kenblack.ie/products/needoh-rainbow-teenie-6-pack",
+          "status": "out_of_stock"
         }
       ]
     },
@@ -1054,11 +1064,6 @@
         {
           "name": "gominola needoh",
           "url": "https://bizcochodeyogurshop.com/products/gominola-needoh",
-          "status": "unknown"
-        },
-        {
-          "name": "Needoh",
-          "url": "https://bizcochodeyogurshop.com/collections/needoh",
           "status": "unknown"
         }
       ]
@@ -1322,6 +1327,11 @@
           "name": "schylling needoh glow in the dark penguin",
           "url": "https://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-penguin",
           "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh",
+          "url": "https://www.2kidstoys.com/search-results?producer[0]=362",
+          "status": "unknown"
         }
       ]
     },
@@ -1330,49 +1340,44 @@
       "country": "🇮🇪 Ireland",
       "products": [
         {
-          "name": "Nee-Doh out of stock! Follow us on Insta for updates on re-stocks. Browse all things squishy here!",
-          "url": "https://toycorner.ie/collections/pocket-money-toys",
-          "status": "out_of_stock"
-        },
-        {
           "name": "Nee-Doh Sugar Skull Cats",
           "url": "https://toycorner.ie/products/nee-doh-sugar-skull-cats",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Nee-Doh Nice Cube Glitter and Glow Assorted Colours",
           "url": "https://toycorner.ie/products/nee-doh-nice-cube-glitter-and-glow-assorted-colours",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Nee-Doh Nice Cube Glow",
           "url": "https://toycorner.ie/products/nee-doh-nice-cube-glow",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh - Nee Doh Teenie Singles Assorted",
+          "name": "Nee Doh Teenie Singles Assorted",
           "url": "https://toycorner.ie/products/nee-doh-teenie-singles-assorted",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Nee-Doh Dream Drop",
           "url": "https://toycorner.ie/products/nee-doh-dream-drop",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Nee-Doh Dohjees 3pk",
           "url": "https://toycorner.ie/products/needoh-dohjees-3pk",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Gumdrop Nee-Doh",
           "url": "https://toycorner.ie/products/gumdrop-nee-doh",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Nice Cube Nee-Doh",
           "url": "https://toycorner.ie/products/nice-cube-nee-doh",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -1391,64 +1396,259 @@
       "country": "🇵🇹 Portugal",
       "products": [
         {
-          "name": "needoh dream drop sensorial",
-          "url": "https://minicool.pt/products/needoh-dream-drop-sensorial?_pos=2&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
+          "name": "Needoh Conjunto 3 Bolas Teenie Azul/Rosa/Verde",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-azul-rosa-verde",
+          "status": "out_of_stock"
         },
         {
-          "name": "Needoh",
-          "url": "https://minicool.pt/collections/vendors?q=Needoh",
-          "status": "unknown"
+          "name": "Needoh Árvore 15 Teenies Coloridos",
+          "url": "https://minicool.pt/products/needoh-arvore-15-teenies-coloridos",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Pack 12 Bolas Pegajosas Coloridas",
+          "url": "https://minicool.pt/products/needoh-pack-12-bolas-pegajosas-coloridas",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Verde - Onda",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-verde-onda",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Roxo - Onda",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-roxo-onda",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Rosa - Onda",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-rosa-onda",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Laranja - Arcos",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-laranja-arcos",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Roxo - Arcos",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-roxo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Rosa - Arcos",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Super Ondas Laranja",
+          "url": "https://minicool.pt/products/needoh-bola-super-ondas-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Bolas Teenie Roxo/Rosa/Azul",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-roxo-rosa-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Bolas Teenie Verde/Rosa/Roxo",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-verde-rosa-roxo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Bolas Teenie Verde/Laranja/Azul",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-verde-laranja-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Bolas Teenie Laranja/Azul/Roxo",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-laranja-azul-roxo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Bolas Teenie Rosa/Verde/Laranja",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-rosa-verde-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Ovo Mágico Azul",
+          "url": "https://minicool.pt/products/needoh-ovo-magico-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Anti-Stress Laranja",
+          "url": "https://minicool.pt/products/needoh-bola-anti-stress-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Anti-Stress Roxa",
+          "url": "https://minicool.pt/products/needoh-bola-anti-stress-roxa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Anti-Stress Azul",
+          "url": "https://minicool.pt/products/needoh-bola-anti-stress-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Anti-Stress Rosa",
+          "url": "https://minicool.pt/products/needoh-bola-anti-stress-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola que Brilha no Escuro Azul",
+          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola que Brilha no Escuro Verde",
+          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-verde",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola que Brilha no Escuro Roxa",
+          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-roxa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola que Brilha no Escuro Rosa",
+          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola que Brilha no Escuro Laranja",
+          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Medusa",
+          "url": "https://minicool.pt/products/needoh-medusa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Renos Squisher",
+          "url": "https://minicool.pt/products/needoh-renos-squisher",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Snowball",
+          "url": "https://minicool.pt/products/needoh-snowball",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Oink Oink",
+          "url": "https://minicool.pt/products/needoh-oink-oink",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Atómica",
+          "url": "https://minicool.pt/products/needoh-atomica",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Coração Good Vibes Azul",
+          "url": "https://minicool.pt/products/needoh-coracao-good-vibes-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Coração Good Vibes Rosa",
+          "url": "https://minicool.pt/products/needoh-coracao-good-vibes-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Coração Good Vibes Roxa",
+          "url": "https://minicool.pt/products/needoh-coracao-good-vibes-roxa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Peluda Velvet Rosa",
+          "url": "https://minicool.pt/products/needoh-bola-peluda-velvet-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Peluda Velvet Verde",
+          "url": "https://minicool.pt/products/needoh-bola-peluda-velvet-verde",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Peluda Velvet Roxa",
+          "url": "https://minicool.pt/products/needoh-bola-peluda-velvet-roxa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Peluda Velvet Azul",
+          "url": "https://minicool.pt/products/needoh-bola-peluda-velvet-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Peluda Velvet Laranja",
+          "url": "https://minicool.pt/products/needoh-bola-peluda-velvet-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Sploot Splay Azul",
+          "url": "https://minicool.pt/products/needoh-sploot-splay-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Sploot Splay Rosa",
+          "url": "https://minicool.pt/products/needoh-sploot-splay-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Sploot Splay Verde",
+          "url": "https://minicool.pt/products/needoh-sploot-splay-verde",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Mello Mallo Rosa",
+          "url": "https://minicool.pt/products/needoh-mello-mallo-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Mello Mallo Amarelo",
+          "url": "https://minicool.pt/products/needoh-mello-mallo-amarelo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Mello Mallo Azul",
+          "url": "https://minicool.pt/products/needoh-mello-mallo-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Pack 3 Monstros Dohjees",
+          "url": "https://minicool.pt/products/needoh-pack-3-monstros-dohjees",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Pintainho Rosa e Azul",
+          "url": "https://minicool.pt/products/needoh-pintainho-rosa-e-azul",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Pintainho Amarelo e Rosa",
+          "url": "https://minicool.pt/products/needoh-pintainho-amarelo-e-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Pintainho Azul e Roxo",
+          "url": "https://minicool.pt/products/needoh-pintainho-azul-e-roxo",
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Cubo Glow Sensorial",
-          "url": "https://minicool.pt/products/nice-cube-glow-sensorial?_pos=3&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
+          "url": "https://minicool.pt/products/nice-cube-glow-sensorial",
+          "status": "out_of_stock"
         },
         {
-          "name": "donut needoh sensorial",
-          "url": "https://minicool.pt/products/donut-needoh-sensorial?_pos=4&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
+          "name": "NeeDoh Gota de Água Sensorial",
+          "url": "https://minicool.pt/products/needoh-dream-drop-sensorial",
+          "status": "out_of_stock"
         },
         {
-          "name": "needoh bola que brilha no escuro rosa",
-          "url": "https://minicool.pt/products/needoh-bola-que-brilha-no-escuro-rosa?_pos=5&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh cubo de gelo azul",
-          "url": "https://minicool.pt/products/needoh-cubo-de-gelo-azul?_pos=6&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "Needoh Coelhinho Sensorial Squish & Sniff",
-          "url": "https://minicool.pt/products/coelhinho-sensorial-squish-sniff?_pos=7&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh renos squisher",
-          "url": "https://minicool.pt/products/needoh-renos-squisher?_pos=8&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh cubo de gelo rosa",
-          "url": "https://minicool.pt/products/needoh-cubo-de-gelo-rosa?_pos=9&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh atomica",
-          "url": "https://minicool.pt/products/needoh-atomica?_pos=10&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh bola anti stress roxa",
-          "url": "https://minicool.pt/products/needoh-bola-anti-stress-roxa?_pos=11&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh ovo magico rosa",
-          "url": "https://minicool.pt/products/needoh-ovo-magico-rosa?_pos=12&_sid=60fa7b615&_ss=r",
-          "status": "unknown"
+          "name": "Needoh Donut Sensorial",
+          "url": "https://minicool.pt/products/donut-needoh-sensorial",
+          "status": "out_of_stock"
         }
       ]
     },
@@ -1525,7 +1725,7 @@
         {
           "name": "4650670 needoh gumdrop needoh",
           "url": "https://www.thimbletoys.com/nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh---gumdrop-needoh",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "4650684 needoh niceberg needoh",
@@ -1915,7 +2115,68 @@
     {
       "name": "Dráček",
       "country": "🇨🇿 Czech Republic",
-      "products": []
+      "products": [
+        {
+          "name": "Schylling NeeDoh Adventní kalendář 2026",
+          "url": "https://www.dracek.cz/schylling-needoh-adventni-kalendar-2026",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling Needoh mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací maxi míček FuzzBall",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-maxi-micek-fuzzball",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací míčky FuzzBall 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-micky-fuzzball-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball 3ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-mini-micky-fuzz-ball-3ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací medúza",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-meduza",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresová kapka 1 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-antistresova-kapka-1-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling, Mačkací texturovaný Needoh Gumdrop",
+          "url": "https://www.dracek.cz/schylling-mackaci-texturovany-needoh-gumdrop",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling Needoh mačkací kostka Nice Cube",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling, Needoh Sněhová křupavá koule",
+          "url": "https://www.dracek.cz/schylling-needoh-snehova-krupava-koule",
+          "status": "in_stock"
+        }
+      ]
     },
     {
       "name": "Houten Onderwijsmateriaal",
