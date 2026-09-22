@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 16:41",
+  "last_checked": "22 Sep 2026, 16:59",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1062,66 +1062,6 @@
       "name": "Logopedicum",
       "country": "🌍 Europe",
       "products": [
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=337295",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=338025",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=337843",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=346679",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=341334",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=341067",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=344957",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=339989",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=337435",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=343582",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=343743",
-          "status": "in_stock"
-        },
-        {
-          "name": "NeeDoh - Añadir al carrito",
-          "url": "https://logopedicum.com/?mot_q=Needoh&add-to-cart=128941",
-          "status": "in_stock"
-        },
         {
           "name": "needoh",
           "url": "https://logopedicum.com/marca/needoh/",
