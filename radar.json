@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 17:06",
+  "last_checked": "22 Sep 2026, 17:25",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -463,6 +463,11 @@
       "country": "🇵🇱 Poland",
       "products": [
         {
+          "name": "NeeDoh by Schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh sugar skull cats syssccnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-sugar-skull-cats-syssccnd.html",
           "status": "unknown"
@@ -705,6 +710,11 @@
         {
           "name": "schylling needoh groovy fruit sensory stress balls 3 pack sygfnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-fruit-sensory-stress-balls-3-pack-sygfnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh by Schylling",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/schylling-schylling-stretching-noodles-sensory-fidget-toy-synl.html",
           "status": "unknown"
         }
       ]
