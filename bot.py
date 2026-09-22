@@ -2,6 +2,9 @@ import os
 import urllib.request
 import urllib.parse
 import json
+import re
+from html import unescape
+from urllib.parse import urljoin
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -1371,7 +1374,512 @@ lobbes_products = [
 ]
 
 
+
+# ============================================================
+# EXTRA EUROPEAN NEEDOH SHOPS
+# Added without changing the existing shop checkers above.
+# These collection/search monitors automatically discover NeeDoh
+# product links, show them on radar.json and use the existing
+# previous-radar history for duplicate-safe Telegram alerts.
+# ============================================================
+
+extra_needoh_shops = [
+    {
+        "name": "Spellenrijk",
+        "country": "🇳🇱 Netherlands",
+        "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
+    },
+    {
+        "name": "Proshop",
+        "country": "🇳🇱 Netherlands",
+        "url": "https://www.proshop.nl/Speelgoed/NeeDoh"
+    },
+    {
+        "name": "Megaknihy",
+        "country": "🇨🇿 Czech Republic",
+        "url": "https://www.megaknihy.cz/vyhledavani?orderby=position&orderway=desc&search_query=Needoh&p=1"
+    },
+    {
+        "name": "Dvě děti CZ",
+        "country": "🇨🇿 Czech Republic",
+        "url": "https://www.dvedeti.cz/vysledky-vyhledavani?search_keyword=Needoh&page=1"
+    },
+    {
+        "name": "MimiMarket",
+        "country": "🇨🇿 Czech Republic",
+        "url": "https://www.mimimarket.cz/1208122646/e-search?q=Needoh"
+    },
+    {
+        "name": "Monkey Mum",
+        "country": "🇨🇿 Czech Republic",
+        "url": "https://monkeymum.cz/search?q=needoh"
+    },
+    {
+        "name": "Miss Lemonade",
+        "country": "🇵🇱 Poland",
+        "url": "https://misslemonade.pl/en/module/ambjolisearch/jolisearch?s=Needoh"
+    },
+    {
+        "name": "Dzieciaki Bystrzaki",
+        "country": "🇵🇱 Poland",
+        "url": "https://www.dzieciakibystrzaki.pl/szukaj?controller=search&orderby=position&orderway=desc&search-cat-select=0&search_query=Needoh&submit_search="
+    },
+    {
+        "name": "Tublu",
+        "country": "🇦🇹 Austria",
+        "url": "https://tublu.at/search?page=1&q=needoh&type=product"
+    },
+    {
+        "name": "Dve Deti SK",
+        "country": "🇸🇰 Slovakia",
+        "url": "https://www.dvedeti.sk/vysledky-vyhladavania?search_keyword=Needoh&page=1"
+    },
+    {
+        "name": "Ken Black",
+        "country": "🇮🇪 Ireland",
+        "url": "https://kenblack.ie/search?sort_by=relevance&q=needoh&type=product&filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte="
+    },
+    {
+        "name": "Bizcocho de Yogur",
+        "country": "🇪🇸 Spain",
+        "url": "https://bizcochodeyogurshop.com/?s=needoh&post_type=product"
+    },
+    {
+        "name": "Logopedicum",
+        "country": "🌍 Europe",
+        "url": "https://logopedicum.com/?mot_q=Needoh"
+    },
+    {
+        "name": "2KidsToys",
+        "country": "🌍 Europe",
+        "url": "https://www.2kidstoys.com/search-results?search_keyword=Needoh&page=1"
+    },
+    {
+        "name": "Toy Corner",
+        "country": "🇮🇪 Ireland",
+        "url": "https://toycorner.ie/collections/nee-doh"
+    },
+    {
+        "name": "Funny Bunny",
+        "country": "🇬🇷 Greece",
+        "url": "https://www.funnybunny.gr/?s=Nee+doh&post_type=product&dgwt_wcas=1"
+    },
+    {
+        "name": "Mavros Larnaca",
+        "country": "🇨🇾 Cyprus",
+        "url": "https://mavroslarnaca.com/?s=Needoh&post_type=product"
+    },
+    {
+        "name": "MiniCool",
+        "country": "🇵🇹 Portugal",
+        "url": "https://minicool.pt/search?page=1&q=Needoh"
+    },
+    {
+        "name": "Bavixo",
+        "country": "🇨🇿 Czech Republic",
+        "url": "https://www.bavixo.cz/search?phrase=Needoh"
+    },
+    {
+        "name": "Thimble Toys",
+        "country": "🇳🇱 Netherlands",
+        "url": "https://www.thimbletoys.com/nl/zoek/Needoh/all"
+    },
+    {
+        "name": "Müller",
+        "country": "🇩🇪 Germany",
+        "url": "https://www.mueller.de/search/?q=Needoh"
+    },
+    {
+        "name": "Juguetea",
+        "country": "🇪🇸 Spain",
+        "url": "https://juguetea.es/?s=Needoh&post_type=product"
+    },
+    {
+        "name": "Le Monde Imaginaire",
+        "country": "🇫🇷 France",
+        "url": "https://lemondeimaginaire.com/?q=Needoh"
+    },
+    {
+        "name": "Booghe",
+        "country": "🇬🇧 United Kingdom",
+        "url": "https://www.booghe.co.uk/search?type=article%2Cpage%2Cproduct&q=Needoh*"
+    },
+    {
+        "name": "Lekia",
+        "country": "🇸🇪 Sweden",
+        "url": "https://www.lekia.se/sokresultat?q=Needoh&tab_index=0"
+    }
+]
+
+
+def fetch_extra_shop_page(url):
+
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9,nl;q=0.8"
+        }
+    )
+
+    with urllib.request.urlopen(
+        request,
+        timeout=25
+    ) as response:
+
+        return response.read().decode(
+            "utf-8",
+            errors="ignore"
+        )
+
+
+def clean_extra_product_name(value):
+
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = unescape(value)
+
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    ).strip()
+
+    return value[:180]
+
+
+def infer_extra_stock(section):
+
+    text = clean_extra_product_name(section).lower()
+
+    out_markers = [
+        "out of stock",
+        "sold out",
+        "sold-out",
+        "unavailable",
+        "niet op voorraad",
+        "niet leverbaar",
+        "niet meer leverbaar",
+        "uitverkocht",
+        "tijdelijk uitverkocht",
+        "není skladem",
+        "neni skladem",
+        "vyprodáno",
+        "vyprodano",
+        "nedostupné",
+        "nedostupne",
+        "brak w magazynie",
+        "brak na stanie",
+        "wyprzedane",
+        "agotado",
+        "esgotado",
+        "épuisé",
+        "epuise",
+        "nicht verfügbar",
+        "nicht verfugbar",
+        "ausverkauft",
+        "ej i lager",
+        "slutsåld",
+        "slutsald"
+    ]
+
+    in_markers = [
+        "in stock",
+        "op voorraad",
+        "direct leverbaar",
+        "skladem",
+        "dostupné",
+        "dostupne",
+        "na stanie",
+        "w magazynie",
+        "disponible",
+        "em stock",
+        "en stock",
+        "auf lager",
+        "i lager",
+        "add to cart",
+        "add to basket",
+        "do koszyka",
+        "do košíku",
+        "do kosiku",
+        "añadir al carrito",
+        "adicionar ao carrinho"
+    ]
+
+    if any(
+        marker in text
+        for marker in out_markers
+    ):
+        return "out_of_stock"
+
+    if any(
+        marker in text
+        for marker in in_markers
+    ):
+        return "in_stock"
+
+    return "unknown"
+
+
+def get_extra_needoh_products(shop):
+
+    try:
+
+        page = fetch_extra_shop_page(
+            shop["url"]
+        )
+
+    except Exception as error:
+
+        print(
+            f"⚠️ {shop['name']} collection error: {error}"
+        )
+
+        return []
+
+    products_found = []
+    seen_urls = set()
+
+    anchor_pattern = re.compile(
+        r"<a\b[^>]*?href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",
+        re.IGNORECASE | re.DOTALL
+    )
+
+    for match in anchor_pattern.finditer(page):
+
+        href = unescape(
+            match.group(1)
+        ).strip()
+
+        anchor_html = match.group(2)
+
+        name = clean_extra_product_name(
+            anchor_html
+        )
+
+        absolute_url = urljoin(
+            shop["url"],
+            href
+        )
+
+        combined = (
+            name
+            + " "
+            + href
+        ).lower()
+
+        if (
+            "needoh" not in combined
+            and "nee-doh" not in combined
+            and "nee_doh" not in combined
+        ):
+            continue
+
+        bad_url_markers = [
+            "search",
+            "zoeken",
+            "vyhled",
+            "szukaj",
+            "sokresultat",
+            "jolisearch",
+            "e-search",
+            "collections/nee-doh",
+            "/merk/1007/needoh",
+            "/speelgoed/needoh"
+        ]
+
+        absolute_lower = absolute_url.lower()
+
+        if any(
+            marker in absolute_lower
+            for marker in bad_url_markers
+        ):
+            continue
+
+        if absolute_url in seen_urls:
+            continue
+
+        if len(name) < 3:
+
+            slug = href.rstrip("/").split("/")[-1]
+            slug = slug.split("?")[0]
+
+            name = clean_extra_product_name(
+                slug.replace("-", " ").replace("_", " ")
+            )
+
+        if (
+            "needoh" not in name.lower()
+            and "nee-doh" not in name.lower()
+        ):
+
+            if "needoh" in absolute_lower or "nee-doh" in absolute_lower:
+                name = f"NeeDoh - {name}"
+            else:
+                continue
+
+        section_start = max(
+            0,
+            match.start() - 900
+        )
+
+        section_end = min(
+            len(page),
+            match.end() + 1400
+        )
+
+        status = infer_extra_stock(
+            page[section_start:section_end]
+        )
+
+        products_found.append({
+            "name": name,
+            "url": absolute_url,
+            "status": status
+        })
+
+        seen_urls.add(
+            absolute_url
+        )
+
+    print(
+        f"🔎 {shop['name']}: found {len(products_found)} NeeDoh product links"
+    )
+
+    return products_found
+
+
+def get_previous_shop_products(
+    previous_radar,
+    shop_name
+):
+
+    if not previous_radar:
+        return None
+
+    for shop in previous_radar.get(
+        "shops",
+        []
+    ):
+
+        if shop.get("name") == shop_name:
+            return shop.get("products", [])
+
+    return None
+
+
+def find_previous_extra_product(
+    previous_products,
+    product
+):
+
+    if previous_products is None:
+        return None
+
+    for previous_product in previous_products:
+
+        if (
+            previous_product.get("url") == product["url"]
+            or previous_product.get("name") == product["name"]
+        ):
+            return previous_product
+
+    return None
+
+
+def check_extra_needoh_shop(
+    shop,
+    previous_radar
+):
+
+    print(
+        f"\nChecking {shop['name']}..."
+    )
+
+    products_found = get_extra_needoh_products(
+        shop
+    )
+
+    previous_products = get_previous_shop_products(
+        previous_radar,
+        shop["name"]
+    )
+
+    # If a shop is brand-new to radar.json, its first run becomes the
+    # baseline. This prevents dozens of Telegram alerts on setup day.
+    first_baseline_run = (
+        previous_products is None
+    )
+
+    for product in products_found:
+
+        previous_product = find_previous_extra_product(
+            previous_products,
+            product
+        )
+
+        if (
+            not first_baseline_run
+            and previous_product is None
+        ):
+
+            send_telegram(
+                f"🆕 NEW NEEDOH FOUND!\n\n"
+                f"➡️ {product['name']}\n"
+                f"🛍️ {shop['name']}\n"
+                f"{shop['country']}\n\n"
+                f"🔗 {product['url']}",
+                RADAR_URL
+            )
+
+            print(
+                f"🆕 NEW {shop['name']} PRODUCT: {product['name']}"
+            )
+
+        if previous_product is not None:
+
+            previous_status = previous_product.get(
+                "status"
+            )
+
+            if (
+                product["status"] == "in_stock"
+                and previous_status == "out_of_stock"
+            ):
+
+                send_telegram(
+                    f"🚨 NEEDOH STOCK ALERT!\n\n"
+                    f"➡️ {product['name']}\n"
+                    f"🛍️ {shop['name']}\n"
+                    f"{shop['country']}\n\n"
+                    f"🟢 IN STOCK ONLINE!\n\n"
+                    f"🔗 {product['url']}",
+                    RADAR_URL
+                )
+
+                print(
+                    f"🚨 BACK IN STOCK AT {shop['name']}: {product['name']}"
+                )
+
+    return products_found
+
 previous_radar = load_previous_radar()
+
+
+extra_shop_results = {}
+
+for extra_shop in extra_needoh_shops:
+
+    extra_shop_results[extra_shop["name"]] = check_extra_needoh_shop(
+        extra_shop,
+        previous_radar
+    )
+
 
 
 intertoys_results = []
@@ -2087,6 +2595,18 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
+
+        *[
+            {
+                "name": extra_shop["name"],
+                "country": extra_shop["country"],
+                "products": extra_shop_results.get(
+                    extra_shop["name"],
+                    []
+                )
+            }
+            for extra_shop in extra_needoh_shops
+        ],
 
         {
             "name": "Drukke Mama's",
