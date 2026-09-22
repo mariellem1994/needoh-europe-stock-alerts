@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V7 active — clean product links + product-page stock confirmation.")
+print("🛡️ VERIFIED STOCK MODE V8 active — product links separated from image links.")
 
 
 sent_alert_keys = set()
@@ -2002,7 +2002,7 @@ def get_extra_needoh_products(shop):
 
     # Markdown links from the reader fallback.
     markdown_pattern = re.compile(
-        r"\[([^\]]{1,250})\]\((https?://[^)\s]+)\)",
+        r"(?<!!)\[([^\]]{1,250})\]\((https?://[^)\s]+)\)",
         re.IGNORECASE
     )
 
@@ -2065,6 +2065,23 @@ def get_extra_needoh_products(shop):
         ]
 
         absolute_lower = absolute_url.lower()
+
+        # Never count product images/assets as products.
+        asset_extensions = (
+            ".jpg", ".jpeg", ".png", ".webp", ".gif",
+            ".svg", ".css", ".js", ".ico", ".pdf"
+        )
+        asset_path_markers = (
+            "/data/product/", "/images/", "/image/", "/img/",
+            "/media/", "/assets/", "/static/", "/upload/", "/uploads/"
+        )
+        parsed_asset_path = urlparse(absolute_url).path.lower()
+
+        if (
+            parsed_asset_path.endswith(asset_extensions)
+            or any(marker in parsed_asset_path for marker in asset_path_markers)
+        ):
+            continue
 
         if any(
             marker in absolute_lower
@@ -2210,8 +2227,12 @@ def is_real_product_page_url(shop, url):
     if shop_name in {"Dvě děti CZ", "Dve Deti SK"}:
         # Their real product pages are root-level slugs; images live under /data/product/.
         parts = [part for part in path.split("/") if part]
-        return len(parts) == 1 and "needoh" in parts[0] or (
-            len(parts) == 1 and parts[0].startswith("schylling-")
+        return (
+            len(parts) == 1
+            and (
+                "needoh" in parts[0]
+                or parts[0].startswith("schylling-")
+            )
         )
 
     # For MimiMarket / 2KidsToys, generic asset filtering is safer than
@@ -2360,10 +2381,16 @@ def apply_verified_extra_stock(shop, products):
     if shop.get("shopify"):
         return products
 
-    products = filter_real_product_links(
-        shop,
-        products
-    )
+    if shop.get("name") in {
+        "Dvě děti CZ",
+        "Dve Deti SK",
+        "2KidsToys",
+        "MimiMarket",
+    }:
+        products = filter_real_product_links(
+            shop,
+            products
+        )
 
     verified = []
 
