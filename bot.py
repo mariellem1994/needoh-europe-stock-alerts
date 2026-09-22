@@ -722,6 +722,8 @@ def check_spadt_product_stock(url):
         page_lower = page.lower()
 
         if (
+            "uit stock" in page_lower
+            or
             "uitverkocht" in page_lower
             or
             "tijdelijk uitverkocht" in page_lower
@@ -733,11 +735,13 @@ def check_spadt_product_stock(url):
             return "out_of_stock"
 
         if (
-            "in winkelwagen" in page_lower
+            '"availability":"https://schema.org/instock"' in page_lower
             or
-            "toevoegen aan winkelwagen" in page_lower
+            '"availability": "https://schema.org/instock"' in page_lower
             or
-            "add to cart" in page_lower
+            '"availability":"instock"' in page_lower
+            or
+            '"availability": "instock"' in page_lower
         ):
             return "in_stock"
 
@@ -745,7 +749,9 @@ def check_spadt_product_stock(url):
 
     except Exception as e:
 
-        print(f"⚠️ Spadt product error: {e}")
+        print(
+            f"⚠️ Spadt product error: {e}"
+        )
 
         return "error"
 
