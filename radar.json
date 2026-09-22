@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 11:54",
+  "last_checked": "22 Sep 2026, 12:06",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -151,57 +151,57 @@
         {
           "name": "Needoh - Cool Cats Ball (1 stuk) - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Classic Needoh Balls (1 stuk) - Paars",
           "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Classic Needoh Balls (1 stuk) - Blauw",
           "url": "https://www.spellenrijk.nl/artikel/50653/needoh-classic-needoh-balls-1-stuk-blauw.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Classic Needoh Balls (1 stuk) - Roze",
           "url": "https://www.spellenrijk.nl/artikel/50871/needoh-classic-needoh-balls-1-stuk-roze.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Classic Needoh Balls (1 stuk) - Oranje",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Classic Needoh Balls (1 stuk) - Groen",
           "url": "https://www.spellenrijk.nl/artikel/50650/needoh-classic-needoh-balls-1-stuk-groen.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Cool Cats Ball (1 stuk) - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51144/needoh-cool-cats-ball-1-stuk-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Cool Cats Ball (1 stuk) - Orange",
           "url": "https://www.spellenrijk.nl/artikel/51140/needoh-cool-cats-ball-1-stuk-orange.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Cool Cats Ball (1 stuk) - Green",
           "url": "https://www.spellenrijk.nl/artikel/51139/needoh-cool-cats-ball-1-stuk-green.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Color Changing Needoh - Yellow",
           "url": "https://www.spellenrijk.nl/artikel/51066/needoh-color-changing-needoh-stretchy-stress-balls-yellow-1-stuk.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Color Changing Needoh - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51036/needoh-color-changing-needoh-stretchy-stress-balls-pink-1-stuk.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Color Changing Needoh - Blue",
@@ -216,12 +216,12 @@
         {
           "name": "Needoh - Nice Cube - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51115/needoh-nice-cube-1-stuk-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Cube - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51114/needoh-nice-cube-1-stuk-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Berg Glitter & Glow - Purple",
@@ -231,67 +231,67 @@
         {
           "name": "Needoh - Gumdrop - Purple",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Fuzz Ball Wonder Waves - Green",
           "url": "https://www.spellenrijk.nl/artikel/51130/needoh-fuzz-ball-wonder-waves-1-stuk-green.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Dream Drop - Blue",
           "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Dream Drop - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Cube Glow In The Dark - Groen",
           "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Berg Swirl - Blue",
           "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Geel",
           "url": "https://www.spellenrijk.nl/artikel/50647/needoh-mello-mallo-color-changing-marshmellow-1-stuk-geel.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Roze",
           "url": "https://www.spellenrijk.nl/artikel/50648/needoh-mello-mallo-color-changing-marshmellow-1-stuk-roze.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Berg Glitter & Glow - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51111/needoh-nice-berg-glitter-glow-1-stuk-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Glitter & Glow Nice Cube - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Niceberg Needoh",
           "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Blauw",
           "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Cube Glow In The Dark - Blauw",
           "url": "https://www.spellenrijk.nl/artikel/50658/needoh-nice-cube-glow-in-the-dark-1-stuk-blauw.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Super Fuzz Ball - Green",
@@ -306,7 +306,7 @@
         {
           "name": "Needoh - Nice Berg Swirl - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51854/needoh-nice-berg-swirl-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Gumdrop - Orange",
@@ -316,17 +316,17 @@
         {
           "name": "Needoh - Nice Cube Glow In The Dark - Oranje",
           "url": "https://www.spellenrijk.nl/artikel/50656/needoh-nice-cube-glow-in-the-dark-1-stuk-oranje.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Cube Glow In The Dark - Roze",
           "url": "https://www.spellenrijk.nl/artikel/50657/needoh-nice-cube-glow-in-the-dark-1-stuk-roze.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Glitter & Glow Nice Cube - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51856/needoh-glitter-glow-nice-cube-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Fuzz Ball Wonder Waves - Blue",
@@ -336,22 +336,22 @@
         {
           "name": "Needoh - Dream Drop - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51134/needoh-dream-drop-1-stuk-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Super Fuzz Ball - Purple",
           "url": "https://www.spellenrijk.nl/artikel/51848/needoh-super-fuzz-ball-purple.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Nice Berg Glitter & Glow - Blue",
           "url": "https://www.spellenrijk.nl/artikel/51110/needoh-nice-berg-glitter-glow-1-stuk-blue.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Gumdrop - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51859/needoh-gumdrop-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Fuzz Ball Wonder Waves - Purple",
@@ -361,22 +361,22 @@
         {
           "name": "Needoh - Glitter & Glow Nice Cube - Blue",
           "url": "https://www.spellenrijk.nl/artikel/51855/needoh-glitter-glow-nice-cube-blue.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Gumdrop - Blue",
           "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Snow Ball Crunch",
           "url": "https://www.spellenrijk.nl/artikel/51141/needoh-snow-ball-crunch-1-stuk.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Super Fuzz Ball - Pink",
           "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh - Fuzz Ball Wonder Waves - Orange",
@@ -851,11 +851,6 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "Niceberg",
-          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
-          "status": "out_of_stock"
-        },
-        {
           "name": "Gumdrop",
           "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650670-needoh-gumdrop-needoh",
           "status": "out_of_stock"
@@ -873,6 +868,11 @@
         {
           "name": "Nice Cube Glow",
           "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650686-needoh-nice-cube-glow-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Niceberg",
+          "url": "https://www.lobbes.nl/speelgoed/uitdeelcadeautjes/fidget-toys/detail/4650684-needoh-niceberg-needoh",
           "status": "out_of_stock"
         },
         {
