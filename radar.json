@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 11:39",
+  "last_checked": "22 Sep 2026, 11:41",
   "shops": [
     {
       "name": "Drukke Mama's",
@@ -147,7 +147,133 @@
     {
       "name": "Spellenrijk",
       "country": "🇳🇱 Netherlands",
-      "products": []
+      "products": [
+        {
+          "name": "//document.onreadystatechange = function () {var bum = document.getElementsByClassName('bumbli-wrap');if (bum != null) {for (var i = 0; i dataLayer = window.dataLayer = window.dataLayer || []; (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j = d.createElement(s),dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); }) (window,document,'script','dataLayer','GTM-WFP3PZW'); dataLayer.push({\"event\":\"view_item_list\",\"ecommerce\":{\"currency\":\"EUR\",\"items\":[{\"item_id\":\"NDH39657-PINK\",\"item_name\":\"Needoh - Cool Cats Ball (1 stuk) - Pink\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":0,\"currency\":\"EUR\"},{\"item_id\":\"NDH39656-PAARS\",\"item_name\":\"Needoh - Classic Needoh Balls (1 stuk) - Paars\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":1,\"currency\":\"EUR\"},{\"item_id\":\"NDH39656-BLAUW\",\"item_name\":\"Needoh - Classic Needoh Balls (1 stuk) - Blauw\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":2,\"currency\":\"EUR\"},{\"item_id\":\"NDH39656-ROZE\",\"item_name\":\"Needoh - Classic Needoh Balls (1 stuk) - Roze\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":3,\"currency\":\"EUR\"},{\"item_id\":\"NDH39656-ORANJE\",\"item_name\":\"Needoh - Classic Needoh Balls (1 stuk) - Oranje\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":4,\"currency\":\"EUR\"},{\"item_id\":\"NDH39656-GROEN\",\"item_name\":\"Needoh - Classic Needoh Balls (1 stuk) - Groen\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":5,\"currency\":\"EUR\"},{\"item_id\":\"NDH39657-PURPLE\",\"item_name\":\"Needoh - Cool Cats Ball (1 stuk) - Purple\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":6,\"currency\":\"EUR\"},{\"item_id\":\"NDH39657-ORANGE\",\"item_name\":\"Needoh - Cool Cats Ball (1 stuk) - Orange\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":7,\"currency\":\"EUR\"},{\"item_id\":\"NDH39657-GREEN\",\"item_name\":\"Needoh - Cool Cats Ball (1 stuk) - Green\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":8,\"currency\":\"EUR\"},{\"item_id\":\"NDH39658-YELLOW\",\"item_name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Yellow (1 stuk) \",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":9,\"currency\":\"EUR\"},{\"item_id\":\"NDH39658-PINK\",\"item_name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Pink (1 stuk) \",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":10,\"currency\":\"EUR\"},{\"item_id\":\"NDH39658-BLUE\",\"item_name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Blue (1 stuk) \",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":11,\"currency\":\"EUR\"},{\"item_id\":\"NDH39654-BLUE\",\"item_name\":\"Needoh - Nice Cube (1 stuk) - Blue\",\"item_brand\":\"Needoh\",\"price\":11.53,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":12,\"currency\":\"EUR\"},{\"item_id\":\"NDH39654-PURPLE\",\"item_name\":\"Needoh - Nice Cube (1 stuk) - Purple\",\"item_brand\":\"Needoh\",\"price\":11.53,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":13,\"currency\":\"EUR\"},{\"item_id\":\"NDH39654-PINK\",\"item_name\":\"Needoh - Nice Cube (1 stuk) - Pink\",\"item_brand\":\"Needoh\",\"price\":11.53,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":14,\"currency\":\"EUR\"},{\"item_id\":\"NDH40434-PURPLE\",\"item_name\":\"Needoh - Nice Berg Glitter \\u0026 Glow (1 stuk) - Purple\",\"item_brand\":\"Needoh\",\"price\":14.01,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":15,\"currency\":\"EUR\"},{\"item_id\":\"NDH39655-MVAR-PURPLE\",\"item_name\":\"Needoh - Gumdrop - Purple\",\"item_brand\":\"Needoh\",\"price\":6.57,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":16,\"currency\":\"EUR\"},{\"item_id\":\"NDH40306-GREEN\",\"item_name\":\"Needoh - Fuzz Ball Wonder Waves (1 stuk) - Green\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":17,\"currency\":\"EUR\"},{\"item_id\":\"NDH40014-BLUE\",\"item_name\":\"Needoh - Dream Drop (1 stuk) - Blue\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":18,\"currency\":\"EUR\"},{\"item_id\":\"NDH40014-PINK\",\"item_name\":\"Needoh - Dream Drop (1 stuk) - Pink\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":19,\"currency\":\"EUR\"},{\"item_id\":\"NDH40305-GROEN\",\"item_name\":\"Needoh - Nice Cube Glow In The Dark (1 stuk) - Groen\",\"item_brand\":\"Needoh\",\"price\":7.40,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":20,\"currency\":\"EUR\"},{\"item_id\":\"NDH40433-MVAR-BLUE\",\"item_name\":\"Needoh - Nice Berg Swirl - Blue\",\"item_brand\":\"Needoh\",\"price\":13.18,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":21,\"currency\":\"EUR\"},{\"item_id\":\"NDH40308-GEEL\",\"item_name\":\"Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Geel\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":22,\"currency\":\"EUR\"},{\"item_id\":\"NDH40308-ROZE\",\"item_name\":\"Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Roze\",\"item_brand\":\"Needoh\",\"price\":4.92,\"quantity\":1,\"item_category\":\"Squishies\",\"item_list_name\":\"products\",\"index\":23,\"currency\":\"EUR\"}]}});dataLayer.push({ 'ecommerce': {\"currencyCode\":\"EUR\",\"impressions\":[{\"position\":0,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39657-PINK\",\"name\":\"Needoh - Cool Cats Ball (1 stuk) - Pink\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":1,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39656-PAARS\",\"name\":\"Needoh - Classic Needoh Balls (1 stuk) - Paars\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":2,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39656-BLAUW\",\"name\":\"Needoh - Classic Needoh Balls (1 stuk) - Blauw\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":3,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39656-ROZE\",\"name\":\"Needoh - Classic Needoh Balls (1 stuk) - Roze\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":4,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39656-ORANJE\",\"name\":\"Needoh - Classic Needoh Balls (1 stuk) - Oranje\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":5,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39656-GROEN\",\"name\":\"Needoh - Classic Needoh Balls (1 stuk) - Groen\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":6,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39657-PURPLE\",\"name\":\"Needoh - Cool Cats Ball (1 stuk) - Purple\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":7,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39657-ORANGE\",\"name\":\"Needoh - Cool Cats Ball (1 stuk) - Orange\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":8,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39657-GREEN\",\"name\":\"Needoh - Cool Cats Ball (1 stuk) - Green\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":9,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39658-YELLOW\",\"name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Yellow (1 stuk) \",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":10,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39658-PINK\",\"name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Pink (1 stuk) \",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":11,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39658-BLUE\",\"name\":\"Needoh - Color Changing Needoh Stretchy Stress Balls - Blue (1 stuk) \",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":12,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39654-BLUE\",\"name\":\"Needoh - Nice Cube (1 stuk) - Blue\",\"price\":\"11.53\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":13,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39654-PURPLE\",\"name\":\"Needoh - Nice Cube (1 stuk) - Purple\",\"price\":\"11.53\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":14,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39654-PINK\",\"name\":\"Needoh - Nice Cube (1 stuk) - Pink\",\"price\":\"11.53\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":15,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40434-PURPLE\",\"name\":\"Needoh - Nice Berg Glitter \\u0026 Glow (1 stuk) - Purple\",\"price\":\"14.01\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":16,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH39655-MVAR-PURPLE\",\"name\":\"Needoh - Gumdrop - Purple\",\"price\":\"6.57\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":17,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40306-GREEN\",\"name\":\"Needoh - Fuzz Ball Wonder Waves (1 stuk) - Green\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":18,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40014-BLUE\",\"name\":\"Needoh - Dream Drop (1 stuk) - Blue\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":19,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40014-PINK\",\"name\":\"Needoh - Dream Drop (1 stuk) - Pink\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":20,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40305-GROEN\",\"name\":\"Needoh - Nice Cube Glow In The Dark (1 stuk) - Groen\",\"price\":\"7.40\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":21,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40433-MVAR-BLUE\",\"name\":\"Needoh - Nice Berg Swirl - Blue\",\"price\":\"13.18\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":22,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40308-GEEL\",\"name\":\"Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Geel\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"},{\"position\":23,\"list\":\"products\",\"quantity\":1,\"id\":\"NDH40308-ROZE\",\"name\":\"Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Roze\",\"price\":\"4.92\",\"brand\":\"Needoh\",\"category\":\"Squishies\"}]} }); {\"@context\":\"https://schema.org\",\"@graph\":[{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"name\":\"Home\",\"item\":\"https://www.spellenrijk.nl/\",\"position\":1},{\"@type\":\"ListItem\",\"name\":\"Merken\",\"item\":\"https://www.spellenrijk.nl/merken.html\",\"position\":2}]}]} Needoh - kopen bij Spellenrijk.nl Menu",
+          "url": "https://www.spellenrijk.nl/merk/1007/needoh.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Cool Cats Ball (1 stuk) - Pink",
+          "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Classic Needoh Balls (1 stuk) - Paars",
+          "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Classic Needoh Balls (1 stuk) - Blauw",
+          "url": "https://www.spellenrijk.nl/artikel/50653/needoh-classic-needoh-balls-1-stuk-blauw.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Classic Needoh Balls (1 stuk) - Roze",
+          "url": "https://www.spellenrijk.nl/artikel/50871/needoh-classic-needoh-balls-1-stuk-roze.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Classic Needoh Balls (1 stuk) - Oranje",
+          "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Classic Needoh Balls (1 stuk) - Groen",
+          "url": "https://www.spellenrijk.nl/artikel/50650/needoh-classic-needoh-balls-1-stuk-groen.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Cool Cats Ball (1 stuk) - Purple",
+          "url": "https://www.spellenrijk.nl/artikel/51144/needoh-cool-cats-ball-1-stuk-purple.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Cool Cats Ball (1 stuk) - Orange",
+          "url": "https://www.spellenrijk.nl/artikel/51140/needoh-cool-cats-ball-1-stuk-orange.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Cool Cats Ball (1 stuk) - Green",
+          "url": "https://www.spellenrijk.nl/artikel/51139/needoh-cool-cats-ball-1-stuk-green.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Color Changing Needoh Stretchy Stress Balls - Yellow (1 stuk)",
+          "url": "https://www.spellenrijk.nl/artikel/51066/needoh-color-changing-needoh-stretchy-stress-balls-yellow-1-stuk.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Color Changing Needoh Stretchy Stress Balls - Pink (1 stuk)",
+          "url": "https://www.spellenrijk.nl/artikel/51036/needoh-color-changing-needoh-stretchy-stress-balls-pink-1-stuk.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Color Changing Needoh Stretchy Stress Balls - Blue (1 stuk)",
+          "url": "https://www.spellenrijk.nl/artikel/51065/needoh-color-changing-needoh-stretchy-stress-balls-blue-1-stuk.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Cube (1 stuk) - Blue",
+          "url": "https://www.spellenrijk.nl/artikel/51113/needoh-nice-cube-1-stuk-blue.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Cube (1 stuk) - Purple",
+          "url": "https://www.spellenrijk.nl/artikel/51115/needoh-nice-cube-1-stuk-purple.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Cube (1 stuk) - Pink",
+          "url": "https://www.spellenrijk.nl/artikel/51114/needoh-nice-cube-1-stuk-pink.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Berg Glitter & Glow (1 stuk) - Purple",
+          "url": "https://www.spellenrijk.nl/artikel/51112/needoh-nice-berg-glitter-glow-1-stuk-purple.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Gumdrop - Purple",
+          "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Fuzz Ball Wonder Waves (1 stuk) - Green",
+          "url": "https://www.spellenrijk.nl/artikel/51130/needoh-fuzz-ball-wonder-waves-1-stuk-green.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Dream Drop (1 stuk) - Blue",
+          "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Dream Drop (1 stuk) - Pink",
+          "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Cube Glow In The Dark (1 stuk) - Groen",
+          "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Nice Berg Swirl - Blue",
+          "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Geel",
+          "url": "https://www.spellenrijk.nl/artikel/50647/needoh-mello-mallo-color-changing-marshmellow-1-stuk-geel.html",
+          "status": "error"
+        },
+        {
+          "name": "Needoh - Mello Mallo Color-Changing Marshmellow (1 stuk) - Roze",
+          "url": "https://www.spellenrijk.nl/artikel/50648/needoh-mello-mallo-color-changing-marshmellow-1-stuk-roze.html",
+          "status": "error"
+        }
+      ]
     },
     {
       "name": "Dráček",
