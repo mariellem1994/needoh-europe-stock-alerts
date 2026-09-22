@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 01:30",
+  "last_checked": "23 Sep 2026, 01:41",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -82,18 +82,18 @@
           "status": "unknown"
         },
         {
-          "name": "4508867 schylling needoh mackaci antistresove srdce.html",
-          "url": "https://www.megaknihy.cz/hry/4508867-schylling-needoh-mackaci-antistresove-srdce.html?search_pos=7&query_text=Needoh",
-          "status": "unknown"
-        },
-        {
           "name": "3861110 schylling mackaci antistresovy mini micek needoh 3 ks.html",
-          "url": "https://www.megaknihy.cz/antistresove-micky/3861110-schylling-mackaci-antistresovy-mini-micek-needoh-3-ks.html?search_pos=8&query_text=Needoh",
+          "url": "https://www.megaknihy.cz/antistresove-micky/3861110-schylling-mackaci-antistresovy-mini-micek-needoh-3-ks.html?search_pos=7&query_text=Needoh",
           "status": "unknown"
         },
         {
           "name": "4508224 schylling needoh mackaci antistresove kocicky.html",
-          "url": "https://www.megaknihy.cz/hry/4508224-schylling-needoh-mackaci-antistresove-kocicky.html?search_pos=9&query_text=Needoh",
+          "url": "https://www.megaknihy.cz/hry/4508224-schylling-needoh-mackaci-antistresove-kocicky.html?search_pos=8&query_text=Needoh",
+          "status": "unknown"
+        },
+        {
+          "name": "4508867 schylling needoh mackaci antistresove srdce.html",
+          "url": "https://www.megaknihy.cz/hry/4508867-schylling-needoh-mackaci-antistresove-srdce.html?search_pos=9&query_text=Needoh",
           "status": "unknown"
         },
         {
