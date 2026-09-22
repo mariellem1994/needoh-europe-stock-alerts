@@ -15,6 +15,8 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
+print("🛡️ SAFE STOCK MODE V5 active — unverified stock will NOT trigger Telegram alerts.")
+
 
 sent_alert_keys = set()
 
@@ -2105,9 +2107,7 @@ def get_extra_needoh_products(shop):
             match_end + 1000
         )
 
-        status = infer_extra_stock(
-            page[section_start:section_end]
-        )
+        status = "unknown"
 
         products_found.append({
             "name": name,
@@ -2253,6 +2253,7 @@ def check_extra_needoh_shop(
         if (
             not catalogue_baseline_run
             and previous_product is None
+            and product.get("status") == "in_stock"
         ):
 
             send_telegram(
@@ -2265,7 +2266,17 @@ def check_extra_needoh_shop(
             )
 
             print(
-                f"🆕 NEW {shop['name']} PRODUCT: {product['name']}"
+                f"🆕 NEW {shop['name']} PRODUCT: {product['name']} (confirmed in stock)"
+            )
+
+        elif (
+            not catalogue_baseline_run
+            and previous_product is None
+            and product.get("status") != "in_stock"
+        ):
+            print(
+                f"⚪ NEW {shop['name']} PRODUCT DISCOVERED BUT STOCK NOT VERIFIED: "
+                f"{product['name']} — no Telegram alert"
             )
 
         if previous_product is not None:
@@ -2274,8 +2285,10 @@ def check_extra_needoh_shop(
                 "status"
             )
 
+            # Strict stock alert: both sides must be trustworthy.
+            # UNKNOWN -> IN STOCK does NOT alert. Only confirmed OUT -> confirmed IN.
             if (
-                product["status"] == "in_stock"
+                product.get("status") == "in_stock"
                 and previous_status == "out_of_stock"
             ):
 
