@@ -265,6 +265,7 @@ def check_stock(url):
 
         return None
 
+
 def check_intertoys_stock(url):
 
     try:
@@ -291,8 +292,6 @@ def check_intertoys_stock(url):
         page_lower = page.lower()
 
 
-        # Intertoys explicitly says these products
-        # are only available in physical stores.
         if (
             "alleen in de winkel te koop"
             in page_lower
@@ -301,8 +300,6 @@ def check_intertoys_stock(url):
             return "out_of_stock"
 
 
-        # We ONLY count the product as online stock
-        # when Intertoys offers home delivery.
         if (
             "thuisbezorgen"
             in page_lower
@@ -311,8 +308,6 @@ def check_intertoys_stock(url):
             return "in_stock"
 
 
-        # Store stock / Click & Collect alone
-        # does NOT count as online stock.
         return "out_of_stock"
 
 
@@ -323,6 +318,7 @@ def check_intertoys_stock(url):
         )
 
         return "error"
+
 
 def check_smyths_stock(url):
 
@@ -350,12 +346,6 @@ def check_smyths_stock(url):
         page_lower = page.lower()
 
 
-        # Smyths distinguishes online/home delivery
-        # from local store availability.
-        #
-        # We only want genuine online purchasing.
-        # Store-only availability must NOT trigger an alert.
-
         if (
             "home delivery"
             in page_lower
@@ -377,6 +367,7 @@ def check_smyths_stock(url):
         )
 
         return "error"
+
 
 def check_dreamland_stock(url):
 
@@ -421,6 +412,7 @@ def check_dreamland_stock(url):
 
         return "error"
 
+
 def check_houten_stock(url):
 
     try:
@@ -446,7 +438,6 @@ def check_houten_stock(url):
 
         page_lower = page.lower()
 
-        # Shopify usually exposes availability in the product page
         if (
             '"available":true' in page_lower
             or
@@ -468,6 +459,7 @@ def check_houten_stock(url):
         print(f"⚠️ Houten Onderwijsmateriaal error: {e}")
 
         return "error"
+
 
 def check_drukke_mamas_collection():
 
@@ -499,6 +491,7 @@ def check_drukke_mamas_collection():
         print(f"⚠️ Drukke Mama's error: {e}")
 
         return None
+
 
 def get_drukke_mamas_needoh_products(page):
 
@@ -581,6 +574,7 @@ def get_drukke_mamas_needoh_products(page):
 
     return unique_products
 
+
 def get_spadt_needoh_products(page):
 
     if not page:
@@ -650,7 +644,7 @@ def get_spadt_needoh_products(page):
             unique_products.append(product)
 
     return unique_products
-    
+
 
 def check_spadt_collection():
 
@@ -683,18 +677,6 @@ def check_spadt_collection():
 
         return None
 
-    unique_products = []
-
-    seen_urls = set()
-
-    for product in products:
-
-        if product["url"] not in seen_urls:
-
-            seen_urls.add(product["url"])
-            unique_products.append(product)
-
-    return unique_products
 
 def check_spadt_product_stock(url):
 
@@ -755,6 +737,7 @@ def check_spadt_product_stock(url):
 
         return "error"
 
+
 def check_mamiee_collection():
 
     try:
@@ -785,6 +768,7 @@ def check_mamiee_collection():
         print(f"⚠️ Mamiee error: {e}")
 
         return None
+
 
 def check_mamiee_product_stock(url):
 
@@ -836,6 +820,7 @@ def check_mamiee_product_stock(url):
         print(f"⚠️ Mamiee product error: {e}")
 
         return "error"
+
 
 def get_mamiee_needoh_products(page):
 
@@ -915,6 +900,7 @@ def get_mamiee_needoh_products(page):
 
     return unique_products
 
+
 dracek_collection_url = "https://www.dracek.cz/vyhledavani?search=Needoh"
 
 
@@ -948,6 +934,7 @@ def check_dracek_collection():
         print(f"⚠️ Dráček error: {e}")
 
         return None
+
 
 def check_dracek_product_stock(url):
 
@@ -993,356 +980,6 @@ def check_dracek_product_stock(url):
 
         return "error"
 
-def check_spellenrijk_product_stock(url):
-
-    try:
-
-        import http.cookiejar
-
-        cookie_jar = http.cookiejar.CookieJar()
-
-        opener = urllib.request.build_opener(
-            urllib.request.HTTPCookieProcessor(cookie_jar)
-        )
-
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-            "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
-            "Referer": "https://www.spellenrijk.nl/",
-            "Upgrade-Insecure-Requests": "1",
-            "Sec-Fetch-Dest": "document",
-            "Sec-Fetch-Mode": "navigate",
-            "Sec-Fetch-Site": "same-origin"
-        }
-
-        homepage_request = urllib.request.Request(
-            "https://www.spellenrijk.nl/",
-            headers=headers
-        )
-
-        with opener.open(
-            homepage_request,
-            timeout=20
-        ) as response:
-
-            response.read()
-
-        product_request = urllib.request.Request(
-            url,
-            headers=headers
-        )
-
-        with opener.open(
-            product_request,
-            timeout=20
-        ) as response:
-
-            page = response.read().decode(
-                "utf-8",
-                errors="ignore"
-            )
-
-        page_lower = page.lower()
-
-        if (
-            "niet leverbaar" in page_lower
-            or
-            "uitverkocht" in page_lower
-            or
-            "tijdelijk uitverkocht" in page_lower
-        ):
-            return "out_of_stock"
-
-        if (
-            "in winkelwagen" in page_lower
-            or
-            "toevoegen aan winkelwagen" in page_lower
-            or
-            "bestellen" in page_lower
-        ):
-            return "in_stock"
-
-        return "out_of_stock"
-
-    except Exception as e:
-
-        print(
-            f"⚠️ Spellenrijk product error: {e}"
-        )
-
-        return "error"
-
-
-def get_spellenrijk_needoh_products():
-
-    products = [
-
-        {
-            "name": "Needoh - Cool Cats Ball (1 stuk) - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html"
-        },
-        {
-            "name": "Needoh - Classic Needoh Balls (1 stuk) - Paars",
-            "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html"
-        },
-        {
-            "name": "Needoh - Classic Needoh Balls (1 stuk) - Blauw",
-            "url": "https://www.spellenrijk.nl/artikel/50653/needoh-classic-needoh-balls-1-stuk-blauw.html"
-        },
-        {
-            "name": "Needoh - Classic Needoh Balls (1 stuk) - Roze",
-            "url": "https://www.spellenrijk.nl/artikel/50871/needoh-classic-needoh-balls-1-stuk-roze.html"
-        },
-        {
-            "name": "Needoh - Classic Needoh Balls (1 stuk) - Oranje",
-            "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html"
-        },
-        {
-            "name": "Needoh - Classic Needoh Balls (1 stuk) - Groen",
-            "url": "https://www.spellenrijk.nl/artikel/50650/needoh-classic-needoh-balls-1-stuk-groen.html"
-        },
-        {
-            "name": "Needoh - Cool Cats Ball (1 stuk) - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51144/needoh-cool-cats-ball-1-stuk-purple.html"
-        },
-        {
-            "name": "Needoh - Cool Cats Ball (1 stuk) - Orange",
-            "url": "https://www.spellenrijk.nl/artikel/51140/needoh-cool-cats-ball-1-stuk-orange.html"
-        },
-        {
-            "name": "Needoh - Cool Cats Ball (1 stuk) - Green",
-            "url": "https://www.spellenrijk.nl/artikel/51139/needoh-cool-cats-ball-1-stuk-green.html"
-        },
-        {
-            "name": "Needoh - Color Changing Needoh - Yellow",
-            "url": "https://www.spellenrijk.nl/artikel/51066/needoh-color-changing-needoh-stretchy-stress-balls-yellow-1-stuk.html"
-        },
-        {
-            "name": "Needoh - Color Changing Needoh - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51036/needoh-color-changing-needoh-stretchy-stress-balls-pink-1-stuk.html"
-        },
-        {
-            "name": "Needoh - Color Changing Needoh - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51065/needoh-color-changing-needoh-stretchy-stress-balls-blue-1-stuk.html"
-        },
-        {
-            "name": "Needoh - Nice Cube - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51113/needoh-nice-cube-1-stuk-blue.html"
-        },
-        {
-            "name": "Needoh - Nice Cube - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51115/needoh-nice-cube-1-stuk-purple.html"
-        },
-        {
-            "name": "Needoh - Nice Cube - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51114/needoh-nice-cube-1-stuk-pink.html"
-        },
-        {
-            "name": "Needoh - Nice Berg Glitter & Glow - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51112/needoh-nice-berg-glitter-glow-1-stuk-purple.html"
-        },
-        {
-            "name": "Needoh - Gumdrop - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html"
-        },
-        {
-            "name": "Needoh - Fuzz Ball Wonder Waves - Green",
-            "url": "https://www.spellenrijk.nl/artikel/51130/needoh-fuzz-ball-wonder-waves-1-stuk-green.html"
-        },
-        {
-            "name": "Needoh - Dream Drop - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html"
-        },
-        {
-            "name": "Needoh - Dream Drop - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html"
-        },
-        {
-            "name": "Needoh - Nice Cube Glow In The Dark - Groen",
-            "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html"
-        },
-        {
-            "name": "Needoh - Nice Berg Swirl - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html"
-        },
-        {
-            "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Geel",
-            "url": "https://www.spellenrijk.nl/artikel/50647/needoh-mello-mallo-color-changing-marshmellow-1-stuk-geel.html"
-        },
-        {
-            "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Roze",
-            "url": "https://www.spellenrijk.nl/artikel/50648/needoh-mello-mallo-color-changing-marshmellow-1-stuk-roze.html"
-        },
-
-        {
-            "name": "Needoh - Nice Berg Glitter & Glow - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51111/needoh-nice-berg-glitter-glow-1-stuk-pink.html"
-        },
-        {
-            "name": "Needoh - Glitter & Glow Nice Cube - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html"
-        },
-        {
-            "name": "Needoh - Niceberg Needoh",
-            "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html"
-        },
-        {
-            "name": "Needoh - Mello Mallo Color-Changing Marshmellow - Blauw",
-            "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html"
-        },
-        {
-            "name": "Needoh - Nice Cube Glow In The Dark - Blauw",
-            "url": "https://www.spellenrijk.nl/artikel/50658/needoh-nice-cube-glow-in-the-dark-1-stuk-blauw.html"
-        },
-        {
-            "name": "Needoh - Super Fuzz Ball - Green",
-            "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html"
-        },
-        {
-            "name": "Needoh - Nice Berg Swirl - Orange",
-            "url": "https://www.spellenrijk.nl/artikel/51852/needoh-nice-berg-swirl-orange.html"
-        },
-        {
-            "name": "Needoh - Nice Berg Swirl - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51854/needoh-nice-berg-swirl-purple.html"
-        },
-        {
-            "name": "Needoh - Gumdrop - Orange",
-            "url": "https://www.spellenrijk.nl/artikel/51858/needoh-gumdrop-orange.html"
-        },
-        {
-            "name": "Needoh - Nice Cube Glow In The Dark - Oranje",
-            "url": "https://www.spellenrijk.nl/artikel/50656/needoh-nice-cube-glow-in-the-dark-1-stuk-oranje.html"
-        },
-        {
-            "name": "Needoh - Nice Cube Glow In The Dark - Roze",
-            "url": "https://www.spellenrijk.nl/artikel/50657/needoh-nice-cube-glow-in-the-dark-1-stuk-roze.html"
-        },
-        {
-            "name": "Needoh - Glitter & Glow Nice Cube - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51856/needoh-glitter-glow-nice-cube-purple.html"
-        },
-        {
-            "name": "Needoh - Fuzz Ball Wonder Waves - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html"
-        },
-        {
-            "name": "Needoh - Dream Drop - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51134/needoh-dream-drop-1-stuk-purple.html"
-        },
-        {
-            "name": "Needoh - Super Fuzz Ball - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51848/needoh-super-fuzz-ball-purple.html"
-        },
-        {
-            "name": "Needoh - Nice Berg Glitter & Glow - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51110/needoh-nice-berg-glitter-glow-1-stuk-blue.html"
-        },
-        {
-            "name": "Needoh - Gumdrop - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51859/needoh-gumdrop-pink.html"
-        },
-        {
-            "name": "Needoh - Fuzz Ball Wonder Waves - Purple",
-            "url": "https://www.spellenrijk.nl/artikel/51116/needoh-fuzz-ball-wonder-waves-1-stuk-purple.html"
-        },
-        {
-            "name": "Needoh - Glitter & Glow Nice Cube - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/51855/needoh-glitter-glow-nice-cube-blue.html"
-        },
-        {
-            "name": "Needoh - Gumdrop - Blue",
-            "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html"
-        },
-        {
-            "name": "Needoh - Snow Ball Crunch",
-            "url": "https://www.spellenrijk.nl/artikel/51141/needoh-snow-ball-crunch-1-stuk.html"
-        },
-        {
-            "name": "Needoh - Super Fuzz Ball - Pink",
-            "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html"
-        },
-        {
-            "name": "Needoh - Fuzz Ball Wonder Waves - Orange",
-            "url": "https://www.spellenrijk.nl/artikel/51131/needoh-fuzz-ball-wonder-waves-1-stuk-orange.html"
-        }
-    ]
-
-    print(
-        f"Spellenrijk loaded {len(products)} NeeDoh products"
-    )
-
-    return products
-
-
-def get_dracek_needoh_products(page):
-
-    if not page:
-        return []
-
-    import re
-    from html import unescape
-
-    products = []
-
-    matches = re.findall(
-        r'href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',
-        page,
-        re.IGNORECASE | re.DOTALL
-    )
-
-    for url, content in matches:
-
-        text = re.sub("<.*?>", " ", content)
-        text = unescape(text)
-        text = " ".join(text.split())
-
-        combined_text = (text + " " + url).lower()
-
-        if "needoh" not in combined_text:
-            continue
-
-        if text.lower().strip() in (
-            "needoh",
-            "search",
-            "hledat",
-            "vyhledávání - needoh"
-        ):
-            continue
-
-        if len(text) < 5:
-            continue
-
-        if len(text) > 150:
-            continue
-
-        if url.startswith("/"):
-            full_url = "https://www.dracek.cz" + url
-
-        elif url.startswith("http"):
-            full_url = url
-
-        else:
-            continue
-
-        products.append({
-            "name": text,
-            "url": full_url
-        })
-
-    unique_products = []
-
-    seen_urls = set()
-
-    for product in products:
-
-        if product["url"] not in seen_urls:
-
-            seen_urls.add(product["url"])
-            unique_products.append(product)
-
-    return unique_products
 
 products = [
 
@@ -1517,6 +1154,7 @@ products = [
 
 ]
 
+
 intertoys_products = [
 
     {
@@ -1581,6 +1219,7 @@ intertoys_products = [
 
 ]
 
+
 smyths_products = [
 
     {
@@ -1630,6 +1269,7 @@ smyths_products = [
 
 ]
 
+
 dreamland_products = [
     {
         "name": "NeeDoh Niceberg",
@@ -1644,6 +1284,7 @@ dreamland_products = [
         "url": "https://www.dreamland.nl/producten/needoh-nice-berg-glitter-glow/02356860"
     }
 ]
+
 
 houten_products = [
     {
@@ -1676,11 +1317,13 @@ houten_products = [
     }
 ]
 
+
 drukke_mamas_collection_url = "https://drukkemamas.be/collections/needoh"
 
 spadt_collection_url = "https://spadt.be/merken/schylling/"
 
 mamiee_collection_url = "https://www.mamiee.cz/search?phrase=Needoh"
+
 
 lobbes_products = [
 
@@ -1729,6 +1372,7 @@ lobbes_products = [
 
 
 previous_radar = load_previous_radar()
+
 
 intertoys_results = []
 
@@ -1783,7 +1427,9 @@ for product in intertoys_products:
         "status": current_status
 
     })
-    smyths_results = []
+
+
+smyths_results = []
 
 for product in smyths_products:
 
@@ -1858,6 +1504,7 @@ for product in smyths_products:
 
     })
 
+
 dreamland_results = []
 
 for product in dreamland_products:
@@ -1921,6 +1568,7 @@ for product in dreamland_products:
         "status": current_status
     })
 
+
 drukke_mamas_results = []
 
 drukke_mamas_page = check_drukke_mamas_collection()
@@ -1946,6 +1594,7 @@ for product in drukke_mamas_products:
         "status": "unknown"
     })
 
+
 for product in drukke_mamas_products:
 
     previous_status = get_previous_status(
@@ -1954,13 +1603,14 @@ for product in drukke_mamas_products:
         product["name"]
     )
 
-if (
-    previous_status is None
-    and any(
-        shop["name"] == "Drukke Mama's"
-        for shop in previous_radar.get("shops", [])
-    )
-):
+    if (
+        previous_status is None
+        and previous_radar
+        and any(
+            shop["name"] == "Drukke Mama's"
+            for shop in previous_radar.get("shops", [])
+        )
+    ):
 
         send_telegram(
             f"🚨 NEW NEEDOH FOUND!\n\n"
@@ -1975,6 +1625,7 @@ if (
             f"🚨 NEW DRUKKE MAMA'S NEEDOH: "
             f"{product['name']}"
         )
+
 
 spadt_results = []
 
@@ -2029,6 +1680,7 @@ for product in spadt_products:
         "status": current_status
     })
 
+
 for product in spadt_products:
 
     previous_status = get_previous_status(
@@ -2039,6 +1691,7 @@ for product in spadt_products:
 
     if (
         previous_status is None
+        and previous_radar
         and any(
             shop["name"] == "Spadt"
             for shop in previous_radar.get("shops", [])
@@ -2084,16 +1737,19 @@ for product in mamiee_products:
     )
 
     if current_status == "in_stock":
+
         print(
             f"🟢 In stock: {product['name']}"
         )
 
     elif current_status == "out_of_stock":
+
         print(
             f"🔴 Out of stock: {product['name']}"
         )
 
     else:
+
         print(
             f"⚠️ Could not check: {product['name']}"
         )
@@ -2129,6 +1785,7 @@ for product in mamiee_products:
         "status": current_status
     })
 
+
 for product in mamiee_products:
 
     previous_status = get_previous_status(
@@ -2139,6 +1796,7 @@ for product in mamiee_products:
 
     if (
         previous_status is None
+        and previous_radar
         and any(
             shop["name"] == "Mamiee"
             for shop in previous_radar.get("shops", [])
@@ -2158,68 +1816,8 @@ for product in mamiee_products:
             f"🚨 NEW MAMIEE NEEDOH: "
             f"{product['name']}"
         )
-        
-spellenrijk_products = get_spellenrijk_needoh_products()
 
-spellenrijk_results = []
-for product in spellenrijk_products:
 
-    print(
-        f"Checking Spellenrijk: {product['name']}"
-    )
-
-    current_status = check_spellenrijk_product_stock(
-        product["url"]
-    )
-
-    previous_status = get_previous_status(
-        previous_radar,
-        "Spellenrijk",
-        product["name"]
-    )
-
-    if (
-        current_status == "in_stock"
-        and previous_status == "out_of_stock"
-    ):
-
-        send_telegram(
-            f"🚨 NEEDOH STOCK ALERT!\n\n"
-            f"➡️ {product['name']}\n"
-            f"🛍️ Spellenrijk\n"
-            f"🇳🇱 Netherlands\n\n"
-            f"🟢 BACK IN STOCK ONLINE!\n\n"
-            f"🔗 {product['url']}"
-        )
-
-        print(
-            f"🚨 NEW SPELLENRIJK STOCK: {product['name']}"
-        )
-
-    if current_status == "in_stock":
-
-        print(
-            f"🟢 In stock: {product['name']}"
-        )
-
-    elif current_status == "out_of_stock":
-
-        print(
-            f"🔴 Out of stock: {product['name']}"
-        )
-
-    else:
-
-        print(
-            f"⚠️ Could not check: {product['name']}"
-        )
-
-    spellenrijk_results.append({
-        "name": product["name"],
-        "url": product["url"],
-        "status": current_status
-    })
-    
 dracek_results = []
 
 dracek_page = check_dracek_collection()
@@ -2268,16 +1866,19 @@ for product in dracek_products:
         )
 
     if current_status == "in_stock":
+
         print(
             f"🟢 In stock: {product['name']}"
         )
 
     elif current_status == "out_of_stock":
+
         print(
             f"🔴 Out of stock: {product['name']}"
         )
 
     else:
+
         print(
             f"⚠️ Could not check: {product['name']}"
         )
@@ -2287,7 +1888,8 @@ for product in dracek_products:
         "url": product["url"],
         "status": current_status
     })
-    
+
+
 houten_results = []
 
 for product in houten_products:
@@ -2350,7 +1952,8 @@ for product in houten_products:
         "url": product["url"],
         "status": current_status
     })
-    
+
+
 print(
     f"🔎 Checking {len(products)} Needoh products..."
 )
@@ -2486,69 +2089,63 @@ radar_data = {
     "last_checked": current_time,
 
     "shops": [
-        {
-    "name": "Drukke Mama's",
-    "country": "🇧🇪 Belgium",
-    "products": drukke_mamas_results
-},
-                {
-    "name": "Spadt",
-    "country": "🇧🇪 Belgium",
-    "products": spadt_results
-},
-        {
-    "name": "Mamiee",
-    "country": "🇨🇿 Czech Republic",
-    "products": mamiee_results
-},
-        {
-    "name": "Spellenrijk",
-    "country": "🇳🇱 Netherlands",
-    "products": spellenrijk_results
-},
-        {
-    "name": "Dráček",
-    "country": "🇨🇿 Czech Republic",
-    "products": dracek_results
-},
-        {
-    "name": "Houten Onderwijsmateriaal",
-    "country": "🇧🇪 Belgium",
-    "products": houten_results
-},
-        {
-    "name": "DreamLand",
-    "country": "🇳🇱 Netherlands",
-    "products": dreamland_results
-},
-        {
-    "name": "Smyths Toys",
-    "country": "🇳🇱 Netherlands",
-    "products": smyths_results
-},
-                {
-            "name": "Intertoys",
 
-            "country": "🇳🇱 Netherlands",
-
-            "products": intertoys_results
-
+        {
+            "name": "Drukke Mama's",
+            "country": "🇧🇪 Belgium",
+            "products": drukke_mamas_results
         },
 
         {
+            "name": "Spadt",
+            "country": "🇧🇪 Belgium",
+            "products": spadt_results
+        },
 
-            "name": "Toys42Hands",
+        {
+            "name": "Mamiee",
+            "country": "🇨🇿 Czech Republic",
+            "products": mamiee_results
+        },
 
+        {
+            "name": "Dráček",
+            "country": "🇨🇿 Czech Republic",
+            "products": dracek_results
+        },
+
+        {
+            "name": "Houten Onderwijsmateriaal",
+            "country": "🇧🇪 Belgium",
+            "products": houten_results
+        },
+
+        {
+            "name": "DreamLand",
             "country": "🇳🇱 Netherlands",
+            "products": dreamland_results
+        },
 
+        {
+            "name": "Smyths Toys",
+            "country": "🇳🇱 Netherlands",
+            "products": smyths_results
+        },
+
+        {
+            "name": "Intertoys",
+            "country": "🇳🇱 Netherlands",
+            "products": intertoys_results
+        },
+
+        {
+            "name": "Toys42Hands",
+            "country": "🇳🇱 Netherlands",
             "products": [
 
                 {
-
                     "name": product["name"],
-
                     "url": product["url"],
-
                     "status": (
 
                         "in_stock"
@@ -2576,15 +2173,10 @@ radar_data = {
 
         },
 
-
         {
-
             "name": "Lobbes",
-
             "country": "🇳🇱 Netherlands",
-
             "products": lobbes_results
-
         }
 
     ]
@@ -2612,11 +2204,13 @@ lobbes_in_stock = sum(
     if product["status"] == "in_stock"
 )
 
+
 lobbes_out_of_stock = sum(
     1
     for product in lobbes_results
     if product["status"] == "out_of_stock"
 )
+
 
 lobbes_errors = sum(
     1
@@ -2626,6 +2220,7 @@ lobbes_errors = sum(
 
 
 lobbes_statuses = []
+
 
 for product in lobbes_results:
 
@@ -2679,7 +2274,6 @@ radar_message = (
     + f"🕐 Last checked: {current_time}"
 
 )
-
 
 
 print(
