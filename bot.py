@@ -7,6 +7,7 @@ from html import unescape
 from urllib.parse import urljoin
 from datetime import datetime
 from zoneinfo import ZoneInfo
+import time
 
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -15,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ SAFE STOCK MODE V5 active — unverified stock will NOT trigger Telegram alerts.")
+print("🛡️ VERIFIED STOCK MODE V6 active — product-page confirmation required for non-Shopify stock alerts.")
 
 
 sent_alert_keys = set()
@@ -2164,6 +2165,133 @@ def find_previous_extra_product(
     return None
 
 
+
+def verify_non_shopify_product_stock(shop, product):
+    """
+    Conservative product-page stock verifier for selected non-Shopify shops.
+    Returns in_stock / out_of_stock / unknown.
+    Search/category-page text is never accepted as stock proof.
+    """
+
+    supported_shops = {
+        "Dvě děti CZ",
+        "Dve Deti SK",
+        "2KidsToys",
+        "MimiMarket",
+    }
+
+    if shop.get("name") not in supported_shops:
+        return "unknown"
+
+    url = product.get("url", "")
+
+    if not url:
+        return "unknown"
+
+    try:
+        page = fetch_extra_shop_page(url)
+    except Exception as error:
+        print(
+            f"⚠️ {shop['name']}: product-page verification failed for "
+            f"{product.get('name', 'unknown product')}: {error}"
+        )
+        return "unknown"
+
+    if not page:
+        return "unknown"
+
+    # Flatten enough markup/markdown to make exact phrases easier to detect.
+    page_text = re.sub(r"<[^>]+>", " ", page)
+    page_text = unescape(page_text)
+    page_text = re.sub(r"\s+", " ", page_text).strip().lower()
+
+    # Strong OUT signals first. These phrases mean the item is not currently
+    # orderable from the shop, even if the page gives an estimated future
+    # delivery time.
+    out_markers = [
+        "produkt bohužel nyní není v prodeji",
+        "produkt bohuzel nyni neni v prodeji",
+        "produkt bohužiaľ teraz nie je v predaji",
+        "produkt bohuzial teraz nie je v predaji",
+        "není skladem",
+        "neni skladem",
+        "není dostupné",
+        "neni dostupne",
+        "nie je skladom",
+        "nie je dostupné",
+        "nie je dostupne",
+        "vyprodáno",
+        "vyprodano",
+        "vypredané",
+        "vypredane",
+        "out of stock",
+        "sold out",
+        "currently unavailable",
+        "not available",
+        "nedostupné",
+        "nedostupne",
+    ]
+
+    if any(marker in page_text for marker in out_markers):
+        return "out_of_stock"
+
+    # Future/estimated delivery is NOT treated as in stock.
+    future_markers = [
+        "obvyklá doba dodání",
+        "obvykla doba dodani",
+        "odhadovaná doba dodání",
+        "odhadovana doba dodani",
+        "estimated delivery time",
+        "doba dodania do",
+        "na cestě do skladu",
+        "na ceste do skladu",
+        "na ceste na sklad",
+    ]
+
+    # Strong IN signals. Require explicit quantity/stock wording from the
+    # product page rather than a generic "available" or "buy" button.
+    in_patterns = [
+        r"\bskladem\s+(?:\d+|1000\s+a\s+více)\s*ks\b",
+        r"\bskladem\s+poslední\s+kus\b",
+        r"\bposlední\s+kus\b",
+        r"\bskladom\s+\d+\s*ks\b",
+        r"\b\d+\s*(?:pcs|pc)\s+in\s+stock\b",
+        r"\bin\s+stock\s*:\s*\d+\b",
+        r"\b\d+\s+ks\s+skladem\b",
+    ]
+
+    if any(re.search(pattern, page_text) for pattern in in_patterns):
+        return "in_stock"
+
+    if any(marker in page_text for marker in future_markers):
+        return "out_of_stock"
+
+    return "unknown"
+
+
+def apply_verified_extra_stock(shop, products):
+    """
+    Shopify keeps its structured variant availability.
+    Selected non-Shopify stores are checked on each product page.
+    Everything else stays UNKNOWN.
+    """
+
+    if shop.get("shopify"):
+        return products
+
+    verified = []
+
+    for product in products:
+        item = dict(product)
+        item["status"] = verify_non_shopify_product_stock(
+            shop,
+            item
+        )
+        verified.append(item)
+
+    return verified
+
+
 def check_extra_needoh_shop(
     shop,
     previous_radar
@@ -2176,6 +2304,31 @@ def check_extra_needoh_shop(
     products_found = get_extra_needoh_products(
         shop
     )
+
+    products_found = apply_verified_extra_stock(
+        shop,
+        products_found
+    )
+
+    confirmed_in = sum(
+        1 for product in products_found
+        if product.get("status") == "in_stock"
+    )
+    confirmed_out = sum(
+        1 for product in products_found
+        if product.get("status") == "out_of_stock"
+    )
+    unverified = sum(
+        1 for product in products_found
+        if product.get("status") == "unknown"
+    )
+
+    if products_found:
+        print(
+            f"🔐 {shop['name']}: {confirmed_in} confirmed in stock, "
+            f"{confirmed_out} confirmed out of stock, "
+            f"{unverified} unverified"
+        )
 
     previous_products = get_previous_shop_products(
         previous_radar,
@@ -2274,10 +2427,9 @@ def check_extra_needoh_shop(
             and previous_product is None
             and product.get("status") != "in_stock"
         ):
-            print(
-                f"⚪ NEW {shop['name']} PRODUCT DISCOVERED BUT STOCK NOT VERIFIED: "
-                f"{product['name']} — no Telegram alert"
-            )
+            # Keep the GitHub Actions log readable. Unverified discoveries are
+            # retained in radar.json but never produce Telegram alerts.
+            pass
 
         if previous_product is not None:
 
