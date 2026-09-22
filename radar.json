@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 12:53",
+  "last_checked": "22 Sep 2026, 13:02",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -14,7 +14,13 @@
     {
       "name": "Megaknihy",
       "country": "🇨🇿 Czech Republic",
-      "products": []
+      "products": [
+        {
+          "name": "Schylling Needoh",
+          "url": "https://www.megaknihy.cz/51463_schylling-needoh",
+          "status": "unknown"
+        }
+      ]
     },
     {
       "name": "Dvě děti CZ",
@@ -780,47 +786,47 @@
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-teenie-squeeze-hearts?_pos=12&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knetball-stickums-needoh?_pos=12&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glow-in-the-dark-needoh-asst?_pos=13&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-teenie-squeeze-hearts?_pos=13&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sinnliches-quetschen-nice-ice-baby-needoh?_pos=14&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-glow-in-the-dark-needoh-asst?_pos=14&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-stickums-needoh?_pos=15&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sinnliches-quetschen-nice-ice-baby-needoh?_pos=15&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-cube-needoh?_pos=16&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-super-needoh-ripples?_pos=16&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-klassischer-needoh?_pos=17&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-cube-needoh?_pos=17&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-hot-shots-football-needoh?_pos=18&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-klassischer-needoh?_pos=18&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-squeeze-hearts?_pos=19&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-hot-shots-football-needoh?_pos=19&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-super-needoh-ripples?_pos=20&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-squeeze-hearts?_pos=20&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
@@ -830,17 +836,17 @@
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-polar-glow-penguin-needoh?_pos=22&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-gumdrop-needoh?_pos=22&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-rainbow-teenie-needoh-6-stueck?_pos=23&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-polar-glow-penguin-needoh?_pos=23&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-gumdrop-needoh?_pos=24&_sid=3adf7c5af&_ss=r",
+          "url": "https://tublu.at/products/schylling-sensorischer-knete-rainbow-teenie-needoh-6-stueck?_pos=24&_sid=3adf7c5af&_ss=r",
           "status": "out_of_stock"
         }
       ]
@@ -1633,102 +1639,102 @@
       "products": [
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/teenie-singles-nice-ice-baby-needoh-48?_pos=26&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/teenie-singles-nice-ice-baby-needoh-48?_pos=28&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/needoh-dream-drop-fidget-toy-styles-vary?_pos=27&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/needoh-dream-drop-fidget-toy-styles-vary?_pos=29&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/polar-glow-penguin-needoh-12?_pos=28&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/polar-glow-penguin-needoh-12?_pos=30&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/nice-cube-swirl-needoh-12?_pos=29&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/nice-cube-swirl-needoh-12?_pos=31&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/rainboh-teenie-needoh-fidget-toy?_pos=30&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/rainboh-teenie-needoh-fidget-toy?_pos=32&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/color-change-nee-doh-ball?_pos=31&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/color-change-nee-doh-ball?_pos=33&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/gumdrop-needoh-12?_pos=32&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/gumdrop-needoh-12?_pos=34&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/needoh-booper-12?_pos=33&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/needoh-booper-12?_pos=35&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/niceberg-needoh-6?_pos=34&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/niceberg-needoh-6?_pos=36&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Snow Ball Crunch Fidget Toy",
-          "url": "https://www.booghe.co.uk/products/snow-ball-crunch-fidget-toy?_pos=35&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/snow-ball-crunch-fidget-toy?_pos=37&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/panic-pete-needoh-12?_pos=36&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/panic-pete-needoh-12?_pos=38&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/needoh-12?_pos=37&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/needoh-12?_pos=39&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/mello-mallo-needoh-12?_pos=38&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/mello-mallo-needoh-12?_pos=40&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/teenie-needoh-fidget-toy?_pos=39&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/teenie-needoh-fidget-toy?_pos=41&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/teenie-jack-glow-lanterns-needoh-12?_pos=40&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/teenie-jack-glow-lanterns-needoh-12?_pos=42&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/jack-glow-lantern-needoh-12?_pos=41&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/jack-glow-lantern-needoh-12?_pos=43&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/swirl-needoh-fidget-toy-styles-vary?_pos=42&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/swirl-needoh-fidget-toy-styles-vary?_pos=44&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/ginger-glowman-needoh-12?_pos=43&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/ginger-glowman-needoh-12?_pos=45&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/schylling-s-teenie-needoh-cool-cats-fidget-toy?_pos=44&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/schylling-s-teenie-needoh-cool-cats-fidget-toy?_pos=46&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - \" class=\"productitem--image-alternate\" > \" class=\"productitem--image-primary\" > Sold out",
-          "url": "https://www.booghe.co.uk/products/sploot-splat-needoh-12?_pos=45&_sid=0f21c99e6&_ss=r",
+          "url": "https://www.booghe.co.uk/products/sploot-splat-needoh-12?_pos=47&_sid=1df6f0f0b&_ss=r",
           "status": "out_of_stock"
         }
       ]
