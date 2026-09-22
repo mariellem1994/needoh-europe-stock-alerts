@@ -1046,12 +1046,6 @@ def check_spellenrijk_product_stock(url):
 
         return "error"
 
-spellenrijk_products = [
-    {
-        "name": "Spellenrijk NeeDoh",
-        "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
-    }
-]
 
 def get_spellenrijk_needoh_products():
 
@@ -1059,17 +1053,44 @@ def get_spellenrijk_needoh_products():
 
     try:
 
-        request = urllib.request.Request(
-            url,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
-            }
+        import http.cookiejar
+
+        cookie_jar = http.cookiejar.CookieJar()
+
+        opener = urllib.request.build_opener(
+            urllib.request.HTTPCookieProcessor(cookie_jar)
         )
 
-        with urllib.request.urlopen(
-            request,
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
+            "Referer": "https://www.spellenrijk.nl/",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "same-origin"
+        }
+
+        homepage_request = urllib.request.Request(
+            "https://www.spellenrijk.nl/",
+            headers=headers
+        )
+
+        with opener.open(
+            homepage_request,
+            timeout=20
+        ) as response:
+
+            response.read()
+
+        collection_request = urllib.request.Request(
+            url,
+            headers=headers
+        )
+
+        with opener.open(
+            collection_request,
             timeout=20
         ) as response:
 
@@ -1139,11 +1160,6 @@ def get_spellenrijk_needoh_products():
 
         return []
 
-
-def get_dracek_needoh_products(page):
-
-    if not page:
-        return []
 
 def get_dracek_needoh_products(page):
 
