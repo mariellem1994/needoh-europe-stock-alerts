@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V8.1 active — product links separated from image links.")
+print("🛡️ VERIFIED STOCK MODE V9 active — strict product-only stock verification.")
 
 
 sent_alert_keys = set()
@@ -2268,6 +2268,30 @@ def filter_real_product_links(shop, products):
     return kept
 
 
+
+def scope_stock_text_to_current_product(shop_name, page):
+    """Remove related/recommended-product sections before stock detection."""
+    if not page:
+        return page
+
+    if shop_name in {"Dvě děti CZ", "Dve Deti SK"}:
+        lowered = page.lower()
+        markers = (
+            "## podobné produkty",
+            "podobné produkty",
+            "podobne produkty",
+            "súvisiace produkty",
+            "suvisiace produkty",
+            "odporúčané produkty",
+            "odporucane produkty",
+        )
+        positions = [lowered.find(m) for m in markers if lowered.find(m) != -1]
+        if positions:
+            return page[:min(positions)]
+
+    return page
+
+
 def verify_non_shopify_product_stock(shop, product):
     """
     Conservative product-page stock verifier for selected non-Shopify shops.
@@ -2301,6 +2325,13 @@ def verify_non_shopify_product_stock(shop, product):
 
     if not page:
         return "unknown"
+
+    # IMPORTANT: remove related/recommended products first. Their stock text
+    # must never be mistaken for stock of the current NeeDoh.
+    page = scope_stock_text_to_current_product(
+        shop.get("name"),
+        page
+    )
 
     # Flatten enough markup/markdown to make exact phrases easier to detect.
     page_text = re.sub(r"<[^>]+>", " ", page)
@@ -2362,11 +2393,13 @@ def verify_non_shopify_product_stock(shop, product):
         r"\b\d+\s+ks\s+skladem\b",
     ]
 
-    if any(re.search(pattern, page_text) for pattern in in_patterns):
-        return "in_stock"
-
+    # A future/estimated delivery message belongs to the current product and
+    # must win over any stray positive stock wording.
     if any(marker in page_text for marker in future_markers):
         return "out_of_stock"
+
+    if any(re.search(pattern, page_text) for pattern in in_patterns):
+        return "in_stock"
 
     return "unknown"
 
