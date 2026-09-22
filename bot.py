@@ -16,7 +16,26 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
 
+sent_alert_keys = set()
+
+
 def send_telegram(message, button_url=None):
+
+    # Prevent the exact same Telegram message from being sent twice during
+    # one execution, even if two checker paths encounter it.
+    alert_key = message.strip()
+
+    if alert_key in sent_alert_keys:
+
+        print(
+            "ℹ️ Duplicate Telegram alert suppressed in this run."
+        )
+
+        return None
+
+    sent_alert_keys.add(
+        alert_key
+    )
 
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
@@ -50,6 +69,55 @@ def send_telegram(message, button_url=None):
 
 def load_previous_radar():
 
+    # Prefer the last published Live Radar state. A GitHub Actions job starts
+    # from a fresh checkout, so the repository copy can otherwise be older
+    # than the state produced by the previous bot run.
+    remote_url = (
+        RADAR_URL.rstrip("/")
+        + "/radar.json?cache="
+        + str(int(datetime.now().timestamp()))
+    )
+
+    try:
+
+        request = urllib.request.Request(
+            remote_url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json",
+                "Cache-Control": "no-cache"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            remote_radar = json.loads(
+                response.read().decode(
+                    "utf-8",
+                    errors="ignore"
+                )
+            )
+
+        if (
+            isinstance(remote_radar, dict)
+            and isinstance(remote_radar.get("shops"), list)
+        ):
+
+            print(
+                "✅ Loaded previous radar state from the Live Radar."
+            )
+
+            return remote_radar
+
+    except Exception as error:
+
+        print(
+            f"ℹ️ Could not load Live Radar state: {error}"
+        )
+
     try:
 
         with open(
@@ -58,11 +126,20 @@ def load_previous_radar():
             encoding="utf-8"
         ) as file:
 
-            return json.load(file)
+            local_radar = json.load(file)
+
+        print(
+            "ℹ️ Using repository radar.json as previous state."
+        )
+
+        return local_radar
 
     except Exception:
 
-        print("ℹ️ No previous radar data found.")
+        print(
+            "ℹ️ No previous radar data found. "
+            "This run will be used as the baseline."
+        )
 
         return None
 
@@ -939,6 +1016,66 @@ def check_dracek_collection():
         return None
 
 
+
+
+def get_dracek_needoh_products(page):
+
+    if not page:
+        return []
+
+    products = []
+    seen_urls = set()
+
+    anchor_pattern = re.compile(
+        r"<a\b[^>]*?href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",
+        re.IGNORECASE | re.DOTALL
+    )
+
+    for match in anchor_pattern.finditer(page):
+
+        href = unescape(match.group(1)).strip()
+        name = clean_extra_product_name(match.group(2))
+
+        combined = (name + " " + href).lower()
+
+        if "needoh" not in combined and "nee-doh" not in combined:
+            continue
+
+        absolute_url = urljoin(
+            dracek_collection_url,
+            href
+        )
+
+        absolute_lower = absolute_url.lower()
+
+        if (
+            "vyhledavani" in absolute_lower
+            or "search=" in absolute_lower
+        ):
+            continue
+
+        if absolute_url in seen_urls:
+            continue
+
+        if len(name) < 3:
+            slug = href.rstrip("/").split("/")[-1].split("?")[0]
+            name = clean_extra_product_name(
+                slug.replace("-", " ").replace("_", " ")
+            )
+
+        if "needoh" not in name.lower() and "nee-doh" not in name.lower():
+            name = f"NeeDoh - {name}"
+
+        products.append({
+            "name": name,
+            "url": absolute_url
+        })
+
+        seen_urls.add(absolute_url)
+
+    return products
+
+
 def check_dracek_product_stock(url):
 
     try:
@@ -1392,7 +1529,7 @@ extra_needoh_shops = [
     {
         "name": "Proshop",
         "country": "🇳🇱 Netherlands",
-        "url": "https://www.proshop.nl/Speelgoed/NeeDoh"
+        "url": "https://www.proshop.nl/?s=Needoh"
     },
     {
         "name": "Megaknihy",
@@ -1427,6 +1564,7 @@ extra_needoh_shops = [
     {
         "name": "Tublu",
         "country": "🇦🇹 Austria",
+        "shopify": True,
         "url": "https://tublu.at/search?page=1&q=needoh&type=product"
     },
     {
@@ -1437,6 +1575,8 @@ extra_needoh_shops = [
     {
         "name": "Ken Black",
         "country": "🇮🇪 Ireland",
+        "shopify": True,
+        "shopify_collection": "needoh",
         "url": "https://kenblack.ie/search?sort_by=relevance&q=needoh&type=product&filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte="
     },
     {
@@ -1457,6 +1597,8 @@ extra_needoh_shops = [
     {
         "name": "Toy Corner",
         "country": "🇮🇪 Ireland",
+        "shopify": True,
+        "shopify_collection": "nee-doh",
         "url": "https://toycorner.ie/collections/nee-doh"
     },
     {
@@ -1472,6 +1614,7 @@ extra_needoh_shops = [
     {
         "name": "MiniCool",
         "country": "🇵🇹 Portugal",
+        "shopify": True,
         "url": "https://minicool.pt/search?page=1&q=Needoh"
     },
     {
@@ -1502,6 +1645,7 @@ extra_needoh_shops = [
     {
         "name": "Booghe",
         "country": "🇬🇧 United Kingdom",
+        "shopify": True,
         "url": "https://www.booghe.co.uk/search?type=article%2Cpage%2Cproduct&q=Needoh*"
     },
     {
@@ -1514,30 +1658,84 @@ extra_needoh_shops = [
 
 def fetch_extra_shop_page(url):
 
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9,nl;q=0.8"
-        }
-    )
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,nl;q=0.8",
+        "Cache-Control": "no-cache"
+    }
 
-    with urllib.request.urlopen(
-        request,
-        timeout=25
-    ) as response:
+    try:
 
-        return response.read().decode(
-            "utf-8",
-            errors="ignore"
+        request = urllib.request.Request(
+            url,
+            headers=headers
         )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=25
+        ) as response:
+
+            return response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+    except Exception as direct_error:
+
+        # Some European stores block GitHub Actions IPs with 403/5xx.
+        # Jina Reader is used only as a read-only fallback for the same
+        # public page; it often makes those public search pages readable.
+        reader_url = "https://r.jina.ai/http://" + url.replace(
+            "https://",
+            ""
+        ).replace(
+            "http://",
+            ""
+        )
+
+        try:
+
+            request = urllib.request.Request(
+                reader_url,
+                headers={
+                    "User-Agent": "Mozilla/5.0",
+                    "Accept": "text/plain,*/*"
+                }
+            )
+
+            with urllib.request.urlopen(
+                request,
+                timeout=35
+            ) as response:
+
+                page = response.read().decode(
+                    "utf-8",
+                    errors="ignore"
+                )
+
+            print(
+                f"ℹ️ Direct request blocked; reader fallback worked for {url}"
+            )
+
+            return page
+
+        except Exception:
+
+            raise direct_error
 
 
 def clean_extra_product_name(value):
 
     value = re.sub(
         r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = re.sub(
+        r"!\[[^\]]*\]\([^)]+\)",
         " ",
         value
     )
@@ -1562,13 +1760,19 @@ def infer_extra_stock(section):
         "sold out",
         "sold-out",
         "unavailable",
+        "coming soon",
+        "due ",
         "niet op voorraad",
         "niet leverbaar",
         "niet meer leverbaar",
+        "momenteel niet leverbaar",
+        "binnenkort beschikbaar",
         "uitverkocht",
         "tijdelijk uitverkocht",
         "není skladem",
         "neni skladem",
+        "momentálně není dostupný",
+        "momentalne neni dostupny",
         "vyprodáno",
         "vyprodano",
         "nedostupné",
@@ -1592,6 +1796,7 @@ def infer_extra_stock(section):
         "in stock",
         "op voorraad",
         "direct leverbaar",
+        "bestel",
         "skladem",
         "dostupné",
         "dostupne",
@@ -1626,7 +1831,135 @@ def infer_extra_stock(section):
     return "unknown"
 
 
+def get_shopify_needoh_products(shop):
+
+    parsed = urllib.parse.urlparse(
+        shop["url"]
+    )
+
+    base_url = (
+        f"{parsed.scheme}://{parsed.netloc}"
+    )
+
+    collection = shop.get(
+        "shopify_collection"
+    )
+
+    if collection:
+
+        json_url = (
+            f"{base_url}/collections/"
+            f"{collection}/products.json?limit=250"
+        )
+
+    else:
+
+        json_url = (
+            f"{base_url}/products.json?limit=250"
+        )
+
+    try:
+
+        request = urllib.request.Request(
+            json_url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=30
+        ) as response:
+
+            data = json.loads(
+                response.read().decode(
+                    "utf-8",
+                    errors="ignore"
+                )
+            )
+
+    except Exception as error:
+
+        print(
+            f"ℹ️ {shop['name']} Shopify feed unavailable: {error}"
+        )
+
+        return None
+
+    products_found = []
+
+    for product in data.get(
+        "products",
+        []
+    ):
+
+        title = clean_extra_product_name(
+            product.get("title", "")
+        )
+
+        handle = product.get(
+            "handle",
+            ""
+        )
+
+        vendor = str(
+            product.get("vendor", "")
+        )
+
+        combined = (
+            title
+            + " "
+            + handle
+            + " "
+            + vendor
+        ).lower()
+
+        if (
+            "needoh" not in combined
+            and "nee-doh" not in combined
+            and "nee doh" not in combined
+        ):
+            continue
+
+        variants = product.get(
+            "variants",
+            []
+        )
+
+        available = any(
+            variant.get("available") is True
+            for variant in variants
+        )
+
+        products_found.append({
+            "name": title,
+            "url": f"{base_url}/products/{handle}",
+            "status": (
+                "in_stock"
+                if available
+                else "out_of_stock"
+            )
+        })
+
+    print(
+        f"🔎 {shop['name']}: found {len(products_found)} NeeDoh products via Shopify feed"
+    )
+
+    return products_found
+
+
 def get_extra_needoh_products(shop):
+
+    if shop.get("shopify"):
+
+        shopify_products = get_shopify_needoh_products(
+            shop
+        )
+
+        if shopify_products is not None:
+            return shopify_products
 
     try:
 
@@ -1645,6 +1978,9 @@ def get_extra_needoh_products(shop):
     products_found = []
     seen_urls = set()
 
+    link_matches = []
+
+    # Normal HTML links.
     anchor_pattern = re.compile(
         r"<a\b[^>]*?href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",
         re.IGNORECASE | re.DOTALL
@@ -1652,14 +1988,40 @@ def get_extra_needoh_products(shop):
 
     for match in anchor_pattern.finditer(page):
 
+        link_matches.append(
+            (
+                match.group(1),
+                match.group(2),
+                match.start(),
+                match.end()
+            )
+        )
+
+    # Markdown links from the reader fallback.
+    markdown_pattern = re.compile(
+        r"\[([^\]]{1,250})\]\((https?://[^)\s]+)\)",
+        re.IGNORECASE
+    )
+
+    for match in markdown_pattern.finditer(page):
+
+        link_matches.append(
+            (
+                match.group(2),
+                match.group(1),
+                match.start(),
+                match.end()
+            )
+        )
+
+    for href, raw_name, match_start, match_end in link_matches:
+
         href = unescape(
-            match.group(1)
+            href
         ).strip()
 
-        anchor_html = match.group(2)
-
         name = clean_extra_product_name(
-            anchor_html
+            raw_name
         )
 
         absolute_url = urljoin(
@@ -1676,19 +2038,25 @@ def get_extra_needoh_products(shop):
         if (
             "needoh" not in combined
             and "nee-doh" not in combined
-            and "nee_doh" not in combined
+            and "nee doh" not in combined
         ):
             continue
 
         bad_url_markers = [
-            "search",
-            "zoeken",
-            "vyhled",
-            "szukaj",
-            "sokresultat",
+            "search_query=",
+            "search_keyword=",
+            "mot_q=",
+            "?q=needoh",
+            "?s=needoh",
+            "/search?",
+            "/vyhledavani?",
+            "/vysledky-vyhled",
+            "/szukaj?",
+            "/sokresultat?",
             "jolisearch",
             "e-search",
-            "collections/nee-doh",
+            "/collections/nee-doh",
+            "/collections/needoh",
             "/merk/1007/needoh",
             "/speelgoed/needoh"
         ]
@@ -1716,21 +2084,25 @@ def get_extra_needoh_products(shop):
         if (
             "needoh" not in name.lower()
             and "nee-doh" not in name.lower()
+            and "nee doh" not in name.lower()
         ):
 
-            if "needoh" in absolute_lower or "nee-doh" in absolute_lower:
+            if (
+                "needoh" in absolute_lower
+                or "nee-doh" in absolute_lower
+            ):
                 name = f"NeeDoh - {name}"
             else:
                 continue
 
         section_start = max(
             0,
-            match.start() - 900
+            match_start - 700
         )
 
         section_end = min(
             len(page),
-            match.end() + 1400
+            match_end + 1000
         )
 
         status = infer_extra_stock(
@@ -1809,6 +2181,17 @@ def check_extra_needoh_shop(
         previous_radar,
         shop["name"]
     )
+
+    if (
+        not products_found
+        and previous_products
+    ):
+
+        print(
+            f"ℹ️ {shop['name']}: keeping previous radar products because this check returned none"
+        )
+
+        return previous_products
 
     # If a shop is brand-new to radar.json, its first run becomes the
     # baseline. This prevents dozens of Telegram alerts on setup day.
@@ -2330,11 +2713,12 @@ dracek_results = []
 
 dracek_page = check_dracek_collection()
 
-dracek_products = []
+dracek_products = get_dracek_needoh_products(
+    dracek_page
+)
 
 print(
-    "⚠️ Dráček checker temporarily disabled: "
-    "get_dracek_needoh_products() is missing."
+    f"Found {len(dracek_products)} NeeDoh products at Dráček"
 )
 
 for product in dracek_products:
