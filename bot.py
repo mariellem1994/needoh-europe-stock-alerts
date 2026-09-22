@@ -993,6 +993,158 @@ def check_dracek_product_stock(url):
 
         return "error"
 
+def check_spellenrijk_product_stock(url):
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        page_lower = page.lower()
+
+        if (
+            "niet leverbaar" in page_lower
+            or
+            "uitverkocht" in page_lower
+            or
+            "tijdelijk uitverkocht" in page_lower
+        ):
+            return "out_of_stock"
+
+        if (
+            "in winkelwagen" in page_lower
+            or
+            "toevoegen aan winkelwagen" in page_lower
+            or
+            "bestellen" in page_lower
+        ):
+            return "in_stock"
+
+        return "out_of_stock"
+
+    except Exception as e:
+
+        print(
+            f"⚠️ Spellenrijk product error: {e}"
+        )
+
+        return "error"
+
+spellenrijk_products = [
+    {
+        "name": "Spellenrijk NeeDoh",
+        "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
+    }
+]
+
+def get_spellenrijk_needoh_products():
+
+    url = "https://www.spellenrijk.nl/merk/1007/needoh.html"
+
+    try:
+
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8"
+            }
+        )
+
+        with urllib.request.urlopen(
+            request,
+            timeout=20
+        ) as response:
+
+            page = response.read().decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+        import re
+
+        products = []
+
+        matches = re.findall(
+            r'href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',
+            page,
+            re.IGNORECASE | re.DOTALL
+        )
+
+        for product_url, product_name in matches:
+
+            clean_name = re.sub(
+                r"<[^>]+>",
+                "",
+                product_name
+            ).strip()
+
+            clean_name = " ".join(
+                clean_name.split()
+            )
+
+            if "needoh" not in clean_name.lower():
+                continue
+
+            if not product_url.startswith("http"):
+                product_url = (
+                    "https://www.spellenrijk.nl"
+                    + product_url
+                )
+
+            products.append({
+                "name": clean_name,
+                "url": product_url
+            })
+
+        unique_products = []
+        seen_urls = set()
+
+        for product in products:
+
+            if product["url"] in seen_urls:
+                continue
+
+            seen_urls.add(product["url"])
+            unique_products.append(product)
+
+        print(
+            f"Spellenrijk found {len(unique_products)} NeeDoh products"
+        )
+
+        return unique_products
+
+    except Exception as e:
+
+        print(
+            f"⚠️ Spellenrijk collection error: {e}"
+        )
+
+        return []
+
+
+def get_dracek_needoh_products(page):
+
+    if not page:
+        return []
+
 def get_dracek_needoh_products(page):
 
     if not page:
@@ -1875,7 +2027,68 @@ for product in mamiee_products:
             f"🚨 NEW MAMIEE NEEDOH: "
             f"{product['name']}"
         )
+        
+spellenrijk_products = get_spellenrijk_needoh_products()
 
+spellenrijk_results = []
+for product in spellenrijk_products:
+
+    print(
+        f"Checking Spellenrijk: {product['name']}"
+    )
+
+    current_status = check_spellenrijk_product_stock(
+        product["url"]
+    )
+
+    previous_status = get_previous_status(
+        previous_radar,
+        "Spellenrijk",
+        product["name"]
+    )
+
+    if (
+        current_status == "in_stock"
+        and previous_status == "out_of_stock"
+    ):
+
+        send_telegram(
+            f"🚨 NEEDOH STOCK ALERT!\n\n"
+            f"➡️ {product['name']}\n"
+            f"🛍️ Spellenrijk\n"
+            f"🇳🇱 Netherlands\n\n"
+            f"🟢 BACK IN STOCK ONLINE!\n\n"
+            f"🔗 {product['url']}"
+        )
+
+        print(
+            f"🚨 NEW SPELLENRIJK STOCK: {product['name']}"
+        )
+
+    if current_status == "in_stock":
+
+        print(
+            f"🟢 In stock: {product['name']}"
+        )
+
+    elif current_status == "out_of_stock":
+
+        print(
+            f"🔴 Out of stock: {product['name']}"
+        )
+
+    else:
+
+        print(
+            f"⚠️ Could not check: {product['name']}"
+        )
+
+    spellenrijk_results.append({
+        "name": product["name"],
+        "url": product["url"],
+        "status": current_status
+    })
+    
 dracek_results = []
 
 dracek_page = check_dracek_collection()
@@ -2156,6 +2369,11 @@ radar_data = {
     "name": "Mamiee",
     "country": "🇨🇿 Czech Republic",
     "products": mamiee_results
+},
+        {
+    "name": "Spellenrijk",
+    "country": "🇳🇱 Netherlands",
+    "products": spellenrijk_results
 },
         {
     "name": "Dráček",
