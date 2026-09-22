@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Sep 2026, 20:46",
+  "last_checked": "22 Sep 2026, 20:53",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2430,7 +2430,7 @@
         {
           "name": "Teenie Singles Needoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube",
