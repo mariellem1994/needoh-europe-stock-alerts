@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 17:54",
+  "last_checked": "23 Sep 2026, 18:04",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -866,124 +866,14 @@
       "country": "🇦🇹 Austria",
       "products": [
         {
-          "name": "schylling adventskalender needoh set mit 24 bunten knautschb llen",
-          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen?_pos=1&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
+          "name": "Sensorik-Knautschball - Squishy Reindeer Needoh",
+          "url": "https://tublu.at/products/schylling-sensorik-knautschball-squishy-reindeer-needoh",
+          "status": "out_of_stock"
         },
         {
-          "name": "schylling sensorischer knete glowy ghost needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glowy-ghost-needoh?_pos=2&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling sensorischer knete jack glow lantern needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-jack-glow-lantern-needoh?_pos=3&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-berg-needoh?_pos=4&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-needoh-adventskalender-set-mit-24-knetfiguren?_pos=5&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorik-knautschball-squishy-reindeer-needoh?_pos=6&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-donut-holes?_pos=7&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "Needoh Stressball Fidget Spielzeug - Squeezy Peezy",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-squeezy-peezy?_pos=8&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-shaggy-needoh?_pos=9&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-chicka-deedos?_pos=10&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-teenie-squeeze-hearts?_pos=11&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-stressball-snow-globe-needoh?_pos=12&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-stickums-needoh?_pos=13&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glow-in-the-dark-needoh-asst?_pos=14&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-klassischer-needoh?_pos=15&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sinnliches-quetschen-nice-ice-baby-needoh?_pos=16&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-super-needoh-ripples?_pos=17&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-hot-shots-football-needoh?_pos=18&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-color-changing-needoh?_pos=19&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-cube-needoh?_pos=20&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-squeeze-hearts?_pos=21&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-polar-glow-penguin-needoh?_pos=22&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-gumdrop-needoh?_pos=23&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-rainbow-teenie-needoh-6-stueck?_pos=24&_sid=3175d8fbf&_ss=r",
-          "status": "unknown"
+          "name": "Adventskalender - NeeDoh - Set mit 24 bunten Knautschbällen",
+          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen",
+          "status": "in_stock"
         }
       ]
     },
