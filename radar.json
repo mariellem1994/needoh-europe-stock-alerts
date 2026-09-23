@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 02:28",
+  "last_checked": "23 Sep 2026, 02:35",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1263,7 +1263,7 @@
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
@@ -1278,7 +1278,7 @@
         {
           "name": "Schylling NeeDoh Chicken Deedos",
           "url": "http://www.2kidstoys.com/schylling-needoh-chicken-deedos",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
@@ -1353,7 +1353,7 @@
         {
           "name": "Schylling NeeDoh Fuzz Ball mini squishy balls",
           "url": "http://www.2kidstoys.com/schylling-needoh-fuzz-ball-mini-squishy-balls",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Fuzz Ball squishy maxi ball",
@@ -1368,7 +1368,7 @@
         {
           "name": "Schylling NeeDoh Glow-in-the-dark penguin",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-penguin",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh",
