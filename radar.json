@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 08:58",
+  "last_checked": "23 Sep 2026, 09:06",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2571,7 +2571,7 @@
         {
           "name": "NeeDoh Booper",
           "url": "https://www.toys42hands.nl/en/products/schylling-needoh-booper-en",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Teenie NeeDoh Fuzz Ball",
@@ -2591,7 +2591,7 @@
         {
           "name": "NeeDoh Groovy Glob",
           "url": "https://www.toys42hands.nl/en/products/needoh-groovy-glob",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Funky Pup",
@@ -2601,12 +2601,12 @@
         {
           "name": "Shaggy NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/shaggy-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Glitter Glow Nice Cube",
           "url": "https://www.toys42hands.nl/en/products/needoh-glitter-glow-nice-cube",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Nice Cube Swirl NeeDoh",
@@ -2616,7 +2616,7 @@
         {
           "name": "Lava Slime",
           "url": "https://www.toys42hands.nl/en/products/lava-slime",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Teenie Cool Cat NeeDoh",
@@ -2626,7 +2626,7 @@
         {
           "name": "NeeDoh Flower Power Fuzz",
           "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Teenie Funky Pup NeeDoh",
@@ -2636,7 +2636,7 @@
         {
           "name": "Mac N Squeeze NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/schylling-mac-n-squeeze-needoh-en",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Rainbow NeeDoh",
