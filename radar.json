@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 15:11",
+  "last_checked": "23 Sep 2026, 15:28",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2369,7 +2369,7 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
