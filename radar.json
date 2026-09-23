@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 14:44",
+  "last_checked": "23 Sep 2026, 14:57",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2039,48 +2039,7 @@
     {
       "name": "Spadt",
       "country": "🇧🇪 Belgium",
-      "products": [
-        {
-          "name": "Uit stock Needoh Squishmas Squishkins Schylling € 9,99",
-          "url": "https://spadt.be/webshop/schylling-needoh-squishmas-squishkins-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmsk24-6990/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Funky Pup Needoh Schylling € 4,99",
-          "url": "https://spadt.be/webshop/schylling-funky-pup-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyfpnd-6979/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Squishmas Groovy Tree Schylling € 19,99",
-          "url": "https://spadt.be/webshop/schylling-squishmas-groovy-tree-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmgt23-6989/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Glow in the Dark Needoh Schylling € 4,99",
-          "url": "https://spadt.be/webshop/schylling-glow-in-the-dark-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssygnd-6952/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Dig It Pig Needoh Schylling € 4,99",
-          "url": "https://spadt.be/webshop/schylling-dig-it-pig-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssydnnd-6951/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Needoh Color Change Schylling € 4,99",
-          "url": "https://spadt.be/webshop/schylling-needoh-color-change-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyccsq-6670/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Needoh Donut Schylling € 9,99",
-          "url": "https://spadt.be/webshop/schylling-needoh-donut-speelgoed-hebbedingen-en-minispeeltjes-fidgetsdpnd-6671/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Uit stock Teenie Needoh Cool Cats (3) Schylling € 6,99",
-          "url": "https://spadt.be/webshop/schylling-teenie-needoh-cool-cats-3-speelgoed-hebbedingen-en-minispeeltjes-fidgetssycctnd-6153/",
-          "status": "out_of_stock"
-        }
-      ]
+      "products": []
     },
     {
       "name": "Mamiee",
