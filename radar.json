@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Sep 2026, 06:29",
+  "last_checked": "23 Sep 2026, 06:35",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -250,7 +250,7 @@
         {
           "name": "Schylling NeeDoh Jack Glow Lanterns svítící ve tmě",
           "url": "http://www.dvedeti.cz/schylling-needoh-jack-glow-lanterns-svitici-ve-tme",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Jack-Glow Lantern Mačkací antistresová dýně svítící ve tmě",
@@ -1034,12 +1034,12 @@
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Berg trblietavá",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-berg-trblietava",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube",
           "url": "http://www.dvedeti.sk/schylling-mackacia-kocka-needo",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Candy Swirl",
@@ -1049,12 +1049,12 @@
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Swirl",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Teenie Nice Ice Baby",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-teenie-nice-ice-baby",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -1228,17 +1228,17 @@
         {
           "name": "Schylling NeeDoh Cat anti-stress heart",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-heart",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Mini Ball 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-mini-ball-3-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Puppies 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-puppies-3-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Ball Flower Power",
@@ -1248,12 +1248,12 @@
         {
           "name": "Schylling NeeDoh Cat Cube Nice Berg Swirl",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-cube-nice-berg-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Fruit",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-fruit",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Sugar Skull glow-in-the-dark cat",
@@ -1263,12 +1263,12 @@
         {
           "name": "Schylling NeeDoh Cat Textured",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-textured",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat's Cube Nice Berg",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-s-cube-nice-berg",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat's Cube Teenie Nice Ice Baby",
@@ -1278,17 +1278,17 @@
         {
           "name": "Schylling NeeDoh Catnip anti-stress cats 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-cats-3-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-nice-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Sploot Splat",
@@ -1298,12 +1298,12 @@
         {
           "name": "Schylling NeeDoh Chicken Deedos",
           "url": "http://www.2kidstoys.com/schylling-needoh-chicken-deedos",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-color-changing-anti-stress-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy balls Fuzz Ball 4 pcs",
@@ -1313,17 +1313,17 @@
         {
           "name": "Schylling NeeDoh Colorful Squishy Balls Hot Shots 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-hot-shots-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy mini balls Swirl 4 ks",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-balls-swirl-4-ks",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful Squishy Mini Cats 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-cats-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
@@ -1333,17 +1333,17 @@
         {
           "name": "Schylling NeeDoh Cuddle Ball Stardust",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-ball-stardust",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Mini Ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-mini-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle neon ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-neon-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Soccer Ball",
@@ -1353,17 +1353,17 @@
         {
           "name": "Schylling NeeDoh Doll Pete",
           "url": "http://www.2kidstoys.com/schylling-needoh-doll-pete",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Donut",
           "url": "http://www.2kidstoys.com/schylling-needoh-donut",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh FSDU Cardboard advertising display",
           "url": "http://www.2kidstoys.com/schylling-needoh-fsdu-cardboard-advertising-display",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Funky Pup puppy",
@@ -1373,17 +1373,17 @@
         {
           "name": "Schylling NeeDoh Fuzz Ball mini squishy balls",
           "url": "http://www.2kidstoys.com/schylling-needoh-fuzz-ball-mini-squishy-balls",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Fuzz Ball squishy maxi ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-fuzz-ball-squishy-maxi-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Glow-in-the-dark Cat Ghost",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-cat-ghost",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Glow-in-the-dark penguin",
