@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 15:11",
+  "last_checked": "24 Sep 2026, 15:50",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -884,7 +884,7 @@
         {
           "name": "Schylling NeeDoh",
           "url": "https://www.dvedeti.sk/schylling-needoh",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "schylling farbu meniacu antistresovu lopticku needoh 1 ks",
@@ -2241,12 +2241,12 @@
         {
           "name": "Gumdrop NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/gumdrop-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Nice Cube NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/nice-cube-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Donut NeeDoh",
@@ -2261,7 +2261,7 @@
         {
           "name": "Sploot Splat NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/sploot-splat-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         }
       ]
     },
@@ -2600,7 +2600,7 @@
         {
           "name": "Mac N Squeeze NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/schylling-mac-n-squeeze-needoh-en",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Rainbow NeeDoh",
