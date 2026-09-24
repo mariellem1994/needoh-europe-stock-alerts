@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 04:37",
+  "last_checked": "24 Sep 2026, 04:49",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2500,12 +2500,12 @@
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.toys42hands.nl/en/products/needoh-dream-drop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Gumdrop",
           "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Swirl Teenie 6-pack",
@@ -2530,7 +2530,7 @@
         {
           "name": "Color Changing NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/color-changing-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Swirl NeeDoh",
