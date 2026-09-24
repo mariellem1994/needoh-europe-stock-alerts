@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 18:05",
+  "last_checked": "24 Sep 2026, 18:22",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -140,11 +140,6 @@
         {
           "name": "Schylling NeeDoh",
           "url": "https://www.dvedeti.cz/schylling-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh teenie jack glow lanterns svitici ve tme",
-          "url": "https://www.dvedeti.cz/schylling-needoh-teenie-jack-glow-lanterns-svitici-ve-tme",
           "status": "out_of_stock"
         },
         {
@@ -310,6 +305,11 @@
         {
           "name": "schylling needoh mackaci kostka nice berg",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "schylling needoh mackaci kostka nice berg swirl",
+          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
           "status": "out_of_stock"
         }
       ]
@@ -2236,7 +2236,7 @@
         {
           "name": "Marbleez NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/marbleez-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Sploot Splat NeeDoh",
