@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 12:38",
+  "last_checked": "24 Sep 2026, 12:53",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2344,62 +2344,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "out_of_stock"
+          "status": "error"
         }
       ]
     },
