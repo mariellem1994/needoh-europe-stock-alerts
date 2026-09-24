@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 12:12",
+  "last_checked": "24 Sep 2026, 12:26",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2445,7 +2445,7 @@
         {
           "name": "NeeDoh Jelly Squish",
           "url": "https://www.toys42hands.nl/en/products/needoh-jelly-squish",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Fuzz Balls 3-pack",
@@ -2590,7 +2590,7 @@
         {
           "name": "NeeDoh Flower Power Fuzz",
           "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Teenie Funky Pup NeeDoh",
