@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 23:31",
+  "last_checked": "24 Sep 2026, 23:39",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1288,7 +1288,7 @@
         {
           "name": "Schylling NeeDoh Catnip Sploot Splat",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-sploot-splat",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Chicken Deedos",
@@ -1298,7 +1298,7 @@
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-color-changing-anti-stress-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy balls Fuzz Ball 4 pcs",
@@ -1308,7 +1308,7 @@
         {
           "name": "Schylling NeeDoh Colorful Squishy Balls Hot Shots 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-hot-shots-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy mini balls Swirl 4 ks",
@@ -1318,7 +1318,7 @@
         {
           "name": "Schylling NeeDoh Colorful Squishy Mini Cats 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-cats-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
@@ -1328,7 +1328,7 @@
         {
           "name": "Schylling NeeDoh Cuddle Ball Stardust",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-ball-stardust",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Mini Ball",
@@ -1338,12 +1338,12 @@
         {
           "name": "Schylling NeeDoh Cuddle neon ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-neon-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Soccer Ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-soccer-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Doll Pete",
@@ -1358,7 +1358,7 @@
         {
           "name": "Schylling NeeDoh FSDU Cardboard advertising display",
           "url": "http://www.2kidstoys.com/schylling-needoh-fsdu-cardboard-advertising-display",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Funky Pup puppy",
@@ -1383,7 +1383,7 @@
         {
           "name": "Schylling NeeDoh Glow-in-the-dark penguin",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-penguin",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh",
