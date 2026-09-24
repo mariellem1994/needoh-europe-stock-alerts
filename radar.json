@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Sep 2026, 00:04",
+  "last_checked": "25 Sep 2026, 00:14",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2281,7 +2281,7 @@
         {
           "name": "Dream Drop NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/dream-drop-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Verkleurende NeeDoh",
@@ -2570,7 +2570,7 @@
         {
           "name": "Atomic NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Color Changing NeeDoh",
@@ -2595,7 +2595,7 @@
         {
           "name": "NeeDoh Nice Berg",
           "url": "https://www.toys42hands.nl/en/products/needoh-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh 3-pack",
