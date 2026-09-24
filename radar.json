@@ -1,5 +1,5 @@
 {
-  "last_checked": "24 Sep 2026, 19:09",
+  "last_checked": "24 Sep 2026, 19:22",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1452,6 +1452,56 @@
       "name": "MiniCool",
       "country": "🇵🇹 Portugal",
       "products": [
+        {
+          "name": "Needoh Bola Muda de Cor Azul/Rosa",
+          "url": "https://minicool.pt/products/needoh-bola-muda-de-cor-azul-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Muda de Cor Rosa/Roxa",
+          "url": "https://minicool.pt/products/needoh-bola-muda-de-cor-rosa-roxa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Muda de Cor Amarela/Laranja",
+          "url": "https://minicool.pt/products/needoh-bola-muda-de-cor-amarela-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Cogumelo Azul/Rosa",
+          "url": "https://minicool.pt/products/needoh-cogumelo-azul-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Cogumelo Rosa/Laranja",
+          "url": "https://minicool.pt/products/needoh-cogumelo-rosa-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Gatinhos Roxo/Rosa/Laranja",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-roxo-rosa-laranja",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Gatinhos Rosa/Roxo/Verde",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-rosa-roxo-verde",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Conjunto 3 Gatinhos Verde/Laranja/Rosa",
+          "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-verde-laranja-rosa",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Cogumelo Laranja/Roxo",
+          "url": "https://minicool.pt/products/needoh-cogumelo-laranja-roxo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Bola Anti-Stress Verde",
+          "url": "https://minicool.pt/products/needoh-bola-anti-stres-verde",
+          "status": "out_of_stock"
+        },
         {
           "name": "Needoh Conjunto 3 Bolas Teenie Azul/Rosa/Verde",
           "url": "https://minicool.pt/products/needoh-conjunto-3-bolas-teenie-azul-rosa-verde",
