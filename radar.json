@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Sep 2026, 04:11",
+  "last_checked": "25 Sep 2026, 04:31",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -127,13 +127,13 @@
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací míček Flower Power",
-          "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html?search_pos=17&query_text=Needoh",
+          "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
+          "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html?search_pos=17&query_text=Needoh",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
-          "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html?search_pos=18&query_text=Needoh",
+          "name": "Schylling NeeDoh Mačkací míček Flower Power",
+          "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html?search_pos=18&query_text=Needoh",
           "status": "unknown"
         },
         {
@@ -2550,12 +2550,12 @@
         {
           "name": "NeeDoh Gumdrop",
           "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Swirl Teenie 6-pack",
           "url": "https://www.toys42hands.nl/en/products/needoh-swirl-teenie-6-stuks",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube Glow",
@@ -2580,7 +2580,7 @@
         {
           "name": "Swirl NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/schylling-swirl-needoh-en",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Booper",
@@ -2635,7 +2635,7 @@
         {
           "name": "Teenie Cool Cat NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-cool-cat-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Flower Power Fuzz",
