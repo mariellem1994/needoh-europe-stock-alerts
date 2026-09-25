@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V10 active — strict stock verification + Cedille coverage.")
+print("🛡️ VERIFIED STOCK MODE V11 active — Cedille cleanup + verified Miss Lemonade coverage.")
 
 
 sent_alert_keys = set()
@@ -1562,7 +1562,7 @@ extra_needoh_shops = [
     {
         "name": "Miss Lemonade",
         "country": "🇵🇱 Poland",
-        "url": "https://misslemonade.pl/en/module/ambjolisearch/jolisearch?s=Needoh"
+        "url": "https://misslemonade.pl/en/brands/needoh-by-schylling"
     },
     {
         "name": "Dzieciaki Bystrzaki",
@@ -1958,7 +1958,108 @@ def get_shopify_needoh_products(shop):
     return products_found
 
 
+def get_miss_lemonade_needoh_products(shop):
+    """Read Miss Lemonade's brand catalogue and trust its per-product stock labels."""
+    products = []
+    seen = set()
+
+    # The catalogue currently spans two pages. Checking both is safer than
+    # relying on the site's changing default page-size setting.
+    urls = [shop["url"], shop["url"] + "?page=2"]
+
+    for catalogue_url in urls:
+        try:
+            page = fetch_extra_shop_page(catalogue_url, quiet=True)
+        except Exception as error:
+            print(f"⚠️ Miss Lemonade catalogue page failed: {error}")
+            continue
+
+        # Reader-fallback format: each product starts with a markdown H2 link.
+        # Stock text belongs to that block until the next product heading.
+        headings = list(re.finditer(
+            r"(?m)^##\s+\[([^\]]+)\]\((https?://[^)]+)\)",
+            page
+        ))
+
+        for index, match in enumerate(headings):
+            name = clean_extra_product_name(match.group(1))
+            url = unescape(match.group(2)).strip()
+
+            if "needoh" not in name.lower() and "nee-doh" not in name.lower():
+                continue
+            if url in seen:
+                continue
+
+            end = headings[index + 1].start() if index + 1 < len(headings) else len(page)
+            block = page[match.end():end].lower()
+
+            if "in stock. dispatch in 24h" in block or "w magazynie. wysyłka 24h" in block:
+                status = "in_stock"
+            elif "out-of-stock" in block or "obecnie brak na stanie" in block:
+                status = "out_of_stock"
+            else:
+                status = "unknown"
+
+            products.append({"name": name, "url": url, "status": status})
+            seen.add(url)
+
+    if products:
+        print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via brand catalogue")
+        return products
+
+    # If the reader format ever changes, fall back to the existing generic
+    # discovery rather than guessing stock.
+    return None
+
+
+def clean_cedille_products(products):
+    """Remove catalogue/navigation junk and give Cedille URLs clean display names."""
+    cleaned = []
+    seen = set()
+
+    for product in products:
+        item = dict(product)
+        url = item.get("url", "")
+        parsed = urllib.parse.urlparse(url)
+        slug = (parsed.path or "").rstrip("/").split("/")[-1]
+        slug_lower = slug.lower()
+
+        # These are brand/search/navigation links, not individual products.
+        if slug_lower in {"needoh", "needoh-", "brands", "search"}:
+            continue
+        if not slug_lower:
+            continue
+
+        # Cedille product pages end in .html. This also prevents the brand page
+        # itself from appearing as a fake red product card.
+        if not slug_lower.endswith(".html"):
+            continue
+
+        canonical = url.split("#", 1)[0]
+        if canonical in seen:
+            continue
+        seen.add(canonical)
+
+        name = item.get("name", "").strip()
+        if name.lower() in {"needoh", "needoh -", "needoh-"} or ".html" in name.lower():
+            pretty = slug[:-5].replace("-", " ").replace("_", " ")
+            pretty = re.sub(r"\s+", " ", pretty).strip()
+            name = "NeeDoh " + re.sub(r"(?i)^needoh\s+", "", pretty)
+            name = " ".join(word.capitalize() if word.lower() not in {"the", "and"} else word.lower() for word in name.split())
+            name = name.replace("Needoh", "NeeDoh")
+
+        item["name"] = name
+        cleaned.append(item)
+
+    return cleaned
+
+
 def get_extra_needoh_products(shop):
+
+    if shop.get("name") == "Miss Lemonade":
+        miss_products = get_miss_lemonade_needoh_products(shop)
+        if miss_products is not None:
+            return miss_products
 
     if shop.get("shopify"):
 
@@ -2482,10 +2583,15 @@ def check_extra_needoh_shop(
         shop
     )
 
-    products_found = apply_verified_extra_stock(
-        shop,
-        products_found
-    )
+    if shop.get("name") == "Cedille Speelgoed":
+        products_found = clean_cedille_products(products_found)
+
+    # Miss Lemonade already carries verified per-product catalogue status.
+    if shop.get("name") != "Miss Lemonade":
+        products_found = apply_verified_extra_stock(
+            shop,
+            products_found
+        )
 
     confirmed_in = sum(
         1 for product in products_found
@@ -3566,4 +3672,8 @@ radar_message = (
 
 print(
     "✅ Stock check completed!"
+)
+
+print(
+    "ℹ️ Duplicate-alert protection is active."
 )
