@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V12 active — Miss Lemonade catalogue stock verification.")
+print("🛡️ VERIFIED STOCK MODE V13 active — accuracy-first stock verification and error cleanup.")
 
 
 sent_alert_keys = set()
@@ -2033,11 +2033,14 @@ def get_miss_lemonade_needoh_products(shop):
         else:
             status = "unknown"
 
-        products.append({"name": name, "url": url, "status": status})
+        # V13: catalogue status is discovery-only. Product stock is verified
+        # against the individual product page so neighbouring cards can never
+        # contaminate one another.
+        products.append({"name": name, "url": url, "status": "unknown"})
         seen.add(key)
 
     if products:
-        print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via verified catalogue reader")
+        print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via catalogue reader")
         return products
 
     print("⚠️ Miss Lemonade reader returned no parseable NeeDoh product cards")
@@ -2445,6 +2448,81 @@ def scope_stock_text_to_current_product(shop_name, page):
     return page
 
 
+def fetch_reader_page(url, quiet=False):
+    """Fetch one public page through the text reader as a fallback for sites that block GitHub."""
+    reader_url = "https://r.jina.ai/http://" + url.replace("https://", "").replace("http://", "")
+    try:
+        request = urllib.request.Request(
+            reader_url,
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "text/plain,*/*", "Cache-Control": "no-cache"}
+        )
+        with urllib.request.urlopen(request, timeout=40) as response:
+            return response.read().decode("utf-8", errors="ignore")
+    except Exception as error:
+        if not quiet:
+            print(f"⚠️ Reader fallback failed for {url}: {error}")
+        return ""
+
+
+def scope_generic_product_text(page):
+    """Keep the current product area and cut common recommendation/footer sections."""
+    if not page:
+        return page
+    lowered = page.lower()
+    markers = (
+        "you may also like", "you might also like", "related products", "similar products",
+        "customers who bought", "vous aimerez aussi", "produits similaires", "ähnliche produkte",
+        "das könnte dir auch gefallen", "te puede interesar", "productos relacionados",
+        "du kanske också gillar", "relaterade produkter", "podobné produkty", "související produkty",
+        "## about schylling", "about schylling", "footer"
+    )
+    positions = [lowered.find(m) for m in markers if lowered.find(m) != -1]
+    return page[:min(positions)] if positions else page
+
+
+def verify_reader_stock(shop_name, url):
+    """Strict product-page reader verification. Ambiguous pages remain unknown."""
+    page = fetch_reader_page(url, quiet=True)
+    if not page:
+        return "unknown"
+    page = scope_generic_product_text(page)
+    text = unescape(re.sub(r"<[^>]+>", " ", page))
+    text = re.sub(r"\s+", " ", text).strip().lower()
+
+    # Strong shop/language-specific OUT signals. Check these before IN markers.
+    out_markers = (
+        "out-of-stock", "out of stock", "currently unavailable", "sold out",
+        "notify me when in stock", "agotado", "sin stock", "rupture de stock",
+        "victime de son succès", "victime de son succes", "nicht verfügbar", "nicht verfuegbar",
+        "online nicht verfügbar", "online nicht verfuegbar", "finns ej i lager online",
+        "slut i lager online", "není skladem", "neni skladem", "vyprodáno", "vyprodano",
+        "sin existencias",
+        "momentálně nedostupné", "momentalne nedostupne"
+    )
+    if any(m in text for m in out_markers):
+        return "out_of_stock"
+
+    # Strong IN signals tied to the current product page only.
+    in_patterns = (
+        r"\bin stock\. dispatch in 24h\b",
+        r"\ben stock\s+\d+\s+produits?\b",
+        r"\ben stock\s+\d+\s+produits?\b",
+        r"\bhay existencias\b",
+        r"\bauf lager\b",
+        r"\bonline verfügbar\b",
+        r"\bonline verfuegbar\b",
+        r"\bfinns i lager online\b",
+        r"\bonline\s+\+?\d+\s+st\b",
+        r"\bi lager online\b",
+        r"\bskladem\s+\d+\s*ks\b",
+        r"\b\d+\s*ks\s+skladem\b",
+        r"\bskladem\b",
+    )
+    if any(re.search(p, text) for p in in_patterns):
+        return "in_stock"
+    return "unknown"
+
+
 def verify_non_shopify_product_stock(shop, product):
     """
     Conservative product-page stock verifier for selected non-Shopify shops.
@@ -2459,6 +2537,13 @@ def verify_non_shopify_product_stock(shop, product):
         "MimiMarket",
         "Cedille Speelgoed",
         "Thimble Toys",
+        "Miss Lemonade",
+        "Bavixo",
+        "Müller",
+        "Juguetea",
+        "Le Monde Imaginaire",
+        "Bizcocho de Yogur",
+        "Lekia",
     }
 
     if shop.get("name") not in supported_shops:
@@ -2468,6 +2553,12 @@ def verify_non_shopify_product_stock(shop, product):
 
     if not url:
         return "unknown"
+
+    if shop.get("name") in {
+        "Miss Lemonade", "Bavixo", "Müller", "Juguetea",
+        "Le Monde Imaginaire", "Bizcocho de Yogur", "Lekia"
+    }:
+        return verify_reader_stock(shop.get("name"), url)
 
     try:
         page = fetch_extra_shop_page(url, quiet=True)
@@ -2583,6 +2674,13 @@ def apply_verified_extra_stock(shop, products):
         "MimiMarket",
         "Cedille Speelgoed",
         "Thimble Toys",
+        "Miss Lemonade",
+        "Bavixo",
+        "Müller",
+        "Juguetea",
+        "Le Monde Imaginaire",
+        "Bizcocho de Yogur",
+        "Lekia",
     }:
         products = filter_real_product_links(
             shop,
@@ -2618,12 +2716,10 @@ def check_extra_needoh_shop(
     if shop.get("name") == "Cedille Speelgoed":
         products_found = clean_cedille_products(products_found)
 
-    # Miss Lemonade already carries verified per-product catalogue status.
-    if shop.get("name") != "Miss Lemonade":
-        products_found = apply_verified_extra_stock(
-            shop,
-            products_found
-        )
+    products_found = apply_verified_extra_stock(
+        shop,
+        products_found
+    )
 
     confirmed_in = sum(
         1 for product in products_found
