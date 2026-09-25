@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Sep 2026, 03:35",
+  "last_checked": "25 Sep 2026, 03:49",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2595,7 +2595,7 @@
         {
           "name": "NeeDoh Nice Berg",
           "url": "https://www.toys42hands.nl/en/products/needoh-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh 3-pack",
@@ -2610,7 +2610,7 @@
         {
           "name": "NeeDoh Funky Pup",
           "url": "https://www.toys42hands.nl/en/products/schylling-funky-pup-kneading-ball",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Shaggy NeeDoh",
@@ -2620,7 +2620,7 @@
         {
           "name": "NeeDoh Glitter Glow Nice Cube",
           "url": "https://www.toys42hands.nl/en/products/needoh-glitter-glow-nice-cube",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Nice Cube Swirl NeeDoh",
@@ -2645,7 +2645,7 @@
         {
           "name": "Teenie Funky Pup NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Mac N Squeeze NeeDoh",
