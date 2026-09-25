@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Sep 2026, 21:43",
+  "last_checked": "25 Sep 2026, 21:51",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -11,22 +11,12 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh",
-          "url": "https://www.internet-speelgoedwinkel.nl/brands/needoh/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh - ",
-          "url": "https://www.internet-speelgoedwinkel.nl/brands/needoh/?mode=list",
-          "status": "out_of_stock"
-        },
-        {
           "name": "NeeDoh Squisher the Reindoh",
           "url": "https://www.internet-speelgoedwinkel.nl/squisher-the-reindoh.html",
           "status": "in_stock"
         },
         {
-          "name": "needoh teenie jack glow lanterns.html",
+          "name": "NeeDoh Teenie Jack Glow Lanterns",
           "url": "https://www.internet-speelgoedwinkel.nl/needoh-teenie-jack-glow-lanterns.html",
           "status": "in_stock"
         },
@@ -36,7 +26,7 @@
           "status": "in_stock"
         },
         {
-          "name": "needoh glowy ghost.html",
+          "name": "NeeDoh Glowy Ghost",
           "url": "https://www.internet-speelgoedwinkel.nl/needoh-glowy-ghost.html",
           "status": "in_stock"
         }
@@ -631,8 +621,198 @@
       "country": "🇵🇱 Poland",
       "products": [
         {
-          "name": "NeeDoh by Schylling",
+          "name": "NeeDoh - AUD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=6",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - CAD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=9",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - CHF",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=8",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - EUR €",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=3",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - GBP £",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=4",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - HKD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=17",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - ILS ₪",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=15",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - NOK kr",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=18",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - NZD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=16",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - PLN zł",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=1",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - SEK kr",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=10",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - TWD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=19",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - USD $",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?SubmitCurrency=1&id_currency=2",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Polski",
+          "url": "https://misslemonade.pl/pl/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - English",
           "url": "https://misslemonade.pl/en/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Deutsch",
+          "url": "https://misslemonade.pl/de/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Français",
+          "url": "https://misslemonade.pl/fr/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Español",
+          "url": "https://misslemonade.pl/es/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Italiano",
+          "url": "https://misslemonade.pl/it/brands/needoh-by-schylling",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh Advent Calendar 2026",
+          "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/schylling-needoh-advent-calendar-2026-sysqmac26.html",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh anti-stress squishes - is this a good toy for a child?",
+          "url": "https://misslemonade.pl/en/magazine/fashion/needoh-anti-stress-squishes-is-this-a-good-toy-for-a-child",
+          "status": "unknown"
+        },
+        {
+          "name": "Safe squishes for children? What you should know about NeeDoh",
+          "url": "https://misslemonade.pl/en/magazine/fashion/safe-squishes-for-children-what-you-should-know-about-needoh",
+          "status": "unknown"
+        },
+        {
+          "name": "How do NeeDoh products support a child's development? Sensory stimulation, play and calming",
+          "url": "https://misslemonade.pl/en/magazine/fashion/how-do-needoh-products-support-a-child-s-development-sensory-stimulation-play-and-calming",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.date_add.desc&productListView=grid",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.date_add.desc&productListView=list",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Relevance",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.position.asc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Newest First",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.date_add.desc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Name, A to Z",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.name.asc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Name, Z to A",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.name.desc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Cheapest first",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.price.asc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Most expensive first",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.price.desc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - In stock first",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.quantity.desc",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Random",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?order=product.random.desc",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?resultsPerPage=12",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?resultsPerPage=24",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?resultsPerPage=36",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?resultsPerPage=54",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh - Show all",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?resultsPerPage=99999",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling",
+          "url": "https://misslemonade.pl/en/brands/needoh-by-schylling?page=2",
           "status": "unknown"
         },
         {
@@ -646,78 +826,8 @@
           "status": "unknown"
         },
         {
-          "name": "needoh by schylling needoh nice cube sensory squeeze toy syncbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-sensory-squeeze-toy-syncbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh by schylling needoh glowy ghost stress ball syndwgg26.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-glowy-ghost-stress-ball-syndwgg26.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh by schylling needoh jack glow lantern halloween fidget toy syndwjgl26.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jack-glow-lantern-halloween-fidget-toy-syndwjgl26.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh sugar skull cats syssccnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-sugar-skull-cats-syssccnd.html",
-          "status": "unknown"
-        },
-        {
           "name": "schylling nice ice baby teenie needoh multi pack 4 symptncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-nice-ice-baby-teenie-needoh-multi-pack-4-symptncbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh fuzz ball teenie multipack 4 pcs sympfzbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-teenie-multipack-4-pcs-sympfzbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh cool cats teenie stress ball 3 pack sycctnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cats-teenie-stress-ball-3-pack-sycctnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh classic stress ball synd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-classic-stress-ball-synd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh hot shots teenie stress ball 4 pack syhstnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-hot-shots-teenie-stress-ball-4-pack-syhstnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh cool cats teenie stress ball 4 pack sympcctnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cats-teenie-stress-ball-4-pack-sympcctnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh marbleez stress ball symrbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-marbleez-stress-ball-symrbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh glow in the dark stress ball syagnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-glow-in-the-dark-stress-ball-syagnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh sploot splat stress ball sysplnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-sploot-splat-stress-ball-sysplnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh fuzz ball wonder waves stress ball sywwfzbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-wonder-waves-stress-ball-sywwfzbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh advent calendar 2026 sysqmac26.html",
-          "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/schylling-needoh-advent-calendar-2026-sysqmac26.html",
           "status": "unknown"
         },
         {
@@ -731,8 +841,23 @@
           "status": "unknown"
         },
         {
+          "name": "schylling needoh jelly hops scented glitter bunny syjhnd26.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-jelly-hops-scented-glitter-bunny-syjhnd26.html",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh gumdrop squishy fidget toy sygdnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-gumdrop-squishy-fidget-toy-sygdnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh nice cube glitter glow stress cube syggncbnd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-glitter-glow-stress-cube-syggncbnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh fuzz ball teenie multipack 4 pcs sympfzbnd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-teenie-multipack-4-pcs-sympfzbnd.html",
           "status": "unknown"
         },
         {
@@ -743,6 +868,11 @@
         {
           "name": "schylling needoh teenie fuzz ball multipack 3 pcs syfzbtnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-teenie-fuzz-ball-multipack-3-pcs-syfzbtnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh cool cats teenie stress ball 3 pack sycctnd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cats-teenie-stress-ball-3-pack-sycctnd.html",
           "status": "unknown"
         },
         {
@@ -761,8 +891,23 @@
           "status": "unknown"
         },
         {
+          "name": "NeeDoh by Schylling",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/schylling-schylling-stretching-noodles-sensory-fidget-toy-synl.html",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh groovy ghost stress ball syndwgg24.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-ghost-stress-ball-syndwgg24.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling needoh nice cube sensory squeeze toy syncbnd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-sensory-squeeze-toy-syncbnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh ramen noodlies sensory fidget toy syrnl.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-ramen-noodlies-sensory-fidget-toy-syrnl.html",
           "status": "unknown"
         },
         {
@@ -773,6 +918,11 @@
         {
           "name": "schylling needoh cool cane 5pc mini christmas fidget toys sysqmcc25.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cane-5pc-mini-christmas-fidget-toys-sysqmcc25.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh christmas snow globe fidget toy for kids sysqmsg25.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-christmas-snow-globe-fidget-toy-for-kids-sysqmsg25.html",
           "status": "unknown"
         },
         {
@@ -788,6 +938,11 @@
         {
           "name": "schylling needoh rainboh teenie stress ball 6 pack syrbtnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-rainboh-teenie-stress-ball-6-pack-syrbtnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh classic stress ball synd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-classic-stress-ball-synd.html",
           "status": "unknown"
         },
         {
@@ -811,68 +966,28 @@
           "status": "unknown"
         },
         {
+          "name": "needoh by schylling lava instant slime kit sylvis.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-instant-slime-kit-sylvis.html",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh by Schylling",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
           "status": "unknown"
         },
         {
-          "name": "schylling needoh fuzz ball flower power sensory stress ball syfpfzbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-flower-power-sensory-stress-ball-syfpfzbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh panic pete stress ball syndppst.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-panic-pete-stress-ball-syndppst.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh chicka deedoos easter stress ball chick sycddnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-chicka-deedoos-easter-stress-ball-chick-sycddnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh donut stress ball sydnnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-donut-stress-ball-sydnnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh hot shots football stress ball syhsfbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-hot-shots-football-stress-ball-syhsfbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh good vibes only stress ball sygvnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-good-vibes-only-stress-ball-sygvnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh christmas snow globe fidget toy for kids sysqmsg25.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-christmas-snow-globe-fidget-toy-for-kids-sysqmsg25.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh nice cube glitter glow stress cube syggncbnd.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-glitter-glow-stress-cube-syggncbnd.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh ramen noodlies sensory fidget toy syrnl.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-ramen-noodlies-sensory-fidget-toy-syrnl.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh polar glow penguin sysqmpnd25.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-polar-glow-penguin-sysqmpnd25.html",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh jelly hops scented glitter bunny syjhnd26.html",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-jelly-hops-scented-glitter-bunny-syjhnd26.html",
-          "status": "unknown"
-        },
-        {
           "name": "schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-jelly-squish-stretchy-jellyfish-toy-with-glitter-filling-syjsnd.html",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling needoh fuzz ball flower power sensory stress ball syfpfzbnd.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-flower-power-sensory-stress-ball-syfpfzbnd.html",
           "status": "unknown"
         },
         {
@@ -886,13 +1001,23 @@
           "status": "unknown"
         },
         {
+          "name": "needoh by schylling needoh jack glow lantern halloween fidget toy syndwjgl26.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jack-glow-lantern-halloween-fidget-toy-syndwjgl26.html",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh groovy fruit sensory stress balls 3 pack sygfnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-fruit-sensory-stress-balls-3-pack-sygfnd.html",
           "status": "unknown"
         },
         {
-          "name": "NeeDoh by Schylling",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/schylling-schylling-stretching-noodles-sensory-fidget-toy-synl.html",
+          "name": "schylling needoh panic pete stress ball syndppst.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-panic-pete-stress-ball-syndppst.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh by schylling needoh glowy ghost stress ball syndwgg26.html",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-glowy-ghost-stress-ball-syndwgg26.html",
           "status": "unknown"
         }
       ]
