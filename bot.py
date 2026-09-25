@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V9 active — strict product-only stock verification.")
+print("🛡️ VERIFIED STOCK MODE V10 active — strict stock verification + Cedille coverage.")
 
 
 sent_alert_keys = set()
@@ -1530,6 +1530,11 @@ extra_needoh_shops = [
         "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
     },
     {
+        "name": "Cedille Speelgoed",
+        "country": "🇳🇱 Netherlands",
+        "url": "https://www.internet-speelgoedwinkel.nl/brands/needoh/"
+    },
+    {
         "name": "Proshop",
         "country": "🇳🇱 Netherlands",
         "url": "https://www.proshop.nl/?s=Needoh"
@@ -1628,7 +1633,7 @@ extra_needoh_shops = [
     {
         "name": "Thimble Toys",
         "country": "🇳🇱 Netherlands",
-        "url": "https://www.thimbletoys.com/nl/zoek/Needoh/all"
+        "url": "https://www.thimbletoys.com/nl/merken/needoh"
     },
     {
         "name": "Müller",
@@ -2289,6 +2294,21 @@ def scope_stock_text_to_current_product(shop_name, page):
         if positions:
             return page[:min(positions)]
 
+    if shop_name == "Cedille Speelgoed":
+        # Cedille shows the current product's stock directly above the
+        # Productomschrijving section. Ignore everything after that point so
+        # related products cannot create a false positive.
+        lowered = page.lower()
+        markers = (
+            "### productomschrijving",
+            "productomschrijving",
+            "related products",
+            "gerelateerde producten",
+        )
+        positions = [lowered.find(m) for m in markers if lowered.find(m) != -1]
+        if positions:
+            return page[:min(positions)]
+
     return page
 
 
@@ -2304,6 +2324,8 @@ def verify_non_shopify_product_stock(shop, product):
         "Dve Deti SK",
         "2KidsToys",
         "MimiMarket",
+        "Cedille Speelgoed",
+        "Thimble Toys",
     }
 
     if shop.get("name") not in supported_shops:
@@ -2363,6 +2385,10 @@ def verify_non_shopify_product_stock(shop, product):
         "not available",
         "nedostupné",
         "nedostupne",
+        "niet op voorraad",
+        "niet leverbaar",
+        "nu niet leverbaar",
+        "dit artikel is nu niet leverbaar",
     ]
 
     if any(marker in page_text for marker in out_markers):
@@ -2379,6 +2405,8 @@ def verify_non_shopify_product_stock(shop, product):
         "na cestě do skladu",
         "na ceste do skladu",
         "na ceste na sklad",
+        "dit artikel is beschikbaar vanaf",
+        "verwacht:",
     ]
 
     # Strong IN signals. Require explicit quantity/stock wording from the
@@ -2391,6 +2419,7 @@ def verify_non_shopify_product_stock(shop, product):
         r"\b\d+\s*(?:pcs|pc)\s+in\s+stock\b",
         r"\bin\s+stock\s*:\s*\d+\b",
         r"\b\d+\s+ks\s+skladem\b",
+        r"\bop voorraad\b",
     ]
 
     # A future/estimated delivery message belongs to the current product and
@@ -2419,6 +2448,8 @@ def apply_verified_extra_stock(shop, products):
         "Dve Deti SK",
         "2KidsToys",
         "MimiMarket",
+        "Cedille Speelgoed",
+        "Thimble Toys",
     }:
         products = filter_real_product_links(
             shop,
@@ -3535,8 +3566,4 @@ radar_message = (
 
 print(
     "✅ Stock check completed!"
-)
-
-print(
-    "ℹ️ Duplicate-alert protection is active."
 )
