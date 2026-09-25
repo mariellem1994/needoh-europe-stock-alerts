@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 00:49",
+  "last_checked": "26 Sep 2026, 00:59",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -978,12 +978,12 @@
         {
           "name": "NeeDoh by Schylling",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd.html",
@@ -998,7 +998,7 @@
         {
           "name": "schylling needoh nice cube swirl sensory fidget toy syswncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25.html",
