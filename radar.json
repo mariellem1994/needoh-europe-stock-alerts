@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Sep 2026, 10:10",
+  "last_checked": "25 Sep 2026, 10:15",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -325,7 +325,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -1044,12 +1044,12 @@
         {
           "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Swirl",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkacia kocka Teenie Nice Ice Baby",
           "url": "http://www.dvedeti.sk/schylling-needoh-mackacia-kocka-teenie-nice-ice-baby",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -1228,12 +1228,12 @@
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Mini Ball 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-mini-ball-3-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Anti-Stress Puppies 3 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-anti-stress-puppies-3-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Ball Flower Power",
@@ -1243,12 +1243,12 @@
         {
           "name": "Schylling NeeDoh Cat Cube Nice Berg Swirl",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-cube-nice-berg-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Fruit",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-fruit",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Sugar Skull glow-in-the-dark cat",
@@ -1258,17 +1258,17 @@
         {
           "name": "Schylling NeeDoh Cat Textured",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-textured",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat's Cube Nice Berg",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-s-cube-nice-berg",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat's Cube Teenie Nice Ice Baby",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-s-cube-teenie-nice-ice-baby",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip anti-stress cats 3 pcs",
@@ -1278,12 +1278,12 @@
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-nice-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Sploot Splat",
@@ -1293,12 +1293,12 @@
         {
           "name": "Schylling NeeDoh Chicken Deedos",
           "url": "http://www.2kidstoys.com/schylling-needoh-chicken-deedos",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-color-changing-anti-stress-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy balls Fuzz Ball 4 pcs",
@@ -1308,7 +1308,7 @@
         {
           "name": "Schylling NeeDoh Colorful Squishy Balls Hot Shots 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-hot-shots-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy mini balls Swirl 4 ks",
@@ -1318,17 +1318,17 @@
         {
           "name": "Schylling NeeDoh Colorful Squishy Mini Cats 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-cats-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-anti-stress-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Ball Stardust",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-ball-stardust",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Mini Ball",
@@ -1338,17 +1338,17 @@
         {
           "name": "Schylling NeeDoh Cuddle neon ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-neon-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle Soccer Ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-cuddle-soccer-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Doll Pete",
           "url": "http://www.2kidstoys.com/schylling-needoh-doll-pete",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Donut",
@@ -1358,17 +1358,17 @@
         {
           "name": "Schylling NeeDoh FSDU Cardboard advertising display",
           "url": "http://www.2kidstoys.com/schylling-needoh-fsdu-cardboard-advertising-display",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Funky Pup puppy",
           "url": "http://www.2kidstoys.com/schylling-needoh-funky-pup-puppy",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Fuzz Ball mini squishy balls",
           "url": "http://www.2kidstoys.com/schylling-needoh-fuzz-ball-mini-squishy-balls",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Fuzz Ball squishy maxi ball",
@@ -1378,12 +1378,12 @@
         {
           "name": "Schylling NeeDoh Glow-in-the-dark Cat Ghost",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-cat-ghost",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Glow-in-the-dark penguin",
           "url": "http://www.2kidstoys.com/schylling-needoh-glow-in-the-dark-penguin",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh",
@@ -2455,7 +2455,7 @@
         {
           "name": "Teenie Singles Needoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube",
@@ -2480,17 +2480,17 @@
         {
           "name": "Teenie NeeDoh Fuzz Balls 3-pack",
           "url": "https://www.toys42hands.nl/en/products/teenie-needoh-fuzz-balls-3-stuks",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Berg Swirl",
           "url": "https://www.toys42hands.nl/en/products/needoh-nice-berg-swirl",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Wonder Wave Fuzz",
           "url": "https://www.toys42hands.nl/en/products/needoh-wonder-wave-fuzz",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Mello Mallo",
@@ -2510,7 +2510,7 @@
         {
           "name": "Teenie Nice Ice Baby NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-nice-ice-baby-needoh",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Cool Cat",
@@ -2525,12 +2525,12 @@
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.toys42hands.nl/en/products/needoh-dream-drop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Gumdrop",
           "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Swirl Teenie 6-pack",
