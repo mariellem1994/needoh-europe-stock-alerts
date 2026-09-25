@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V11 active — Cedille cleanup + verified Miss Lemonade coverage.")
+print("🛡️ VERIFIED STOCK MODE V12 active — Miss Lemonade catalogue stock verification.")
 
 
 sent_alert_keys = set()
@@ -1959,56 +1959,88 @@ def get_shopify_needoh_products(shop):
 
 
 def get_miss_lemonade_needoh_products(shop):
-    """Read Miss Lemonade's brand catalogue and trust its per-product stock labels."""
+    """Read Miss Lemonade through the text reader so each catalogue product keeps its own stock label."""
     products = []
     seen = set()
 
-    # The catalogue currently spans two pages. Checking both is safer than
-    # relying on the site's changing default page-size setting.
-    urls = [shop["url"], shop["url"] + "?page=2"]
+    # Ask for all products on one catalogue page. The normal HTML response is
+    # JavaScript/template-heavy; the reader turns the public catalogue into
+    # stable Markdown where every product heading is followed by its own stock label.
+    catalogue_url = shop["url"] + "?resultsPerPage=54"
+    reader_url = "https://r.jina.ai/http://" + catalogue_url.replace(
+        "https://", ""
+    ).replace(
+        "http://", ""
+    )
 
-    for catalogue_url in urls:
-        try:
-            page = fetch_extra_shop_page(catalogue_url, quiet=True)
-        except Exception as error:
-            print(f"⚠️ Miss Lemonade catalogue page failed: {error}")
+    try:
+        request = urllib.request.Request(
+            reader_url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "text/plain,*/*",
+                "Cache-Control": "no-cache"
+            }
+        )
+        with urllib.request.urlopen(request, timeout=40) as response:
+            page = response.read().decode("utf-8", errors="ignore")
+    except Exception as error:
+        print(f"⚠️ Miss Lemonade catalogue reader failed: {error}")
+        return None
+
+    # Jina Markdown normally exposes products as linked H2 headings. Some
+    # versions omit the link in the heading, so accept both forms. For an
+    # unlinked heading we keep the catalogue URL as the safe click target.
+    headings = list(re.finditer(
+        r"(?m)^##\s+(?:\[([^\]]+)\]\((https?://[^)]+)\)|([^\n]+))\s*$",
+        page
+    ))
+
+    for index, match in enumerate(headings):
+        raw_name = match.group(1) or match.group(3) or ""
+        name = clean_extra_product_name(raw_name)
+        name_lower = name.lower()
+
+        # Keep genuine NeeDoh products only; exclude the brand-page heading and
+        # unrelated LAVA/Schylling products that can share the catalogue.
+        if "needoh" not in name_lower and "nee-doh" not in name_lower:
+            continue
+        if name_lower in {"needoh", "needoh by schylling", "nee-doh"}:
             continue
 
-        # Reader-fallback format: each product starts with a markdown H2 link.
-        # Stock text belongs to that block until the next product heading.
-        headings = list(re.finditer(
-            r"(?m)^##\s+\[([^\]]+)\]\((https?://[^)]+)\)",
-            page
-        ))
+        url = unescape(match.group(2)).strip() if match.group(2) else catalogue_url
+        key = (name_lower, url)
+        if key in seen:
+            continue
 
-        for index, match in enumerate(headings):
-            name = clean_extra_product_name(match.group(1))
-            url = unescape(match.group(2)).strip()
+        end_pos = headings[index + 1].start() if index + 1 < len(headings) else len(page)
+        block = page[match.end():end_pos].lower()
 
-            if "needoh" not in name.lower() and "nee-doh" not in name.lower():
-                continue
-            if url in seen:
-                continue
+        # IMPORTANT: only inspect this product's block. Never search the whole
+        # catalogue for stock text, because different products have different statuses.
+        if (
+            "in stock. dispatch in 24h" in block
+            or "in stock" in block
+            or "w magazynie. wysyłka 24h" in block
+        ) and "out-of-stock" not in block:
+            status = "in_stock"
+        elif (
+            "out-of-stock" in block
+            or "out of stock" in block
+            or "obecnie brak na stanie" in block
+        ):
+            status = "out_of_stock"
+        else:
+            status = "unknown"
 
-            end = headings[index + 1].start() if index + 1 < len(headings) else len(page)
-            block = page[match.end():end].lower()
-
-            if "in stock. dispatch in 24h" in block or "w magazynie. wysyłka 24h" in block:
-                status = "in_stock"
-            elif "out-of-stock" in block or "obecnie brak na stanie" in block:
-                status = "out_of_stock"
-            else:
-                status = "unknown"
-
-            products.append({"name": name, "url": url, "status": status})
-            seen.add(url)
+        products.append({"name": name, "url": url, "status": status})
+        seen.add(key)
 
     if products:
-        print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via brand catalogue")
+        print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via verified catalogue reader")
         return products
 
-    # If the reader format ever changes, fall back to the existing generic
-    # discovery rather than guessing stock.
+    print("⚠️ Miss Lemonade reader returned no parseable NeeDoh product cards")
     return None
 
 
