@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 16:41",
+  "last_checked": "26 Sep 2026, 16:55",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -2761,7 +2761,7 @@
         {
           "name": "Shaggy NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/shaggy-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glitter Glow Nice Cube",
