@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 15:04",
+  "last_checked": "26 Sep 2026, 15:21",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -10,11 +10,6 @@
       "name": "Cedille Speelgoed",
       "country": "🇳🇱 Netherlands",
       "products": [
-        {
-          "name": "NeeDoh Squisher the Reindoh",
-          "url": "https://www.internet-speelgoedwinkel.nl/squisher-the-reindoh.html",
-          "status": "in_stock"
-        },
         {
           "name": "NeeDoh Teenie Jack Glow Lanterns",
           "url": "https://www.internet-speelgoedwinkel.nl/needoh-teenie-jack-glow-lanterns.html",
