@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 12:18",
+  "last_checked": "26 Sep 2026, 12:37",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1960,43 +1960,43 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
-          "name": "Schylling NeeDoh Adventní kalendář 2026",
-          "url": "http://www.bavixo.cz/p/schylling-needoh-adventni-kalendar-2026",
+          "name": "schylling needoh adventni kalendar 2026",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-adventni-kalendar-2026",
           "status": "in_stock"
         },
         {
-          "name": "Schylling Mačkací texturovaný Needoh 1 ks",
-          "url": "http://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
+          "name": "schylling mackaci texturovany needoh 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball",
-          "url": "http://www.bavixo.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball",
+          "name": "schylling needoh mackaci mini micky fuzz ball",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball",
           "status": "unknown"
         },
         {
-          "name": "Schylling Mačkací kostka NeeDoh růžová 1 ks",
-          "url": "http://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-ruzova-1-ks",
+          "name": "schylling mackaci kostka needoh ruzova 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-ruzova-1-ks",
           "status": "in_stock"
         },
         {
-          "name": "Schylling Mačkací kostka NeeDoh fialová 1 ks",
-          "url": "http://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-fialova-1-ks",
+          "name": "schylling mackaci kostka needoh fialova 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-fialova-1-ks",
           "status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací maxi míček Fuzz Ball",
-          "url": "http://www.bavixo.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
+          "name": "schylling needoh mackaci maxi micek fuzz ball",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
           "status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
-          "url": "http://www.bavixo.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
+          "name": "schylling needoh barevne mackaci mini micky swirl 4 ks",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
           "status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
-          "url": "http://www.bavixo.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "name": "schylling needoh mackaci kostky mini nice ice baby teenie 4 ks",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
           "status": "unknown"
         }
       ]
@@ -2230,12 +2230,134 @@
     {
       "name": "Spadt",
       "country": "🇧🇪 Belgium",
-      "products": []
+      "products": [
+        {
+          "name": "Uit stock Needoh Squishmas Squishkins Schylling € 9,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-squishmas-squishkins-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmsk24-6990/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Funky Pup Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-funky-pup-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyfpnd-6979/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Squishmas Groovy Tree Schylling € 19,99",
+          "url": "https://spadt.be/webshop/schylling-squishmas-groovy-tree-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmgt23-6989/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Glow in the Dark Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-glow-in-the-dark-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssygnd-6952/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Dig It Pig Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-dig-it-pig-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssydnnd-6951/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Needoh Color Change Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-color-change-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyccsq-6670/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Needoh Donut Schylling € 9,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-donut-speelgoed-hebbedingen-en-minispeeltjes-fidgetsdpnd-6671/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Teenie Needoh Cool Cats (3) Schylling € 6,99",
+          "url": "https://spadt.be/webshop/schylling-teenie-needoh-cool-cats-3-speelgoed-hebbedingen-en-minispeeltjes-fidgetssycctnd-6153/",
+          "status": "out_of_stock"
+        }
+      ]
     },
     {
       "name": "Mamiee",
       "country": "🇨🇿 Czech Republic",
-      "products": []
+      "products": [
+        {
+          "name": "Schylling NeeDoh Mačkací medúza",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-meduza",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresová kapka",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresova-kapka",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míček",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-mini-micek-ruze-barvy-antistres",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Adventní kalendář 2026",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-adventni-kalendar-2026",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací texturovaný - různé barvy",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-texturovany",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Duhové mačkací míčky 6 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-duhove-mackaci-micky-6-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresove-kocicky-3-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball-strapate-trojbaleni",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací maxi míček Fuzz Ball",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Nice Cube - střední",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-antistresova-kostka-nice-cube-stredni",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-kostka-teenie-nice-ice-baby",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací míčky Fuzz Ball 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-micky-fuzz-ball-4-ks",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
+          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Squisher Reindoh Mačkací vánoční sob - limitovaná vánoční edice",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-squisher-reindoh-mackaci-vanocni-sob",
+          "status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "status": "in_stock"
+        }
+      ]
     },
     {
       "name": "Dráček",
