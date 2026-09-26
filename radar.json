@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 06:59",
+  "last_checked": "26 Sep 2026, 07:09",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -1983,32 +1983,7 @@
         {
           "name": "Needoh",
           "url": "https://www.thimbletoys.com/nl/merken/needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "4650670 needoh gumdrop needoh",
-          "url": "https://www.thimbletoys.com/nl/merken/needoh/detail/4650670-needoh---gumdrop-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "4650672 needoh cool cats kat",
-          "url": "https://www.thimbletoys.com/nl/merken/needoh/detail/4650672-needoh-cool-cats-kat",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "4650673 needoh color change",
-          "url": "https://www.thimbletoys.com/nl/merken/needoh/detail/4650673-needoh-color-change",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "4650684 needoh niceberg needoh",
-          "url": "https://www.thimbletoys.com/nl/merken/needoh/detail/4650684-needoh---niceberg-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "4650686 needoh nice cube glow needoh",
-          "url": "https://www.thimbletoys.com/nl/merken/needoh/detail/4650686-needoh---nice-cube-glow-needoh",
-          "status": "out_of_stock"
+          "status": "in_stock"
         }
       ]
     },
