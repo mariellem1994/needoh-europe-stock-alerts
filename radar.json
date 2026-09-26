@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 16:55",
+  "last_checked": "26 Sep 2026, 17:04",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -103,18 +103,18 @@
           "status": "unknown"
         },
         {
+          "name": "Schylling NeeDoh Mačkací antistresové srdce",
+          "url": "https://www.megaknihy.cz/hry/4508867-schylling-needoh-mackaci-antistresove-srdce.html?search_pos=7&query_text=Needoh",
+          "status": "unknown"
+        },
+        {
           "name": "Schylling Mačkací antistresový mini míček Needoh 3 ks",
-          "url": "https://www.megaknihy.cz/antistresove-micky/3861110-schylling-mackaci-antistresovy-mini-micek-needoh-3-ks.html?search_pos=7&query_text=Needoh",
+          "url": "https://www.megaknihy.cz/antistresove-micky/3861110-schylling-mackaci-antistresovy-mini-micek-needoh-3-ks.html?search_pos=8&query_text=Needoh",
           "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresové kočičky",
-          "url": "https://www.megaknihy.cz/hry/4508224-schylling-needoh-mackaci-antistresove-kocicky.html?search_pos=8&query_text=Needoh",
-          "status": "unknown"
-        },
-        {
-          "name": "Schylling NeeDoh Mačkací antistresové srdce",
-          "url": "https://www.megaknihy.cz/hry/4508867-schylling-needoh-mackaci-antistresove-srdce.html?search_pos=9&query_text=Needoh",
+          "url": "https://www.megaknihy.cz/hry/4508224-schylling-needoh-mackaci-antistresove-kocicky.html?search_pos=9&query_text=Needoh",
           "status": "unknown"
         },
         {
@@ -968,7 +968,7 @@
         {
           "name": "schylling needoh nice cube glow in the dark stress cube sygncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-glow-in-the-dark-stress-cube-sygncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh by schylling lava instant slime kit sylvis.html",
@@ -978,12 +978,12 @@
         {
           "name": "NeeDoh by Schylling",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd.html",
@@ -998,7 +998,7 @@
         {
           "name": "schylling needoh nice cube swirl sensory fidget toy syswncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25.html",
