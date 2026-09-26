@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Sep 2026, 19:05",
+  "last_checked": "26 Sep 2026, 19:22",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -838,7 +838,7 @@
         {
           "name": "schylling needoh fuzz ball sensory toy syfzbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-sensory-toy-syfzbnd.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "schylling needoh super fuzz ball stress ball sysfzbnd.html",
@@ -928,7 +928,7 @@
         {
           "name": "schylling needoh christmas snow globe fidget toy for kids sysqmsg25.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-christmas-snow-globe-fidget-toy-for-kids-sysqmsg25.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh ginger glowman christmas fidget toy sysqmgm25.html",
@@ -978,12 +978,12 @@
         {
           "name": "NeeDoh by Schylling",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd.html",
@@ -998,7 +998,7 @@
         {
           "name": "schylling needoh nice cube swirl sensory fidget toy syswncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25.html",
@@ -2540,62 +2540,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "error"
+          "status": "out_of_stock"
         }
       ]
     },
