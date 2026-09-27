@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Sep 2026, 17:46",
+  "last_checked": "27 Sep 2026, 18:01",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -1181,8 +1181,8 @@
       "country": "🇪🇸 Spain",
       "products": [
         {
-          "name": "Gominola · Needoh",
-          "url": "http://bizcochodeyogurshop.com/products/gominola-needoh",
+          "name": "gominola needoh",
+          "url": "https://bizcochodeyogurshop.com/products/gominola-needoh",
           "status": "out_of_stock"
         }
       ]
