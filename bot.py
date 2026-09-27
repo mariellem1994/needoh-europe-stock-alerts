@@ -26,8 +26,11 @@ PENGUIN_CODES = {"sqmpnd25", "sqmpnd26", "019649506071", "019649508433"}
 def is_polar_penguin(value):
     value = str(value).lower()
     compact = re.sub(r"[^a-z0-9]", "", value)
-    return ("penguin" in value or "pinguin" in value or "pingwin" in value
-            or any(code in compact for code in PENGUIN_CODES))
+    has_product_code = any(code in compact for code in PENGUIN_CODES)
+    has_brand = "needoh" in compact
+    has_penguin = any(word in compact for word in ("penguin", "pinguin", "pingwin"))
+    # A generic Penguin vinyl figure is never a NeeDoh stock match.
+    return has_product_code or (has_brand and has_penguin)
 
 
 sent_alert_keys = set()
@@ -1957,6 +1960,12 @@ def get_shopify_needoh_products(shop):
             + vendor
         ).lower()
 
+        # A shop's search/collection may contain unrelated Penguin toys.
+        # Codes are exact identifiers; a generic character name is not.
+        if ("vinyl figure" in title.lower() or "funko pop" in title.lower()) \
+                and not is_polar_penguin(handle):
+            continue
+
         if (
             "needoh" not in combined
             and "nee-doh" not in combined
@@ -2088,7 +2097,10 @@ def get_miss_lemonade_needoh_products(shop):
         return products
 
     print("⚠️ Miss Lemonade reader returned no parseable NeeDoh product cards")
-    return None
+    # The generic catalogue parser can mistake navigation/related links for
+    # products (80 unverified cards in the September 27 Actions run). Keep
+    # only the known Penguin product page until this catalogue is readable.
+    return products
 
 
 def clean_cedille_products(products):
