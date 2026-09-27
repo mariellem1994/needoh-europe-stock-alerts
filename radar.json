@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Sep 2026, 22:02",
+  "last_checked": "27 Sep 2026, 22:13",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -256,12 +256,12 @@
         {
           "name": "Schylling Mačkací kostka NeeDoh",
           "url": "https://www.megaknihy.cz/antistresove-micky/4093626-schylling-mackaci-kostka-needoh.html?search_pos=1&query_text=Needoh",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Schylling Katalog hraček 2026 v anglickém jazyce",
           "url": "https://www.megaknihy.cz/nezarazeno/26294546-schylling-katalog-hracek-2026-v-anglickem-jazyce.html?search_pos=2&query_text=Needoh",
-          "status": "unknown"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
@@ -301,12 +301,12 @@
         {
           "name": "Schylling Barvu měnící antistresový míček Needoh 1 ks",
           "url": "https://www.megaknihy.cz/hry/3861229-schylling-barvu-menici-antistresovy-micek-needoh-1-ks.html?search_pos=10&query_text=Needoh",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html?search_pos=11&query_text=Needoh",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresová štěňátka",
