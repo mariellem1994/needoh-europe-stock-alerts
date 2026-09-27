@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V14 active — Penguin tracking and verified stock checks.")
+print("🛡️ VERIFIED STOCK MODE V14.1 active — Penguin filter and stale-card cleanup.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
@@ -2807,6 +2807,13 @@ def check_extra_needoh_shop(
         not products_found
         and previous_products
     ):
+
+        # The earlier broad Penguin matcher admitted a Booghe vinyl figure.
+        # Never keep that stale card when the corrected Shopify feed finds no
+        # actual NeeDoh products.
+        if shop["name"] == "Booghe":
+            print("🧹 Booghe: removed stale non-NeeDoh radar cards")
+            return []
 
         print(
             f"ℹ️ {shop['name']}: keeping previous radar products because this check returned none"
