@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Sep 2026, 11:31",
+  "last_checked": "27 Sep 2026, 11:51",
   "shops": [
     {
       "name": "Spellenrijk",
@@ -998,7 +998,7 @@
         {
           "name": "schylling needoh nice cube swirl sensory fidget toy syswncbnd.html",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25.html",
@@ -1954,11 +1954,6 @@
       "name": "Bavixo",
       "country": "🇨🇿 Czech Republic",
       "products": [
-        {
-          "name": "schylling needoh adventni kalendar 2026",
-          "url": "https://www.bavixo.cz/p/schylling-needoh-adventni-kalendar-2026",
-          "status": "in_stock"
-        },
         {
           "name": "schylling mackaci texturovany needoh 1 ks",
           "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
