@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Sep 2026, 15:38",
+  "last_checked": "27 Sep 2026, 15:50",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -834,7 +834,7 @@
         {
           "name": "NeeDoh Polar Glow Penguin (SQMPND25 / SQMPND26)",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/schylling-needoh-polar-glow-penguin-sysqmpnd25.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
