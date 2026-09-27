@@ -16,7 +16,18 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V13 active — accuracy-first stock verification and error cleanup.")
+print("🛡️ VERIFIED STOCK MODE V14 active — Penguin tracking and verified stock checks.")
+
+# Both seasonal catalogue codes are used by retailers. The barcodes may be
+# printed without a leading zero, so normalize digits before matching.
+PENGUIN_CODES = {"sqmpnd25", "sqmpnd26", "019649506071", "019649508433"}
+
+
+def is_polar_penguin(value):
+    value = str(value).lower()
+    compact = re.sub(r"[^a-z0-9]", "", value)
+    return ("penguin" in value or "pinguin" in value or "pingwin" in value
+            or any(code in compact for code in PENGUIN_CODES))
 
 
 sent_alert_keys = set()
@@ -487,13 +498,28 @@ def check_dreamland_stock(url):
         if "levering aan huis" in page_lower:
             return "in_stock"
 
-        return "out_of_stock"
+        return "unknown"
 
     except Exception as e:
 
-        print(f"⚠️ DreamLand error: {e}")
-
-        return "error"
+        # DreamLand blocks GitHub Actions with HTTP 403. Try the same public
+        # product page through the text reader, and never convert a blocked
+        # request into an out-of-stock claim.
+        print(f"ℹ️ DreamLand direct check unavailable: {e}")
+        page = fetch_reader_page(url, quiet=True)
+        if not page:
+            return "unknown"
+        page = scope_generic_product_text(page).lower()
+        if any(marker in page for marker in (
+            "tijdelijk uitverkocht", "niet leverbaar", "uitverkocht",
+            "niet beschikbaar", "out of stock", "sold out"
+        )):
+            return "out_of_stock"
+        if "levering aan huis" in page and not any(marker in page for marker in (
+            "geen levering aan huis", "niet beschikbaar voor levering aan huis"
+        )):
+            return "in_stock"
+        return "unknown"
 
 
 def check_houten_stock(url):
@@ -1525,6 +1551,13 @@ lobbes_products = [
 
 extra_needoh_shops = [
     {
+        "name": "Cogs Toys & Games",
+        "country": "🇮🇪 Ireland",
+        "shopify": True,
+        "shopify_collection": "needoh",
+        "url": "https://www.cogstoysandgames.ie/collections/needoh"
+    },
+    {
         "name": "Spellenrijk",
         "country": "🇳🇱 Netherlands",
         "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
@@ -1928,6 +1961,7 @@ def get_shopify_needoh_products(shop):
             "needoh" not in combined
             and "nee-doh" not in combined
             and "nee doh" not in combined
+            and not is_polar_penguin(combined)
         ):
             continue
 
@@ -1963,6 +1997,14 @@ def get_miss_lemonade_needoh_products(shop):
     products = []
     seen = set()
 
+    # Keep the known product page on the radar even if catalogue pagination
+    # or the shop's search ranking temporarily hides it.
+    penguin_url = ("https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/"
+                   "games/schylling-needoh-polar-glow-penguin-sysqmpnd25.html")
+    products.append({"name": "NeeDoh Polar Glow Penguin (SQMPND25 / SQMPND26)",
+                     "url": penguin_url, "status": "unknown"})
+    seen.add((products[0]["name"].lower(), penguin_url))
+
     # Ask for all products on one catalogue page. The normal HTML response is
     # JavaScript/template-heavy; the reader turns the public catalogue into
     # stable Markdown where every product heading is followed by its own stock label.
@@ -1986,7 +2028,7 @@ def get_miss_lemonade_needoh_products(shop):
             page = response.read().decode("utf-8", errors="ignore")
     except Exception as error:
         print(f"⚠️ Miss Lemonade catalogue reader failed: {error}")
-        return None
+        return products
 
     # Jina Markdown normally exposes products as linked H2 headings. Some
     # versions omit the link in the heading, so accept both forms. For an
@@ -2009,6 +2051,8 @@ def get_miss_lemonade_needoh_products(shop):
             continue
 
         url = unescape(match.group(2)).strip() if match.group(2) else catalogue_url
+        if url == penguin_url:
+            continue
         key = (name_lower, url)
         if key in seen:
             continue
@@ -2183,6 +2227,7 @@ def get_extra_needoh_products(shop):
             "needoh" not in combined
             and "nee-doh" not in combined
             and "nee doh" not in combined
+            and not is_polar_penguin(combined)
         ):
             continue
 
