@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V14.1 active — Penguin filter and stale-card cleanup.")
+print("🛡️ VERIFIED STOCK MODE V15 active — retailer catalogue and stock verification fixes.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
@@ -1573,12 +1573,12 @@ extra_needoh_shops = [
     {
         "name": "Proshop",
         "country": "🇳🇱 Netherlands",
-        "url": "https://www.proshop.nl/?s=Needoh"
+        "url": "https://www.proshop.nl/NeeDoh"
     },
     {
         "name": "Megaknihy",
         "country": "🇨🇿 Czech Republic",
-        "url": "https://www.megaknihy.cz/vyhledavani?orderby=position&orderway=desc&search_query=Needoh&p=1"
+        "url": "https://www.megaknihy.cz/51463_schylling-needoh"
     },
     {
         "name": "Dvě děti CZ",
@@ -1630,13 +1630,13 @@ extra_needoh_shops = [
     },
     {
         "name": "Logopedicum",
-        "country": "🌍 Europe",
-        "url": "https://logopedicum.com/?mot_q=Needoh"
+        "country": "🇪🇸 Spain",
+        "url": "https://logopedicum.com/marca/needoh/"
     },
     {
         "name": "2KidsToys",
         "country": "🌍 Europe",
-        "url": "https://www.2kidstoys.com/search-results?search_keyword=Needoh&page=1"
+        "url": "https://www.2kidstoys.com/schylling-needoh"
     },
     {
         "name": "Toy Corner",
@@ -1679,12 +1679,12 @@ extra_needoh_shops = [
     {
         "name": "Juguetea",
         "country": "🇪🇸 Spain",
-        "url": "https://juguetea.es/?s=Needoh&post_type=product"
+        "url": "https://juguetea.es/?marca=needoh"
     },
     {
         "name": "Le Monde Imaginaire",
         "country": "🇫🇷 France",
-        "url": "https://lemondeimaginaire.com/?q=Needoh"
+        "url": "https://lemondeimaginaire.com/brand/331-needoh?resultsPerPage=60"
     },
     {
         "name": "Booghe",
@@ -1695,7 +1695,7 @@ extra_needoh_shops = [
     {
         "name": "Lekia",
         "country": "🇸🇪 Sweden",
-        "url": "https://www.lekia.se/sokresultat?q=Needoh&tab_index=0"
+        "url": "https://www.lekia.se/varumarken/needoh"
     }
 ]
 
@@ -2037,7 +2037,7 @@ def get_miss_lemonade_needoh_products(shop):
             page = response.read().decode("utf-8", errors="ignore")
     except Exception as error:
         print(f"⚠️ Miss Lemonade catalogue reader failed: {error}")
-        return products
+        page = ""
 
     # Jina Markdown normally exposes products as linked H2 headings. Some
     # versions omit the link in the heading, so accept both forms. For an
@@ -2091,6 +2091,39 @@ def get_miss_lemonade_needoh_products(shop):
         # contaminate one another.
         products.append({"name": name, "url": url, "status": "unknown"})
         seen.add(key)
+
+    # The reader sometimes returns a shortened page without product headings.
+    # The public HTML still exposes the real .html product links in that case.
+    if len(products) == 1:
+        try:
+            html_page = fetch_extra_shop_page(catalogue_url, quiet=True)
+        except Exception as error:
+            print(f"ℹ️ Miss Lemonade HTML catalogue unavailable: {error}")
+            html_page = ""
+        for match in re.finditer(
+            r'<a\b[^>]*href=["\']([^"\']+\.html(?:\?[^"\']*)?)["\'][^>]*>(.*?)</a>',
+            html_page, re.IGNORECASE | re.DOTALL
+        ):
+            url = urljoin(shop["url"], unescape(match.group(1))).split("?", 1)[0]
+            slug = urllib.parse.urlparse(url).path.rsplit("/", 1)[-1].lower()
+            if "needoh" not in slug and "nee-doh" not in slug:
+                continue
+            if url == penguin_url or any(p["url"] == url for p in products):
+                continue
+            name = clean_extra_product_name(match.group(2))
+            if "needoh" not in name.lower() and "nee-doh" not in name.lower():
+                name = "NeeDoh " + slug.removesuffix(".html").replace("-", " ")
+            products.append({"name": name, "url": url, "status": "unknown"})
+        # The fallback can itself be Markdown rather than HTML on a 403.
+        for match in re.finditer(r'\[([^\]]{3,180})\]\((https?://[^)\s]+\.html)(?:\?[^)]*)?\)', html_page):
+            url = unescape(match.group(2))
+            slug = urllib.parse.urlparse(url).path.rsplit("/", 1)[-1].lower()
+            if ("needoh" not in slug and "nee-doh" not in slug) or any(
+                p["url"] == url for p in products
+            ):
+                continue
+            products.append({"name": clean_extra_product_name(match.group(1)),
+                             "url": url, "status": "unknown"})
 
     if products:
         print(f"🔎 Miss Lemonade: found {len(products)} NeeDoh products via catalogue reader")
@@ -2422,6 +2455,25 @@ def is_real_product_page_url(shop, url):
     # Store-specific product URL rules for the high-volume Czech/Slovak shops.
     shop_name = shop.get("name")
 
+    if shop_name == "Proshop":
+        return bool(re.search(r"/\d{6,8}/?$", path))
+    if shop_name == "Megaknihy":
+        return bool(re.search(r"/\d+-[^/]+\.html$", path))
+    if shop_name == "Logopedicum":
+        return "/producto/" in path
+    if shop_name == "Miss Lemonade":
+        return path.endswith(".html")
+    if shop_name == "Müller":
+        return "/p/" in path
+    if shop_name == "Juguetea":
+        return "/producto/" in path
+    if shop_name == "Le Monde Imaginaire":
+        return path.endswith(".html")
+    if shop_name == "Lekia":
+        return "/leksaker/" in path
+    if shop_name == "2KidsToys":
+        return "needoh" in path and path.rstrip("/") != "/schylling-needoh"
+
     if shop_name in {"Dvě děti CZ", "Dve Deti SK"}:
         # Their real product pages are root-level slugs; images live under /data/product/.
         parts = [part for part in path.split("/") if part]
@@ -2537,12 +2589,53 @@ def scope_generic_product_text(page):
     return page[:min(positions)] if positions else page
 
 
+def structured_product_stock(page):
+    """Use the current product's structured offer when it is unambiguous."""
+    offers = []
+    for script in re.findall(
+        r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        page, re.IGNORECASE | re.DOTALL
+    ):
+        try:
+            data = json.loads(unescape(script.strip()))
+        except (ValueError, TypeError):
+            continue
+        queue = data if isinstance(data, list) else [data]
+        while queue:
+            item = queue.pop(0)
+            if not isinstance(item, dict):
+                continue
+            queue.extend(x for x in item.get("@graph", []) if isinstance(x, dict))
+            if "Product" not in str(item.get("@type", "")):
+                continue
+            offer = item.get("offers", [])
+            offers.extend(offer if isinstance(offer, list) else [offer])
+    values = {
+        str(o.get("availability", "")).lower().rsplit("/", 1)[-1]
+        for o in offers if isinstance(o, dict) and o.get("availability")
+    }
+    if values == {"instock"}:
+        return "in_stock"
+    if values and values <= {"outofstock", "soldout", "discontinued"}:
+        return "out_of_stock"
+    return "unknown"
+
+
 def verify_reader_stock(shop_name, url):
     """Strict product-page reader verification. Ambiguous pages remain unknown."""
-    page = fetch_reader_page(url, quiet=True)
+    try:
+        direct_page = fetch_extra_shop_page(url, quiet=True)
+    except Exception:
+        direct_page = ""
+    if direct_page and "<html" in direct_page[:1000].lower():
+        structured = structured_product_stock(direct_page)
+        if structured != "unknown":
+            return structured
+    page = fetch_reader_page(url, quiet=True) or direct_page
     if not page:
         return "unknown"
-    page = scope_generic_product_text(page)
+
+    page = scope_generic_product_text(page)[:14000]
     text = unescape(re.sub(r"<[^>]+>", " ", page))
     text = re.sub(r"\s+", " ", text).strip().lower()
 
@@ -2554,8 +2647,34 @@ def verify_reader_stock(shop_name, url):
         "online nicht verfügbar", "online nicht verfuegbar", "finns ej i lager online",
         "slut i lager online", "není skladem", "neni skladem", "vyprodáno", "vyprodano",
         "sin existencias",
-        "momentálně nedostupné", "momentalne nedostupne"
+        "momentálně nedostupné", "momentalne nedostupne",
+        "aktuell nicht lieferbar", "outofstock",
+        "unfortunately, this product is currently out of stock"
     )
+    # Different retailers use different words for online (rather than local
+    # store) availability. Never treat a generic cart button as proof.
+    if shop_name == "Lekia":
+        if "finns ej i lager online" in text or "slut i lager online" in text:
+            return "out_of_stock"
+        return "in_stock" if "finns i lager online" in text else "unknown"
+    if shop_name == "Proshop":
+        if "bestelproduct" in text or "niet op voorraad" in text:
+            return "out_of_stock"
+        return "in_stock" if re.search(r"\bop voorraad\s*-\s*\d", text) else "unknown"
+    if shop_name == "Megaknihy":
+        if "není skladem" in text or "neni skladem" in text:
+            return "out_of_stock"
+        return "in_stock" if re.search(r"\bskladem\b", text) else "unknown"
+    if shop_name == "Müller":
+        if "aktuell nicht lieferbar" in text or "online nicht verfügbar" in text:
+            return "out_of_stock"
+        return "in_stock" if "online lieferbar" in text else "unknown"
+    if shop_name == "Bavixo":
+        if "není skladem" in text or "neni skladem" in text:
+            return "out_of_stock"
+        # A generic "skladem" also appears in Bavixo's footer and related
+        # products. Only a structured offer above can confirm availability.
+        return "unknown"
     if any(m in text for m in out_markers):
         return "out_of_stock"
 
@@ -2573,7 +2692,6 @@ def verify_reader_stock(shop_name, url):
         r"\bi lager online\b",
         r"\bskladem\s+\d+\s*ks\b",
         r"\b\d+\s*ks\s+skladem\b",
-        r"\bskladem\b",
     )
     if any(re.search(p, text) for p in in_patterns):
         return "in_stock"
@@ -2588,6 +2706,7 @@ def verify_non_shopify_product_stock(shop, product):
     """
 
     supported_shops = {
+        "Proshop", "Megaknihy", "Logopedicum",
         "Dvě děti CZ",
         "Dve Deti SK",
         "2KidsToys",
@@ -2612,6 +2731,7 @@ def verify_non_shopify_product_stock(shop, product):
         return "unknown"
 
     if shop.get("name") in {
+        "Proshop", "Megaknihy", "Logopedicum",
         "Miss Lemonade", "Bavixo", "Müller", "Juguetea",
         "Le Monde Imaginaire", "Bizcocho de Yogur", "Lekia"
     }:
@@ -2630,11 +2750,25 @@ def verify_non_shopify_product_stock(shop, product):
         return "unknown"
 
     # IMPORTANT: remove related/recommended products first. Their stock text
+    if "<html" in page[:1000].lower():
+        structured = structured_product_stock(page)
+        if structured != "unknown":
+            return structured
+
+    # IMPORTANT: remove related/recommended products first. Their stock text
     # must never be mistaken for stock of the current NeeDoh.
     page = scope_stock_text_to_current_product(
         shop.get("name"),
         page
     )
+
+    if shop.get("name") == "2KidsToys":
+        # Variant links list other colours and their availability before the
+        # current product's warehouse and purchase status.
+        page = re.sub(
+            r"(?is)(?:##\s*)?choose a variant:.*?(?=2kids toys warehouse:)",
+            "", page
+        )
 
     # Flatten enough markup/markdown to make exact phrases easier to detect.
     page_text = re.sub(r"<[^>]+>", " ", page)
@@ -2725,6 +2859,7 @@ def apply_verified_extra_stock(shop, products):
         return products
 
     if shop.get("name") in {
+        "Proshop", "Megaknihy", "Logopedicum",
         "Dvě děti CZ",
         "Dve Deti SK",
         "2KidsToys",
@@ -2770,6 +2905,13 @@ def check_extra_needoh_shop(
         shop
     )
 
+    previous_products = get_previous_shop_products(previous_radar, shop["name"])
+    if not products_found and previous_products and shop["name"] in {
+        "Proshop", "Megaknihy", "Logopedicum", "Müller"
+    }:
+        print(f"ℹ️ {shop['name']}: checking known product URLs while catalogue is unavailable")
+        products_found = [dict(item, status="unknown") for item in previous_products]
+
     if shop.get("name") == "Cedille Speelgoed":
         products_found = clean_cedille_products(products_found)
 
@@ -2798,11 +2940,6 @@ def check_extra_needoh_shop(
             f"{unverified} unverified"
         )
 
-    previous_products = get_previous_shop_products(
-        previous_radar,
-        shop["name"]
-    )
-
     if (
         not products_found
         and previous_products
@@ -2816,10 +2953,10 @@ def check_extra_needoh_shop(
             return []
 
         print(
-            f"ℹ️ {shop['name']}: keeping previous radar products because this check returned none"
+            f"ℹ️ {shop['name']}: discovery unavailable; previous links marked unverified"
         )
 
-        return previous_products
+        return [dict(product, status="unknown") for product in previous_products]
 
     # Baseline protection:
     # If an improved checker suddenly discovers a large catalogue that the
