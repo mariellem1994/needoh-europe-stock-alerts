@@ -1,5 +1,5 @@
 {
-  "last_checked": "28 Sep 2026, 09:01",
+  "last_checked": "28 Sep 2026, 09:11",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -261,12 +261,12 @@
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
@@ -281,12 +281,12 @@
         {
           "name": "Schylling NeeDoh Mačkací tučňák svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
@@ -301,7 +301,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
@@ -1068,119 +1068,14 @@
       "country": "🇦🇹 Austria",
       "products": [
         {
-          "name": "schylling adventskalender needoh set mit 24 bunten knautschb llen",
-          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen?_pos=1&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
+          "name": "Sensorik-Knautschball - Squishy Reindeer Needoh",
+          "url": "https://tublu.at/products/schylling-sensorik-knautschball-squishy-reindeer-needoh",
+          "status": "out_of_stock"
         },
         {
-          "name": "schylling sensorischer knete glowy ghost needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glowy-ghost-needoh?_pos=2&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling sensorischer knete jack glow lantern needoh",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-jack-glow-lantern-needoh?_pos=3&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-berg-needoh?_pos=5&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-needoh-adventskalender-set-mit-24-knetfiguren?_pos=6&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-chicka-deedos?_pos=7&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-stickums-needoh?_pos=8&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-donut-holes?_pos=9&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-stressball-snow-globe-needoh?_pos=10&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-glow-in-the-dark-needoh-asst?_pos=11&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-shaggy-needoh?_pos=12&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-super-needoh-ripples?_pos=13&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-teenie-squeeze-hearts?_pos=14&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sinnliches-quetschen-nice-ice-baby-needoh?_pos=15&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-nice-cube-needoh?_pos=16&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-klassischer-needoh?_pos=17&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-hot-shots-football-needoh?_pos=18&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-needoh-squeeze-hearts?_pos=19&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-color-changing-needoh?_pos=20&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-rainbow-teenie-needoh-6-stueck?_pos=21&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-polar-glow-penguin-needoh?_pos=22&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knete-gumdrop-needoh?_pos=23&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - Ausverkauft",
-          "url": "https://tublu.at/products/schylling-sensorischer-knetball-gobs-of-globs-needoh?_pos=24&_sid=f8119f4fb&_ss=r",
-          "status": "unknown"
+          "name": "Adventskalender - NeeDoh - Set mit 24 bunten Knautschbällen",
+          "url": "https://tublu.at/products/schylling-adventskalender-needoh-set-mit-24-bunten-knautschb-llen",
+          "status": "in_stock"
         }
       ]
     },
@@ -2755,62 +2650,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "out_of_stock"
+          "status": "error"
         }
       ]
     },
