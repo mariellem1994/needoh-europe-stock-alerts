@@ -1,5 +1,5 @@
 {
-  "last_checked": "28 Sep 2026, 21:13",
+  "last_checked": "28 Sep 2026, 21:23",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -266,7 +266,7 @@
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
@@ -276,12 +276,12 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -291,12 +291,12 @@
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -355,13 +355,8 @@
           "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Barvu měnící antistresový míček",
-          "url": "http://www.dvedeti.cz/schylling-barvu-menici-antistresovy-micek-needoh-1-ks",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Mačkací fotbalový míček",
-          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-fotbalovy-micek-1-ks",
+          "name": "schylling barvu menici antistresovy micek needoh 1 ks",
+          "url": "https://www.dvedeti.cz/schylling-barvu-menici-antistresovy-micek-needoh-1-ks",
           "status": "out_of_stock"
         },
         {
@@ -517,6 +512,11 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "schylling needoh mackaci kostka nice berg swirl",
+          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
           "status": "out_of_stock"
         }
       ]
@@ -1458,13 +1458,8 @@
       "country": "🌍 Europe",
       "products": [
         {
-          "name": "Schylling NeeDoh Advent Calendar 2026",
-          "url": "http://www.2kidstoys.com/schylling-needoh-advent-calendar-2026",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Wonder Waves Cuddle Ball",
-          "url": "http://www.2kidstoys.com/schylling-needoh-wonder-waves-cuddle-ball",
+          "name": "schylling needoh wonder waves cuddle ball",
+          "url": "https://www.2kidstoys.com/schylling-needoh-wonder-waves-cuddle-ball",
           "status": "out_of_stock"
         },
         {
@@ -1580,6 +1575,11 @@
         {
           "name": "Schylling NeeDoh Cat Textured",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-textured",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "schylling needoh catnip anti stress drop",
+          "url": "https://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
           "status": "out_of_stock"
         }
       ]
