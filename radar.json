@@ -1,5 +1,5 @@
 {
-  "last_checked": "28 Sep 2026, 15:21",
+  "last_checked": "28 Sep 2026, 15:43",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -256,7 +256,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
@@ -276,7 +276,7 @@
         {
           "name": "Schylling NeeDoh Groovy Ghosts",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací tučňák svítící ve tmě",
@@ -286,7 +286,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
@@ -296,7 +296,7 @@
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
@@ -311,7 +311,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -1966,11 +1966,6 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
-          "name": "schylling needoh adventni kalendar 2026",
-          "url": "https://www.bavixo.cz/p/schylling-needoh-adventni-kalendar-2026",
-          "status": "unknown"
-        },
-        {
           "name": "schylling mackaci texturovany needoh 1 ks",
           "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "unknown"
@@ -2202,7 +2197,7 @@
         {
           "name": "52027 teenie singles needoh assortment 0019649508952.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52027-teenie-singles-needoh-assortment-0019649508952.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52026 teenie needoh 0019649236268.html",
