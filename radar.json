@@ -1,5 +1,5 @@
 {
-  "last_checked": "29 Sep 2026, 04:32",
+  "last_checked": "29 Sep 2026, 04:46",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -261,7 +261,7 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
@@ -286,7 +286,7 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
@@ -2532,7 +2532,7 @@
         {
           "name": "Dream Drop NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/dream-drop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Verkleurende NeeDoh",
@@ -2542,7 +2542,7 @@
         {
           "name": "Gumdrop NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/gumdrop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Nice Cube NeeDoh",
@@ -2552,7 +2552,7 @@
         {
           "name": "Donut NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/donut-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Marbleez NeeDoh",
@@ -2650,7 +2650,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop",
@@ -2695,7 +2695,7 @@
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
@@ -2726,7 +2726,7 @@
         {
           "name": "Teenie Singles Needoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube",
@@ -2876,7 +2876,7 @@
         {
           "name": "Nice Cube Swirl NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/nice-cube-swirl-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Lava Slime",
@@ -2906,17 +2906,17 @@
         {
           "name": "Rainbow NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/regenboog-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Ramen Noodlies",
           "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jack-Glow Lantern",
           "url": "https://www.toys42hands.nl/en/products/needoh-jack-glow-latern",
-          "status": "error"
+          "status": "in_stock"
         }
       ]
     },
