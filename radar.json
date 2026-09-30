@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 11:41",
+  "last_checked": "30 Sep 2026, 11:52",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -249,11 +249,6 @@
           "status": "unknown"
         },
         {
-          "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
-          "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
-        },
-        {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
           "status": "out_of_stock"
@@ -261,7 +256,7 @@
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
@@ -271,7 +266,22 @@
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
+          "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
+          "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
           "status": "out_of_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací mini míček",
+          "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
+          "status": "unknown"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
