@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 16:15",
+  "last_checked": "30 Sep 2026, 16:35",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -251,17 +251,17 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
@@ -286,7 +286,7 @@
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -306,7 +306,7 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
@@ -1404,52 +1404,52 @@
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-gigante-super-ondas-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-peluda-antiestres-needoh-peluda/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pack-de-pelotas-antiestres-mini-arcoiris-teenie-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/canica-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/lanzador-de-pelotas-booper-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-squeezy-peezy-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/cubito-de-hielo-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-brilla-en-la-oscuridad/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/fidget-antiestres-macarrones-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-atomica/",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -1960,6 +1960,11 @@
       "name": "Bavixo",
       "country": "🇨🇿 Czech Republic",
       "products": [
+        {
+          "name": "schylling needoh mackaci meduza",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-meduza",
+          "status": "unknown"
+        },
         {
           "name": "schylling needoh adventni kalendar 2026",
           "url": "https://www.bavixo.cz/p/schylling-needoh-adventni-kalendar-2026",
@@ -2645,62 +2650,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "error"
+          "status": "out_of_stock"
         }
       ]
     },
