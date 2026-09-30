@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 02:59",
+  "last_checked": "30 Sep 2026, 03:09",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -251,7 +251,7 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
@@ -266,7 +266,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -281,17 +281,17 @@
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
@@ -301,7 +301,7 @@
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
@@ -316,12 +316,12 @@
         {
           "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25091086 schylling needoh vanocni stromecek s 15 mackacimi ozdobami.html",
@@ -331,7 +331,7 @@
         {
           "name": "26345944 schylling needoh barevne mackaci mini kocky 4 ks.html",
           "url": "https://www.megaknihy.cz/hry/26345944-schylling-needoh-barevne-mackaci-mini-kocky-4-ks.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -2791,7 +2791,7 @@
         {
           "name": "NeeDoh Gumdrop",
           "url": "https://www.toys42hands.nl/en/products/needoh-gumdrop",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Swirl Teenie 6-pack",
@@ -2886,7 +2886,7 @@
         {
           "name": "Teenie Funky Pup NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Mac N Squeeze NeeDoh",
@@ -2901,7 +2901,7 @@
         {
           "name": "Ramen Noodlies",
           "url": "https://www.toys42hands.nl/en/products/schylling-ramen-noodlies-fidget-en",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jack-Glow Lantern",
