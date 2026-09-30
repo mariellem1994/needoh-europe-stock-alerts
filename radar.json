@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 14:36",
+  "last_checked": "30 Sep 2026, 15:01",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -266,7 +266,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -281,12 +281,12 @@
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
