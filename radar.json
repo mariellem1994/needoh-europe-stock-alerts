@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 19:52",
+  "last_checked": "30 Sep 2026, 20:02",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -286,7 +286,7 @@
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
