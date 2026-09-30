@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Sep 2026, 15:57",
+  "last_checked": "30 Sep 2026, 16:15",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -271,22 +271,22 @@
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -1404,52 +1404,52 @@
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-gigante-super-ondas-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-peluda-antiestres-needoh-peluda/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pack-de-pelotas-antiestres-mini-arcoiris-teenie-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/canica-antiestres-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/lanzador-de-pelotas-booper-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-squeezy-peezy-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/cubito-de-hielo-antiestres-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-brilla-en-la-oscuridad/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/fidget-antiestres-macarrones-needoh/",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-atomica/",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -2645,62 +2645,62 @@
         {
           "name": "NeeDoh Mega Niceberg",
           "url": "https://www.intertoys.nl/needoh-mega-niceberg",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.intertoys.nl/needoh-nice-cube-swirl",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Dream Drop",
           "url": "https://www.intertoys.nl/needoh-dream-drop",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
           "url": "https://www.intertoys.nl/needoh-sugar-skull-cats",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh glow in the dark",
           "url": "https://www.intertoys.nl/needoh-glow-in-the-dark",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Hot Shots voetbal",
           "url": "https://www.intertoys.nl/needoh-hot-shots-voetbal",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Teenie Fab Four multipack",
           "url": "https://www.intertoys.nl/needoh-teenie-fab-four-multipack-stressballen",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh coole kat",
           "url": "https://www.intertoys.nl/needoh-coole-kat",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Color Change",
           "url": "https://www.intertoys.nl/needoh-color-change",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "NeeDoh Nice Cube",
           "url": "https://www.intertoys.nl/needoh-nice-cube",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Needoh Classic Needoh stressbal",
           "url": "https://www.intertoys.nl/needoh-classic-needoh-stressbal",
-          "status": "out_of_stock"
+          "status": "error"
         }
       ]
     },
