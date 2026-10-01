@@ -1,5 +1,5 @@
 {
-  "last_checked": "01 Oct 2026, 04:44",
+  "last_checked": "01 Oct 2026, 05:00",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -266,12 +266,12 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -286,7 +286,7 @@
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -1971,23 +1971,13 @@
           "status": "unknown"
         },
         {
-          "name": "schylling mackaci texturovany needoh 1 ks",
-          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
-          "status": "unknown"
-        },
-        {
           "name": "schylling mackaci kostka needoh 1 ks",
           "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-1-ks",
           "status": "unknown"
         },
         {
-          "name": "schylling mackaci kostka needoh fialova 1 ks",
-          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-fialova-1-ks",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling mackaci kostka needoh ruzova 1 ks",
-          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-ruzova-1-ks",
+          "name": "schylling mackaci texturovany needoh 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "unknown"
         },
         {
@@ -1998,6 +1988,16 @@
         {
           "name": "schylling needoh mackaci maxi micek fuzz ball",
           "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling mackaci kostka needoh fialova 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-fialova-1-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling mackaci kostka needoh ruzova 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-kostka-needoh-ruzova-1-ks",
           "status": "unknown"
         },
         {
