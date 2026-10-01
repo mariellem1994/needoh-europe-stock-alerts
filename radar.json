@@ -1,5 +1,5 @@
 {
-  "last_checked": "01 Oct 2026, 16:09",
+  "last_checked": "01 Oct 2026, 16:20",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -327,7 +327,7 @@
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
@@ -337,7 +337,7 @@
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -2429,13 +2429,13 @@
           "status": "out_of_stock"
         },
         {
-          "name": "NEEDOH Nice Cube puristeltava lelu, erilaisia",
-          "url": "https://www.prisma.fi/tuotteet/110701502/needoh-nice-cube-puristeltava-lelu-erilaisia-110701502",
+          "name": "NEEDOH puristelulelu Fuzz Ball Waves",
+          "url": "https://www.prisma.fi/tuotteet/111211360/needoh-puristelulelu-fuzz-ball-waves-111211360",
           "status": "out_of_stock"
         },
         {
-          "name": "NEEDOH puristelulelu Fuzz Ball Waves",
-          "url": "https://www.prisma.fi/tuotteet/111211360/needoh-puristelulelu-fuzz-ball-waves-111211360",
+          "name": "NEEDOH Nice Cube puristeltava lelu, erilaisia",
+          "url": "https://www.prisma.fi/tuotteet/110701502/needoh-nice-cube-puristeltava-lelu-erilaisia-110701502",
           "status": "out_of_stock"
         },
         {
