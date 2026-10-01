@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V19 active — wider catalogues, Proshop DK, strict page identity, DreamLand and Mamiee fixes.")
+print("🛡️ VERIFIED STOCK MODE V19.1 active — wider catalogues, Proshop DK, strict page identity, DreamLand and Mamiee fixes.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
@@ -3159,7 +3159,7 @@ def check_extra_needoh_shop(
     previous_products = get_previous_shop_products(previous_radar, shop["name"])
     if shop["name"] in {"Spellenrijk", "Proshop", "Proshop Denmark", "Suomalainen", "Lekia Norway", "Cărturești"}:
         found_urls = {item["url"] for item in products_found}
-        products_found.extend(dict(item, status="unknown") for item in previous_products
+        products_found.extend(dict(item, status="unknown") for item in (previous_products or [])
                               if item.get("url") not in found_urls
                               and is_real_product_page_url(shop, item.get("url", "")))
         products_found = filter_real_product_links(shop, products_found)
@@ -4222,45 +4222,3 @@ for product in lobbes_results:
         lobbes_statuses.append(
             f"⚠️ {product['name']}"
         )
-
-
-radar_message = (
-
-    "📡 NEEDOH LIVE RADAR\n\n"
-
-    "🛍️ Toys42Hands 🇳🇱\n\n"
-
-    + "\n".join(statuses)
-
-    + "\n\n"
-
-    + f"🟢 In stock: {in_stock}\n"
-
-    + f"🔴 Out of stock: {out_of_stock}\n"
-
-    + f"⚠️ Could not check: {errors}\n\n"
-
-    "🛍️ Lobbes 🇳🇱\n\n"
-
-    + "\n".join(lobbes_statuses)
-
-    + "\n\n"
-
-    + f"🟢 In stock: {lobbes_in_stock}\n"
-
-    + f"🔴 Out of stock: {lobbes_out_of_stock}\n"
-
-    + f"⚠️ Could not check: {lobbes_errors}\n\n"
-
-    + f"🕐 Last checked: {current_time}"
-
-)
-
-
-print(
-    "✅ Stock check completed!"
-)
-
-print(
-    "ℹ️ Duplicate-alert protection is active."
-)
