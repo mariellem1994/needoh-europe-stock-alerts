@@ -16,11 +16,24 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V15 active — retailer catalogue and stock verification fixes.")
+print("🛡️ VERIFIED STOCK MODE V17 active — AMO/Nordic expansion + SKU/EAN matching.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
-PENGUIN_CODES = {"sqmpnd25", "sqmpnd26", "019649506071", "019649508433"}
+PENGUIN_CODES = {"sqmpnd25", "sqmpnd26", "019649506071", "019649508433", "0019649508433"}
+
+# Rare/seasonal NeeDoh identifiers. Retailers sometimes translate the product
+# name completely, so SKU/EAN matching lets the radar still recognise it.
+RARE_NEEDOH_CODES = {
+    # Polar Glow Penguin
+    "sqmpnd25", "sysqmpnd25", "sqmpnd26", "019649508433", "0019649508433",
+    # Snow Globe / Squishmas Snow Globe
+    "sqmsg24", "sysqmsg24", "sqmsg25", "019649517442", "0019649517442",
+}
+
+def has_rare_needoh_identifier(value):
+    compact = re.sub(r"[^a-z0-9]", "", str(value).lower())
+    return any(code in compact for code in RARE_NEEDOH_CODES)
 
 
 def is_polar_penguin(value):
@@ -1679,7 +1692,7 @@ extra_needoh_shops = [
     {
         "name": "Juguetea",
         "country": "🇪🇸 Spain",
-        "url": "https://juguetea.es/?marca=needoh"
+        "url": "https://juguetea.es/?s=Needoh&post_type=product"
     },
     {
         "name": "Le Monde Imaginaire",
@@ -1696,7 +1709,72 @@ extra_needoh_shops = [
         "name": "Lekia",
         "country": "🇸🇪 Sweden",
         "url": "https://www.lekia.se/varumarken/needoh"
+    },
+    {
+        "name": "Lekia Norway",
+        "country": "🇳🇴 Norway",
+        "url": "https://www.lekia.no/merkevarer/needoh"
+    },
+    {
+        "name": "Prisma Finland",
+        "country": "🇫🇮 Finland · AMO Toys",
+        "url": "https://www.prisma.fi/tuotemerkit/needoh"
+    },
+    {
+        "name": "Suomalainen",
+        "country": "🇫🇮 Finland",
+        "shopify": True,
+        "url": "https://www.suomalainen.com/search?q=needoh&type=product",
+        "fixed_products": [
+            {
+                "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+                "url": "https://www.suomalainen.com/products/needoh-polar-glow-penguin-stressilelu"
+            }
+        ]
+    },
+    {
+        "name": "Lelukauppa Partanen",
+        "country": "🇫🇮 Finland",
+        "url": "https://lelupartanen.fi/72544/needoh-snow-globe-",
+        "fixed_products": [
+            {
+                "name": "NeeDoh Snow Globe (EAN 019649517442)",
+                "url": "https://lelupartanen.fi/72544/needoh-snow-globe-"
+            }
+        ]
+    },
+    {
+        "name": "Muovitukku",
+        "country": "🇫🇮 Finland",
+        "url": "https://www.muovitukku.fi/tuote-osasto/roolileikki-fidgetit-ja-ilmapallot/fidgetit-limat-ja-muut-puristeltavatlelut/",
+        "fixed_products": [
+            {
+                "name": "NeeDoh Snow Globe",
+                "url": "https://www.muovitukku.fi/tuote/needoh-snow-globe-puristeltava/"
+            }
+        ]
+    },
+    {
+        "name": "Cărturești",
+        "country": "🇷🇴 Romania",
+        "url": "https://carturesti.ro/colectie/needoh?lang=en-US",
+        "fixed_products": [
+            {
+                "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+                "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246"
+            }
+        ]
     }
+]
+
+# Proshop's catalogue is sometimes omitted by the text reader used from
+# GitHub Actions. These are product URLs from its own NeeDoh brand page.
+PROSHOP_KNOWN_PRODUCTS = [
+    {"name": "NeeDoh Advent Calendar 2025", "url": "https://www.proshop.nl/Kerstkalender/NeeDoh-Advent-Calendar-2025/3342714"},
+    {"name": "NeeDoh Niceberg", "url": "https://www.proshop.nl/Speelgoed/NeeDoh-Niceberg/3388804"},
+    {"name": "NeeDoh Jelly Dohnuts", "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573"},
+    {"name": "NeeDoh Dig It Pig", "url": "https://www.proshop.nl/Speelgoed/NeeDoh-Dig-It-Pig-assorted/3152428"},
+    {"name": "NeeDoh Snowball Crunch", "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098"},
 ]
 
 
@@ -1971,6 +2049,7 @@ def get_shopify_needoh_products(shop):
             and "nee-doh" not in combined
             and "nee doh" not in combined
             and not is_polar_penguin(combined)
+            and not has_rare_needoh_identifier(combined)
         ):
             continue
 
@@ -2232,7 +2311,7 @@ def get_extra_needoh_products(shop):
 
     # Markdown links from the reader fallback.
     markdown_pattern = re.compile(
-        r"(?<!!)\[([^\]]{1,250})\]\((https?://[^)\s]+)\)",
+        r"(?<!!)\[([^\]]{1,250})\]\((https?://[^)\s]+|/[^)\s]+)\)",
         re.IGNORECASE
     )
 
@@ -2273,6 +2352,7 @@ def get_extra_needoh_products(shop):
             and "nee-doh" not in combined
             and "nee doh" not in combined
             and not is_polar_penguin(combined)
+            and not has_rare_needoh_identifier(combined)
         ):
             continue
 
@@ -2367,6 +2447,18 @@ def get_extra_needoh_products(shop):
         seen_urls.add(
             absolute_url
         )
+
+    # Always retain high-value known pages even if a retailer changes its
+    # catalogue/search markup. They are verified against the individual page.
+    for fixed in shop.get("fixed_products", []):
+        fixed_url = fixed.get("url", "")
+        if fixed_url and fixed_url not in seen_urls:
+            products_found.append({
+                "name": fixed.get("name", "NeeDoh product"),
+                "url": fixed_url,
+                "status": "unknown"
+            })
+            seen_urls.add(fixed_url)
 
     print(
         f"🔎 {shop['name']}: found {len(products_found)} NeeDoh product links"
@@ -2670,11 +2762,41 @@ def verify_reader_stock(shop_name, url):
             return "out_of_stock"
         return "in_stock" if "online lieferbar" in text else "unknown"
     if shop_name == "Bavixo":
-        if "není skladem" in text or "neni skladem" in text:
+        current = re.split(
+            r"(?i)(?:###\s*máte dotaz\?|##\s*široká nabídka hraček skladem|související produkty)",
+            text, maxsplit=1
+        )[0]
+        if "není skladem" in current or "neni skladem" in current:
             return "out_of_stock"
-        # A generic "skladem" also appears in Bavixo's footer and related
-        # products. Only a structured offer above can confirm availability.
+        # Bavixo also repeats "skladem" in its footer. Require the stock label
+        # beside the current product's buy button before the contact section.
+        return "in_stock" if re.search(r"\bskladem\b.{0,160}\bdo košíku\b", current) else "unknown"
+    if shop_name in {"Lekia Norway"}:
+        if "ikke på lager online" in text or "utsolgt" in text:
+            return "out_of_stock"
+        return "in_stock" if "på lager online" in text else "unknown"
+    if shop_name == "Suomalainen":
+        if "ei saatavilla" in text:
+            return "out_of_stock"
+        return "in_stock" if "lisää koriin" in text or "lisaa koriin" in text else "unknown"
+    if shop_name == "Lelukauppa Partanen":
+        if "myyty loppuun" in text or re.search(r"netistä toimitettavissa heti\s*0\s*kpl", text):
+            return "out_of_stock"
+        return "in_stock" if re.search(r"netistä toimitettavissa heti\s*[1-9]\d*\s*kpl", text) else "unknown"
+    if shop_name == "Muovitukku":
+        if "varasto loppu" in text or "tällä hetkellä loppu" in text:
+            return "out_of_stock"
+        return "in_stock" if "saatavilla" in text and "lisää ostoskoriin" in text else "unknown"
+    if shop_name == "Prisma Finland":
+        if "ei saatavilla" in text:
+            return "out_of_stock"
+        # Prisma's delivery controls are dynamic; only trust structured stock
+        # above, otherwise leave the page unverified rather than false-alert.
         return "unknown"
+    if shop_name == "Cărturești":
+        if "indisponibil" in text or "unavailable" in text:
+            return "out_of_stock"
+        return "in_stock" if "adaugă în coș" in text or "adauga in cos" in text else "unknown"
     if any(m in text for m in out_markers):
         return "out_of_stock"
 
@@ -2719,7 +2841,9 @@ def verify_non_shopify_product_stock(shop, product):
         "Juguetea",
         "Le Monde Imaginaire",
         "Bizcocho de Yogur",
-        "Lekia",
+        "Lekia", "Lekia Norway",
+        "Prisma Finland", "Suomalainen", "Lelukauppa Partanen",
+        "Muovitukku", "Cărturești",
     }
 
     if shop.get("name") not in supported_shops:
@@ -2733,7 +2857,9 @@ def verify_non_shopify_product_stock(shop, product):
     if shop.get("name") in {
         "Proshop", "Megaknihy", "Logopedicum",
         "Miss Lemonade", "Bavixo", "Müller", "Juguetea",
-        "Le Monde Imaginaire", "Bizcocho de Yogur", "Lekia"
+        "Le Monde Imaginaire", "Bizcocho de Yogur", "Lekia",
+        "Lekia Norway", "Prisma Finland", "Suomalainen",
+        "Lelukauppa Partanen", "Muovitukku", "Cărturești"
     }:
         return verify_reader_stock(shop.get("name"), url)
 
@@ -2872,7 +2998,9 @@ def apply_verified_extra_stock(shop, products):
         "Juguetea",
         "Le Monde Imaginaire",
         "Bizcocho de Yogur",
-        "Lekia",
+        "Lekia", "Lekia Norway",
+        "Prisma Finland", "Suomalainen", "Lelukauppa Partanen",
+        "Muovitukku", "Cărturești",
     }:
         products = filter_real_product_links(
             shop,
@@ -2905,9 +3033,13 @@ def check_extra_needoh_shop(
         shop
     )
 
+    if shop["name"] == "Proshop" and not products_found:
+        print("ℹ️ Proshop: checking known product pages from its NeeDoh brand catalogue")
+        products_found = [dict(item, status="unknown") for item in PROSHOP_KNOWN_PRODUCTS]
+
     previous_products = get_previous_shop_products(previous_radar, shop["name"])
     if not products_found and previous_products and shop["name"] in {
-        "Proshop", "Megaknihy", "Logopedicum", "Müller"
+        "Proshop", "Megaknihy", "Logopedicum", "Müller", "Juguetea"
     }:
         print(f"ℹ️ {shop['name']}: checking known product URLs while catalogue is unavailable")
         products_found = [dict(item, status="unknown") for item in previous_products]
