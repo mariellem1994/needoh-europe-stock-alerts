@@ -1,5 +1,5 @@
 {
-  "last_checked": "01 Oct 2026, 04:09",
+  "last_checked": "01 Oct 2026, 04:27",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -246,22 +246,22 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Groovy Ghosts",
@@ -271,12 +271,12 @@
         {
           "name": "Schylling NeeDoh Mačkací tučňák svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
@@ -291,12 +291,12 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
@@ -1409,52 +1409,52 @@
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-gigante-super-ondas-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-peluda-antiestres-needoh-peluda/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pack-de-pelotas-antiestres-mini-arcoiris-teenie-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/canica-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/lanzador-de-pelotas-booper-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-squeezy-peezy-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/cubito-de-hielo-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-brilla-en-la-oscuridad/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/fidget-antiestres-macarrones-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-atomica/",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
