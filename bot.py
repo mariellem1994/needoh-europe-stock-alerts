@@ -16,7 +16,7 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V17 active — AMO/Nordic expansion + SKU/EAN matching.")
+print("🛡️ VERIFIED STOCK MODE V18 active — Nordic discovery and product-page verification fixes.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
@@ -1574,6 +1574,7 @@ extra_needoh_shops = [
         "url": "https://www.cogstoysandgames.ie/collections/needoh"
     },
     {
+        "fixed_products": [{"name": "needoh niceberg needoh 1 stuk", "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html"}, {"name": "needoh gumdrop blue", "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html"}, {"name": "needoh mello mallo color changing marshmellow 1 stuk blauw", "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html"}, {"name": "needoh super fuzz ball pink", "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html"}, {"name": "needoh nice cube glow in the dark 1 stuk groen", "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html"}, {"name": "needoh nice berg swirl blue", "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html"}, {"name": "needoh super fuzz ball green", "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html"}, {"name": "needoh fuzz ball wonder waves 1 stuk blue", "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html"}, {"name": "needoh dream drop 1 stuk blue", "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html"}, {"name": "needoh glitter glow nice cube pink", "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html"}],
         "name": "Spellenrijk",
         "country": "🇳🇱 Netherlands",
         "url": "https://www.spellenrijk.nl/merk/1007/needoh.html"
@@ -1713,7 +1714,7 @@ extra_needoh_shops = [
     {
         "name": "Lekia Norway",
         "country": "🇳🇴 Norway",
-        "url": "https://www.lekia.no/merkevarer/needoh"
+        "url": "https://www.lekia.no/varemerker/needoh"
     },
     {
         "name": "Prisma Finland",
@@ -1723,7 +1724,6 @@ extra_needoh_shops = [
     {
         "name": "Suomalainen",
         "country": "🇫🇮 Finland",
-        "shopify": True,
         "url": "https://www.suomalainen.com/search?q=needoh&type=product",
         "fixed_products": [
             {
@@ -2285,7 +2285,7 @@ def get_extra_needoh_products(shop):
             f"⚠️ {shop['name']} collection error: {error}"
         )
 
-        return []
+        page = ""
 
     products_found = []
     seen_urls = set()
@@ -2326,6 +2326,21 @@ def get_extra_needoh_products(shop):
             )
         )
 
+    # Reader output often nests images inside links, or appends quoted titles.
+    # Extract URL tokens as well; only same-site real product URLs survive.
+    for match in (re.finditer(r'https?://[^\s<>"\')\]]+', page)
+                  if shop.get("name") in {"Suomalainen", "Lekia Norway", "Cărturești", "Proshop", "Spellenrijk"} else []):
+        href = unescape(match.group(0)).rstrip(".,;")
+        parsed_link = urllib.parse.urlparse(href)
+        if parsed_link.netloc != urllib.parse.urlparse(shop["url"]).netloc:
+            continue
+        if not is_real_product_page_url(shop, href):
+            continue
+        slug = parsed_link.path.rstrip("/").split("/")[-1]
+        if slug.isdigit():
+            slug = parsed_link.path.rstrip("/").split("/")[-2]
+        link_matches.append((href, slug.replace("-", " "), match.start(), match.end()))
+
     for href, raw_name, match_start, match_end in link_matches:
 
         href = unescape(
@@ -2336,10 +2351,14 @@ def get_extra_needoh_products(shop):
             raw_name
         )
 
-        absolute_url = urljoin(
-            shop["url"],
-            href
-        )
+        absolute_url = urljoin(shop["url"], href)
+        parsed_link = urllib.parse.urlparse(absolute_url)
+        if parsed_link.netloc != urllib.parse.urlparse(shop["url"]).netloc:
+            continue
+        if shop.get("name") in {"Suomalainen", "Lekia Norway", "Cărturești", "Proshop", "Spellenrijk"}:
+            absolute_url = urllib.parse.urlunparse(parsed_link._replace(query="", fragment=""))
+            if not is_real_product_page_url(shop, absolute_url):
+                continue
 
         combined = (
             name
@@ -2422,6 +2441,8 @@ def get_extra_needoh_products(shop):
                 "needoh" in absolute_lower
                 or "nee-doh" in absolute_lower
             ):
+                name = f"NeeDoh - {name}"
+            elif is_polar_penguin(combined) or has_rare_needoh_identifier(combined):
                 name = f"NeeDoh - {name}"
             else:
                 continue
@@ -2547,6 +2568,14 @@ def is_real_product_page_url(shop, url):
     # Store-specific product URL rules for the high-volume Czech/Slovak shops.
     shop_name = shop.get("name")
 
+    if shop_name == "Suomalainen":
+        return path.startswith("/products/")
+    if shop_name == "Lekia Norway":
+        return path.startswith("/leketoy/") and "needoh" in path.rsplit("/", 1)[-1]
+    if shop_name == "Cărturești":
+        return bool(re.search(r"^/jucarii/[^/]+-\d+/?$", path))
+    if shop_name == "Spellenrijk":
+        return bool(re.search(r"^/artikel/\d+/[^/]+\.html$", path))
     if shop_name == "Proshop":
         return bool(re.search(r"/\d{6,8}/?$", path))
     if shop_name == "Megaknihy":
@@ -2713,6 +2742,27 @@ def structured_product_stock(page):
     return "unknown"
 
 
+def scope_v18_product_text(shop_name, page):
+    if shop_name not in {"Suomalainen", "Lekia Norway", "Cărturești", "Proshop", "Spellenrijk"}:
+        return page
+    if not page:
+        return ""
+    # Strip scripts/styles before looking for visible product headings.
+    page = re.sub(r"(?is)<(script|style)\b[^>]*>.*?</\1>", " ", page)
+    heading = re.search(r"(?im)^# [^\n]+|<h1\b[^>]*>", page)
+    if heading:
+        page = page[heading.start():]
+    elif shop_name in {"Suomalainen", "Lekia Norway", "Spellenrijk", "Proshop"}:
+        return ""  # cookie/login/footer-only responses are not product evidence
+    if shop_name == "Suomalainen":
+        page = re.split(r"(?im)^### Tarkista myymäläsaatavuus|^### Tuotetiedot|^### Tuotekuvaus", page, 1)[0]
+    if shop_name == "Cărturești":
+        # Producer safety notices use 'indisponibile' even for buyable items.
+        page = re.sub(r"(?im)^Momentan,[^\n]*", "", page)
+        page = re.split(r"(?im)^Descriere\s*$|^## Recenzii", page, 1)[0]
+    return page
+
+
 def verify_reader_stock(shop_name, url):
     """Strict product-page reader verification. Ambiguous pages remain unknown."""
     try:
@@ -2727,7 +2777,8 @@ def verify_reader_stock(shop_name, url):
     if not page:
         return "unknown"
 
-    page = scope_generic_product_text(page)[:14000]
+    page = scope_v18_product_text(shop_name, page)
+    page = scope_generic_product_text(page)[:24000]
     text = unescape(re.sub(r"<[^>]+>", " ", page))
     text = re.sub(r"\s+", " ", text).strip().lower()
 
@@ -2750,9 +2801,9 @@ def verify_reader_stock(shop_name, url):
             return "out_of_stock"
         return "in_stock" if "finns i lager online" in text else "unknown"
     if shop_name == "Proshop":
-        if "bestelproduct" in text or "niet op voorraad" in text:
+        if any(marker in text for marker in ("bestelproduct", "niet op voorraad", "verwacht op voorraad", "niet leverbaar", "besteld:")):
             return "out_of_stock"
-        return "in_stock" if re.search(r"\bop voorraad\s*-\s*\d", text) else "unknown"
+        return "in_stock" if re.search(r"\bop voorraad\s*(?:[-–:]\s*)?[1-9]\d*", text) else "unknown"
     if shop_name == "Megaknihy":
         if "není skladem" in text or "neni skladem" in text:
             return "out_of_stock"
@@ -2771,12 +2822,16 @@ def verify_reader_stock(shop_name, url):
         # Bavixo also repeats "skladem" in its footer. Require the stock label
         # beside the current product's buy button before the contact section.
         return "in_stock" if re.search(r"\bskladem\b.{0,160}\bdo košíku\b", current) else "unknown"
-    if shop_name in {"Lekia Norway"}:
+    if shop_name == "Spellenrijk":
+        if any(m in text for m in ("niet leverbaar", "niet meer leverbaar", "levertijd onbekend", "binnenkort beschikbaar")):
+            return "out_of_stock"
+        return "in_stock" if re.search(r"\bop voorraad\s*[:–-]\s*[1-9]\d*", text) else "unknown"
+    if shop_name == "Lekia Norway":
         if "ikke på lager online" in text or "utsolgt" in text:
             return "out_of_stock"
-        return "in_stock" if "på lager online" in text else "unknown"
+        return "in_stock" if re.search(r"\b(?:finnes (?:på|i) lager online|på lager online)\b", text) else "unknown"
     if shop_name == "Suomalainen":
-        if "ei saatavilla" in text:
+        if "ei saatavilla" in text or "saatavilla vain myymälöistä" in text:
             return "out_of_stock"
         return "in_stock" if "lisää koriin" in text or "lisaa koriin" in text else "unknown"
     if shop_name == "Lelukauppa Partanen":
@@ -2794,9 +2849,11 @@ def verify_reader_stock(shop_name, url):
         # above, otherwise leave the page unverified rather than false-alert.
         return "unknown"
     if shop_name == "Cărturești":
-        if "indisponibil" in text or "unavailable" in text:
+        if re.search(r"\bindisponibil\b|\bunavailable\b|alert[ăa] stoc", text):
             return "out_of_stock"
-        return "in_stock" if "adaugă în coș" in text or "adauga in cos" in text else "unknown"
+        cart = any(m in text for m in ("adaugă în coș", "adaugă în coş", "adauga in cos", "add to cart"))
+        available = re.search(r"\b(?:în stoc|in stoc|in stock)\b", text)
+        return "in_stock" if cart and available else "unknown"
     if any(m in text for m in out_markers):
         return "out_of_stock"
 
@@ -2828,7 +2885,7 @@ def verify_non_shopify_product_stock(shop, product):
     """
 
     supported_shops = {
-        "Proshop", "Megaknihy", "Logopedicum",
+        "Spellenrijk", "Proshop", "Megaknihy", "Logopedicum",
         "Dvě děti CZ",
         "Dve Deti SK",
         "2KidsToys",
@@ -2855,7 +2912,7 @@ def verify_non_shopify_product_stock(shop, product):
         return "unknown"
 
     if shop.get("name") in {
-        "Proshop", "Megaknihy", "Logopedicum",
+        "Spellenrijk", "Proshop", "Megaknihy", "Logopedicum",
         "Miss Lemonade", "Bavixo", "Müller", "Juguetea",
         "Le Monde Imaginaire", "Bizcocho de Yogur", "Lekia",
         "Lekia Norway", "Prisma Finland", "Suomalainen",
@@ -2985,7 +3042,7 @@ def apply_verified_extra_stock(shop, products):
         return products
 
     if shop.get("name") in {
-        "Proshop", "Megaknihy", "Logopedicum",
+        "Spellenrijk", "Proshop", "Megaknihy", "Logopedicum",
         "Dvě děti CZ",
         "Dve Deti SK",
         "2KidsToys",
@@ -3033,13 +3090,21 @@ def check_extra_needoh_shop(
         shop
     )
 
-    if shop["name"] == "Proshop" and not products_found:
-        print("ℹ️ Proshop: checking known product pages from its NeeDoh brand catalogue")
-        products_found = [dict(item, status="unknown") for item in PROSHOP_KNOWN_PRODUCTS]
+    if shop["name"] == "Proshop":
+        known_urls = {item["url"] for item in products_found}
+        products_found.extend(dict(item, status="unknown") for item in PROSHOP_KNOWN_PRODUCTS
+                              if item["url"] not in known_urls)
 
     previous_products = get_previous_shop_products(previous_radar, shop["name"])
+    if shop["name"] in {"Spellenrijk", "Proshop", "Suomalainen", "Lekia Norway", "Cărturești"}:
+        found_urls = {item["url"] for item in products_found}
+        products_found.extend(dict(item, status="unknown") for item in previous_products
+                              if item.get("url") not in found_urls
+                              and is_real_product_page_url(shop, item.get("url", "")))
+        products_found = filter_real_product_links(shop, products_found)
     if not products_found and previous_products and shop["name"] in {
-        "Proshop", "Megaknihy", "Logopedicum", "Müller", "Juguetea"
+        "Spellenrijk", "Proshop", "Megaknihy", "Logopedicum", "Müller", "Juguetea",
+        "Suomalainen", "Lekia Norway", "Cărturești"
     }:
         print(f"ℹ️ {shop['name']}: checking known product URLs while catalogue is unavailable")
         products_found = [dict(item, status="unknown") for item in previous_products]
