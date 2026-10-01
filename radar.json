@@ -1,5 +1,5 @@
 {
-  "last_checked": "02 Oct 2026, 00:50",
+  "last_checked": "02 Oct 2026, 01:02",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -286,7 +286,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom",
@@ -327,7 +327,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
@@ -382,17 +382,17 @@
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow 1 pk assorted",
@@ -407,7 +407,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
@@ -468,7 +468,7 @@
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
@@ -478,7 +478,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -488,12 +488,12 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
@@ -644,86 +644,81 @@
         {
           "name": "Schylling NeeDoh Jack-Glow Lantern Mačkací antistresová dýně svítící ve tmě",
           "url": "http://www.dvedeti.cz/schylling-needoh-jack-glow-lantern-mackaci-antistresova-dyne-svitici-ve-tme",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Jelly Donuts",
+          "url": "http://www.dvedeti.cz/schylling-needoh-jelly-donuts-1-ks",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jack glow lantern mackaci antistresova dyne svitici ve tme",
-          "url": "https://www.dvedeti.cz/schylling-needoh-jack-glow-lantern-mackaci-antistresova-dyne-svitici-ve-tme",
+          "name": "Schylling NeeDoh Knittens Mačkací hebká antistresová kočka",
+          "url": "http://www.dvedeti.cz/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Kouzelné barevné vejce",
+          "url": "http://www.dvedeti.cz/schylling-needoh-kouzelne-barevne-vejce-1-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Kuřátko Deedos",
+          "url": "http://www.dvedeti.cz/schylling-needoh-kuratko-deedos-12-1-ks",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jelly donuts 1 ks",
-          "url": "https://www.dvedeti.cz/schylling-needoh-jelly-donuts-1-ks",
+          "name": "Schylling NeeDoh Mačkací antistresová kapka",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-kapka",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresová štěňátka 3 ks",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-stenatka-1-bal",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-kocicky-1-bal",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh knittens mackaci hebka antistresova kocka",
-          "url": "https://www.dvedeti.cz/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
+          "name": "Schylling NeeDoh Mačkací antistresové srdce",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-srdce-1-ks",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kouzelne barevne vejce 1 ks",
-          "url": "https://www.dvedeti.cz/schylling-needoh-kouzelne-barevne-vejce-1-ks",
+          "name": "Schylling NeeDoh Mačkací antistresový míček",
+          "url": "http://www.dvedeti.cz/schylling-mackaci-antistresovy-micek-needoh",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací antistresový mini míček 3 ks",
+          "url": "http://www.dvedeti.cz/schylling-mackaci-antistresovy-mini-micek-needoh",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kuratko deedos 12 1 ks",
-          "url": "https://www.dvedeti.cz/schylling-needoh-kuratko-deedos-12-1-ks",
+          "name": "Schylling NeeDoh Mačkací duch svítící ve tmě",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-duch-svitici-ve-tme",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kaňka Sploot Splat",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kanka-sploot-splat",
+          "status": "unknown"
+        },
+        {
+          "name": "Schylling NeeDoh Mačkací kostka Mello Mallo",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-mello-mallo",
           "status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci antistresova kapka",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-kapka",
-          "status": "out_of_stock"
+          "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
+          "status": "unknown"
         },
         {
-          "name": "schylling needoh mackaci antistresova stenatka 1 bal",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-stenatka-1-bal",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci antistresove kocicky 1 bal",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-kocicky-1-bal",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci antistresove srdce 1 ks",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-srdce-1-ks",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling mackaci antistresovy micek needoh",
-          "url": "https://www.dvedeti.cz/schylling-mackaci-antistresovy-micek-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling mackaci antistresovy mini micek needoh",
-          "url": "https://www.dvedeti.cz/schylling-mackaci-antistresovy-mini-micek-needoh",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci duch svitici ve tme",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-duch-svitici-ve-tme",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci kanka sploot splat",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kanka-sploot-splat",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci kostka mello mallo",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-mello-mallo",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci kostka nice berg",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "schylling needoh mackaci kostka nice berg swirl",
-          "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
+          "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
+          "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
           "status": "out_of_stock"
         }
       ]
@@ -1777,7 +1772,7 @@
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-color-changing-anti-stress-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
@@ -1787,12 +1782,12 @@
         {
           "name": "Schylling NeeDoh Cat Textured",
           "url": "http://www.2kidstoys.com/schylling-needoh-cat-textured",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
