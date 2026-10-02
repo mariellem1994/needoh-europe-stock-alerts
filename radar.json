@@ -1,5 +1,5 @@
 {
-  "last_checked": "02 Oct 2026, 23:27",
+  "last_checked": "02 Oct 2026, 23:40",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -284,7 +284,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk oranje.html",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk groen.html",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -442,7 +442,7 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
@@ -452,12 +452,12 @@
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Wild-Cats-4-asst/3452468",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
@@ -467,27 +467,27 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow 1 pk assorted",
@@ -495,9 +495,14 @@
           "status": "unknown"
         },
         {
+          "name": "NeeDoh Mello Mallo assorted",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
+          "status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Ice Baby assorted",
@@ -512,12 +517,12 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves 1pk assorted",
@@ -527,7 +532,7 @@
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
@@ -542,7 +547,7 @@
         {
           "name": "NeeDoh Squeeza CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Squeeza-CDU/3452276",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
@@ -552,7 +557,7 @@
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzzy-Hugs-Bear-3-assorteret-CDU/3489167",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -583,7 +588,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -769,7 +774,7 @@
         {
           "name": "Schylling NeeDoh Kouzelné barevné vejce",
           "url": "http://www.dvedeti.cz/schylling-needoh-kouzelne-barevne-vejce-1-ks",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Kuřátko Deedos",
@@ -779,7 +784,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-kapka",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresová štěňátka 3 ks",
@@ -789,12 +794,12 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-kocicky-1-bal",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresové srdce",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-srdce-1-ks",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresový míček",
@@ -804,7 +809,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresový mini míček 3 ks",
           "url": "http://www.dvedeti.cz/schylling-mackaci-antistresovy-mini-micek-needoh",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací duch svítící ve tmě",
@@ -814,12 +819,12 @@
         {
           "name": "Schylling NeeDoh Mačkací kaňka Sploot Splat",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kanka-sploot-splat",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Mello Mallo",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-mello-mallo",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
@@ -829,7 +834,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -1104,257 +1109,267 @@
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Squisher Reindoh Squishy Reindeer",
+          "name": "NeeDoh Advent Calendar 2026",
+          "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/schylling-needoh-advent-calendar-2026-sysqmac26.html",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh needoh by schylling needoh squisher reindoh squishy reindeer sysqmsrnd26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-squisher-reindoh-squishy-reindeer-sysqmsrnd26.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Baby Boos Squishy Ghost",
+          "name": "NeeDoh needoh by schylling needoh baby boos squishy ghost syndwbb26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-baby-boos-squishy-ghost-syndwbb26.html",
           "status": "in_stock"
         },
         {
-          "name": "NeeDoh Advent Calendar 2026",
+          "name": "NeeDoh needoh by schylling needoh advent calendar 2026 sysqmac26",
           "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/needoh-by-schylling-needoh-advent-calendar-2026-sysqmac26.html",
           "status": "in_stock"
         },
         {
-          "name": "Nice Ice Baby Teenie NeeDoh Multi-pack (4)",
+          "name": "NeeDoh schylling nice ice baby teenie needoh multi pack 4 symptncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-nice-ice-baby-teenie-needoh-multi-pack-4-symptncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Fuzz Ball Sensory Toy",
+          "name": "NeeDoh schylling needoh fuzz ball sensory toy syfzbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-sensory-toy-syfzbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Super Fuzz Ball Stress Ball",
+          "name": "NeeDoh schylling needoh super fuzz ball stress ball sysfzbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-super-fuzz-ball-stress-ball-sysfzbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Jelly Hops - Scented Glitter Bunny",
+          "name": "NeeDoh schylling needoh jelly hops scented glitter bunny syjhnd26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-jelly-hops-scented-glitter-bunny-syjhnd26.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Gumdrop Squishy Fidget Toy",
+          "name": "NeeDoh schylling needoh gumdrop squishy fidget toy sygdnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-gumdrop-squishy-fidget-toy-sygdnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Cube Glitter & Glow Stress Cube",
+          "name": "NeeDoh schylling needoh nice cube glitter glow stress cube syggncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-glitter-glow-stress-cube-syggncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Fuzz Ball Teenie Multipack (4 pcs)",
+          "name": "NeeDoh schylling needoh fuzz ball teenie multipack 4 pcs sympfzbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-teenie-multipack-4-pcs-sympfzbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Snow Ball Crunch Stress Ball",
+          "name": "NeeDoh schylling needoh snow ball crunch stress ball sysnbc",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-snow-ball-crunch-stress-ball-sysnbc.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Teenie Fuzz Ball Multipack (3 pcs)",
+          "name": "NeeDoh schylling needoh teenie fuzz ball multipack 3 pcs syfzbtnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-teenie-fuzz-ball-multipack-3-pcs-syfzbtnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Cool Cats Teenie Stress Ball, 3 pack",
+          "name": "NeeDoh schylling needoh cool cats teenie stress ball 3 pack sycctnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cats-teenie-stress-ball-3-pack-sycctnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Groovy Shroom",
+          "name": "NeeDoh schylling needoh groovy shroom sygsnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-shroom-sygsnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Atomic Stress Ball",
+          "name": "NeeDoh schylling needoh atomic stress ball syatnd bzl",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-atomic-stress-ball-syatnd-bzl.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Monsters Dohjees Series 2",
+          "name": "NeeDoh schylling needoh monsters dohjees series 2 sydj2",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-monsters-dohjees-series-2-sydj2.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Groovy Ghost Stress Ball",
+          "name": "NeeDoh schylling needoh groovy ghost stress ball syndwgg24",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-ghost-stress-ball-syndwgg24.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Cube Sensory Squeeze Toy",
+          "name": "NeeDoh needoh by schylling needoh nice cube sensory squeeze toy syncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-sensory-squeeze-toy-syncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Ramen Noodlies Sensory Fidget Toy",
+          "name": "NeeDoh schylling needoh ramen noodlies sensory fidget toy syrnl",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-ramen-noodlies-sensory-fidget-toy-syrnl.html",
           "status": "in_stock"
         },
         {
-          "name": "NeeDoh Booper Sensory Squeeze Toy",
+          "name": "NeeDoh schylling needoh booper sensory squeeze toy sybnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-booper-sensory-squeeze-toy-sybnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Cool Cane 5pc Mini Christmas Fidget Toys",
+          "name": "NeeDoh schylling needoh cool cane 5pc mini christmas fidget toys sysqmcc25",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cane-5pc-mini-christmas-fidget-toys-sysqmcc25.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Christmas Snow Globe Fidget Toy for Kids",
+          "name": "NeeDoh schylling needoh christmas snow globe fidget toy for kids sysqmsg25",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-christmas-snow-globe-fidget-toy-for-kids-sysqmsg25.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Ginger Glowman Christmas Fidget Toy",
+          "name": "NeeDoh schylling needoh ginger glowman christmas fidget toy sysqmgm25",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-ginger-glowman-christmas-fidget-toy-sysqmgm25.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Niceberg Sensory Fidget Toy",
+          "name": "NeeDoh schylling needoh niceberg sensory fidget toy sysncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-niceberg-sensory-fidget-toy-sysncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Rainboh Teenie Stress Ball, 6 pack",
+          "name": "NeeDoh schylling needoh rainboh teenie stress ball 6 pack syrbtnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-rainboh-teenie-stress-ball-6-pack-syrbtnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Classic Stress Ball",
+          "name": "NeeDoh schylling needoh classic stress ball synd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-classic-stress-ball-synd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Teenie Swirl Stress Ball, 4 pack",
+          "name": "NeeDoh schylling needoh teenie swirl stress ball 4 pack symptswnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-teenie-swirl-stress-ball-4-pack-symptswnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Golden Egg Hunt Kids' Easter Fidget Toy Box",
+          "name": "NeeDoh schylling needoh golden egg hunt kids easter fidget toy box sygehnd26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-golden-egg-hunt-kids-easter-fidget-toy-box-sygehnd26.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Teenie Funky Pups Fidget Toys (3 Pack)",
+          "name": "NeeDoh schylling needoh teenie funky pups fidget toys 3 pack syfptnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-teenie-funky-pups-fidget-toys-3-pack-syfptnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Cube Glow in the Dark Stress Cube",
+          "name": "NeeDoh schylling needoh nice cube glow in the dark stress cube sygncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-glow-in-the-dark-stress-cube-sygncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Berg Swirl Giant Marbled Fidget Cube",
+          "name": "NeeDoh needoh by schylling lava instant slime kit sylvis",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-instant-slime-kit-sylvis.html",
+          "status": "in_stock"
+        },
+        {
+          "name": "NeeDoh schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Jelly Squish Stretchy Jellyfish Toy with Glitter Filling",
+          "name": "NeeDoh schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-jelly-squish-stretchy-jellyfish-toy-with-glitter-filling-syjsnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Fuzz Ball Flower Power Sensory Stress Ball",
+          "name": "NeeDoh schylling needoh fuzz ball flower power sensory stress ball syfpfzbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-flower-power-sensory-stress-ball-syfpfzbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Cube Swirl Sensory Fidget Toy",
+          "name": "NeeDoh schylling needoh nice cube swirl sensory fidget toy syswncbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Teenie Jack-Glow Lantern 3-Pack",
+          "name": "NeeDoh schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-teenie-jack-glow-lantern-3-pack-syndwtnjgl25.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Jack-Glow Lantern Halloween Fidget Toy",
+          "name": "NeeDoh needoh by schylling needoh jack glow lantern halloween fidget toy syndwjgl26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jack-glow-lantern-halloween-fidget-toy-syndwjgl26.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Groovy Fruit Sensory Stress Balls, 3 pack",
+          "name": "NeeDoh schylling needoh groovy fruit sensory stress balls 3 pack sygfnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-groovy-fruit-sensory-stress-balls-3-pack-sygfnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Panic Pete Stress Ball",
+          "name": "NeeDoh schylling needoh panic pete stress ball syndppst",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-panic-pete-stress-ball-syndppst.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Glowy Ghost Stress Ball",
+          "name": "NeeDoh needoh by schylling needoh glowy ghost stress ball syndwgg26",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-glowy-ghost-stress-ball-syndwgg26.html",
           "status": "in_stock"
         },
         {
-          "name": "NeeDoh Chicka DeeDoos Easter Stress Ball Chick",
+          "name": "NeeDoh schylling needoh chicka deedoos easter stress ball chick sycddnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-chicka-deedoos-easter-stress-ball-chick-sycddnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Donut Stress Ball",
+          "name": "NeeDoh schylling needoh donut stress ball sydnnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-donut-stress-ball-sydnnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Hot Shots Teenie Stress Ball, 4 pack",
+          "name": "NeeDoh schylling needoh hot shots teenie stress ball 4 pack syhstnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-hot-shots-teenie-stress-ball-4-pack-syhstnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Cool Cats Teenie Stress Ball, 4 pack",
+          "name": "NeeDoh schylling needoh cool cats teenie stress ball 4 pack sympcctnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-cool-cats-teenie-stress-ball-4-pack-sympcctnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Marbleez Stress Ball",
+          "name": "NeeDoh schylling needoh marbleez stress ball symrbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-marbleez-stress-ball-symrbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Glow in the Dark Stress Ball",
+          "name": "NeeDoh schylling needoh glow in the dark stress ball syagnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-glow-in-the-dark-stress-ball-syagnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Sploot Splat Stress Ball",
+          "name": "NeeDoh schylling needoh sploot splat stress ball sysplnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-sploot-splat-stress-ball-sysplnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Hot Shots Football Stress Ball",
+          "name": "NeeDoh schylling needoh hot shots football stress ball syhsfbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-hot-shots-football-stress-ball-syhsfbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Good Vibes Only Stress Ball",
+          "name": "NeeDoh schylling needoh good vibes only stress ball sygvnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-good-vibes-only-stress-ball-sygvnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Fuzz Ball Wonder Waves Stress Ball",
+          "name": "NeeDoh schylling needoh fuzz ball wonder waves stress ball sywwfzbnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-fuzz-ball-wonder-waves-stress-ball-sywwfzbnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Sugar Skull Cats",
+          "name": "NeeDoh schylling needoh sugar skull cats syssccnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-sugar-skull-cats-syssccnd.html",
           "status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Polar Glow Penguin",
+          "name": "NeeDoh schylling needoh polar glow penguin sysqmpnd25",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/schylling-needoh-polar-glow-penguin-sysqmpnd25.html",
           "status": "out_of_stock"
         }
@@ -1847,12 +1862,12 @@
         {
           "name": "Schylling NeeDoh Mini Nice Ice Baby Teenie Squeeze Cubes 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-mini-nice-ice-baby-teenie-squeeze-cubes-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Colorful squishy balls Fuzz Ball 4 pcs",
           "url": "http://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-fuzz-ball-4-pcs",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Knittens Soft Stress Cat",
@@ -1862,12 +1877,12 @@
         {
           "name": "Schylling NeeDoh Squishy heart",
           "url": "http://www.2kidstoys.com/schylling-needoh-squishy-heart",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Fuzz Ball squishy maxi ball",
           "url": "http://www.2kidstoys.com/schylling-needoh-fuzz-ball-squishy-maxi-ball",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Color-changing anti-stress cube",
@@ -1877,7 +1892,7 @@
         {
           "name": "Schylling NeeDoh Catnip Nice Cube",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-nice-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cat Textured",
@@ -1887,7 +1902,7 @@
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
