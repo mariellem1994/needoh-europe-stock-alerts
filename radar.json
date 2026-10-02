@@ -1,5 +1,5 @@
 {
-  "last_checked": "02 Oct 2026, 09:01",
+  "last_checked": "02 Oct 2026, 09:15",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -286,7 +286,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom",
@@ -311,7 +311,7 @@
         {
           "name": "NeeDoh Dig It Pig",
           "url": "https://www.proshop.nl/Speelgoed/NeeDoh-Dig-It-Pig-assorted/3152428",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Snowball Crunch",
@@ -337,7 +337,7 @@
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Puff-Puff/3452465",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
@@ -387,7 +387,7 @@
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
@@ -407,12 +407,12 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves 1pk assorted",
@@ -422,27 +422,27 @@
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Sploot-Splat-assorted/3414036",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squeeza CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Squeeza-CDU/3452276",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
@@ -458,7 +458,7 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -468,7 +468,7 @@
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
@@ -478,7 +478,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -488,12 +488,12 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
@@ -503,12 +503,12 @@
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
