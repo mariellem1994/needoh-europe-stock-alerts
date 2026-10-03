@@ -1,5 +1,5 @@
 {
-  "last_checked": "03 Oct 2026, 01:48",
+  "last_checked": "03 Oct 2026, 02:02",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -219,7 +219,7 @@
         {
           "name": "needoh gumdrop blue",
           "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
@@ -259,7 +259,7 @@
         {
           "name": "needoh glitter glow nice cube pink",
           "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh cool cats ball 1 stuk pink.html",
@@ -447,7 +447,7 @@
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
@@ -472,12 +472,12 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
@@ -487,16 +487,11 @@
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow 1 pk assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Glitter-Glow-1-pk-assorted/3407597",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Mello Mallo assorted",
-          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
           "status": "unknown"
         },
         {
@@ -510,9 +505,14 @@
           "status": "unknown"
         },
         {
+          "name": "NeeDoh Mello Mallo assorted",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
+          "status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
@@ -527,7 +527,7 @@
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
@@ -608,7 +608,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
