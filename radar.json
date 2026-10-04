@@ -1,5 +1,5 @@
 {
-  "last_checked": "05 Oct 2026, 00:20",
+  "last_checked": "05 Oct 2026, 00:34",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -452,27 +452,27 @@
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Wild-Cats-4-asst/3452468",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
@@ -482,7 +482,7 @@
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
@@ -502,7 +502,7 @@
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
@@ -512,12 +512,12 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves 1pk assorted",
@@ -527,17 +527,17 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -552,7 +552,7 @@
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzzy-Hugs-Bear-3-assorteret-CDU/3489167",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -573,7 +573,7 @@
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
@@ -593,7 +593,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
@@ -618,7 +618,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -633,7 +633,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací míček Flower Power",
