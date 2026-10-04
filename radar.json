@@ -1,5 +1,5 @@
 {
-  "last_checked": "04 Oct 2026, 14:41",
+  "last_checked": "04 Oct 2026, 20:33",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -212,6 +212,56 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "needoh niceberg needoh 1 stuk",
+          "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh gumdrop blue",
+          "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
+          "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh super fuzz ball pink",
+          "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh nice cube glow in the dark 1 stuk groen",
+          "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh nice berg swirl blue",
+          "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh super fuzz ball green",
+          "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh fuzz ball wonder waves 1 stuk blue",
+          "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh dream drop 1 stuk blue",
+          "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh glitter glow nice cube pink",
+          "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
+          "status": "unknown"
+        },
+        {
           "name": "needoh cool cats ball 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html",
           "status": "unknown"
@@ -294,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -302,24 +352,9 @@
           "status": "unknown"
         },
         {
-          "name": "needoh dream drop 1 stuk blue.html",
-          "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
-          "status": "unknown"
-        },
-        {
           "name": "needoh dream drop 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html",
           "status": "unknown"
-        },
-        {
-          "name": "needoh nice cube glow in the dark 1 stuk groen.html",
-          "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh nice berg swirl blue.html",
-          "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
-          "status": "out_of_stock"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk geel.html",
@@ -330,41 +365,6 @@
           "name": "needoh mello mallo color changing marshmellow 1 stuk roze.html",
           "url": "https://www.spellenrijk.nl/artikel/50648/needoh-mello-mallo-color-changing-marshmellow-1-stuk-roze.html",
           "status": "unknown"
-        },
-        {
-          "name": "needoh niceberg needoh 1 stuk",
-          "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh gumdrop blue",
-          "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
-          "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh super fuzz ball pink",
-          "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh super fuzz ball green",
-          "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh fuzz ball wonder waves 1 stuk blue",
-          "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh glitter glow nice cube pink",
-          "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "out_of_stock"
         }
       ]
     },
@@ -391,7 +391,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Smushroom",
@@ -411,7 +411,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -462,7 +462,7 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
@@ -482,12 +482,12 @@
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow 1 pk assorted",
@@ -502,17 +502,17 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
@@ -532,7 +532,7 @@
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
@@ -542,12 +542,12 @@
         {
           "name": "NeeDoh Squeeza CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Squeeza-CDU/3452276",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Sploot-Splat-assorted/3414036",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
@@ -598,7 +598,7 @@
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
@@ -608,12 +608,12 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
@@ -633,7 +633,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací míček Flower Power",
@@ -2869,18 +2869,18 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
+          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
+          "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
+          "status": "unknown"
+        },
+        {
+          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
-          "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
           "status": "out_of_stock"
         },
         {
@@ -2896,7 +2896,7 @@
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-antistres-needoh-fructe-4187049339",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
@@ -2913,7 +2913,48 @@
     {
       "name": "Spadt",
       "country": "🇧🇪 Belgium",
-      "products": []
+      "products": [
+        {
+          "name": "Uit stock Needoh Squishmas Squishkins Schylling € 9,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-squishmas-squishkins-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmsk24-6990/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Funky Pup Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-funky-pup-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyfpnd-6979/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Squishmas Groovy Tree Schylling € 19,99",
+          "url": "https://spadt.be/webshop/schylling-squishmas-groovy-tree-speelgoed-hebbedingen-en-minispeeltjes-fidgetssysqmgt23-6989/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Glow in the Dark Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-glow-in-the-dark-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssygnd-6952/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Dig It Pig Needoh Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-dig-it-pig-needoh-speelgoed-hebbedingen-en-minispeeltjes-fidgetssydnnd-6951/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Needoh Color Change Schylling € 4,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-color-change-speelgoed-hebbedingen-en-minispeeltjes-fidgetssyccsq-6670/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Needoh Donut Schylling € 9,99",
+          "url": "https://spadt.be/webshop/schylling-needoh-donut-speelgoed-hebbedingen-en-minispeeltjes-fidgetsdpnd-6671/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Uit stock Teenie Needoh Cool Cats (3) Schylling € 6,99",
+          "url": "https://spadt.be/webshop/schylling-teenie-needoh-cool-cats-3-speelgoed-hebbedingen-en-minispeeltjes-fidgetssycctnd-6153/",
+          "status": "out_of_stock"
+        }
+      ]
     },
     {
       "name": "Mamiee",
