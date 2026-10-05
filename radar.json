@@ -1,5 +1,5 @@
 {
-  "last_checked": "05 Oct 2026, 20:20",
+  "last_checked": "05 Oct 2026, 20:57",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -411,7 +411,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -452,7 +452,7 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
@@ -462,7 +462,7 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
@@ -497,7 +497,7 @@
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
@@ -547,12 +547,12 @@
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -572,7 +572,7 @@
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -583,7 +583,7 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -603,7 +603,7 @@
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -623,7 +623,7 @@
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -638,7 +638,7 @@
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
@@ -1381,7 +1381,7 @@
         {
           "name": "NeeDoh needoh by schylling needoh good vibes only stress ball sygvnd",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-good-vibes-only-stress-ball-sygvnd.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh needoh by schylling needoh fuzz ball wonder waves stress ball sywwfzbnd",
