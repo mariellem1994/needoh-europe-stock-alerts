@@ -1,5 +1,5 @@
 {
-  "last_checked": "06 Oct 2026, 04:03",
+  "last_checked": "06 Oct 2026, 04:24",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -239,7 +239,7 @@
         {
           "name": "needoh nice berg swirl blue",
           "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh super fuzz ball green",
@@ -304,7 +304,7 @@
         {
           "name": "needoh cool cats ball 1 stuk green.html",
           "url": "https://www.spellenrijk.nl/artikel/51139/needoh-cool-cats-ball-1-stuk-green.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh color changing needoh stretchy stress balls yellow 1 stuk.html",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -386,7 +386,7 @@
         {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Puff Puff",
@@ -416,7 +416,7 @@
         {
           "name": "NeeDoh Dig It Pig",
           "url": "https://www.proshop.nl/Speelgoed/NeeDoh-Dig-It-Pig-assorted/3152428",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Snowball Crunch",
@@ -477,7 +477,7 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
@@ -487,7 +487,7 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
@@ -532,7 +532,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves 1pk assorted",
@@ -588,7 +588,7 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
@@ -608,7 +608,7 @@
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -628,12 +628,12 @@
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
@@ -643,7 +643,7 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
@@ -658,12 +658,12 @@
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091086 schylling needoh vanocni stromecek s 15 mackacimi ozdobami.html",
           "url": "https://www.megaknihy.cz/hry/25091086-schylling-needoh-vanocni-stromecek-s-15-mackacimi-ozdobami.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26345944 schylling needoh barevne mackaci mini kocky 4 ks.html",
@@ -2891,7 +2891,7 @@
         {
           "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
