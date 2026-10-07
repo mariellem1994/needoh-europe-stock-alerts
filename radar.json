@@ -1,5 +1,5 @@
 {
-  "last_checked": "07 Oct 2026, 18:47",
+  "last_checked": "07 Oct 2026, 19:27",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -384,11 +384,6 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Nice Icle 3 asst CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
-        },
-        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -416,7 +411,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -426,6 +421,11 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh Nice Icle 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
           "status": "unknown"
         },
         {
@@ -441,7 +441,7 @@
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
@@ -452,7 +452,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
@@ -462,7 +462,7 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
@@ -487,7 +487,7 @@
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
@@ -522,7 +522,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Mello Mallo assorted",
@@ -547,7 +547,7 @@
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
@@ -572,7 +572,7 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -593,32 +593,32 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25148017 schylling needoh groovy ghosts.html",
           "url": "https://www.megaknihy.cz/hry/25148017-schylling-needoh-groovy-ghosts.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -643,7 +643,7 @@
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
@@ -653,7 +653,7 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
@@ -663,7 +663,7 @@
         {
           "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
@@ -2899,18 +2899,18 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock"
         },
         {
-          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
+          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock"
         },
         {
