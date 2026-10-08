@@ -1,5 +1,5 @@
 {
-  "last_checked": "08 Oct 2026, 16:03",
+  "last_checked": "08 Oct 2026, 16:13",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -522,7 +522,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Mello Mallo assorted",
@@ -623,12 +623,12 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
@@ -648,7 +648,7 @@
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
@@ -3514,7 +3514,7 @@
         {
           "name": "Lava Slime",
           "url": "https://www.toys42hands.nl/en/products/lava-slime",
-          "status": "out_of_stock"
+          "status": "error"
         },
         {
           "name": "Teenie Cool Cat NeeDoh",
