@@ -1,5 +1,5 @@
 {
-  "last_checked": "09 Oct 2026, 21:40",
+  "last_checked": "09 Oct 2026, 21:52",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -269,7 +269,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk paars.html",
           "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk blauw.html",
@@ -284,7 +284,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk oranje.html",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk groen.html",
@@ -329,7 +329,7 @@
         {
           "name": "needoh nice cube 1 stuk purple.html",
           "url": "https://www.spellenrijk.nl/artikel/51115/needoh-nice-cube-1-stuk-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh nice cube 1 stuk pink.html",
@@ -441,7 +441,7 @@
         {
           "name": "NeeDoh Candy Swirl Nice Cube CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
@@ -472,7 +472,7 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
@@ -598,7 +598,12 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
+        },
+        {
+          "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
+          "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
@@ -608,7 +613,7 @@
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
@@ -618,7 +623,7 @@
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
@@ -628,7 +633,7 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář",
@@ -638,7 +643,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -794,7 +799,7 @@
         {
           "name": "Schylling NeeDoh Knittens Mačkací hebká antistresová kočka",
           "url": "http://www.dvedeti.cz/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Kouzelné barevné vejce",
@@ -804,7 +809,7 @@
         {
           "name": "Schylling NeeDoh Kuřátko Deedos",
           "url": "http://www.dvedeti.cz/schylling-needoh-kuratko-deedos-12-1-ks",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
@@ -814,7 +819,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová štěňátka 3 ks",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-stenatka-1-bal",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
@@ -829,7 +834,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresový míček",
           "url": "http://www.dvedeti.cz/schylling-mackaci-antistresovy-micek-needoh",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresový mini míček 3 ks",
@@ -839,12 +844,12 @@
         {
           "name": "Schylling NeeDoh Mačkací duch svítící ve tmě",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-duch-svitici-ve-tme",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kaňka Sploot Splat",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kanka-sploot-splat",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Mello Mallo",
@@ -854,7 +859,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
           "url": "http://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
@@ -1443,7 +1448,7 @@
         {
           "name": "Schylling NeeDoh Baby Boos Mačkací duch 3 ks",
           "url": "http://www.dvedeti.sk/schylling-needoh-baby-boos-mackaci-duch",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Booper",
@@ -1619,127 +1624,127 @@
         {
           "name": "Needoh Nice Berg Swirl - Giant Marbled Fidget Cube, Squishy Toy Cubes For Kids",
           "url": "https://kenblack.ie/products/needoh-nice-berg-swirl-giant-marbled-fidget-cube-squishy-toy-cubes-for-kids",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Nice Ice Baby Teenie Multipack - Fidget Cube Toys, Kids Sensory Ice Cubes",
           "url": "https://kenblack.ie/products/needoh-nice-ice-baby-teenie-multipack-fidget-cube-toys-kids-sensory-ice-cubes",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Nice Berg Glitter & Glow Squishy Toy Cube, Big Glow In The Dark Fidget",
           "url": "https://kenblack.ie/products/needoh-nice-berg-glitter-glow-squishy-toy-cube-big-glow-in-the-dark-fidget",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh - Nice Cube",
           "url": "https://kenblack.ie/products/needoh-nice-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Jelly Squish - Stretchy Jellyfish Toy With Glitter Filling, Sensory Toys",
           "url": "https://kenblack.ie/products/needoh-jelly-squish-stretchy-jellyfish-toy-with-glitter-filling-sensory-toys",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Nice Cream Cone Assortment",
           "url": "https://kenblack.ie/products/needoh-nice-cream-cone",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh - Niceberg",
           "url": "https://kenblack.ie/products/needoh-niceberg",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh - Dream Drop",
           "url": "https://kenblack.ie/products/needoh-dream-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh - Gumdrop",
           "url": "https://kenblack.ie/products/needoh-gumdrop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Nice-Icicle Ice Sensory Squish Toy",
           "url": "https://kenblack.ie/products/needoh-nice-icicle-ice-sensory-squish-toy",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Jelly Hops Scented Bunny Squishy Fidget Toys",
           "url": "https://kenblack.ie/products/needoh-jelly-hops-scented-bunny-squishy-fidget-toys",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Candy Swirl Nice Cube",
           "url": "https://kenblack.ie/products/schylling-needoh-candy-swirl-nice-cube",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Mello Mallo Squishy Colour-Changing Marshmallow Fidget Toy",
           "url": "https://kenblack.ie/products/needoh-mello-mallo-squishy-colour-changing-marshmallow-fidget-toy",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Sugar Skull Cats Squishy Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-sugar-skull-cats-squishy-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Glow In The Dark Nee-Doh Assortment",
           "url": "https://kenblack.ie/products/glow-in-the-dark-nee-doh-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Teenie Hot Shots Fidget Toy 4 Pack",
           "url": "https://kenblack.ie/products/needoh-teenie-hot-shots-fidget-toy-4-pack",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Peace O'Cake Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-peace-ocake-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-fuzz-ball-flower-power-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh The Groovy Glob Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-the-groovy-glob-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Colour Change Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-colour-change-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Teenie 3 Pack Assortment",
           "url": "https://kenblack.ie/products/needoh-teenie-3-pack-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Teenies Single Assortment",
           "url": "https://kenblack.ie/products/needoh-teenies-single-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Hot Shots Football Assortment",
           "url": "https://kenblack.ie/products/needoh-hot-shots-football-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Sploot Splat Fidget Toy Assortment",
           "url": "https://kenblack.ie/products/needoh-sploot-splat-fidget-toy-assortment",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Needoh Rainbow Teenie 6 Pack",
           "url": "https://kenblack.ie/products/needoh-rainbow-teenie-6-pack",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
