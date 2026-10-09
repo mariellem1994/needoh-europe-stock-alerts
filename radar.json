@@ -1,5 +1,5 @@
 {
-  "last_checked": "09 Oct 2026, 07:37",
+  "last_checked": "09 Oct 2026, 07:48",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -212,56 +212,6 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "needoh niceberg needoh 1 stuk",
-          "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh gumdrop blue",
-          "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
-          "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh super fuzz ball pink",
-          "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh nice cube glow in the dark 1 stuk groen",
-          "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh nice berg swirl blue",
-          "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh super fuzz ball green",
-          "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh fuzz ball wonder waves 1 stuk blue",
-          "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh dream drop 1 stuk blue",
-          "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
-          "status": "unknown"
-        },
-        {
-          "name": "needoh glitter glow nice cube pink",
-          "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "out_of_stock"
-        },
-        {
           "name": "needoh cool cats ball 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html",
           "status": "unknown"
@@ -289,7 +239,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk groen.html",
           "url": "https://www.spellenrijk.nl/artikel/50650/needoh-classic-needoh-balls-1-stuk-groen.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh cool cats ball 1 stuk purple.html",
@@ -352,9 +302,24 @@
           "status": "unknown"
         },
         {
+          "name": "needoh dream drop 1 stuk blue.html",
+          "url": "https://www.spellenrijk.nl/artikel/51132/needoh-dream-drop-1-stuk-blue.html",
+          "status": "unknown"
+        },
+        {
           "name": "needoh dream drop 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html",
           "status": "unknown"
+        },
+        {
+          "name": "needoh nice cube glow in the dark 1 stuk groen.html",
+          "url": "https://www.spellenrijk.nl/artikel/50654/needoh-nice-cube-glow-in-the-dark-1-stuk-groen.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh nice berg swirl blue.html",
+          "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
+          "status": "out_of_stock"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk geel.html",
@@ -364,6 +329,41 @@
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk roze.html",
           "url": "https://www.spellenrijk.nl/artikel/50648/needoh-mello-mallo-color-changing-marshmellow-1-stuk-roze.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh niceberg needoh 1 stuk",
+          "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh gumdrop blue",
+          "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
+          "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh super fuzz ball pink",
+          "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh super fuzz ball green",
+          "url": "https://www.spellenrijk.nl/artikel/51849/needoh-super-fuzz-ball-green.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh fuzz ball wonder waves 1 stuk blue",
+          "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html",
+          "status": "unknown"
+        },
+        {
+          "name": "needoh glitter glow nice cube pink",
+          "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
           "status": "unknown"
         }
       ]
@@ -386,7 +386,7 @@
         {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Puff Puff",
@@ -633,7 +633,7 @@
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
@@ -648,7 +648,7 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
