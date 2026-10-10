@@ -1,5 +1,5 @@
 {
-  "last_checked": "10 Oct 2026, 07:47",
+  "last_checked": "10 Oct 2026, 08:01",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -603,42 +603,42 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
@@ -2894,18 +2894,18 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
+          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock"
         },
         {
-          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
+          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock"
         },
         {
@@ -3294,7 +3294,7 @@
         {
           "name": "NeeDoh Teenie NeeDoh 3-pack",
           "url": "https://www.intertoys.nl/needoh-teenie-needoh-3-pack",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cats",
