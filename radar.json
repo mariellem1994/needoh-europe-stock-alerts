@@ -1,5 +1,5 @@
 {
-  "last_checked": "11 Oct 2026, 01:20",
+  "last_checked": "11 Oct 2026, 01:31",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -264,7 +264,7 @@
         {
           "name": "needoh cool cats ball 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51138/needoh-cool-cats-ball-1-stuk-pink.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh classic needoh balls 1 stuk paars.html",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -384,9 +384,14 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Nice Icle 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Puff Puff",
@@ -436,7 +441,7 @@
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Classic-1pk-assorted/3414047",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -542,7 +547,7 @@
         {
           "name": "NeeDoh Nice Ice Baby assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Ice-Baby-assorted/3388809",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
@@ -603,17 +608,17 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
