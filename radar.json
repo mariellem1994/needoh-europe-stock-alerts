@@ -1,5 +1,5 @@
 {
-  "last_checked": "10 Oct 2026, 05:04",
+  "last_checked": "10 Oct 2026, 05:15",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -426,7 +426,7 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
@@ -603,12 +603,12 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -648,7 +648,7 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
@@ -2906,7 +2906,7 @@
         {
           "name": "jucarie antistres nee doh dohjees monsters 2073208220",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-dohjees-monsters-2073208220",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
