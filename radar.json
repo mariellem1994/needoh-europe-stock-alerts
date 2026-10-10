@@ -1,5 +1,5 @@
 {
-  "last_checked": "10 Oct 2026, 23:07",
+  "last_checked": "10 Oct 2026, 23:29",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -269,7 +269,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk paars.html",
           "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk blauw.html",
@@ -294,7 +294,7 @@
         {
           "name": "needoh cool cats ball 1 stuk purple.html",
           "url": "https://www.spellenrijk.nl/artikel/51144/needoh-cool-cats-ball-1-stuk-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh cool cats ball 1 stuk orange.html",
@@ -329,7 +329,7 @@
         {
           "name": "needoh nice cube 1 stuk purple.html",
           "url": "https://www.spellenrijk.nl/artikel/51115/needoh-nice-cube-1-stuk-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh nice cube 1 stuk pink.html",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -384,9 +384,14 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Nice Icle 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
+          "status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Puff Puff",
@@ -396,7 +401,7 @@
         {
           "name": "NeeDoh Smushroom",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Advent Calendar 2025",
@@ -411,7 +416,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -424,14 +429,9 @@
           "status": "unknown"
         },
         {
-          "name": "NeeDoh Nice Icle 3 asst CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
-        },
-        {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
@@ -446,7 +446,7 @@
         {
           "name": "NeeDoh Candy Swirl Nice Cube CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
@@ -462,7 +462,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
@@ -477,12 +477,12 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Wild-Cats-4-asst/3452468",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
@@ -502,12 +502,12 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
@@ -517,12 +517,12 @@
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow 1 pk assorted",
@@ -601,92 +601,92 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
-          "name": "Schylling NeeDoh Mačkací antistresová kapka",
+          "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
           "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
+          "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
+          "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
+          "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací mini míček",
+          "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
+          "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
           "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Adventní kalendář 2025",
+          "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
           "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Adventní kalendář",
+          "name": "25091436 schylling needoh adventni kalendar.html",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
           "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
+          "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
-          "name": "Schylling NeeDoh Hledání zlatých vajíček",
+          "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
+          "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
+          "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací míček Flower Power",
+          "name": "26007032 schylling needoh mackaci micek flower power.html",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Vánoční stromeček s 15 mačkacími ozdobami",
+          "name": "25091086 schylling needoh vanocni stromecek s 15 mackacimi ozdobami.html",
           "url": "https://www.megaknihy.cz/hry/25091086-schylling-needoh-vanocni-stromecek-s-15-mackacimi-ozdobami.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
+          "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Barevné mačkací mini kočky 4 ks",
+          "name": "26345944 schylling needoh barevne mackaci mini kocky 4 ks.html",
           "url": "https://www.megaknihy.cz/hry/26345944-schylling-needoh-barevne-mackaci-mini-kocky-4-ks.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací míček Wonder Waves",
+          "name": "26106148 schylling needoh mackaci micek wonder waves.html",
           "url": "https://www.megaknihy.cz/hry/26106148-schylling-needoh-mackaci-micek-wonder-waves.html",
           "status": "unknown"
         },
         {
-          "name": "Schylling NeeDoh Mačkací tučňák svítící ve tmě",
+          "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922642-schylling-needoh-mackaci-tucnak-svitici-ve-tme.html",
           "status": "unknown"
         }
@@ -2459,182 +2459,182 @@
         {
           "name": "57056 cool cats needoh 0019649235391.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/57056-cool-cats-needoh-0019649235391.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "55230 needoh balle anti stress niceberg needoh 8 cm 0019649508778.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/55230-needoh-balle-anti-stress-niceberg-needoh-8-cm-0019649508778.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "54880 teenie jack glow lanterns needoh 0019649508204.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/54880-teenie-jack-glow-lanterns-needoh-0019649508204.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "54879 jack glow lantern needoh 0019649508303.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/54879-jack-glow-lantern-needoh-0019649508303.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "54878 glowy ghost needoh 0019649508280.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/54878-glowy-ghost-needoh-0019649508280.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53937 needoh polar glow penguin 0019649508433.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53937-needoh-polar-glow-penguin-0019649508433.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53936 needoh ginger glowman 0019649508198.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53936-needoh-ginger-glowman-0019649508198.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53935 needoh sugar cats 0019649509195.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53935-needoh-sugar-cats-0019649509195.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53934 needoh groovy ghosts halloween 0019649509430.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53934-needoh-groovy-ghosts-halloween-0019649509430.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53439 cool cats super needoh 0019649519446.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53439-cool-cats-super-needoh-0019649519446.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53438 mello mallo needoh 0019649508075.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/53438-mello-mallo-needoh-0019649508075.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53437 fuzz ball flower power needoh 0019649508082.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/53437-fuzz-ball-flower-power-needoh-0019649508082.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53219 teenie singles nice ice baby needoh 0019649508785.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53219-teenie-singles-nice-ice-baby-needoh-0019649508785.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53218 nice cube swirl needoh 0019649508167.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53218-nice-cube-swirl-needoh-0019649508167.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "53217 sploot splat needoh 0019649509102.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/53217-sploot-splat-needoh-0019649509102.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52086 needoh bunnies and chicks 0019649509003.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52086-needoh-bunnies-and-chicks-0019649509003.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52085 lava squish n flow needoh 0019649513895.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/52085-lava-squish-n-flow-needoh-0019649513895.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52027 teenie singles needoh assortment 0019649508952.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52027-teenie-singles-needoh-assortment-0019649508952.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52026 teenie needoh 0019649236268.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52026-teenie-needoh-0019649236268.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52025 super needoh 0019649235186.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52025-super-needoh-0019649235186.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52024 gobs of globs needoh 0019649237609.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52024-gobs-of-globs-needoh-0019649237609.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52023 funky pup needoh 0019649520114.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52023-funky-pup-needoh-0019649520114.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "52022 dig it pig needoh 0019649520008.html",
           "url": "https://lemondeimaginaire.com/jouer-pour-grandir/52022-dig-it-pig-needoh-0019649520008.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51834 needoh squeeze hearts 0019649516575.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51834-needoh-squeeze-hearts-0019649516575.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51833 lava instant slime needoh 0019649516308.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/51833-lava-instant-slime-needoh-0019649516308.html",
-          "status": "unknown"
+          "status": "in_stock"
         },
         {
           "name": "51832 happy snappy needoh 0019649519538.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51832-happy-snappy-needoh-0019649519538.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51831 hot shots football needoh 0019649509041.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51831-hot-shots-football-needoh-0019649509041.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51830 groovy shroom needoh 0019649519545.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51830-groovy-shroom-needoh-0019649519545.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51829 needoh donut holes 0019649517817.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51829-needoh-donut-holes-0019649517817.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51828 needoh chicka deedos 0019649516568.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51828-needoh-chicka-deedos-0019649516568.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "51827 glow in the dark needoh 0019649517954.html",
           "url": "https://lemondeimaginaire.com/comme-les-grands-/51827-glow-in-the-dark-needoh-0019649517954.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "50225 needoh groovy the glowman 0019649509454.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/50225-needoh-groovy-the-glowman-0019649509454.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "50224 dream drop needoh 0019649516223.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/50224-dream-drop-needoh-0019649516223.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "49989 needoh advent calendar calendrier de l avent needoh 0019649508266.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/49989-needoh-advent-calendar-calendrier-de-l-avent-needoh-0019649508266.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "49988 spooky squishkins haunted house needoh halloween 0019649517718.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/49988-spooky-squishkins-haunted-house-needoh-halloween-0019649517718.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "49613 stardust needoh 0019649235599.html",
           "url": "https://lemondeimaginaire.com/experiences-et-decouvertes/49613-stardust-needoh-0019649235599.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
