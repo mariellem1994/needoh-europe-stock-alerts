@@ -1,5 +1,5 @@
 {
-  "last_checked": "11 Oct 2026, 23:13",
+  "last_checked": "11 Oct 2026, 23:23",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -219,7 +219,7 @@
         {
           "name": "needoh gumdrop blue",
           "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
@@ -239,7 +239,7 @@
         {
           "name": "needoh nice berg swirl blue",
           "url": "https://www.spellenrijk.nl/artikel/51853/needoh-nice-berg-swirl-blue.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh super fuzz ball green",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -603,12 +603,12 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -623,7 +623,7 @@
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -633,12 +633,12 @@
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
@@ -658,7 +658,7 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
@@ -3085,62 +3085,52 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář 2026",
           "url": "https://www.dracek.cz/schylling-needoh-adventni-kalendar-2026",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling Needoh mačkací kostky Mini Nice Ice Baby Teenie 4 ks",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací maxi míček FuzzBall",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-maxi-micek-fuzzball",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Barevné mačkací míčky FuzzBall 4 ks",
           "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-micky-fuzzball-4-ks",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míčky Fuzz Ball 3ks",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-mini-micky-fuzz-ball-3ks",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
           "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka 1 ks",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-antistresova-kapka-1-ks",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling, Mačkací texturovaný Needoh Gumdrop",
           "url": "https://www.dracek.cz/schylling-mackaci-texturovany-needoh-gumdrop",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling Needoh mačkací kostka Nice Cube",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube",
-          "status": "out_of_stock"
+          "status": "in_stock"
         },
         {
           "name": "Schylling, Needoh Sněhová křupavá koule",
           "url": "https://www.dracek.cz/schylling-needoh-snehova-krupava-koule",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Knittens Mačkací hebká antistresová kočka",
-          "url": "https://www.dracek.cz/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
-          "url": "https://www.dracek.cz/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
-          "status": "out_of_stock"
+          "status": "in_stock"
         }
       ]
     },
