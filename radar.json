@@ -1,5 +1,5 @@
 {
-  "last_checked": "11 Oct 2026, 11:39",
+  "last_checked": "11 Oct 2026, 11:52",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -214,7 +214,7 @@
         {
           "name": "needoh niceberg needoh 1 stuk",
           "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh gumdrop blue",
@@ -229,7 +229,7 @@
         {
           "name": "needoh super fuzz ball pink",
           "url": "https://www.spellenrijk.nl/artikel/51850/needoh-super-fuzz-ball-pink.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh nice cube glow in the dark 1 stuk groen",
@@ -259,7 +259,7 @@
         {
           "name": "needoh glitter glow nice cube pink",
           "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh cool cats ball 1 stuk pink.html",
@@ -299,7 +299,7 @@
         {
           "name": "needoh cool cats ball 1 stuk orange.html",
           "url": "https://www.spellenrijk.nl/artikel/51140/needoh-cool-cats-ball-1-stuk-orange.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh cool cats ball 1 stuk green.html",
@@ -421,7 +421,7 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
@@ -547,7 +547,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves 1pk assorted",
@@ -582,12 +582,12 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzzy-Hugs-Bear-3-assorteret-CDU/3489167",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -603,7 +603,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
