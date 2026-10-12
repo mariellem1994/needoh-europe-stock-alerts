@@ -1,5 +1,5 @@
 {
-  "last_checked": "12 Oct 2026, 18:41",
+  "last_checked": "12 Oct 2026, 19:04",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -7,123 +7,203 @@
       "products": [
         {
           "name": "NeeDoh Advent Calendar 2026",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-advent-calendar-2026",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-advent-calendar-2026",
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Swirl",
-          "url": "http://www.cogstoysandgames.ie/products/teenie-needoh-swirl",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/teenie-needoh-swirl",
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Cool Cats 3 Pack",
-          "url": "http://www.cogstoysandgames.ie/products/teenie-needoh-cool-cats-3-pack-1",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/teenie-needoh-cool-cats-3-pack-1",
+          "status": "out_of_stock"
         },
         {
           "name": "Super NeeDoh Fuzz Ball",
-          "url": "http://www.cogstoysandgames.ie/products/super-needoh-fuzz-ball",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/super-needoh-fuzz-ball",
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Fuzz Ball Multi Pack",
-          "url": "http://www.cogstoysandgames.ie/products/teenie-needoh-fuzz-ball-multi-pack-1",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/teenie-needoh-fuzz-ball-multi-pack-1",
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Fuzz Ball 3 Pack",
-          "url": "http://www.cogstoysandgames.ie/products/teenie-needoh-fuzz-ball-3-pack-1",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/teenie-needoh-fuzz-ball-3-pack-1",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Teenie Nee Hot Shots",
+          "url": "https://www.cogstoysandgames.ie/products/teenie-nee-hot-shots",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Squish - Super Solid Squish",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-jelly-squish-super-solid-squish",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-jelly-squish-super-solid-squish",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Berg Swirl",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-nice-berg-swirl",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-berg-swirl",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Berg Glitter & Glow",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-nice-berg-glitter-glow",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-berg-glitter-glow",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Velvet Squeeze (Colors May Vary)",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-colour-change-cube-copy",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-colour-change-cube-copy",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Colour Change Cube",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-colour-change-cube",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-colour-change-cube",
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Fuzz Ball Wonder Waves",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-fuzz-ball-wonder-waves-1",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-fuzz-ball-wonder-waves-1",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Good Vibes Only Squishy Fidget Toy",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-good-vibes-only-squishy-fidget-toy",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh - ![Image 41: Three sparkly pink, purple, and teal heart-shaped fidget toys displayed in a heart-shaped striped window box.",
-          "url": "http://www.cogstoysandgames.ie/cdn/shop/files/needohteeniesparklesqueezehearts.avif?v=1770722623&width=330&height=330",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-good-vibes-only-squishy-fidget-toy",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Sparkle Squeeze Hearts – Glitter Sensory Fidget Toy (3 Pack)",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-sparkle-hearts",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-sparkle-hearts",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Golden Egg Hunt",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-golden-egg-hunt",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-golden-egg-hunt",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Hops",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-jelly-hops",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-jelly-hops",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squishmas – Cool Cane",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-squishmas-cool-cane",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-squishmas-cool-cane",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Christmas Snow Globe Fidget",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-snow-ball",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-snow-ball",
+          "status": "out_of_stock"
         },
         {
           "name": "Needoh Nice Ice Baby",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-nice-ice-baby",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-ice-baby",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter and Glow",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-nice-cube-glitter-and-glow",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-cube-glitter-and-glow",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-fuzz-ball-flower-power",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-fuzz-ball-flower-power",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-nice-cube-glow",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-cube-glow",
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Singles",
-          "url": "http://www.cogstoysandgames.ie/products/needoh-swirl-the-groovy-glob",
-          "status": "unknown"
+          "url": "https://www.cogstoysandgames.ie/products/needoh-swirl-the-groovy-glob",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Sugar Skull Cats",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-sugar-skull-cats",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Groovy Ghost",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-groovy-ghost",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Ginger Glowman",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-ginger-glowman",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Mello Mallo",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-mello-mallo",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Sploot Splat",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-sploot-splat",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube Swirl",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-cube-swirl",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Lava Instant Slime",
+          "url": "https://www.cogstoysandgames.ie/products/lava-instant-slime",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Berg",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-nice-berg",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Dream Drop",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-gumdrop-copy",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Super NeeDoh Ripples",
+          "url": "https://www.cogstoysandgames.ie/products/super-needoh-ripples",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Dig It Pig",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-dig-it-pig",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Gumdrop",
+          "url": "https://www.cogstoysandgames.ie/products/copy-of-colour-changing-nee-doh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Nice Cube Needoh",
+          "url": "https://www.cogstoysandgames.ie/products/nice-cube-needoh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Super Nee Doh",
+          "url": "https://www.cogstoysandgames.ie/products/super-nee-doh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Colour Changing Nee Doh",
+          "url": "https://www.cogstoysandgames.ie/products/colour-changing-nee-doh",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "Snow Ball Nee Doh Crunch",
+          "url": "https://www.cogstoysandgames.ie/products/snow-ball-nee-doh-crunch",
+          "status": "out_of_stock"
         }
       ]
     },
@@ -356,7 +436,7 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
@@ -502,7 +582,7 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
@@ -523,17 +603,17 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
@@ -553,12 +633,12 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
@@ -573,7 +653,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
