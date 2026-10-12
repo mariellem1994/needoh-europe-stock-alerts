@@ -1,5 +1,5 @@
 {
-  "last_checked": "12 Oct 2026, 06:08",
+  "last_checked": "12 Oct 2026, 06:24",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -467,7 +467,7 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
@@ -613,7 +613,7 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
@@ -648,12 +648,12 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
@@ -683,7 +683,7 @@
         {
           "name": "26106148 schylling needoh mackaci micek wonder waves.html",
           "url": "https://www.megaknihy.cz/hry/26106148-schylling-needoh-mackaci-micek-wonder-waves.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922642 schylling needoh mackaci tucnak svitici ve tme.html",
@@ -1912,7 +1912,7 @@
         {
           "name": "Schylling NeeDoh Knittens Soft Stress Cat",
           "url": "http://www.2kidstoys.com/schylling-needoh-knittens-soft-stress-cat",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Squishy heart",
@@ -1942,7 +1942,7 @@
         {
           "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "http://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Cuddle anti-stress ball",
@@ -2766,19 +2766,19 @@
       "country": "🇫🇮 Finland",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin stressilelu",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://www.suomalainen.com/products/needoh-polar-glow-penguin-stressilelu",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
-          "name": "NeeDoh Fuzz Ball Wonder Waves stressilelu",
+          "name": "NeeDoh Fuzz Ball Wonder Waves",
           "url": "https://www.suomalainen.com/products/needoh-fuzz-ball-wonder-waves-stressilelu",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
-          "name": "Stressilelu Needoh Teenie Hot Shots 4 -Pack",
+          "name": "NeeDoh Teenie Hot Shots 4-Pack",
           "url": "https://www.suomalainen.com/products/stressilelu-needoh-teenie-hot-shots-4-pack",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power",
