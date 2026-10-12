@@ -1,5 +1,5 @@
 {
-  "last_checked": "13 Oct 2026, 01:31",
+  "last_checked": "13 Oct 2026, 01:50",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -224,7 +224,7 @@
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
           "url": "https://www.spellenrijk.nl/artikel/50646/needoh-mello-mallo-color-changing-marshmellow-1-stuk-blauw.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh super fuzz ball pink",
@@ -384,6 +384,11 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Peace O Cake 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
+          "status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -421,11 +426,6 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Peace O Cake 3 asst CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
           "status": "unknown"
         },
         {
@@ -532,7 +532,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
@@ -603,12 +603,12 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
@@ -618,7 +618,7 @@
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
@@ -638,12 +638,12 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -653,22 +653,22 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací míček Flower Power",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční stromeček s 15 mačkacími ozdobami",
           "url": "https://www.megaknihy.cz/hry/25091086-schylling-needoh-vanocni-stromecek-s-15-mackacimi-ozdobami.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací míčky Cukrová hůlka",
@@ -683,7 +683,7 @@
         {
           "name": "Schylling NeeDoh Mačkací míček Wonder Waves",
           "url": "https://www.megaknihy.cz/hry/26106148-schylling-needoh-mackaci-micek-wonder-waves.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací tučňák svítící ve tmě",
@@ -1776,52 +1776,52 @@
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-gigante-super-ondas-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-peluda-antiestres-needoh-peluda/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pack-de-pelotas-antiestres-mini-arcoiris-teenie-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/canica-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/lanzador-de-pelotas-booper-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-squeezy-peezy-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/cubito-de-hielo-antiestres-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-brilla-en-la-oscuridad/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/fidget-antiestres-macarrones-needoh/",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh - Agotado",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-atomica/",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -2880,7 +2880,7 @@
         {
           "name": "NeeDoh Snow Globe",
           "url": "https://www.muovitukku.fi/tuote/needoh-snow-globe-puristeltava/",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -2889,24 +2889,24 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
-          "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
-          "status": "out_of_stock"
-        },
-        {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock"
+          "status": "unknown"
+        },
+        {
+          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
+          "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
+          "status": "unknown"
+        },
+        {
+          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "unknown"
         },
         {
           "name": "set jucarii anti stress needoh mingi de fotbal 3 culori pret pe bucata 4737410753",
           "url": "https://carturesti.ro/jucarii/set-jucarii-anti-stress-needoh-mingi-de-fotbal-3-culori-pret-pe-bucata-4737410753",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "jucarie antistres nee doh dohjees monsters 2073208220",
@@ -2916,12 +2916,12 @@
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-antistres-needoh-fructe-4187049339",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-atomic-3-culori-pret-pe-bucata-2073208229",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
