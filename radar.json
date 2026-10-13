@@ -1,5 +1,5 @@
 {
-  "last_checked": "13 Oct 2026, 11:42",
+  "last_checked": "13 Oct 2026, 12:07",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -319,7 +319,7 @@
         {
           "name": "needoh color changing needoh stretchy stress balls blue 1 stuk.html",
           "url": "https://www.spellenrijk.nl/artikel/51065/needoh-color-changing-needoh-stretchy-stress-balls-blue-1-stuk.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh nice cube 1 stuk blue.html",
@@ -384,14 +384,9 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-assorted/3391313",
-          "status": "unknown"
-        },
-        {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jelly Hops",
@@ -434,6 +429,11 @@
           "status": "unknown"
         },
         {
+          "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-assorted/3391313",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Advent Calendar 2026",
           "url": "https://www.proshop.nl/Kerstkalender/NeeDoh-Advent-Calendar-2026/3448124",
           "status": "unknown"
@@ -467,7 +467,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
@@ -613,7 +613,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
@@ -628,12 +628,12 @@
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
@@ -643,12 +643,12 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -658,7 +658,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
@@ -2395,13 +2395,8 @@
       "country": "🇩🇪 Germany",
       "products": [
         {
-          "name": "needoh wildcatfuzz ball sortiert keine auswahl moeglich PPN3211370",
-          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh fuzz ball wonder waves keine auswahl moeglich PPN3178005",
-          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
+          "name": "needoh nice cube sortiert keine auswahl moeglich PPN3187268",
+          "url": "https://www.mueller.de/p/needoh-nice-cube-sortiert-keine-auswahl-moeglich-PPN3187268/",
           "status": "out_of_stock"
         },
         {
@@ -2410,18 +2405,23 @@
           "status": "out_of_stock"
         },
         {
-          "name": "needoh cool cats sortiert keine auswahl moeglich PPN3211313",
-          "url": "https://www.mueller.de/p/needoh-cool-cats-sortiert-keine-auswahl-moeglich-PPN3211313/",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "needoh nice cube sortiert keine auswahl moeglich PPN3187268",
-          "url": "https://www.mueller.de/p/needoh-nice-cube-sortiert-keine-auswahl-moeglich-PPN3187268/",
+          "name": "needoh wildcatfuzz ball sortiert keine auswahl moeglich PPN3211370",
+          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
           "status": "out_of_stock"
         },
         {
           "name": "needoh gumdrop keine auswahl moeglich PPN3178000",
           "url": "https://www.mueller.de/p/needoh-gumdrop-keine-auswahl-moeglich-PPN3178000/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh fuzz ball wonder waves keine auswahl moeglich PPN3178005",
+          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "needoh cool cats sortiert keine auswahl moeglich PPN3211313",
+          "url": "https://www.mueller.de/p/needoh-cool-cats-sortiert-keine-auswahl-moeglich-PPN3211313/",
           "status": "out_of_stock"
         }
       ]
