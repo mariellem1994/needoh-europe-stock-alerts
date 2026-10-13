@@ -1,5 +1,5 @@
 {
-  "last_checked": "13 Oct 2026, 05:17",
+  "last_checked": "13 Oct 2026, 05:28",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -532,7 +532,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
@@ -582,7 +582,7 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat assorted",
@@ -603,12 +603,12 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -623,7 +623,7 @@
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -663,7 +663,7 @@
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091086 schylling needoh vanocni stromecek s 15 mackacimi ozdobami.html",
