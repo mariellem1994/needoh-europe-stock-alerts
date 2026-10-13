@@ -1,5 +1,5 @@
 {
-  "last_checked": "13 Oct 2026, 07:49",
+  "last_checked": "13 Oct 2026, 08:11",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -384,6 +384,11 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Peace O Cake 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -421,11 +426,6 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Peace O Cake 3 asst CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
           "status": "unknown"
         },
         {
@@ -603,7 +603,7 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
@@ -613,7 +613,7 @@
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
@@ -673,7 +673,7 @@
         {
           "name": "26106803 schylling needoh mackaci micky cukrova hulka.html",
           "url": "https://www.megaknihy.cz/hry/26106803-schylling-needoh-mackaci-micky-cukrova-hulka.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26345944 schylling needoh barevne mackaci mini kocky 4 ks.html",
@@ -2896,7 +2896,7 @@
         {
           "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
@@ -2921,7 +2921,7 @@
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-atomic-3-culori-pret-pe-bucata-2073208229",
-          "status": "out_of_stock"
+          "status": "unknown"
         }
       ]
     },
