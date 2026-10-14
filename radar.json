@@ -1,5 +1,5 @@
 {
-  "last_checked": "14 Oct 2026, 13:20",
+  "last_checked": "14 Oct 2026, 13:52",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -354,7 +354,7 @@
         {
           "name": "needoh dream drop 1 stuk pink.html",
           "url": "https://www.spellenrijk.nl/artikel/51133/needoh-dream-drop-1-stuk-pink.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk geel.html",
@@ -416,7 +416,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -431,7 +431,7 @@
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
@@ -441,7 +441,7 @@
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-assorted/3391313",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Advent Calendar 2026",
@@ -467,12 +467,12 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
@@ -482,12 +482,12 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
@@ -507,12 +507,12 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Jelly Squish assorted",
@@ -608,7 +608,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
@@ -623,7 +623,7 @@
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
@@ -653,12 +653,12 @@
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
@@ -2299,21 +2299,6 @@
         {
           "name": "Needoh Pack 3 Monstros Dohjees",
           "url": "https://minicool.pt/products/needoh-pack-3-monstros-dohjees",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Pintainho Rosa e Azul",
-          "url": "https://minicool.pt/products/needoh-pintainho-rosa-e-azul",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Pintainho Amarelo e Rosa",
-          "url": "https://minicool.pt/products/needoh-pintainho-amarelo-e-rosa",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Pintainho Azul e Roxo",
-          "url": "https://minicool.pt/products/needoh-pintainho-azul-e-roxo",
           "status": "out_of_stock"
         }
       ]
