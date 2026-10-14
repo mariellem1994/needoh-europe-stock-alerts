@@ -1,5 +1,5 @@
 {
-  "last_checked": "14 Oct 2026, 02:03",
+  "last_checked": "14 Oct 2026, 02:35",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -249,7 +249,7 @@
         {
           "name": "needoh fuzz ball wonder waves 1 stuk blue",
           "url": "https://www.spellenrijk.nl/artikel/51128/needoh-fuzz-ball-wonder-waves-1-stuk-blue.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh dream drop 1 stuk blue",
@@ -396,12 +396,12 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Advent Calendar 2025",
@@ -416,7 +416,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -446,7 +446,7 @@
         {
           "name": "NeeDoh Candy Swirl Nice Cube CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -502,7 +502,7 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
@@ -608,12 +608,12 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25922542 schylling needoh mackaci pernicek svitici ve tme.html",
@@ -623,7 +623,7 @@
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
@@ -663,7 +663,7 @@
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26007032 schylling needoh mackaci micek flower power.html",
@@ -1110,7 +1110,7 @@
         {
           "name": "Schylling NeeDoh Happy Snappy modrá",
           "url": "http://www.mimimarket.cz/schylling-needoh-happy-snappy-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Happy Snappy zelená",
