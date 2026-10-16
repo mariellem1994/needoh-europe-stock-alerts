@@ -1,5 +1,5 @@
 {
-  "last_checked": "16 Oct 2026, 06:41",
+  "last_checked": "16 Oct 2026, 07:18",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -384,6 +384,11 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Nice Icle 3 asst CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
+          "status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -391,12 +396,12 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Advent Calendar 2025",
@@ -411,7 +416,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -424,14 +429,9 @@
           "status": "unknown"
         },
         {
-          "name": "NeeDoh Nice Icle 3 asst CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
-        },
-        {
           "name": "NeeDoh Glow In The Dark 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Glow-In-The-Dark-1pk-assorted/3412031",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
@@ -441,7 +441,7 @@
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Classic-1pk-assorted/3414047",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
@@ -456,7 +456,7 @@
         {
           "name": "NeeDoh Candy Swirl Nice Cube CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -472,12 +472,12 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
@@ -487,27 +487,27 @@
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats 4 asst. Fuzz Ball Wild Cats NEEDOH® er tekstureret og giver en pels-blød squishy oplevelse. Den kombinerer den velkendte squishy med ultra-bløde overflad",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Wild-Cats-4-asst/3452468",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
@@ -552,7 +552,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
@@ -587,12 +587,12 @@
         {
           "name": "NeeDoh Sploot Splat assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Sploot-Splat-assorted/3414036",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -623,12 +623,12 @@
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
@@ -648,7 +648,7 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
@@ -673,7 +673,7 @@
         {
           "name": "Schylling NeeDoh Mačkací míček Flower Power",
           "url": "https://www.megaknihy.cz/interaktivni/26007032-schylling-needoh-mackaci-micek-flower-power.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "Schylling NeeDoh Vánoční stromeček s 15 mačkacími ozdobami",
@@ -2923,7 +2923,18 @@
     {
       "name": "Drukke Mama's",
       "country": "🇧🇪 Belgium",
-      "products": []
+      "products": [
+        {
+          "name": "Inloggen",
+          "url": "https://mijn-account.drukkemamas.be/account?from=https%3A%2F%2Fdrukkemamas.be%2Fcollections%2Fneedoh",
+          "status": "unknown"
+        },
+        {
+          "name": "Alles verwijderen",
+          "url": "https://drukkemamas.be/collections/needoh",
+          "status": "unknown"
+        }
+      ]
     },
     {
       "name": "Spadt",
@@ -3125,12 +3136,12 @@
         {
           "name": "Dream Drop NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/dream-drop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Verkleurende NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/verkleurende-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Gumdrop NeeDoh",
@@ -3140,12 +3151,12 @@
         {
           "name": "Nice Cube NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/nice-cube-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Donut NeeDoh",
           "url": "https://houtenonderwijsmateriaal.be/products/donut-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Marbleez NeeDoh",
@@ -3314,12 +3325,12 @@
         {
           "name": "Knittens",
           "url": "https://www.toys42hands.nl/en/products/knittens",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie Singles Needoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-singles-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube",
@@ -3329,7 +3340,7 @@
         {
           "name": "NeeDoh Squishmas Fidget Advent Calendar",
           "url": "https://www.toys42hands.nl/en/products/needoh-sqishmas-fidget-adventskalender",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Ice Baby Teenie 6-pack",
@@ -3349,7 +3360,7 @@
         {
           "name": "NeeDoh Nice Berg Swirl",
           "url": "https://www.toys42hands.nl/en/products/needoh-nice-berg-swirl",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Wonder Wave Fuzz",
@@ -3359,7 +3370,7 @@
         {
           "name": "NeeDoh Mello Mallo",
           "url": "https://www.toys42hands.nl/en/products/needoh-mello-mallo",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Snow Ball Crunch",
@@ -3369,7 +3380,7 @@
         {
           "name": "NeeDoh Super Fuzz",
           "url": "https://www.toys42hands.nl/en/products/needoh-super-fuzz-antistressball",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie Nice Ice Baby NeeDoh",
@@ -3384,7 +3395,7 @@
         {
           "name": "Super NeeDoh Ripples",
           "url": "https://www.toys42hands.nl/en/products/super-needoh-ripples",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dream Drop",
@@ -3399,12 +3410,12 @@
         {
           "name": "NeeDoh Swirl Teenie 6-pack",
           "url": "https://www.toys42hands.nl/en/products/needoh-swirl-teenie-6-stuks",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow",
           "url": "https://www.toys42hands.nl/en/products/needoh-nice-cube-glow",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Sploot Splat",
@@ -3414,7 +3425,7 @@
         {
           "name": "Atomic NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/atomic-needoh-antistressbal",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Color Changing NeeDoh",
@@ -3429,7 +3440,7 @@
         {
           "name": "NeeDoh Booper",
           "url": "https://www.toys42hands.nl/en/products/schylling-needoh-booper-en",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie NeeDoh Fuzz Ball",
@@ -3459,7 +3470,7 @@
         {
           "name": "Shaggy NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/shaggy-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glitter Glow Nice Cube",
@@ -3484,12 +3495,12 @@
         {
           "name": "NeeDoh Flower Power Fuzz",
           "url": "https://www.toys42hands.nl/en/products/needoh-flower-power-fuzz",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Teenie Funky Pup NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/teenie-funky-pop-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Mac N Squeeze NeeDoh",
@@ -3499,7 +3510,7 @@
         {
           "name": "Rainbow NeeDoh",
           "url": "https://www.toys42hands.nl/en/products/regenboog-needoh",
-          "status": "error"
+          "status": "out_of_stock"
         },
         {
           "name": "Ramen Noodlies",
