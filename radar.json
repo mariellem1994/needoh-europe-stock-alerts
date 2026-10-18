@@ -1,5 +1,5 @@
 {
-  "last_checked": "18 Oct 2026, 11:44",
+  "last_checked": "18 Oct 2026, 11:57",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -339,7 +339,7 @@
         {
           "name": "needoh nice berg glitter glow 1 stuk purple.html",
           "url": "https://www.spellenrijk.nl/artikel/51112/needoh-nice-berg-glitter-glow-1-stuk-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh gumdrop purple.html",
@@ -391,7 +391,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Smushroom",
@@ -411,7 +411,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -421,7 +421,7 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
@@ -441,12 +441,12 @@
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Classic-1pk-assorted/3414047",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-assorted/3391313",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Advent Calendar 2026",
@@ -527,12 +527,12 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Nice Ice Baby 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Nice-Ice-Baby-4-Pack/3411622",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
@@ -557,12 +557,12 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -613,7 +613,7 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
@@ -653,7 +653,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
@@ -663,7 +663,7 @@
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
