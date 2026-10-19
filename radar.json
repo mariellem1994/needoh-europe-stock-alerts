@@ -1,5 +1,5 @@
 {
-  "last_checked": "19 Oct 2026, 16:33",
+  "last_checked": "19 Oct 2026, 17:11",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -344,7 +344,7 @@
         {
           "name": "needoh gumdrop purple.html",
           "url": "https://www.spellenrijk.nl/artikel/52155/needoh-gumdrop-purple.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball wonder waves 1 stuk green.html",
@@ -411,7 +411,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dig It Pig",
@@ -431,7 +431,7 @@
         {
           "name": "NeeDoh Glow In The Dark 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Glow-In-The-Dark-1pk-assorted/3412031",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
@@ -456,7 +456,7 @@
         {
           "name": "NeeDoh Candy Swirl Nice Cube CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -507,7 +507,7 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
@@ -522,7 +522,7 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
@@ -597,7 +597,7 @@
         {
           "name": "NeeDoh Teenie Color Change 4-Pack CDU Oplev fire sjove Teenie NeeDoh-bolde, der skifter farve, når de klemmes. De bløde stressbolde er perfekte til at holde hænderne beskæftiget og",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Color-Change-4-Pack-CDU/3517262",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -633,12 +633,12 @@
         {
           "name": "26152546 schylling needoh vanocni snehova koule mackaci.html",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25448283 schylling needoh mackaci mini micek.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
@@ -648,17 +648,17 @@
         {
           "name": "25923286 schylling needoh adventni kalendar 2025.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "25091436 schylling needoh adventni kalendar.html",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "26344391 schylling needoh mackaci kostka nice berg trpytiva.html",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
@@ -2235,11 +2235,6 @@
           "name": "Needoh Coração Good Vibes Azul",
           "url": "https://minicool.pt/products/needoh-coracao-good-vibes-azul",
           "status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Coração Good Vibes Rosa",
-          "url": "https://minicool.pt/products/needoh-coracao-good-vibes-rosa",
-          "status": "out_of_stock"
         }
       ]
     },
@@ -2779,18 +2774,18 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
+          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock"
         },
         {
-          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
+          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock"
         },
         {
