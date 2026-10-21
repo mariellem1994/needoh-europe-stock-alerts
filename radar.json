@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Oct 2026, 21:15",
+  "last_checked": "22 Oct 2026, 00:28",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -214,12 +214,12 @@
         {
           "name": "needoh niceberg needoh 1 stuk",
           "url": "https://www.spellenrijk.nl/artikel/51135/needoh-niceberg-needoh-1-stuk.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh gumdrop blue",
           "url": "https://www.spellenrijk.nl/artikel/52154/needoh-gumdrop-blue.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh mello mallo color changing marshmellow 1 stuk blauw",
@@ -259,7 +259,7 @@
         {
           "name": "needoh glitter glow nice cube pink",
           "url": "https://www.spellenrijk.nl/artikel/51857/needoh-glitter-glow-nice-cube-pink.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "needoh cool cats ball 1 stuk pink.html",
@@ -472,7 +472,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
@@ -482,7 +482,7 @@
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop er det doh-lectable. ej-spiselige vingummi med det superfaste squish. Gumdrop har form som en vingummi i overstørrelse og giver dig en ny fas",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
@@ -522,7 +522,7 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
@@ -552,7 +552,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "out_of_stock"
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -618,12 +618,12 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
@@ -633,7 +633,7 @@
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
@@ -648,7 +648,7 @@
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář",
@@ -658,12 +658,12 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Hledání zlatých vajíček",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Třpytivý králíček",
@@ -819,7 +819,7 @@
         {
           "name": "Schylling NeeDoh Kouzelné barevné vejce",
           "url": "http://www.dvedeti.cz/schylling-needoh-kouzelne-barevne-vejce-1-ks",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Kuřátko Deedos",
@@ -890,252 +890,252 @@
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks2",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling ve tme svitici micek needoh2",
           "url": "https://www.mimimarket.cz/schylling-ve-tme-svitici-micek-needoh2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling micek zhava lava needoh oranzova",
           "url": "https://www.mimimarket.cz/schylling-micek-zhava-lava-needoh-oranzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling micek zhava lava needoh modra",
           "url": "https://www.mimimarket.cz/schylling-micek-zhava-lava-needoh-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci kostka needoh 1ks fialova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-kostka-needoh-1ks-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci kostka needoh 1ks modra",
           "url": "https://www.mimimarket.cz/schylling-mackaci-kostka-needoh-1ks-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci kostka needoh 1ks ruzova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-kostka-needoh-1ks-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci duhovy needoh 1ks oranzova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-duhovy-needoh-1ks-oranzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy micek needoh modra",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-micek-needoh-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy micek needoh oranzova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-micek-needoh-oranzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy micek needoh fialova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-micek-needoh-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy micek needoh zelena",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-micek-needoh-zelena",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy micek needoh ruzova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-micek-needoh-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh priserky dohjees serie 2 1 ks2",
           "url": "https://www.mimimarket.cz/schylling-needoh-priserky-dohjees-serie-2-1-ks2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh kuratko deedos",
           "url": "https://www.mimimarket.cz/schylling-needoh-kuratko-deedos",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh jelly donuts2",
           "url": "https://www.mimimarket.cz/schylling-needoh-jelly-donuts2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh groovy ghosts",
           "url": "https://www.mimimarket.cz/schylling-needoh-groovy-ghosts",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci antistresove kocicky fialova oranzova ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresove-kocicky-fialova-oranzova-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci antistresova stenatka oranzova zelena ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresova-stenatka-oranzova-zelena-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci antistresova stenatka fialova zelena ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresova-stenatka-fialova-zelena-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci texturovany needoh 1 ks2",
           "url": "https://www.mimimarket.cz/schylling-mackaci-texturovany-needoh-1-ks2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci texturovany needoh 1 ks fialova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-texturovany-needoh-1-ks-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci texturovany needoh 1 ks modra",
           "url": "https://www.mimimarket.cz/schylling-mackaci-texturovany-needoh-1-ks-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci texturovany needoh 1 ks oranzova",
           "url": "https://www.mimimarket.cz/schylling-mackaci-texturovany-needoh-1-ks-oranzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks ruzova oranzova zelena",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks-ruzova-oranzova-zelena",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling mackaci antistresovy mini micek needoh 3 ks modra ruzova zelena",
           "url": "https://www.mimimarket.cz/schylling-mackaci-antistresovy-mini-micek-needoh-3-ks-modra-ruzova-zelena",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh strasidelny dum se 4 mackacimi micky2",
           "url": "https://www.mimimarket.cz/schylling-needoh-strasidelny-dum-se-4-mackacimi-micky2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh vanocni stromecek s 15 mackacimi ozdobami2",
           "url": "https://www.mimimarket.cz/schylling-needoh-vanocni-stromecek-s-15-mackacimi-ozdobami2",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci antistresova kapka modra",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresova-kapka-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci fotbalovy micek 1 ks oranzovy",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-fotbalovy-micek-1-ks-oranzovy",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci fotbalovy micek 1 ks zeleny",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-fotbalovy-micek-1-ks-zeleny",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci fotbalovy micek 1 ks ruzovy",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-fotbalovy-micek-1-ks-ruzovy",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci antistresove kocicky ruzova zelena fialova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-antistresove-kocicky-ruzova-zelena-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci ovoce",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-ovoce",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh duhove mackaci micky 6 ks",
           "url": "https://www.mimimarket.cz/schylling-needoh-duhove-mackaci-micky-6-ks",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh booper modra",
           "url": "https://www.mimimarket.cz/schylling-needoh-booper-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh booper oranzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-booper-oranzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh booper ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-booper-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh donut modra",
           "url": "https://www.mimimarket.cz/schylling-needoh-donut-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh donut fialova",
           "url": "https://www.mimimarket.cz/schylling-needoh-donut-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh donut ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-donut-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh happy snappy fialova",
           "url": "https://www.mimimarket.cz/schylling-needoh-happy-snappy-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh happy snappy ruzova",
           "url": "https://www.mimimarket.cz/schylling-needoh-happy-snappy-ruzova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh panacek pete",
           "url": "https://www.mimimarket.cz/schylling-needoh-panacek-pete",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh booper fialova",
           "url": "https://www.mimimarket.cz/schylling-needoh-booper-fialova",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh happy snappy modra",
           "url": "https://www.mimimarket.cz/schylling-needoh-happy-snappy-modra",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh happy snappy zelena",
           "url": "https://www.mimimarket.cz/schylling-needoh-happy-snappy-zelena",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh kouzelne barevne vejce",
           "url": "https://www.mimimarket.cz/schylling-needoh-kouzelne-barevne-vejce",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci vejce oranzove",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-vejce-oranzove",
-          "status": "unknown"
+          "status": "out_of_stock"
         },
         {
           "name": "schylling needoh mackaci vejce sv fialkova",
           "url": "https://www.mimimarket.cz/schylling-needoh-mackaci-vejce-sv-fialkova",
-          "status": "unknown"
+          "status": "out_of_stock"
         }
       ]
     },
@@ -2769,18 +2769,18 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock"
-        },
-        {
-          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
+          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock"
         },
         {
-          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
+          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock"
         },
         {
