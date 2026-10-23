@@ -10,13 +10,13 @@ from zoneinfo import ZoneInfo
 import time
 
 
-TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "") if "--check-new-shops" in __import__("sys").argv else os.environ["TELEGRAM_BOT_TOKEN"]
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "") if "--check-new-shops" in __import__("sys").argv else os.environ["TELEGRAM_CHAT_ID"]
 
 
 RADAR_URL = "https://mariellem1994.github.io/needoh-europe-stock-alerts/"
 
-print("🛡️ VERIFIED STOCK MODE V19.1 active — wider catalogues, Proshop DK, strict page identity, DreamLand and Mamiee fixes.")
+print("🛡️ VERIFIED STOCK MODE V21 active — 28 additional European shops; product-specific stock verification and rare-product retention.")
 
 # Both seasonal catalogue codes are used by retailers. The barcodes may be
 # printed without a leading zero, so normalize digits before matching.
@@ -2293,6 +2293,9 @@ def get_suomalainen_catalogue(shop):
 
 def get_extra_needoh_products(shop):
 
+    if shop.get("v21_monitor"):
+        return v21_monitor(shop, globals().get("previous_radar"))
+
     if shop.get("name") == "Suomalainen":
         products = get_suomalainen_catalogue(shop)
         if products:
@@ -2302,6 +2305,9 @@ def get_extra_needoh_products(shop):
         miss_products = get_miss_lemonade_needoh_products(shop)
         if miss_products is not None:
             return miss_products
+
+    if shop.get("name") == "Mimitoys":
+        return get_mimitoys_products(shop)
 
     if shop.get("shopify"):
 
@@ -2613,6 +2619,12 @@ def is_real_product_page_url(shop, url):
     # Store-specific product URL rules for the high-volume Czech/Slovak shops.
     shop_name = shop.get("name")
 
+    if shop_name == "Lolear":
+        return bool(re.search(r"/\d+-[^/]+\.html$", path))
+    if shop_name == "ALI Juguetes":
+        return path.startswith("/juguetes/") and "needoh" in path.rsplit("/", 1)[-1]
+    if shop_name == "L’École Buissonnière":
+        return bool(re.search(r"^/article/\d+/", path))
     if shop_name == "Suomalainen":
         return path.startswith("/products/")
     if shop_name == "Lekia Norway":
@@ -2945,6 +2957,9 @@ def verify_non_shopify_product_stock(shop, product):
     Search/category-page text is never accepted as stock proof.
     """
 
+    if shop.get("name") in NEW_HTML_SHOPS:
+        return verify_new_shop_product(shop, product)
+
     supported_shops = {
         "Spellenrijk", "Proshop", "Proshop Denmark", "Megaknihy", "Logopedicum",
         "Dvě děti CZ",
@@ -3099,7 +3114,7 @@ def apply_verified_extra_stock(shop, products):
     Everything else stays UNKNOWN.
     """
 
-    if shop.get("shopify"):
+    if shop.get("v21_monitor") or shop.get("shopify"):
         return products
 
     if shop.get("name") in {
@@ -3172,6 +3187,9 @@ def check_extra_needoh_shop(
 
     if shop.get("name") == "Cedille Speelgoed":
         products_found = clean_cedille_products(products_found)
+
+    if shop["name"] in NEW_HTML_SHOPS:
+        products_found = filter_real_product_links(shop, products_found)
 
     products_found = apply_verified_extra_stock(
         shop,
@@ -3330,6 +3348,438 @@ def check_extra_needoh_shop(
 
     return products_found
 
+
+# V20: Conservative adapters for the three new HTML retailers.
+NEW_HTML_SHOPS = {"Lolear", "ALI Juguetes", "L’École Buissonnière"}
+
+def verify_new_shop_product(shop, product):
+    url = product["url"]
+    if not is_real_product_page_url(shop, url):
+        return "unknown"
+    try:
+        page = fetch_extra_shop_page(url, quiet=True)
+    except Exception as error:
+        print(f"⚠️ {shop['name']}: product request failed: {error}")
+        return "error"
+    # Require the requested page's own identity before considering offers.
+    expected = urllib.parse.urlparse(url).path.rstrip("/")
+    identity = re.search(r'<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)', page, re.I)
+    if identity and urllib.parse.urlparse(unescape(identity.group(1))).path.rstrip("/") != expected:
+        return "unknown"
+    heading = next((m for m in re.finditer(r'<h1\b[^>]*>(.*?)</h1>|(?m:^# ([^\n]+))', page, re.I | re.S)
+                    if "needoh" in re.sub(r"[^a-z0-9]", "", clean_extra_product_name(m.group(1) or m.group(2)).lower())), None)
+    if not heading:
+        return "unknown"
+    title = clean_extra_product_name(heading.group(1) or heading.group(2))
+    if "needoh" not in re.sub(r"[^a-z0-9]", "", title.lower()):
+        return "unknown"
+    # Only offers explicitly attached to this requested product URL count.
+    values = set()
+    for script in re.findall(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', page, re.I | re.S):
+        try:
+            data = json.loads(unescape(script))
+        except (ValueError, TypeError):
+            continue
+        queue = data if isinstance(data, list) else [data]
+        while queue:
+            item = queue.pop(0)
+            if not isinstance(item, dict):
+                continue
+            graph = item.get("@graph", [])
+            queue.extend(graph if isinstance(graph, list) else [graph])
+            if "Product" not in str(item.get("@type", "")):
+                continue
+            identity_url = item.get("url") or item.get("@id") or ""
+            if not isinstance(identity_url, str):
+                continue
+            if urllib.parse.urlparse(urljoin(url, identity_url)).path.rstrip("/") != expected:
+                continue
+            offers = item.get("offers", [])
+            for offer in offers if isinstance(offers, list) else [offers]:
+                if isinstance(offer, dict) and offer.get("availability"):
+                    values.add(str(offer["availability"]).lower().rsplit("/", 1)[-1])
+    if values == {"instock"}:
+        return "in_stock"
+    if values and values <= {"outofstock", "soldout", "discontinued"}:
+        return "out_of_stock"
+    # Visible wording can prove OUT, but a cart button alone cannot prove IN.
+    area = page[heading.start():]
+    area = re.split(r'(?i)Produits similaires|Produits fréquemment|Los clientes que|productos relacionados|<footer\b', area, 1)[0]
+    area = re.sub(r'(?is)<(script|style)\b[^>]*>.*?</\1>', ' ', area)
+    text = clean_extra_product_name_unlimited(area).lower()
+    if any(m in text for m in ("article non disponible", "agotado", "sin stock", "rupture de stock", "fuera de stock")):
+        return "out_of_stock"
+    return "unknown"
+
+def clean_extra_product_name_unlimited(value):
+    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", value))).strip()
+
+def get_mimitoys_products(shop):
+    # No NeeDoh collection feed exists here; keep documented products even
+    # when they fall beyond the first page of the whole-store feed.
+    found = get_shopify_needoh_products(shop) or []
+    seen = {p["url"] for p in found}
+    for fixed in shop.get("fixed_products", []):
+        if fixed["url"] in seen:
+            continue
+        item = dict(fixed, status="unknown")
+        try:
+            data = json.loads(fetch_extra_shop_page(fixed["url"] + ".js", quiet=True))
+            expected_handle = urllib.parse.urlparse(fixed["url"]).path.rsplit("/", 1)[-1]
+            if data.get("handle") == expected_handle and isinstance(data.get("available"), bool):
+                item["name"] = data.get("title") or item["name"]
+                item["status"] = "in_stock" if data["available"] else "out_of_stock"
+        except Exception as error:
+            print(f"ℹ️ Mimitoys product feed unverified: {error}")
+        found.append(item)
+    return found
+
+extra_needoh_shops.extend([{'name': 'Lolear', 'country': '🇪🇸 Spain', 'url': 'https://lolear.es/150-needoh?resultsPerPage=999', 'fixed_products': [{'name': 'NeeDoh Teenie Tree Squishmas', 'url': 'https://lolear.es/inicio/15846-tennie-tree-squishmas-needoh-019649517862.html'}]}, {'name': 'ALI Juguetes', 'country': '🇪🇸 Spain', 'url': 'https://alijuguetes.es/marca/needoh', 'fixed_products': [{'name': 'NeeDoh Dream Drop', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-dream-drop-sqeeze-8-cm-surtido'}, {'name': 'NeeDoh Gumdrop', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-gumdrop-squeeze-6-cm-surtido'}, {'name': 'NeeDoh Fuzz Wonder', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-squeeze-fuzz-wonder-surtido'}, {'name': 'NeeDoh Color Change', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-bola-squeeze-cambia-color-6-cm-surtida'}, {'name': 'NeeDoh Flower Power', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-bola-squeeze-fuzz-flower-surtido'}, {'name': 'NeeDoh Mini Nice Cube', 'url': 'https://alijuguetes.es/juguetes/juegos-de-manualidades/plastilina-y-juegos-de-moldeo/needoh-mini-cubo-nice-squeeze-25-cm-surtido'}]}, {'name': 'L’École Buissonnière', 'country': '🇫🇷 France', 'url': 'https://www.lecole-buissonniere.fr/marques/1040/needoh', 'fixed_products': [{'name': 'NeeDoh 40306', 'url': 'https://www.lecole-buissonniere.fr/article/90258/needoh-40306-jouet-anti-stress-squishy-asst'}, {'name': 'NeeDoh 40308', 'url': 'https://www.lecole-buissonniere.fr/article/90259/needoh-40308-jouet-anti-stress-squishy-asst'}]}, {'name': 'La Chata Merengüela', 'country': '🇪🇸 Spain', 'url': 'https://lachatamerenguela.com/collections/needoh', 'shopify': True, 'shopify_collection': 'needoh'}, {'name': 'Mimitoys', 'country': '🇮🇪 Ireland', 'url': 'https://mimitoys.ie/search?q=needoh&type=product', 'shopify': True, 'fixed_products': [{'name': 'NeeDoh Glow in the Dark', 'url': 'https://mimitoys.ie/products/glow-in-the-dark-needoh'}, {'name': 'NeeDoh Snow Ball Crunch', 'url': 'https://mimitoys.ie/products/snow-ball-crunch-needoh'}]}, {'name': 'Thinking Toys', 'country': '🇮🇪 Ireland', 'url': 'https://thinkingtoys.ie/collections/needoh', 'shopify': True, 'shopify_collection': 'needoh'}, {'name': 'Lulabug', 'country': '🇮🇪 Ireland', 'url': 'https://lulabug.ie/collections/needoh', 'shopify': True, 'shopify_collection': 'needoh'}])
+
+# V21 additional European retailer monitors (standard-library only).
+# A listing is not evidence of stock; every status comes from that product's
+# structured variant data or matching Product offer. Missing evidence is unknown.
+from html.parser import HTMLParser
+from concurrent.futures import ThreadPoolExecutor
+import sys
+
+V21_SHOPS = [{'name': 'The Dyslexia Shop', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.thedyslexiashop.co.uk/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://www.thedyslexiashop.co.uk/search?q=needoh&type=product']}, {'name': 'Bigjigs Toys', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.bigjigstoys.co.uk/collections/nee-doh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'nee-doh', 'discovery_urls': ['https://www.bigjigstoys.co.uk/search?q=needoh&type=product']}, {'name': 'The Kid Collective', 'country': '🇬🇧 United Kingdom', 'url': 'https://thekidcollective.co.uk/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://thekidcollective.co.uk/search?q=needoh&type=product']}, {'name': 'Toys4You', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.toys4you.co.uk/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://www.toys4you.co.uk/search?q=needoh&type=product']}, {'name': 'Junior Edition', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.junioredition.com/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://www.junioredition.com/search?q=needoh&type=product']}, {'name': 'Jukupop', 'country': '🇬🇧 United Kingdom', 'url': 'https://jukupop.com/collections/needoh-squishy-fidget-toys-shop-stress-balls-fidget-fun', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh-squishy-fidget-toys-shop-stress-balls-fidget-fun', 'discovery_urls': ['https://jukupop.com/search?q=needoh&type=product']}, {'name': 'Fidget Fables', 'country': '🇬🇧 United Kingdom', 'url': 'https://fidgetfables.com/products/needoh-knittens', 'v21_monitor': True, 'shopify': True, 'discovery_urls': ['https://fidgetfables.com/search?q=needoh&type=product'], 'fixed_products': [{'name': 'NeeDoh needoh knittens', 'url': 'https://fidgetfables.com/products/needoh-knittens'}]}, {'name': 'Maple Gifts', 'country': '🇬🇧 United Kingdom', 'url': 'https://maplegifts.co.uk/products/bigjigs-nee-doh-squishmas-teenie-tree', 'v21_monitor': True, 'shopify': True, 'discovery_urls': ['https://maplegifts.co.uk/search?q=needoh&type=product'], 'fixed_products': [{'name': 'NeeDoh bigjigs nee doh squishmas teenie tree', 'url': 'https://maplegifts.co.uk/products/bigjigs-nee-doh-squishmas-teenie-tree'}]}, {'name': 'Rooleo', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.rooleo.shop/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://www.rooleo.shop/search?q=needoh&type=product']}, {'name': 'Bambola', 'country': '🇯🇪 Jersey', 'url': 'https://bambola.je/products/needoh-groovy-shroom', 'v21_monitor': True, 'shopify': True, 'discovery_urls': ['https://bambola.je/search?q=needoh&type=product'], 'fixed_products': [{'name': 'NeeDoh needoh groovy shroom', 'url': 'https://bambola.je/products/needoh-groovy-shroom'}]}, {'name': 'Smallkins', 'country': '🇬🇧 United Kingdom', 'url': 'https://smallkins.com/collections/vendors?q=needoh', 'v21_monitor': True, 'shopify': True, 'discovery_urls': ['https://smallkins.com/search?q=needoh&type=product', 'https://smallkins.com/collections/needoh']}, {'name': 'My Small World', 'country': '🇬🇧 United Kingdom', 'url': 'https://www.mysmallworld.co.uk/collections/vendors?q=needoh', 'v21_monitor': True, 'shopify': True, 'discovery_urls': ['https://www.mysmallworld.co.uk/search?q=needoh&type=product']}, {'name': 'Brinca Juguetería', 'country': '🇪🇸 Spain', 'url': 'https://brincajugueteria.es/producto/dohjees-needoh/', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh dohjees needoh', 'url': 'https://brincajugueteria.es/producto/dohjees-needoh/'}]}, {'name': 'Coco Loco', 'country': '🇳🇱 Netherlands', 'url': 'https://cocoloco.nl/product/stardust-needoh-schylling/', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh stardust needoh schylling', 'url': 'https://cocoloco.nl/product/stardust-needoh-schylling/'}]}, {'name': 'Toys and Tools', 'country': '🇳🇱 Netherlands', 'url': 'https://www.toysandtools.nl/nl/brands/needoh/', 'v21_monitor': True}, {'name': 'MTHOR Shop', 'country': '🇫🇷 France', 'url': 'https://mthorshop.com/collections/needoh', 'v21_monitor': True, 'shopify': True, 'shopify_collection': 'needoh', 'discovery_urls': ['https://mthorshop.com/search?q=needoh&type=product']}, {'name': 'Kärkkäinen', 'country': '🇫🇮 Finland', 'url': 'https://www.karkkainen.com/en/needoh-polar-glow-penguin-squeezable-penguin', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh needoh polar glow penguin squeezable penguin', 'url': 'https://www.karkkainen.com/en/needoh-polar-glow-penguin-squeezable-penguin'}]}, {'name': 'Muovi ja Lelu', 'country': '🇫🇮 Finland', 'url': 'https://www.muovijalelu.fi/kauppa/lelut-ja-pelit/askartelu/stressilelut/needoh-stardust-shimmer-puristelupallo-erilaisia/', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh needoh stardust shimmer puristelupallo erilaisia', 'url': 'https://www.muovijalelu.fi/kauppa/lelut-ja-pelit/askartelu/stressilelut/needoh-stardust-shimmer-puristelupallo-erilaisia/'}]}, {'name': 'RCprofi CZ', 'country': '🇨🇿 Czech Republic', 'url': 'https://www.rcprofi.cz/schylling-mackaci-maxi-needoh', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh schylling mackaci maxi needoh', 'url': 'https://www.rcprofi.cz/schylling-mackaci-maxi-needoh'}]}, {'name': 'Kidero', 'country': '🇨🇿 Czech Republic', 'url': 'https://kidero.cz/produkt/96638-schylling-mackaci-duhovy-needoh-1-ks-zelena', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh 96638 schylling mackaci duhovy needoh 1 ks zelena', 'url': 'https://kidero.cz/produkt/96638-schylling-mackaci-duhovy-needoh-1-ks-zelena'}]}, {'name': 'Funbaby', 'country': '🇨🇿 Czech Republic', 'url': 'https://funbaby.cz/needoh-mackaci-antistresovy-micek-119970.html', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh needoh mackaci antistresovy micek 119970.html', 'url': 'https://funbaby.cz/needoh-mackaci-antistresovy-micek-119970.html'}]}, {'name': 'DárkyHry', 'country': '🇨🇿 Czech Republic', 'url': 'https://www.darkyhry.cz/48550_3476-schylling-needoh-mackaci-antistresovy-micek.html', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh 48550_3476 schylling needoh mackaci antistresovy micek.html', 'url': 'https://www.darkyhry.cz/48550_3476-schylling-needoh-mackaci-antistresovy-micek.html'}]}, {'name': 'Tublu Poland', 'country': '🇵🇱 Poland', 'url': 'https://www.tublu.pl/maluszek-w-podrozy/zabawa-podczas-podrozy/sensoryczny-gniotek-schylling-glowy-ghost-needoh.html', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh sensoryczny gniotek schylling glowy ghost needoh.html', 'url': 'https://www.tublu.pl/maluszek-w-podrozy/zabawa-podczas-podrozy/sensoryczny-gniotek-schylling-glowy-ghost-needoh.html'}]}, {'name': 'Zosiu', 'country': '🇵🇱 Poland', 'url': 'https://zosiu.pl/zabawki-dla-dzieci/zabawki-sensoryczne/gniotki-sensoryczne-3-szt-teenie-needoh-schylling', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh gniotki sensoryczne 3 szt teenie needoh schylling', 'url': 'https://zosiu.pl/zabawki-dla-dzieci/zabawki-sensoryczne/gniotki-sensoryczne-3-szt-teenie-needoh-schylling'}]}, {'name': 'Edukatorek', 'country': '🇵🇱 Poland', 'url': 'https://edukatorek.pl/drobiazgi/32638-mello-mallo-needoh-niebiesko-granatowy-gniotek-zmieniajacy-kolor-pod-wplywem-slonca-schylling-symmndnieb-schylling.html', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh 32638 mello mallo needoh niebiesko granatowy gniotek zmieniajacy kolor pod wplywem slonca schylling symmndnieb schylling.html', 'url': 'https://edukatorek.pl/drobiazgi/32638-mello-mallo-needoh-niebiesko-granatowy-gniotek-zmieniajacy-kolor-pod-wplywem-slonca-schylling-symmndnieb-schylling.html'}]}, {'name': 'Piccolo Tesoro', 'country': '🇵🇱 Poland', 'url': 'https://piccolotesoro.pl/pwb-brand/schylling/', 'v21_monitor': True}, {'name': 'Dobre Liski', 'country': '🇵🇱 Poland', 'url': 'https://www.dobreliski.pl/pl/p/Sensoryczny-gniotek-zmieniajacy-kolor-The-Color-Change-NeeDoh-Schylling/30788', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh 30788', 'url': 'https://www.dobreliski.pl/pl/p/Sensoryczny-gniotek-zmieniajacy-kolor-The-Color-Change-NeeDoh-Schylling/30788'}]}, {'name': 'Zabawka i Wyprawka', 'country': '🇵🇱 Poland', 'url': 'https://zabawkaiwyprawka.pl/produkt/gniotek-sensoryczny-schylling-kostka-lodu-nice-cube-needoh-niebieski', 'v21_monitor': True, 'fixed_products': [{'name': 'NeeDoh gniotek sensoryczny schylling kostka lodu nice cube needoh niebieski', 'url': 'https://zabawkaiwyprawka.pl/produkt/gniotek-sensoryczny-schylling-kostka-lodu-nice-cube-needoh-niebieski'}]}]
+_V21_CACHE = {}
+
+
+def v21_compact(value):
+    return re.sub(r'[^a-z0-9]', '', unescape(str(value)).lower())
+
+
+def v21_is_needoh(value):
+    compact = v21_compact(value)
+    return 'needoh' in compact or has_rare_needoh_identifier(value)
+
+
+def v21_fetch(url):
+    if url in _V21_CACHE:
+        return _V21_CACHE[url]
+    request = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0', 'Accept': 'text/html,application/json;q=0.9,*/*;q=0.8',
+        'Cache-Control': 'no-cache'})
+    with urllib.request.urlopen(request, timeout=18) as response:
+        result = (response.read().decode('utf-8', errors='replace'), response.url)
+    _V21_CACHE[url] = result
+    return result
+
+
+def v21_url_key(url):
+    p = urllib.parse.urlsplit(unescape(url))
+    return (p.netloc.lower().removeprefix('www.'), urllib.parse.unquote(p.path).rstrip('/'))
+
+
+class V21Links(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.links = []
+        self.href = None
+        self.parts = []
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'a':
+            self.href = attrs.get('href')
+            self.parts = [attrs.get('title', '')]
+        elif tag == 'img' and self.href:
+            self.parts.append(attrs.get('alt', ''))
+    def handle_data(self, data):
+        if self.href:
+            self.parts.append(data)
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.href:
+            self.links.append((self.href, ' '.join(x for x in self.parts if isinstance(x, str))))
+            self.href = None
+            self.parts = []
+
+
+def v21_real_product(shop, url):
+    parsed = urllib.parse.urlsplit(url)
+    if parsed.scheme not in {'https', 'http'} or v21_url_key(url)[0] != v21_url_key(shop['url'])[0]:
+        return False
+    path = parsed.path.lower()
+    if path.endswith(('.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.pdf', '.js', '.json')):
+        return False
+    if shop.get('shopify'):
+        return bool(re.search(r'/products/[^/]+/?$', path))
+    if any(x in path for x in ('/brands/', '/brand/', '/pwb-brand/', '/schylling/', '/search', '/szukaj', '/tag/', '/category/', '/kategoria/', '/koszyk', '/cart', '/blog', '/images/', '/media/', '/assets/')):
+        return False
+    if not v21_is_needoh(path):
+        return False
+    # Product patterns observed on these retailers; reject categories/navigation.
+    name = shop['name']
+    if name == 'Brinca Juguetería':
+        return path.startswith('/producto/')
+    if name == 'Turol Games':
+        return bool(re.search(r'/\d+-[^/]+$', path))
+    if name in {'Coco Loco'}:
+        return path.startswith('/product/')
+    if name == 'Muovi ja Lelu':
+        return path.startswith('/kauppa/') and len(path.strip('/').split('/')) >= 5
+    if name == 'Kidero':
+        return bool(re.match(r'/produkt/\d+-', path))
+    if name == 'Dobre Liski':
+        return bool(re.search(r'/pl/p/.+/\d+/?$', path))
+    if name == 'Zabawka i Wyprawka':
+        return path.startswith('/produkt/')
+    if name == 'Piccolo Tesoro':
+        return path.startswith('/produkt/')
+    if name in {'Tublu Poland', 'Edukatorek', 'Funbaby', 'DárkyHry', 'Toys and Tools'}:
+        return path.endswith('.html')
+    if name == 'Planet Happy':
+        return '/artikel/' in path
+    if name in {'RCprofi CZ', 'Kärkkäinen', 'Zosiu'}:
+        return len(path.strip('/').split('/')) >= 1 and not path.rstrip('/').endswith('/needoh')
+    return False
+
+
+def v21_discover_links(shop, page):
+    parser = V21Links()
+    parser.feed(page)
+    links = list(parser.links)
+    links.extend((m.group(2), m.group(1)) for m in re.finditer(r'(?<!!)\[([^\]]+)\]\((https?://[^)\s]+)\)', page))
+    found = {}
+    for href, text in links:
+        url = urljoin(shop['url'], unescape(href)).split('#', 1)[0].split('?', 1)[0]
+        if not v21_real_product(shop, url):
+            continue
+        # A tagged search query must not turn unrelated products into NeeDoh.
+        if not v21_is_needoh(text + ' ' + urllib.parse.urlsplit(url).path):
+            continue
+        if shop.get('shopify'):
+            slug = urllib.parse.urlsplit(url).path.rsplit('/', 1)[-1]
+            origin = urllib.parse.urlsplit(shop['url'])
+            url = f'{origin.scheme}://{origin.netloc}/products/{slug}'
+        found[url] = {'name': clean_extra_product_name(text) or 'NeeDoh product', 'url': url, 'status': 'unknown'}
+    return list(found.values())
+
+
+def v21_product_json_stock(product, url):
+    """AJAX product JSON has an explicit available boolean; missing isn't false."""
+    expected = urllib.parse.urlsplit(url).path.rstrip('/').rsplit('/', 1)[-1]
+    if not isinstance(product, dict) or product.get('handle') != expected:
+        return 'unknown'
+    if not v21_is_needoh(str(product.get('title', '')) + ' ' + expected + ' ' + str(product.get('vendor', ''))):
+        return 'unknown'
+    available = product.get('available')
+    if isinstance(available, bool):
+        return 'in_stock' if available else 'out_of_stock'
+    variants = product.get('variants')
+    if not isinstance(variants, list) or not variants:
+        return 'unknown'
+    flags = [v.get('available') for v in variants if isinstance(v, dict)]
+    if any(flag is True for flag in flags):
+        return 'in_stock'
+    if len(flags) == len(variants) and all(flag is False for flag in flags):
+        return 'out_of_stock'
+    return 'unknown'
+
+
+class V21Microdata(HTMLParser):
+    VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+        self.products = []
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        ctx = self.stack[-1][1] if self.stack else None
+        if str(attrs.get('itemtype', '')).rstrip('/').rsplit('/', 1)[-1] == 'Product':
+            ctx = {'name': '', 'url': attrs.get('itemid', ''), 'availability': []}
+            self.products.append(ctx)
+        prop = str(attrs.get('itemprop', '')).split()
+        capture = ctx if ctx is not None and 'name' in prop else None
+        if ctx is not None:
+            if 'url' in prop and (attrs.get('href') or attrs.get('content')):
+                ctx['url'] = attrs.get('href') or attrs.get('content')
+            if 'name' in prop and attrs.get('content'):
+                ctx['name'] = attrs['content']
+            if 'availability' in prop:
+                ctx['availability'].append(attrs.get('href') or attrs.get('content') or '')
+        if tag not in self.VOID:
+            self.stack.append((tag, ctx, capture))
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID:
+            self.handle_endtag(tag)
+    def handle_data(self, data):
+        for _, _, capture in reversed(self.stack):
+            if capture is not None:
+                capture['name'] += data
+                break
+    def handle_endtag(self, tag):
+        for i in range(len(self.stack)-1, -1, -1):
+            if self.stack[i][0] == tag:
+                del self.stack[i:]
+                break
+
+
+def v21_normalize_availability(value):
+    value = str(value).lower().rstrip('/').rsplit('/', 1)[-1].strip()
+    # This Finnish WooCommerce store emits its translated stock label in JSON.
+    return {'varasto loppu': 'outofstock'}.get(value, value)
+
+
+def v21_classify_html(page, requested_url, final_url):
+    if v21_url_key(requested_url) != v21_url_key(final_url):
+        return 'unknown'  # redirect to category, another product or home page
+    headings = re.findall(r'<h1\b[^>]*>(.*?)</h1>', page, re.I | re.S)
+    title = next((clean_extra_product_name(h) for h in headings if v21_is_needoh(clean_extra_product_name(h))), '')
+    if not title:
+        product_titles = re.findall(r'<h2\b[^>]*class=["\'][^"\']*product_title[^"\']*["\'][^>]*>(.*?)</h2>', page, re.I | re.S)
+        title = next((clean_extra_product_name(h) for h in product_titles if v21_is_needoh(clean_extra_product_name(h))), '')
+    if not title:
+        return 'unknown'
+    canonical = re.search(r'<link\b(?=[^>]*\brel=["\']canonical["\'])[^>]*\bhref=["\']([^"\']+)', page, re.I)
+    if canonical and v21_url_key(urljoin(final_url, unescape(canonical.group(1)))) != v21_url_key(requested_url):
+        return 'unknown'
+    values = set()
+    for raw in re.findall(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', page, re.I | re.S):
+        try:
+            data = json.loads(unescape(raw))
+        except (ValueError, TypeError):
+            continue
+        queue = data if isinstance(data, list) else [data]
+        while queue:
+            item = queue.pop(0)
+            if not isinstance(item, dict):
+                continue
+            graph = item.get('@graph', [])
+            queue.extend(graph if isinstance(graph, list) else [graph])
+            typ = item.get('@type', '')
+            if not (typ == 'Product' or isinstance(typ, list) and 'Product' in typ):
+                continue
+            identity = item.get('url') or item.get('@id')
+            if isinstance(identity, str) and identity and not identity.startswith('#'):
+                matches = v21_url_key(urljoin(final_url, identity)) == v21_url_key(requested_url)
+            else:
+                # WooCommerce frequently identifies Product using only #product.
+                # Require exact current H1 identity when no product URL exists.
+                matches = v21_compact(item.get('name', '')) == v21_compact(title)
+            if not matches:
+                continue
+            offers = item.get('offers', [])
+            for offer in offers if isinstance(offers, list) else [offers]:
+                if not isinstance(offer, dict):
+                    continue
+                # Do not infer online availability from pickup-only offers.
+                delivery = str(offer.get('availableDeliveryMethod', '')).lower()
+                if delivery and 'pickup' in delivery and not any(x in delivery for x in ('parcel', 'delivery', 'mail')):
+                    continue
+                status = v21_normalize_availability(offer.get('availability', ''))
+                if status:
+                    values.add(status)
+    micro = V21Microdata()
+    micro.feed(page)
+    for product in micro.products:
+        identity = product.get('url')
+        matches = (v21_url_key(urljoin(final_url, identity)) == v21_url_key(requested_url)
+                   if identity else v21_compact(product.get('name', '')) == v21_compact(title))
+        if matches:
+            values.update(v21_normalize_availability(x) for x in product['availability'] if x)
+    if values == {'instock'}:
+        return 'in_stock'
+    if values and values <= {'outofstock', 'soldout', 'discontinued', 'preorder', 'backorder', 'presale'}:
+        return 'out_of_stock'
+    if v21_url_key(requested_url)[0] == 'cocoloco.nl':
+        main_heading = next((m for m in re.finditer(r'<h1\b[^>]*>(.*?)</h1>', page, re.I | re.S)
+                             if v21_compact(clean_extra_product_name(m.group(1))) == v21_compact(title)), None)
+        area = page[main_heading.end():] if main_heading else ''
+        area = re.split(r'(?i)<section[^>]*class=["\'][^"\']*(?:related|upsells)|<footer\b', area, 1)[0]
+        if re.search(r'<p\b[^>]*class=["\']?stock\s+out-of-stock\b', area, re.I):
+            return 'out_of_stock'
+    return 'unknown'
+
+
+def v21_verify(shop, product):
+    item = dict(product)
+    try:
+        if shop.get('shopify'):
+            page, final = v21_fetch(item['url'] + '.js')
+            data = json.loads(page)
+            item['status'] = v21_product_json_stock(data, item['url'])
+            if item['status'] != 'unknown':
+                item['name'] = data.get('title') or item['name']
+        else:
+            page, final = v21_fetch(item['url'])
+            item['status'] = v21_classify_html(page, item['url'], final)
+            title = re.search(r'<h1\b[^>]*>(.*?)</h1>', page, re.I | re.S)
+            if title and v21_is_needoh(clean_extra_product_name(title.group(1))):
+                item['name'] = clean_extra_product_name(title.group(1))
+    except Exception as error:
+        item['status'] = 'error'
+        print(f"⚠️ {shop['name']}: {item['url']}: {error}")
+    return item
+
+
+def v21_monitor(shop, previous_radar=None):
+    products = {}
+    previous = get_previous_shop_products(previous_radar, shop['name']) or []
+    for product in previous + shop.get('fixed_products', []):
+        if v21_real_product(shop, product.get('url', '')):
+            products[product['url']] = dict(product, status='unknown')
+    origin = urllib.parse.urlsplit(shop['url'])
+    base = f'{origin.scheme}://{origin.netloc}'
+    if shop.get('shopify') and shop.get('shopify_collection'):
+        endpoint = base + '/collections/' + shop['shopify_collection'] + '/products.json'
+        seen_ids = set()
+        for page_number in range(1, 13):
+            try:
+                raw, final = v21_fetch(endpoint + '?limit=250&page=' + str(page_number))
+                batch = json.loads(raw).get('products', [])
+                if not isinstance(batch, list):
+                    break
+            except Exception as error:
+                print(f"ℹ️ {shop['name']}: catalogue feed unavailable: {error}")
+                break
+            new_ids = {p.get('id') for p in batch if isinstance(p, dict)} - seen_ids
+            if not new_ids:
+                break
+            seen_ids.update(new_ids)
+            for p in batch:
+                if not isinstance(p, dict) or not v21_is_needoh(str(p.get('title', '')) + ' ' + str(p.get('handle', '')) + ' ' + str(p.get('vendor', ''))):
+                    continue
+                handle = p.get('handle')
+                if not isinstance(handle, str) or not handle or '/' in handle:
+                    continue
+                url = base + '/products/' + handle
+                products[url] = {'name': clean_extra_product_name(p.get('title', 'NeeDoh')), 'url': url,
+                                 'status': v21_product_json_stock(p, url)}
+            if len(batch) < 250:
+                break
+    # HTML discovery also retains older links hidden from the current feed.
+    for source in [shop['url']] + shop.get('discovery_urls', []):
+        try:
+            raw, final = v21_fetch(source)
+            for item in v21_discover_links(shop, raw):
+                products.setdefault(item['url'], item)
+        except Exception as error:
+            print(f"ℹ️ {shop['name']}: discovery unavailable: {error}")
+    pending = [p for p in products.values() if p.get('status') == 'unknown']
+    # Four requests at a time per shop. No Telegram writes occur in workers.
+    with ThreadPoolExecutor(max_workers=4) as workers:
+        for item in workers.map(lambda p: v21_verify(shop, p), pending):
+            products[item['url']] = item
+    print(f"🔎 {shop['name']}: {len(products)} product pages; "
+          f"{sum(p.get('status') == 'in_stock' for p in products.values())} confirmed in stock")
+    return list(products.values())
+
+
+extra_needoh_shops.extend(V21_SHOPS)
+
+if "--check-new-shops" in sys.argv:
+    # Diagnostic mode never calls Telegram or overwrites the live radar.
+    diagnostics = {"checked_at": datetime.now(ZoneInfo("Europe/Amsterdam")).isoformat(), "shops": []}
+    for shop in V21_SHOPS:
+        diagnostics["shops"].append({"name": shop["name"], "country": shop["country"], "products": v21_monitor(shop)})
+    with open("new_shop_diagnostics.json", "w", encoding="utf-8") as file:
+        json.dump(diagnostics, file, indent=2, ensure_ascii=False)
+    print("Saved new_shop_diagnostics.json; no alerts sent.")
+    sys.exit(0)
+
 previous_radar = load_previous_radar()
 
 
@@ -3413,7 +3863,7 @@ for product in smyths_products:
 
     previous_status = get_previous_status(
         previous_radar,
-        "Smyths",
+        "Smyths Toys",
         product["name"]
     )
 
@@ -3574,7 +4024,8 @@ for product in drukke_mamas_products:
     )
 
     if (
-        previous_status is None
+        False  # Discovery alone is not proof of online stock.
+        and previous_status is None
         and previous_radar
         and any(
             shop["name"] == "Drukke Mama's"
@@ -3660,7 +4111,8 @@ for product in spadt_products:
     )
 
     if (
-        previous_status is None
+        False  # Discovery alone is not proof of online stock.
+        and previous_status is None
         and previous_radar
         and any(
             shop["name"] == "Spadt"
@@ -3765,7 +4217,8 @@ for product in mamiee_products:
     )
 
     if (
-        previous_status is None
+        False  # Discovery alone is not proof of online stock.
+        and previous_status is None
         and previous_radar
         and any(
             shop["name"] == "Mamiee"
