@@ -221,9 +221,10 @@ h1 {
     </div>
     <div>
         <span class="number" id="errors">0</span>
-        ⚠️ Errors
+        ⚠️ Request errors
     </div>
 </div>
+<div class="summary"><div><span class="number" id="unverified">0</span>⚪ Unverified stock</div></div>
 <!-- SEARCH + FILTERS -->
 <div class="controls">
     <input
@@ -314,6 +315,7 @@ function renderRadar() {
     let inStock = 0;
     let outStock = 0;
     let errors = 0;
+    let unverified = 0;
     /* GET SHOPS */
     let shops = [];
     if (Array.isArray(radarData.shops)) {
@@ -347,8 +349,11 @@ function renderRadar() {
             ) {
                 outStock++;
             }
-            else {
+            else if (product.status === "error") {
                 errors++;
+            }
+            else {
+                unverified++;
             }
         });
     });
@@ -362,6 +367,7 @@ function renderRadar() {
     document.getElementById(
         "errors"
     ).textContent = errors;
+    document.getElementById("unverified").textContent = unverified;
     /* SEARCH */
     const searchValue =
         document.getElementById(
@@ -440,7 +446,7 @@ function renderRadar() {
             }
             else {
                 statusText =
-                    "⚠️ Could not check";
+                    product.status === "error" ? "⚠️ Request failed" : "⚪ Stock unverified";
                 statusClass =
                     "error";
             }
