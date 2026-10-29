@@ -3780,6 +3780,13 @@ if "--check-new-shops" in sys.argv:
     print("Saved new_shop_diagnostics.json; no alerts sent.")
     sys.exit(0)
 
+# Temporary Telegram delivery test. Remove after confirming delivery.
+send_telegram(
+    "✅ Test message: your NeeDoh bot can reach Telegram.",
+    RADAR_URL
+)
+print("✅ Telegram test message sent.")
+
 previous_radar = load_previous_radar()
 
 
