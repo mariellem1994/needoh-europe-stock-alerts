@@ -63,10 +63,6 @@ def send_telegram(message, button_url=None):
 
         return None
 
-    sent_alert_keys.add(
-        alert_key
-    )
-
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
     data = {
@@ -93,8 +89,16 @@ def send_telegram(message, button_url=None):
         method="POST"
     )
 
-    with urllib.request.urlopen(request) as response:
-        return response.read()
+    # Fail the run before saving stock history if delivery fails. The next
+    # run can retry against the previous radar instead of losing the alert.
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = response.read()
+    result = json.loads(payload)
+    if result.get("ok") is not True:
+        raise RuntimeError("Telegram rejected the alert; radar history was not saved.")
+    sent_alert_keys.add(alert_key)
+    print("✅ Telegram alert delivered.")
+    return payload
 
 
 def load_previous_radar():
@@ -174,6 +178,42 @@ def load_previous_radar():
         return None
 
 
+def last_confirmed_status(product):
+    status = product.get("status")
+    if status in {"in_stock", "out_of_stock"}:
+        return status
+    return product.get("last_confirmed_status")
+
+
+def preserve_confirmed_history(current, previous):
+    """Keep observation failures visible without erasing stock history."""
+    old_shops = {shop["name"]: shop for shop in (previous or {}).get("shops", [])}
+    for shop in current.get("shops", []):
+        old_products = old_shops.get(shop["name"], {}).get("products", [])
+        by_url = {p.get("url"): p for p in old_products if p.get("url")}
+        by_name = {p.get("name"): p for p in old_products}
+        seen = set()
+        for product in shop.get("products", []):
+            seen.add(product.get("url"))
+            old = by_url.get(product.get("url")) or by_name.get(product.get("name"), {})
+            confirmed = last_confirmed_status(product) if product.get("status") in {
+                "in_stock", "out_of_stock"
+            } else last_confirmed_status(old)
+            if confirmed:
+                product["last_confirmed_status"] = confirmed
+            else:
+                product.pop("last_confirmed_status", None)
+        # Catalogue failures must not delete products and their history.
+        for old in old_products:
+            if old.get("url") and old["url"] not in seen:
+                retained = dict(old, status="unknown")
+                confirmed = last_confirmed_status(old)
+                if confirmed:
+                    retained["last_confirmed_status"] = confirmed
+                shop.setdefault("products", []).append(retained)
+    return current
+
+
 def get_previous_status(
     previous_radar,
     shop_name,
@@ -198,7 +238,7 @@ def get_previous_status(
 
             if product.get("name") == product_name:
 
-                return product.get("status")
+                return last_confirmed_status(product)
 
     return None
 
@@ -2074,11 +2114,7 @@ def get_shopify_needoh_products(shop):
         products_found.append({
             "name": title,
             "url": f"{base_url}/products/{handle}",
-            "status": (
-                "in_stock"
-                if available
-                else "out_of_stock"
-            )
+            "status": v21_product_json_stock(product, f"{base_url}/products/{handle}")
         })
 
     print(
@@ -3321,12 +3357,10 @@ def check_extra_needoh_shop(
 
         if previous_product is not None:
 
-            previous_status = previous_product.get(
-                "status"
-            )
+            previous_status = last_confirmed_status(previous_product)
 
-            # Strict stock alert: both sides must be trustworthy.
-            # UNKNOWN -> IN STOCK does NOT alert. Only confirmed OUT -> confirmed IN.
+            # Compare with the last confirmed observation, even when one or
+            # more intervening requests were blocked or unverified.
             if (
                 product.get("status") == "in_stock"
                 and previous_status == "out_of_stock"
@@ -3779,13 +3813,6 @@ if "--check-new-shops" in sys.argv:
         json.dump(diagnostics, file, indent=2, ensure_ascii=False)
     print("Saved new_shop_diagnostics.json; no alerts sent.")
     sys.exit(0)
-
-# Temporary Telegram delivery test. Remove after confirming delivery.
-send_telegram(
-    "✅ Test message: your NeeDoh bot can reach Telegram.",
-    RADAR_URL
-)
-print("✅ Telegram test message sent.")
 
 previous_radar = load_previous_radar()
 
@@ -4624,6 +4651,9 @@ radar_data = {
 
 }
 
+
+preserve_confirmed_history(radar_data, previous_radar)
+print(f"✅ Checks complete: {len(sent_alert_keys)} Telegram alerts delivered.")
 
 with open(
     "radar.json",
