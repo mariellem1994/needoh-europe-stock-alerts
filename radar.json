@@ -1,5 +1,5 @@
 {
-  "last_checked": "30 Oct 2026, 21:13",
+  "last_checked": "31 Oct 2026, 00:54",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -319,12 +319,14 @@
         {
           "name": "needoh classic needoh balls 1 stuk roze.html",
           "url": "https://www.spellenrijk.nl/artikel/50871/needoh-classic-needoh-balls-1-stuk-roze.html",
-          "status": "unknown"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk oranje.html",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "unknown"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh classic needoh balls 1 stuk groen.html",
@@ -427,7 +429,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
@@ -489,7 +491,7 @@
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -535,7 +537,7 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -547,7 +549,7 @@
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Puff-Puff/3452465",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -571,7 +573,7 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -595,8 +597,13 @@
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Nice Cube Swirl assorted",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
+          "status": "unknown"
         },
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
@@ -610,25 +617,21 @@
           "status": "unknown"
         },
         {
+          "name": "NeeDoh Nice Ice Baby assorted",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Ice-Baby-assorted/3388809",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
           "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Ice Baby assorted",
-          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Ice-Baby-assorted/3388809",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Nice Cube Swirl assorted",
-          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Super Fuzz Ball assorted",
-          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown"
+          "name": "NeeDoh Nice Cream Cone 3 asst CDU",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squeeza CDU",
@@ -637,9 +640,9 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh Nice Cream Cone 3 asst CDU",
-          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown",
+          "name": "NeeDoh Super Fuzz Ball assorted",
+          "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -694,19 +697,19 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -718,31 +721,31 @@
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář",
           "url": "https://www.megaknihy.cz/mackaci-figurky/25091436-schylling-needoh-adventni-kalendar.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -760,7 +763,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -801,213 +804,213 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
-          "name": "Schylling NeeDoh",
-          "url": "https://www.dvedeti.cz/schylling-needoh",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "schylling barvu menici antistresovy micek needoh 1 ks",
+          "name": "Schylling NeeDoh Barvu měnící antistresový míček",
           "url": "https://www.dvedeti.cz/schylling-barvu-menici-antistresovy-micek-needoh-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci fotbalovy micek 1 ks",
+          "name": "Schylling NeeDoh Mačkací fotbalový míček",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-fotbalovy-micek-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh baby boos mackaci duch",
+          "name": "Schylling NeeDoh Baby Boos Mačkací duch 3 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-baby-boos-mackaci-duch",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh barevne mackaci micky fuzz ball 4 ks",
+          "name": "Schylling NeeDoh Barevné mačkací míčky Fuzz Ball 4 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-barevne-mackaci-micky-fuzz-ball-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh barevne mackaci micky hot shots 4 ks",
+          "name": "Schylling NeeDoh Barevné mačkací míčky Hot Shots 4 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-barevne-mackaci-micky-hot-shots-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh barevne mackaci mini kocky 4 ks",
+          "name": "Schylling NeeDoh Barevné mačkací mini kočky 4 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-barevne-mackaci-mini-kocky-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh barevne mackaci mini micky swirl 4 ks",
+          "name": "Schylling NeeDoh Barevné mačkací mini míčky Swirl 4 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh barvu menici antistresova kostlka",
+          "name": "Schylling NeeDoh Barvu měnící antistresová kostka",
           "url": "https://www.dvedeti.cz/schylling-needoh-barvu-menici-antistresova-kostlka",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh booper 1 ks",
+          "name": "Schylling NeeDoh Booper",
           "url": "https://www.dvedeti.cz/schylling-needoh-booper-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh donut 1 ks",
+          "name": "Schylling NeeDoh Donut",
           "url": "https://www.dvedeti.cz/schylling-needoh-donut-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling duhove mackaci micky needoh 6 ks",
+          "name": "Schylling NeeDoh Duhové mačkací míčky 6 ks",
           "url": "https://www.dvedeti.cz/schylling-duhove-mackaci-micky-needoh-6-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh fsdu kartonovy reklamni displej",
+          "name": "Schylling NeeDoh FSDU Kartonový reklamní displej",
           "url": "https://www.dvedeti.cz/schylling-needoh-fsdu-kartonovy-reklamni-displej",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling funky pup needoh 1 ks",
+          "name": "Schylling NeeDoh Funky Pup štěňátko",
           "url": "https://www.dvedeti.cz/schylling-funky-pup-needoh-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh glowy ghost mackaci antistresovy duch svitici ve tme",
+          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
           "url": "https://www.dvedeti.cz/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh groovy ghosts 1 ks",
+          "name": "Schylling NeeDoh Groovy Ghosts",
           "url": "https://www.dvedeti.cz/schylling-needoh-groovy-ghosts-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh happy snappy 1 ks",
+          "name": "Schylling NeeDoh Happy Snappy",
           "url": "https://www.dvedeti.cz/schylling-needoh-happy-snappy-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh hledani zlatych vajicek",
+          "name": "Schylling NeeDoh Hledání zlatých vajíček",
           "url": "https://www.dvedeti.cz/schylling-needoh-hledani-zlatych-vajicek",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jack glow lanterns svitici ve tme",
+          "name": "Schylling NeeDoh Jack Glow Lanterns svítící ve tmě",
           "url": "https://www.dvedeti.cz/schylling-needoh-jack-glow-lanterns-svitici-ve-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jack glow lantern mackaci antistresova dyne svitici ve tme",
+          "name": "Schylling NeeDoh Jack-Glow Lantern Mačkací antistresová dýně svítící ve tmě",
           "url": "https://www.dvedeti.cz/schylling-needoh-jack-glow-lantern-mackaci-antistresova-dyne-svitici-ve-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jelly donuts 1 ks",
+          "name": "Schylling NeeDoh Jelly Donuts",
           "url": "https://www.dvedeti.cz/schylling-needoh-jelly-donuts-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh knittens mackaci hebka antistresova kocka",
+          "name": "Schylling NeeDoh Knittens Mačkací hebká antistresová kočka",
           "url": "https://www.dvedeti.cz/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kouzelne barevne vejce 1 ks",
+          "name": "Schylling NeeDoh Kouzelné barevné vejce",
           "url": "https://www.dvedeti.cz/schylling-needoh-kouzelne-barevne-vejce-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kuratko deedos 12 1 ks",
+          "name": "Schylling NeeDoh Kuřátko Deedos",
           "url": "https://www.dvedeti.cz/schylling-needoh-kuratko-deedos-12-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci antistresova kapka",
+          "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-kapka",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci antistresova stenatka 1 bal",
+          "name": "Schylling NeeDoh Mačkací antistresová štěňátka 3 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresova-stenatka-1-bal",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci antistresove kocicky 1 bal",
+          "name": "Schylling NeeDoh Mačkací antistresové kočičky 3 ks",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-kocicky-1-bal",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci antistresove srdce 1 ks",
+          "name": "Schylling NeeDoh Mačkací antistresové srdce",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-antistresove-srdce-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling mackaci antistresovy micek needoh",
+          "name": "Schylling NeeDoh Mačkací antistresový míček",
           "url": "https://www.dvedeti.cz/schylling-mackaci-antistresovy-micek-needoh",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling mackaci antistresovy mini micek needoh",
+          "name": "Schylling NeeDoh Mačkací antistresový mini míček 3 ks",
           "url": "https://www.dvedeti.cz/schylling-mackaci-antistresovy-mini-micek-needoh",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci duch svitici ve tme",
+          "name": "Schylling NeeDoh Mačkací duch svítící ve tmě",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-duch-svitici-ve-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci kanka sploot splat",
+          "name": "Schylling NeeDoh Mačkací kaňka Sploot Splat",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kanka-sploot-splat",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci kostka mello mallo",
+          "name": "Schylling NeeDoh Mačkací kostka Mello Mallo",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-mello-mallo",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci kostka nice berg",
+          "name": "Schylling NeeDoh Mačkací kostka Nice Berg",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci kostka nice berg swirl",
+          "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.dvedeti.cz/schylling-needoh-mackaci-kostka-nice-berg-swirl",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Schylling NeeDoh",
+          "url": "https://www.dvedeti.cz/schylling-needoh",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -1334,331 +1337,331 @@
         },
         {
           "name": "NeeDoh Advent Calendar 2026",
-          "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/schylling-needoh-advent-calendar-2026-sysqmac26.html",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh needoh by schylling needoh advent calendar 2026 sysqmac26",
           "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/needoh-by-schylling-needoh-advent-calendar-2026-sysqmac26.html",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling lava instant slime kit sylvis",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-instant-slime-kit-sylvis.html",
-          "status": "in_stock",
-          "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "NeeDoh needoh by schylling needoh glowy ghost stress ball syndwgg26",
+          "name": "NeeDoh Glowy Ghost Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-glowy-ghost-stress-ball-syndwgg26.html",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh nice cube candy swirl sensory squeeze toy sycsncbnd",
+          "name": "NeeDoh Nice Cube Candy Swirl Sensory Squeeze Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-candy-swirl-sensory-squeeze-toy-sycsncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh squisher reindoh squishy reindeer sysqmsrnd26",
+          "name": "NeeDoh Squisher Reindoh Squishy Reindeer",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-squisher-reindoh-squishy-reindeer-sysqmsrnd26.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh baby boos squishy ghost syndwbb26",
+          "name": "NeeDoh Baby Boos Squishy Ghost",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-baby-boos-squishy-ghost-syndwbb26.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling nice ice baby teenie needoh multi pack 4 symptncbnd",
+          "name": "Nice Ice Baby Teenie NeeDoh Multi-pack (4)",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-nice-ice-baby-teenie-needoh-multi-pack-4-symptncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh fuzz ball sensory toy syfzbnd",
+          "name": "NeeDoh Fuzz Ball Sensory Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-fuzz-ball-sensory-toy-syfzbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh super fuzz ball stress ball sysfzbnd",
+          "name": "NeeDoh Super Fuzz Ball Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-super-fuzz-ball-stress-ball-sysfzbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh jelly hops scented glitter bunny syjhnd26",
+          "name": "NeeDoh Jelly Hops - Scented Glitter Bunny",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jelly-hops-scented-glitter-bunny-syjhnd26.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh gumdrop squishy fidget toy sygdnd",
+          "name": "NeeDoh Gumdrop Squishy Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-gumdrop-squishy-fidget-toy-sygdnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh nice cube glitter glow stress cube syggncbnd",
+          "name": "NeeDoh Nice Cube Glitter & Glow Stress Cube",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-glitter-glow-stress-cube-syggncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh fuzz ball teenie multipack 4 pcs sympfzbnd",
+          "name": "NeeDoh Fuzz Ball Teenie Multipack (4 pcs)",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-fuzz-ball-teenie-multipack-4-pcs-sympfzbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh snow ball crunch stress ball sysnbc",
+          "name": "NeeDoh Snow Ball Crunch Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-snow-ball-crunch-stress-ball-sysnbc.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh teenie fuzz ball multipack 3 pcs syfzbtnd",
+          "name": "NeeDoh Teenie Fuzz Ball Multipack (3 pcs)",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-teenie-fuzz-ball-multipack-3-pcs-syfzbtnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh cool cats teenie stress ball 3 pack sycctnd",
+          "name": "NeeDoh Cool Cats Teenie Stress Ball, 3 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-cool-cats-teenie-stress-ball-3-pack-sycctnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh groovy shroom sygsnd",
+          "name": "NeeDoh Groovy Shroom",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-groovy-shroom-sygsnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh atomic stress ball syatnd bzl",
+          "name": "NeeDoh Atomic Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-atomic-stress-ball-syatnd-bzl.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh monsters dohjees series 2 sydj2",
+          "name": "NeeDoh Monsters Dohjees Series 2",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-monsters-dohjees-series-2-sydj2.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling schylling stretching noodles sensory fidget toy synl",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/needoh-by-schylling-schylling-stretching-noodles-sensory-fidget-toy-synl.html",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh needoh by schylling needoh groovy ghost stress ball syndwgg24",
+          "name": "NeeDoh Groovy Ghost Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-groovy-ghost-stress-ball-syndwgg24.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh nice cube sensory squeeze toy syncbnd",
+          "name": "NeeDoh Nice Cube Sensory Squeeze Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-sensory-squeeze-toy-syncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh ramen noodlies sensory fidget toy syrnl",
+          "name": "NeeDoh Ramen Noodlies Sensory Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-ramen-noodlies-sensory-fidget-toy-syrnl.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh booper sensory squeeze toy sybnd",
+          "name": "NeeDoh Booper Sensory Squeeze Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-booper-sensory-squeeze-toy-sybnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh cool cane 5pc mini christmas fidget toys sysqmcc25",
+          "name": "NeeDoh Cool Cane 5pc Mini Christmas Fidget Toys",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-cool-cane-5pc-mini-christmas-fidget-toys-sysqmcc25.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh christmas snow globe fidget toy for kids sysqmsg25",
+          "name": "NeeDoh Christmas Snow Globe Fidget Toy for Kids",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-christmas-snow-globe-fidget-toy-for-kids-sysqmsg25.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh ginger glowman christmas fidget toy sysqmgm25",
+          "name": "NeeDoh Ginger Glowman Christmas Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-ginger-glowman-christmas-fidget-toy-sysqmgm25.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh niceberg sensory fidget toy sysncbnd",
+          "name": "NeeDoh Niceberg Sensory Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-niceberg-sensory-fidget-toy-sysncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh rainboh teenie stress ball 6 pack syrbtnd",
+          "name": "NeeDoh Rainboh Teenie Stress Ball, 6 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-rainboh-teenie-stress-ball-6-pack-syrbtnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh classic stress ball synd",
+          "name": "NeeDoh Classic Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-classic-stress-ball-synd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh teenie swirl stress ball 4 pack symptswnd",
+          "name": "NeeDoh Teenie Swirl Stress Ball, 4 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-teenie-swirl-stress-ball-4-pack-symptswnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh golden egg hunt kids easter fidget toy box sygehnd26",
+          "name": "NeeDoh Golden Egg Hunt Kids' Easter Fidget Toy Box",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-golden-egg-hunt-kids-easter-fidget-toy-box-sygehnd26.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh teenie funky pups fidget toys 3 pack syfptnd",
+          "name": "NeeDoh Teenie Funky Pups Fidget Toys (3 Pack)",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-teenie-funky-pups-fidget-toys-3-pack-syfptnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh nice cube glow in the dark stress cube sygncbnd",
+          "name": "NeeDoh Nice Cube Glow in the Dark Stress Cube",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-glow-in-the-dark-stress-cube-sygncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling lava squish n flow lava lamp squishy fidget toy sylvgs",
-          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh needoh by schylling needoh nice berg swirl giant marbled fidget cube syswsncbnd",
+          "name": "NeeDoh Nice Berg Swirl Giant Marbled Fidget Cube",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-berg-swirl-giant-marbled-fidget-cube-syswsncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh jelly squish stretchy jellyfish toy with glitter filling syjsnd",
+          "name": "NeeDoh Jelly Squish Stretchy Jellyfish Toy with Glitter Filling",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jelly-squish-stretchy-jellyfish-toy-with-glitter-filling-syjsnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh fuzz ball flower power sensory stress ball syfpfzbnd",
+          "name": "NeeDoh Fuzz Ball Flower Power Sensory Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-fuzz-ball-flower-power-sensory-stress-ball-syfpfzbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh nice cube swirl sensory fidget toy syswncbnd",
+          "name": "NeeDoh Nice Cube Swirl Sensory Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-nice-cube-swirl-sensory-fidget-toy-syswncbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh teenie jack glow lantern 3 pack syndwtnjgl25",
+          "name": "NeeDoh Teenie Jack-Glow Lantern 3-Pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-teenie-jack-glow-lantern-3-pack-syndwtnjgl25.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh jack glow lantern halloween fidget toy syndwjgl26",
+          "name": "NeeDoh Jack-Glow Lantern Halloween Fidget Toy",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-jack-glow-lantern-halloween-fidget-toy-syndwjgl26.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh groovy fruit sensory stress balls 3 pack sygfnd",
+          "name": "NeeDoh Groovy Fruit Sensory Stress Balls, 3 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-groovy-fruit-sensory-stress-balls-3-pack-sygfnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh panic pete stress ball syndppst",
+          "name": "NeeDoh Panic Pete Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-panic-pete-stress-ball-syndppst.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh chicka deedoos easter stress ball chick sycddnd",
+          "name": "NeeDoh Chicka DeeDoos Easter Stress Ball Chick",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-chicka-deedoos-easter-stress-ball-chick-sycddnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh donut stress ball sydnnd",
+          "name": "NeeDoh Donut Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-donut-stress-ball-sydnnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh hot shots teenie stress ball 4 pack syhstnd",
+          "name": "NeeDoh Hot Shots Teenie Stress Ball, 4 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-hot-shots-teenie-stress-ball-4-pack-syhstnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh cool cats teenie stress ball 4 pack sympcctnd",
+          "name": "NeeDoh Cool Cats Teenie Stress Ball, 4 pack",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-cool-cats-teenie-stress-ball-4-pack-sympcctnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh marbleez stress ball symrbnd",
+          "name": "NeeDoh Marbleez Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-marbleez-stress-ball-symrbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh glow in the dark stress ball syagnd",
+          "name": "NeeDoh Glow in the Dark Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-glow-in-the-dark-stress-ball-syagnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh sploot splat stress ball sysplnd",
+          "name": "NeeDoh Sploot Splat Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-sploot-splat-stress-ball-sysplnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh hot shots football stress ball syhsfbnd",
+          "name": "NeeDoh Hot Shots Football Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-hot-shots-football-stress-ball-syhsfbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh good vibes only stress ball sygvnd",
+          "name": "NeeDoh Good Vibes Only Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-good-vibes-only-stress-ball-sygvnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh fuzz ball wonder waves stress ball sywwfzbnd",
+          "name": "NeeDoh Fuzz Ball Wonder Waves Stress Ball",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-fuzz-ball-wonder-waves-stress-ball-sywwfzbnd.html",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh needoh by schylling needoh sugar skull cats syssccnd",
+          "name": "NeeDoh Sugar Skull Cats",
           "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-needoh-sugar-skull-cats-syssccnd.html",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Advent Calendar 2026",
+          "url": "https://misslemonade.pl/en/home-design/decor/christmas-decorations-advent-calendars/schylling-needoh-advent-calendar-2026-sysqmac26.html",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh needoh by schylling lava instant slime kit sylvis",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-instant-slime-kit-sylvis.html",
+          "status": "unknown",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "NeeDoh needoh by schylling schylling stretching noodles sensory fidget toy synl",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/games/needoh-by-schylling-schylling-stretching-noodles-sensory-fidget-toy-synl.html",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh needoh by schylling lava squish n flow lava lamp squishy fidget toy sylvgs",
+          "url": "https://misslemonade.pl/en/toys-and-hobbies/toys-for-kids/sensory-toys/needoh-by-schylling-lava-squish-n-flow-lava-lamp-squishy-fidget-toy-sylvgs.html",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -1684,193 +1687,187 @@
       "country": "🇸🇰 Slovakia",
       "products": [
         {
-          "name": "Schylling NeeDoh",
-          "url": "https://www.dvedeti.sk/schylling-needoh",
-          "status": "in_stock",
-          "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "schylling farbu meniacu antistresovu lopticku needoh 1 ks",
+          "name": "Schylling NeeDoh Farbu meniacu antistresovú loptičku",
           "url": "https://www.dvedeti.sk/schylling-farbu-meniacu-antistresovu-lopticku-needoh-1-ks",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh baby boos mackaci duch",
+          "name": "Schylling NeeDoh Baby Boos Mačkací duch 3 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-baby-boos-mackaci-duch",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh booper 1 ks",
+          "name": "Schylling NeeDoh Booper",
           "url": "https://www.dvedeti.sk/schylling-needoh-booper-1-ks",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh donut 1 ks",
+          "name": "Schylling NeeDoh Donut",
           "url": "https://www.dvedeti.sk/schylling-needoh-donut-1-ks",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling duhove lopticky na mackanie needoh 6 ks",
+          "name": "Schylling NeeDoh Dúhové loptičky na mačkanie 6 ks",
           "url": "https://www.dvedeti.sk/schylling-duhove-lopticky-na-mackanie-needoh-6-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh farbu meniacu antistresova kocka",
+          "name": "Schylling NeeDoh Farbu meniacu antistresová kocka",
           "url": "https://www.dvedeti.sk/schylling-needoh-farbu-meniacu-antistresova-kocka",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh farebne mackacie lopticky fuzz ball 4 ks",
+          "name": "Schylling NeeDoh Farebné mačkacie loptičky Fuzz Ball 4 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-farebne-mackacie-lopticky-fuzz-ball-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh farebne mackacie lopticky hot shots 4 ks",
+          "name": "Schylling NeeDoh Farebné mačkacie loptičky Hot Shots 4 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-farebne-mackacie-lopticky-hot-shots-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh farebne mackacie mini lopticky swirl 4 ks",
+          "name": "Schylling NeeDoh Farebné mačkacie mini loptičky Swirl 4 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-farebne-mackacie-mini-lopticky-swirl-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh farebne mackacie mini macky 4 ks",
+          "name": "Schylling NeeDoh Farebné mačkacie mini mačky 4 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-farebne-mackacie-mini-macky-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh fsdu kartonovy reklamni displej",
+          "name": "Schylling NeeDoh FSDU Kartónový reklamný displej",
           "url": "https://www.dvedeti.sk/schylling-needoh-fsdu-kartonovy-reklamni-displej",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling funky pup needoh 1 ks",
+          "name": "Schylling NeeDoh Funky Pup šteniatko",
           "url": "https://www.dvedeti.sk/schylling-funky-pup-needoh-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh glowy ghost antistresovy duch svietiaci v tme",
+          "name": "Schylling NeeDoh Glowy Ghost Antistresový duch svietiaci v tme",
           "url": "https://www.dvedeti.sk/schylling-needoh-glowy-ghost-antistresovy-duch-svietiaci-v-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh groovy ghosts 1 ks",
+          "name": "Schylling NeeDoh Groovy Ghosts",
           "url": "https://www.dvedeti.sk/schylling-needoh-groovy-ghosts-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh happy snappy 1 ks",
+          "name": "Schylling NeeDoh Happy Snappy",
           "url": "https://www.dvedeti.sk/schylling-needoh-happy-snappy-1-ks",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh hladanie zlatych vajicok",
+          "name": "Schylling NeeDoh Hľadanie zlatých vajíčok",
           "url": "https://www.dvedeti.sk/schylling-needoh-hladanie-zlatych-vajicok",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jack glow lanterns svietiaci v tme",
+          "name": "Schylling NeeDoh Jack Glow Lanterns svietiaci v tme",
           "url": "https://www.dvedeti.sk/schylling-needoh-jack-glow-lanterns-svietiaci-v-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jack glow lantern antistresova tekvica svietiaca v tme",
+          "name": "Schylling NeeDoh Jack-Glow Lantern Antistresová tekvica svietiaca v tme",
           "url": "https://www.dvedeti.sk/schylling-needoh-jack-glow-lantern-antistresova-tekvica-svietiaca-v-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh jelly donuts 1 ks",
+          "name": "Schylling NeeDoh Jelly Donuts",
           "url": "https://www.dvedeti.sk/schylling-needoh-jelly-donuts-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh knittens hebka antistresova macicka",
+          "name": "Schylling NeeDoh Knittens Hebká antistresová mačička",
           "url": "https://www.dvedeti.sk/schylling-needoh-knittens-hebka-antistresova-macicka",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kuriatko deedos 12 1 ks",
+          "name": "Schylling NeeDoh Kuriatko Deedos",
           "url": "https://www.dvedeti.sk/schylling-needoh-kuriatko-deedos-12-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh kuzelne farebne vajcia 1 ks",
+          "name": "Schylling NeeDoh Kúzelné farebné vajcia",
           "url": "https://www.dvedeti.sk/schylling-needoh-kuzelne-farebne-vajcia-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh macacie antistresove macky 1 balenie",
+          "name": "Schylling NeeDoh Mačacie antistresové mačky 3 ks",
           "url": "https://www.dvedeti.sk/schylling-needoh-macacie-antistresove-macky-1-balenie",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci duch svietiaci v tme",
+          "name": "Schylling NeeDoh Mačkací duch svietiaci v tme",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackaci-duch-svietiaci-v-tme",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackaci prasatko 1 ks",
+          "name": "Schylling NeeDoh mačkací prasátko",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackaci-prasatko-1-ks",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling mackaci texturovany needoh 1 ks",
+          "name": "Schylling NeeDoh Mačkací texturovaný",
           "url": "https://www.dvedeti.sk/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kanka sploot splat",
+          "name": "Schylling NeeDoh Mačkacia kanka Sploot Splat",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kanka-sploot-splat",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka mello mallo",
+          "name": "Schylling NeeDoh Mačkacia kocka Mello Mallo",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-mello-mallo",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka nice berg",
+          "name": "Schylling NeeDoh Mačkacia kocka Nice Berg",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-berg",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka nice berg swirl",
+          "name": "Schylling NeeDoh Mačkacia kocka Nice Berg Swirl",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-berg-swirl",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka nice berg trblietava",
+          "name": "Schylling NeeDoh Mačkacia kocka Nice Berg trblietavá",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-berg-trblietava",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
@@ -1882,22 +1879,28 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka nice cube candy swirl",
+          "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Candy Swirl",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-candy-swirl",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka nice cube swirl",
+          "name": "Schylling NeeDoh Mačkacia kocka Nice Cube Swirl",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-nice-cube-swirl",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mackacia kocka teenie nice ice baby",
+          "name": "Schylling NeeDoh Mačkacia kocka Teenie Nice Ice Baby",
           "url": "https://www.dvedeti.sk/schylling-needoh-mackacia-kocka-teenie-nice-ice-baby",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Schylling NeeDoh",
+          "url": "https://www.dvedeti.sk/schylling-needoh",
+          "status": "unknown",
+          "last_confirmed_status": "in_stock"
         }
       ]
     },
@@ -2139,157 +2142,157 @@
       "country": "🌍 Europe",
       "products": [
         {
-          "name": "schylling needoh wonder waves cuddle ball",
+          "name": "Schylling NeeDoh Wonder Waves Cuddle Ball",
           "url": "https://www.2kidstoys.com/schylling-needoh-wonder-waves-cuddle-ball",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh cat cube nice berg swirl",
+          "name": "Schylling NeeDoh Cat Cube Nice Berg Swirl",
           "url": "https://www.2kidstoys.com/schylling-needoh-cat-cube-nice-berg-swirl",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squeeze cube nice berg glitter",
+          "name": "Schylling NeeDoh Squeeze Cube Nice Berg Glitter",
           "url": "https://www.2kidstoys.com/schylling-needoh-squeeze-cube-nice-berg-glitter",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh catnip sploot splat",
+          "name": "Schylling NeeDoh Catnip Sploot Splat",
           "url": "https://www.2kidstoys.com/schylling-needoh-catnip-sploot-splat",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh colorful squishy mini cats 4 pcs",
+          "name": "Schylling NeeDoh Colorful Squishy Mini Cats 4 pcs",
           "url": "https://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-cats-4-pcs",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh snowball squishy",
+          "name": "Schylling NeeDoh Snowball squishy",
           "url": "https://www.2kidstoys.com/schylling-needoh-snowball-squishy",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh nice cube swirl",
+          "name": "Schylling NeeDoh Nice Cube Swirl",
           "url": "https://www.2kidstoys.com/schylling-needoh-nice-cube-swirl",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh fuzz ball mini squishy balls",
+          "name": "Schylling NeeDoh Fuzz Ball mini squishy balls",
           "url": "https://www.2kidstoys.com/schylling-needoh-fuzz-ball-mini-squishy-balls",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh colorful squishy balls hot shots 4 pcs",
+          "name": "Schylling NeeDoh Colorful Squishy Balls Hot Shots 4 pcs",
           "url": "https://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-hot-shots-4-pcs",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squishy glitter bunny",
+          "name": "Schylling NeeDoh Squishy Glitter Bunny",
           "url": "https://www.2kidstoys.com/schylling-needoh-squishy-glitter-bunny",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh golden egg hunt",
+          "name": "Schylling NeeDoh Golden Egg Hunt",
           "url": "https://www.2kidstoys.com/schylling-needoh-golden-egg-hunt",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squishy jellyfish",
+          "name": "Schylling NeeDoh Squishy jellyfish",
           "url": "https://www.2kidstoys.com/schylling-needoh-squishy-jellyfish",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squeeze glitter hearts 3pcs",
+          "name": "Schylling NeeDoh Squeeze Glitter Hearts 3pcs",
           "url": "https://www.2kidstoys.com/schylling-needoh-squeeze-glitter-hearts-3pcs",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh colorful squishy mini balls swirl 4 ks",
+          "name": "Schylling NeeDoh Colorful squishy mini balls Swirl 4 ks",
           "url": "https://www.2kidstoys.com/schylling-needoh-colorful-squishy-mini-balls-swirl-4-ks",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squishy balls sugar wand",
+          "name": "Schylling NeeDoh Squishy Balls Sugar Wand",
           "url": "https://www.2kidstoys.com/schylling-needoh-squishy-balls-sugar-wand",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh nice cube glow",
+          "name": "Schylling NeeDoh Nice Cube Glow",
           "url": "https://www.2kidstoys.com/schylling-needoh-nice-cube-glow",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh mini nice ice baby teenie squeeze cubes 4 pcs",
+          "name": "Schylling NeeDoh Mini Nice Ice Baby Teenie Squeeze Cubes 4 pcs",
           "url": "https://www.2kidstoys.com/schylling-needoh-mini-nice-ice-baby-teenie-squeeze-cubes-4-pcs",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh colorful squishy balls fuzz ball 4 pcs",
+          "name": "Schylling NeeDoh Colorful squishy balls Fuzz Ball 4 pcs",
           "url": "https://www.2kidstoys.com/schylling-needoh-colorful-squishy-balls-fuzz-ball-4-pcs",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh knittens soft stress cat",
+          "name": "Schylling NeeDoh Knittens Soft Stress Cat",
           "url": "https://www.2kidstoys.com/schylling-needoh-knittens-soft-stress-cat",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh squishy heart",
+          "name": "Schylling NeeDoh Squishy heart",
           "url": "https://www.2kidstoys.com/schylling-needoh-squishy-heart",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh fuzz ball squishy maxi ball",
+          "name": "Schylling NeeDoh Fuzz Ball squishy maxi ball",
           "url": "https://www.2kidstoys.com/schylling-needoh-fuzz-ball-squishy-maxi-ball",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh color changing anti stress cube",
+          "name": "Schylling NeeDoh Color-changing anti-stress cube",
           "url": "https://www.2kidstoys.com/schylling-needoh-color-changing-anti-stress-cube",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh catnip nice cube",
+          "name": "Schylling NeeDoh Catnip Nice Cube",
           "url": "https://www.2kidstoys.com/schylling-needoh-catnip-nice-cube",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh cat textured",
+          "name": "Schylling NeeDoh Cat Textured",
           "url": "https://www.2kidstoys.com/schylling-needoh-cat-textured",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh catnip anti stress drop",
+          "name": "Schylling NeeDoh Catnip Anti-Stress Drop",
           "url": "https://www.2kidstoys.com/schylling-needoh-catnip-anti-stress-drop",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "schylling needoh cuddle anti stress ball",
+          "name": "Schylling NeeDoh Cuddle anti-stress ball",
           "url": "https://www.2kidstoys.com/schylling-needoh-cuddle-anti-stress-ball",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
@@ -5394,9 +5397,9 @@
       "country": "🇪🇸 Spain",
       "products": [
         {
-          "name": "NeeDoh dohjees needoh",
+          "name": "Dohjees Needoh",
           "url": "https://brincajugueteria.es/producto/dohjees-needoh/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -5408,19 +5411,19 @@
         {
           "name": "NeeDoh stardust needoh schylling",
           "url": "https://cocoloco.nl/product/stardust-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/super-needoh-ripples-115cm-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/magic-colour-egg-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -5480,1327 +5483,1327 @@
         {
           "name": "NeeDoh Holiday Advent Calendar 2026 Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-holiday-advent-calendar-2026-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh JellySquish Squishy Fidget Toy 3x Lot Purple/Pink/Blue",
           "url": "https://mthorshop.com/products/needoh-jellysquish-squishy-fidget-toy-3x-lot-purple-pink-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-nice-cube-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Flower Power Fuzz Ball Squishy Fidget Toy 5x Lot Pink/Orange/Purple/Green/Blue",
           "url": "https://mthorshop.com/products/needoh-flower-power-fuzz-ball-squishy-fidget-toy-5x-lot-pink-orange-purple-green-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squeeza Pizza Squishy Fidget Toy Yellow Crust",
           "url": "https://mthorshop.com/products/needoh-squeeza-pizza-squishy-fidget-toy-yellow-crust",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter and Glow Squishy Fidget Toy Set of 3 Pink/ Purple/ Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glitter-and-glow-squishy-fidget-toy-set-of-3-pink-purple-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Advent Calendar Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-advent-calendar-squishy-fidget-toy",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Cloud Pleaser Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-cloud-pleaser-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzzball The Velvet Squeeze Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-fuzzball-the-velvet-squeeze-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice-sicle Popsicle Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-nice-sicle-popsicle-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Cool Cat 4-Pack Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-teenie-cool-cat-4-pack-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Fuzzball Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-super-fuzzball-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dig’ It Pig Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-dig-it-pig-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Groovy Jewel Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-groovy-jewel-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh The Groovy Glob! Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-the-groovy-glob-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy Fruit Squishy Fidget Toy Multicolor",
           "url": "https://mthorshop.com/products/needoh-groovy-fruit-squishy-fidget-toy-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Flower Power Fuzz Ball Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-flower-power-fuzz-ball-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Berg Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-nice-berg-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Schylling Teenie Hot Shots Squishy Fidget Toy Set of 4 Orange/Green/Pink/Blue",
           "url": "https://mthorshop.com/products/needoh-schylling-teenie-hot-shots-squishy-fidget-toy-set-of-4-orange-green-pink-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Peace O’ Cake Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-peace-o-cake-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Snowball Crunch Squishy Fidget Toy White",
           "url": "https://mthorshop.com/products/needoh-snowball-crunch-squishy-fidget-toy-white",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gummy Bear Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-gummy-bear-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dream Drop Squishy Fidget Toy (Set of 3) Pink/Blue/Purple",
           "url": "https://mthorshop.com/products/needoh-dream-drop-squishy-fidget-toy-set-of-3-pink-blue-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dream Drop Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-dream-drop-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh JellySquish Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-jellysquish-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter and Glow Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glitter-and-glow-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter and Glow Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glitter-and-glow-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cream Ice Cream Cone Squishy Fidget Toy 3x Lot Orange/Pink/Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cream-ice-cream-cone-squishy-fidget-toy-3x-lot-orange-pink-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Flower Power Fuzz Ball Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-flower-power-fuzz-ball-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Pup Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-funky-pup-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cream Ice Cream Cone Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cream-ice-cream-cone-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gum Drop Display Case (12 Needoh Gum Drops)",
           "url": "https://mthorshop.com/products/needoh-gum-drop-display-case-12-needoh-gum-drops",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Groovy Jewel Mini Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-groovy-jewel-mini-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glowy Ghost (Glow in the Dark) (Random Facial Expression) Squishy Fidget Toy White",
           "url": "https://mthorshop.com/products/needoh-glowy-ghost-glow-in-the-dark-random-facial-expression-squishy-fidget-toy-white",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube: Wow Flake Squishy Fidget Toy 2x Lot",
           "url": "https://mthorshop.com/products/needoh-nice-cube-wow-flake-squishy-fidget-toy-2x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squishmas Cool Cane Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-squishmas-cool-cane-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube: Wow Flake Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-nice-cube-wow-flake-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Rainboh Squishy Fidget Toy Set of 6",
           "url": "https://mthorshop.com/products/needoh-rainboh-squishy-fidget-toy-set-of-6",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Wild Cats Squishy Fidget Toy Orange (Random Facial Expression)",
           "url": "https://mthorshop.com/products/needoh-wild-cats-squishy-fidget-toy-orange-random-facial-expression",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh The Groovy Glob! Squishy Fidget Toy 5x Lot Pink/Orange/Purple/Green/Blue",
           "url": "https://mthorshop.com/products/needoh-the-groovy-glob-squishy-fidget-toy-5x-lot-pink-orange-purple-green-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squisher the Reindeer Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-squisher-the-reindeer-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzzball The Velvet Squeeze Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-fuzzball-the-velvet-squeeze-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack-Glow Lantern Glow-in-the-Dark Squishy Fidget Toy (Random Facial Expression) Pink",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-glow-in-the-dark-squishy-fidget-toy-random-facial-expression-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squish n' Flow Snow Globe Reindeer Squishy Fidget Toy (Colors May Vary)",
           "url": "https://mthorshop.com/products/needoh-squish-n-flow-snow-globe-reindeer-squishy-fidget-toy-colors-may-vary",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gummy Bear Squishy Fidget Toy 4x Lot Red,Orange/Blue/Purple",
           "url": "https://mthorshop.com/products/needoh-gummy-bear-squishy-fidget-toy-4x-lot-red-orange-blue-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Knittens Squishy Fidget Toy Set of 2 Green/Pink",
           "url": "https://mthorshop.com/products/needoh-knittens-squishy-fidget-toy-set-of-2-green-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cool Cats Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-sugar-skull-cool-cats-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squisher the Reindeer Squishy Fidget Toy Set of 3 Pink, Orange, Blue",
           "url": "https://mthorshop.com/products/needoh-squisher-the-reindeer-squishy-fidget-toy-set-of-3-pink-orange-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack-Glow Lantern Squishy Fidget Toy (Random Facial Expression) Green",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-squishy-fidget-toy-random-facial-expression-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squishmas Squish n' Flow Snow Globe Groovy The Dohman Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-squishmas-squish-n-flow-snow-globe-groovy-the-dohman-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Polar Glow Penguin (Super Solid Squish Sticker) Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-polar-glow-penguin-super-solid-squish-sticker-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glow in the Dark Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-glow-in-the-dark-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Squishmas Squish n' Flow Snow Globe Squishy Fidget Toy (Set of 3)",
           "url": "https://mthorshop.com/products/needoh-squishmas-squish-n-flow-snow-globe-squishy-fidget-toy-set-of-3",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack Glow Lantern Squishy Fidget Toy 3x Lot",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-squishy-fidget-toy-3x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glow in the Dark Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-glow-in-the-dark-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glowy Ghost Squishy Fidget Toy (Random Facial Expression) Green",
           "url": "https://mthorshop.com/products/needoh-glowy-ghost-squishy-fidget-toy-random-facial-expression-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glowy Ghost Squishy Fidget Toy (Random Facial Expression) Orange",
           "url": "https://mthorshop.com/products/needoh-glowy-ghost-squishy-fidget-toy-random-facial-expression-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Knittens Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-knittens-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy the Glowman Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-groovy-the-glowman-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Polar Glow Penguin Squishy Fidget Toy Purple (Random Colored Accessories)",
           "url": "https://mthorshop.com/products/needoh-polar-glow-penguin-squishy-fidget-toy-purple-random-colored-accessories",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Barnyard Fuzzball Squishy Fidget Toy 4-Pack",
           "url": "https://mthorshop.com/products/needoh-barnyard-fuzzball-squishy-fidget-toy-4-pack",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Ginger Glowman Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-ginger-glowman-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mermaid Groovy Glob Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-mermaid-groovy-glob-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gummy Bear Squishy Fidget Toy Red",
           "url": "https://mthorshop.com/products/needoh-gummy-bear-squishy-fidget-toy-red",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy Jewel Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-groovy-jewel-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack Glow Lantern Squishy Fidget Toy Happy Face with Teeth",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-squishy-fidget-toy-happy-face-with-teeth",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Pup Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-funky-pup-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cool Cats Squishy Fidget Toy Set of 3 Blue/ Pink/ Green",
           "url": "https://mthorshop.com/products/needoh-sugar-skull-cool-cats-squishy-fidget-toy-set-of-3-blue-pink-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Monster Mush Squish-O-Ween Countdown 14 Squishy Toys",
           "url": "https://mthorshop.com/products/needoh-monster-mush-squish-o-ween-countdown-14-squishy-toys",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy Jewel Mini Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-groovy-jewel-mini-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glowy Ghost Squishy Fidget Toy (Random Facial Expression) Purple",
           "url": "https://mthorshop.com/products/needoh-glowy-ghost-squishy-fidget-toy-random-facial-expression-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Good Vibes Only Squishy Fidget Toy Purple (Text on Heart May Vary)",
           "url": "https://mthorshop.com/products/needoh-good-vibes-only-squishy-fidget-toy-purple-text-on-heart-may-vary",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squeezza Pizza (Pink Crust) Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-squeezza-pizza-pink-crust-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack Glow Lantern Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Frights Squish-O-Ween Countdown Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-funky-frights-squish-o-ween-countdown-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Groovy Glob Squishy Fidget Toy (Blue)",
           "url": "https://mthorshop.com/products/needoh-super-groovy-glob-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Pup Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-funky-pup-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh NeedDohWeen Baby Boos Box of 3 Squishy Glowy Ghosts",
           "url": "https://mthorshop.com/products/needoh-needdohween-baby-boos-box-of-3-squishy-glowy-ghosts",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Ripples Fidget Ball Pink",
           "url": "https://mthorshop.com/products/needoh-super-ripples-fidget-ball-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Barnyard Squisher Squishy Fidget Toy Set of 3 Pink/ Blue/ Green",
           "url": "https://mthorshop.com/products/needoh-barnyard-squisher-squishy-fidget-toy-set-of-3-pink-blue-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Tennie Fuzz Ball 3-Pack Squishy Fidget Toy 3x Lot",
           "url": "https://mthorshop.com/products/needoh-tennie-fuzz-ball-3-pack-squishy-fidget-toy-3x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Candy Swirl Nice Cube Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-candy-swirl-nice-cube-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzzball The Velvet Squeeze Squishy Fidget Toy Set of 5 Purple/ Blue/ Orange/ Pink/ Green",
           "url": "https://mthorshop.com/products/needoh-fuzzball-the-velvet-squeeze-squishy-fidget-toy-set-of-5-purple-blue-orange-pink-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Farmyard Squishkin Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-farmyard-squishkin-squishy-fidget-toy",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzzball The Velvet Squeeze Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-fuzzball-the-velvet-squeeze-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mac n Squeeze Squishy Fidget Toy Multicolor",
           "url": "https://mthorshop.com/products/needoh-mac-n-squeeze-squishy-fidget-toy-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squishmas Squish n' Flow Snow Globe Penguin Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-squishmas-squish-n-flow-snow-globe-penguin-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jack Glow Lantern Squishy Fidget Toy 3-Pack",
           "url": "https://mthorshop.com/products/needoh-jack-glow-lantern-squishy-fidget-toy-3-pack",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Change Cube Sensory Squeeze Toy Blue",
           "url": "https://mthorshop.com/products/needoh-color-change-cube-sensory-squeeze-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squishmas Squishkins Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-squishmas-squishkins-squishy-fidget-toy",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzzball The Velvet Squeeze Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-fuzzball-the-velvet-squeeze-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter and Glow Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glitter-and-glow-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Cloud Pleaser Squishy Fidget Toy 2x Lot",
           "url": "https://mthorshop.com/products/needoh-cloud-pleaser-squishy-fidget-toy-2x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Cloud Pleaser Squishy Fidget Toy 4x Lot",
           "url": "https://mthorshop.com/products/needoh-cloud-pleaser-squishy-fidget-toy-4x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Groovy Glob Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-super-groovy-glob-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Display Case (12 Needoh Nice Cubes)",
           "url": "https://mthorshop.com/products/needoh-nice-cube-display-case-12-needoh-nice-cubes",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Polar Glow Penguin Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-polar-glow-penguin-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Dohnut Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-jelly-dohnut-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Ripples Fidget Ball Purple",
           "url": "https://mthorshop.com/products/needoh-super-ripples-fidget-ball-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Cool Cat Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-cool-cat-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Dohnut Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-jelly-dohnut-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dohnut Holes Squishy Fidget Toy Set of 3 Purple/Orange/Pink",
           "url": "https://mthorshop.com/products/needoh-dohnut-holes-squishy-fidget-toy-set-of-3-purple-orange-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Change Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-color-change-squishy-fidget-toy-1",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Swirlie Egg Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-swirlie-egg-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Change set of 3 Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-color-change-set-of-3-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Change Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-color-change-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Tennie Fuzz Ball 3-Pack Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-tennie-fuzz-ball-3-pack-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Fuzz Ball 4-Pack Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-teenie-fuzz-ball-4-pack-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-nice-cube-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wild-cats-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh The Groovy Glob! Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-the-groovy-glob-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Limited Edition Dr Pepper Nice Cube Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-limited-edition-dr-pepper-nice-cube-squishy-fidget-toy",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wild-cats-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Fuzzball Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-super-fuzzball-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Shaggy Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-shaggy-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Fab Four Squishy Fidget Toy Set of 4 Mullticolor",
           "url": "https://mthorshop.com/products/needoh-teenie-fab-four-squishy-fidget-toy-set-of-4-mullticolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy the Glowman Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-groovy-the-glowman-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Galactic Glow Dream Drop Squishy Fidget Toy Set of 3 Cosmic Bloom/ Galacti-Blue/ Nebula Haze",
           "url": "https://mthorshop.com/products/needoh-galactic-glow-dream-drop-squishy-fidget-toy-set-of-3-cosmic-bloom-galacti-blue-nebula-haze",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Groovy the Glowman Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-groovy-the-glowman-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzzball Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-super-fuzzball-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Ripples Fidget Ball Green",
           "url": "https://mthorshop.com/products/needoh-super-ripples-fidget-ball-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Orage",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-orage",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glow in the Dark Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-glow-in-the-dark-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Good Vibes Only Squishy Fidget Toy Pink (Text on Heart May Vary)",
           "url": "https://mthorshop.com/products/needoh-good-vibes-only-squishy-fidget-toy-pink-text-on-heart-may-vary",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Galactic Glow Dream Drop Squishy Fidget Toy Galacti-Blue",
           "url": "https://mthorshop.com/products/needoh-galactic-glow-dream-drop-squishy-fidget-toy-galacti-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Cool Cat Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-cool-cat-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wild-cats-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wild Cats Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wild-cats-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh SplootSplat Squishy Fidget Toy 3x Lot Purple/Blue/Green",
           "url": "https://mthorshop.com/products/needoh-splootsplat-squishy-fidget-toy-3x-lot-purple-blue-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Changing Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-color-changing-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Good Vibes Only Squishy Fidget Toy Blue (Text on Heart May Vary)",
           "url": "https://mthorshop.com/products/needoh-good-vibes-only-squishy-fidget-toy-blue-text-on-heart-may-vary",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Noodlies Squishy Fidget Toy Multicolor",
           "url": "https://mthorshop.com/products/needoh-noodlies-squishy-fidget-toy-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Pup Squishy Fidget Toy 4x Lot Orange/Blue/Purple/Pink",
           "url": "https://mthorshop.com/products/needoh-funky-pup-squishy-fidget-toy-4x-lot-orange-blue-purple-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Chicka Deedo Squishy Fidget Toy Polka Dot",
           "url": "https://mthorshop.com/products/needoh-chicka-deedo-squishy-fidget-toy-polka-dot",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dohnuts Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-dohnuts-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Schylling Nee Doh Ramen Noodle Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-schylling-nee-doh-ramen-noodle-squishy-fidget-toy",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glow in the Dark Squishy Fidget Toy Set of 5 Pink/ Green/ Orange/ Blue/ Purple",
           "url": "https://mthorshop.com/products/needoh-glow-in-the-dark-squishy-fidget-toy-set-of-5-pink-green-orange-blue-purple",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Super Fuzzball Squishy Fidget Toy Green/ Pink/ Purple",
           "url": "https://mthorshop.com/products/needoh-super-fuzzball-squishy-fidget-toy-green-pink-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gummy Bear Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-gummy-bear-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Quad Squad Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-teenie-quad-squad-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh The Groovy Glob! Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-the-groovy-glob-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dippin Dazzer Egg Squishy Fidget Toy Smooth Sunrise",
           "url": "https://mthorshop.com/products/needoh-dippin-dazzer-egg-squishy-fidget-toy-smooth-sunrise",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Hops Scented Bunny Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-jelly-hops-scented-bunny-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh The Groovy Glob! Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-the-groovy-glob-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mello Mallo Squishy Fidget Toy Yellow",
           "url": "https://mthorshop.com/products/needoh-mello-mallo-squishy-fidget-toy-yellow",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Swirlin USA Squishy Fidget Toy Red/ White/ Blue",
           "url": "https://mthorshop.com/products/needoh-swirlin-usa-squishy-fidget-toy-red-white-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh SplootSplat Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-splootsplat-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Hops Scented Bunny Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-jelly-hops-scented-bunny-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Cool Cat Squishy Fidget Toy Yellow",
           "url": "https://mthorshop.com/products/needoh-super-cool-cat-squishy-fidget-toy-yellow",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cool Cats Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-sugar-skull-cool-cats-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh SplootSplat Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-splootsplat-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Cool Cat Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-super-cool-cat-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Cool Cat Squishy Fidget Toy Teal",
           "url": "https://mthorshop.com/products/needoh-super-cool-cat-squishy-fidget-toy-teal",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Funky Pups Squishy Fidget Toy Set of 3 Multicolor",
           "url": "https://mthorshop.com/products/needoh-teenie-funky-pups-squishy-fidget-toy-set-of-3-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Galactic Glow Dream Drop Squishy Fidget Toy Cosmic Bloom",
           "url": "https://mthorshop.com/products/needoh-galactic-glow-dream-drop-squishy-fidget-toy-cosmic-bloom",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Sugar Skull Cool Cats Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-sugar-skull-cool-cats-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh 2025 Easter Golden Egg Hunt Mystery Box (10 Pack)",
           "url": "https://mthorshop.com/products/needoh-2025-easter-golden-egg-hunt-mystery-box-10-pack",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Dohnuts Squishy Fidget Toy 3x Lot Blue/Purple/Pink",
           "url": "https://mthorshop.com/products/needoh-dohnuts-squishy-fidget-toy-3x-lot-blue-purple-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-nice-cube-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dohnuts Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-dohnuts-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Cool Cat Squishy Fidget Toy Multicolor",
           "url": "https://mthorshop.com/products/needoh-teenie-cool-cat-squishy-fidget-toy-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Flower Power Fuzz Ball Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-flower-power-fuzz-ball-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzzball Squishy Fidget Toy Green",
           "url": "https://mthorshop.com/products/needoh-fuzzball-squishy-fidget-toy-green",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh NeeDoh Nice Ice Baby Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-needoh-nice-ice-baby-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Cool Cat Squishy Fidget Toy 4x Lot Pink/Purple/Yellow/Blue",
           "url": "https://mthorshop.com/products/needoh-super-cool-cat-squishy-fidget-toy-4x-lot-pink-purple-yellow-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Teenie Swirl Squishy Fidget Toy Set of 4",
           "url": "https://mthorshop.com/products/needoh-teenie-swirl-squishy-fidget-toy-set-of-4",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh NeeDoh Nice Ice Baby Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-needoh-nice-ice-baby-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl Super Squeeze! Green/Purple/Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-swirl-super-squeeze-green-purple-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Hops Scented Bunny Squishy Fidget Toy Yellow",
           "url": "https://mthorshop.com/products/needoh-jelly-hops-scented-bunny-squishy-fidget-toy-yellow",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gummy Bear Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-gummy-bear-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Glow in the Dark Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-glow-in-the-dark-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice-sicle Popsicle Squishy Fidget Toy Red",
           "url": "https://mthorshop.com/products/needoh-nice-sicle-popsicle-squishy-fidget-toy-red",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dream Drop Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-dream-drop-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Squeeza Pizza Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-squeeza-pizza-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gumdrop Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-gumdrop-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jumbo Swirl Nice Berg Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-jumbo-swirl-nice-berg-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gumdrop Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-gumdrop-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mello Mallo Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-mello-mallo-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Chick Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-chick-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Bunny Squishy Fidget Toy",
           "url": "https://mthorshop.com/products/needoh-bunny-squishy-fidget-toy",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl Super Squeeze! Purple/Pink/Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-swirl-super-squeeze-purple-pink-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dohnuts Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-dohnuts-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jelly Hops Scented Bunny 3x Lot Squishy Fidget Toy Blue/Pink/Yellow",
           "url": "https://mthorshop.com/products/needoh-jelly-hops-scented-bunny-3x-lot-squishy-fidget-toy-blue-pink-yellow",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Jumbo Swirl Nice Berg Squishy Fidget Toy 3x Lot Orange/Blue/Purple",
           "url": "https://mthorshop.com/products/needoh-jumbo-swirl-nice-berg-squishy-fidget-toy-3x-lot-orange-blue-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl Super Squeeze! Orange/Pink/Yellow",
           "url": "https://mthorshop.com/products/needoh-nice-cube-swirl-super-squeeze-orange-pink-yellow",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dohnut Hole Squishy Fidget Toy Set of 4 Mullticolor",
           "url": "https://mthorshop.com/products/needoh-dohnut-hole-squishy-fidget-toy-set-of-4-mullticolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Swirl Super Squeeze! Pink/Purple/Black",
           "url": "https://mthorshop.com/products/needoh-nice-cube-swirl-super-squeeze-pink-purple-black",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gumdrop Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-gumdrop-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Wonder Waves Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-fuzz-ball-wonder-waves-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh NeeDoh Nice Ice Baby Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-needoh-nice-ice-baby-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Funky Pup Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-funky-pup-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glow Squishy Fidget Toy 5x Lot Pink/Orange/Purple/Green/Blue",
           "url": "https://mthorshop.com/products/needoh-nice-cube-glow-squishy-fidget-toy-5x-lot-pink-orange-purple-green-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Gumdrop Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-gumdrop-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Marbleez Groovy Glob Toy Squishy Fidget Toy Multicolor",
           "url": "https://mthorshop.com/products/needoh-marbleez-groovy-glob-toy-squishy-fidget-toy-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dream Drop Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-dream-drop-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Super Cool Cat Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-super-cool-cat-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Ice Baby Squishy Fidget Toy Set of 4 Blue/Purple/Pink",
           "url": "https://mthorshop.com/products/needoh-nice-ice-baby-squishy-fidget-toy-set-of-4-blue-purple-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh JellySquish Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-jellysquish-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice-sicle Popsicle Squishy Fidget Toy Mullticolor",
           "url": "https://mthorshop.com/products/needoh-nice-sicle-popsicle-squishy-fidget-toy-mullticolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jumbo Swirl Nice Berg Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-jumbo-swirl-nice-berg-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh JellySquish Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-jellysquish-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Flower Power Fuzz Ball Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-flower-power-fuzz-ball-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh SplootSplat Squishy Fidget Toy Blue",
           "url": "https://mthorshop.com/products/needoh-splootsplat-squishy-fidget-toy-blue",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Dippin Dazzler Egg Squishy Fidget Toy Blind Box Multicolor",
           "url": "https://mthorshop.com/products/needoh-dippin-dazzler-egg-squishy-fidget-toy-blind-box-multicolor",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mello Mallo Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-mello-mallo-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cream Ice Cream Cone Squishy Fidget Toy Orange",
           "url": "https://mthorshop.com/products/needoh-nice-cream-ice-cream-cone-squishy-fidget-toy-orange",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Jumbo Swirl Nice Berg Squishy Fidget Toy Purple",
           "url": "https://mthorshop.com/products/needoh-jumbo-swirl-nice-berg-squishy-fidget-toy-purple",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Mello Mallo Squishy Fidget Toy 3x Lot Blue/Pink/Yellow",
           "url": "https://mthorshop.com/products/needoh-mello-mallo-squishy-fidget-toy-3x-lot-blue-pink-yellow",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Nice Cream Ice Cream Cone Squishy Fidget Toy Pink",
           "url": "https://mthorshop.com/products/needoh-nice-cream-ice-cream-cone-squishy-fidget-toy-pink",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Power Tower Squishy Fidget Toy 6 Pack 2x Lot",
           "url": "https://mthorshop.com/products/needoh-power-tower-squishy-fidget-toy-6-pack-2x-lot",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Polar Glow Penguin Squishy Fidget Toy Pink (Super Solid Squish Sticker)",
           "url": "https://mthorshop.com/products/needoh-polar-glow-penguin-squishy-fidget-toy-pink-super-solid-squish-sticker",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Power Tower Squishy Fidget Toy 6 Pack",
           "url": "https://mthorshop.com/products/needoh-power-tower-squishy-fidget-toy-6-pack",
-          "status": "error",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         }
       ]
