@@ -1,5 +1,5 @@
 {
-  "last_checked": "31 Oct 2026, 16:14",
+  "last_checked": "31 Oct 2026, 20:27",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -626,7 +626,7 @@
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -661,13 +661,13 @@
         {
           "name": "NeeDoh Teenie Cool Cats 4 Pack",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Cool-Cats-4-Pack/3411624",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Color Change Cube assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Color-Change-Cube-assorted/3411629",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -711,7 +711,7 @@
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -729,13 +729,13 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Teenie Nice Ice Baby",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Adventní kalendář 2025",
           "url": "https://www.megaknihy.cz/interaktivni/25923286-schylling-needoh-adventni-kalendar-2025.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -747,7 +747,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg třpytivá",
           "url": "https://www.megaknihy.cz/interaktivni/26344391-schylling-needoh-mackaci-kostka-nice-berg-trpytiva.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3448,43 +3448,43 @@
         {
           "name": "NeeDoh Dream Drop Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-dream-drop-squishy-fidget-toy-various-colours",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Gumdrop Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-gumdrop",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-nice-cube-squishy-fidget-toy-various-colours",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glow In The Dark Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-glow-in-the-dark",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Marbleez Squishy Fidget Toy",
           "url": "https://lulabug.ie/products/needoh-marbleez-squishy-fidget-toy-assorted-colours",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Colour Changing Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-colour-changing",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzz Ball Squishy Fidget Toy Various Colours",
           "url": "https://lulabug.ie/products/needoh-fuzz-ball-assorted-colours",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -4495,13 +4495,13 @@
         {
           "name": "Teenie Singles Nice Ice Baby Needoh Squishy Toy by Schylling",
           "url": "https://www.junioredition.com/products/teenie-singles-nice-ice-baby-needoh-squishy-toy-by-schylling",
-          "status": "out_of_stock",
+          "status": "error",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Knittens Needoh Squishy Toy by Schylling",
           "url": "https://www.junioredition.com/products/knittens-needoh-squishy-toy-by-schylling",
-          "status": "out_of_stock",
+          "status": "error",
           "last_confirmed_status": "out_of_stock"
         }
       ]
