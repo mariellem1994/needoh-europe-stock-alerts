@@ -1,5 +1,5 @@
 {
-  "last_checked": "01 Nov 2026, 15:48",
+  "last_checked": "01 Nov 2026, 20:26",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -315,7 +315,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk blauw.html",
           "url": "https://www.spellenrijk.nl/artikel/50653/needoh-classic-needoh-balls-1-stuk-blauw.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -327,7 +327,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk oranje.html",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -458,7 +458,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -563,7 +563,7 @@
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -575,7 +575,7 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -638,7 +638,7 @@
         {
           "name": "NeeDoh Squeeza CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Squeeza-CDU/3452276",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -699,13 +699,13 @@
         {
           "name": "25146722 schylling needoh mackaci antistresova kapka.html",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "25923480 schylling needoh mackaci sugar skull kocka svitici ve tme.html",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -729,7 +729,7 @@
         {
           "name": "25652850 schylling needoh mackaci kostka teenie nice ice baby.html",
           "url": "https://www.megaknihy.cz/cestovni-hry/25652850-schylling-needoh-mackaci-kostka-teenie-nice-ice-baby.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -753,19 +753,19 @@
         {
           "name": "26270092 schylling needoh hledani zlatych vajicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26270092-schylling-needoh-hledani-zlatych-vajicek.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "26269349 schylling needoh mackaci trpytivy kralicek.html",
           "url": "https://www.megaknihy.cz/interaktivni/26269349-schylling-needoh-mackaci-trpytivy-kralicek.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "26345515 schylling needoh mackaci kostka nice berg swirl.html",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2957,6 +2957,12 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
+          "name": "NeeDoh - Groovy Fruit",
+          "url": "https://www.lekia.no/leketoy/fidgets-og-smamoro/needoh-groovy-fruit",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "Needoh, Stickums",
           "url": "https://www.lekia.no/leketoy/fidgets-og-smamoro/needoh-stickums",
           "status": "out_of_stock",
@@ -3062,9 +3068,9 @@
       "country": "🇫🇮 Finland",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin stressilelu",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://www.suomalainen.com/products/needoh-polar-glow-penguin-stressilelu",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
@@ -7169,12 +7175,6 @@
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Barevné mačkací mini kočky 4 ks",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-mini-kocky-4-ks",
-          "status": "in_stock",
-          "last_confirmed_status": "in_stock"
-        },
-        {
           "name": "Schylling NeeDoh Mini koblížky (posypané míčky), 6 ks",
           "url": "https://www.mamiee.cz/p/schylling-needoh-mini-koblihy-6-ks-posypane-micky",
           "status": "in_stock",
@@ -7256,6 +7256,12 @@
           "name": "ORIGINAL Schylling NeeDoh Mačkací kostka Nice Cube Candy Swirl, růžovo-bílé mramorování - střední",
           "url": "https://www.mamiee.cz/p/original-schylling-needoh-mackaci-kostka-nice-cube-candy-swirl-ruzovo-bile-mramorovani-stredni",
           "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Barevné mačkací mini kočky 4 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-barevne-mackaci-mini-kocky-4-ks",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         }
       ]
