@@ -1,5 +1,5 @@
 {
-  "last_checked": "04 Nov 2026, 09:21",
+  "last_checked": "04 Nov 2026, 17:32",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -104,12 +104,6 @@
         {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.cogstoysandgames.ie/products/needoh-jelly-hops",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Squishmas – Cool Cane",
-          "url": "https://www.cogstoysandgames.ie/products/needoh-squishmas-cool-cane",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
@@ -243,6 +237,12 @@
           "name": "Snow Ball Nee Doh Crunch",
           "url": "https://www.cogstoysandgames.ie/products/snow-ball-nee-doh-crunch",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Squishmas – Cool Cane",
+          "url": "https://www.cogstoysandgames.ie/products/needoh-squishmas-cool-cane",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -418,6 +418,12 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Teenie Jack Glow Lanterns",
+          "url": "https://www.internet-speelgoedwinkel.nl/needoh-teenie-jack-glow-lanterns.html",
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
           "name": "NeeDoh Glowy Ghost",
           "url": "https://www.internet-speelgoedwinkel.nl/needoh-glowy-ghost.html",
           "status": "unknown"
@@ -482,7 +488,7 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -494,7 +500,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -512,7 +518,7 @@
         {
           "name": "NeeDoh Nice Cube assorted Hug me! Embrace me! I will always return to my square starting point. Nice Cube dice is filled with a super robust embracing feeling. Try it... It comes i",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-assorted/3391313",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -546,7 +552,7 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -558,7 +564,7 @@
         {
           "name": "NeeDoh Puff Puff Puff Puff fra NEEDOH® er en helt ny squishy. som giver følelsen af en sky. Den superbløde tekstur giver en beroglignede klemme oplevelse. mens glimmer...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Puff-Puff/3452465",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -588,13 +594,13 @@
         {
           "name": "NeeDoh Teenie Singles assorted Oplev de bedste NeeDoh-produkter i en lille, sjov verden! Individuel emballage med de groovigste NeeDoh-designs – saml dem alle og elsk dem! Fås i 4 ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Singles-assorted/3365096",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Teenie Color Change 4-Pack CDU Oplev fire sjove Teenie NeeDoh-bolde, der skifter farve, når de klemmes. De bløde stressbolde er perfekte til at holde hænderne beskæftiget og",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Teenie-Color-Change-4-Pack-CDU/3517262",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -618,7 +624,7 @@
         {
           "name": "NeeDoh Jelly Squish assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Jelly-Squish-assorted/3411627",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -636,7 +642,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-assorted/3411631",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -716,31 +722,31 @@
         {
           "name": "Schylling NeeDoh Mačkací antistresová kapka",
           "url": "https://www.megaknihy.cz/hry/25146722-schylling-needoh-mackaci-antistresova-kapka.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací Sugar Skull kočka svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25923480-schylling-needoh-mackaci-sugar-skull-kocka-svitici-ve-tme.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací perníček svítící ve tmě",
           "url": "https://www.megaknihy.cz/interaktivni/25922542-schylling-needoh-mackaci-pernicek-svitici-ve-tme.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Vánoční sněhová koule mačkací",
           "url": "https://www.megaknihy.cz/hry/26152546-schylling-needoh-vanocni-snehova-koule-mackaci.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling NeeDoh Mačkací mini míček",
           "url": "https://www.megaknihy.cz/cestovni-hry/25448283-schylling-needoh-mackaci-mini-micek.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -782,7 +788,7 @@
         {
           "name": "Schylling NeeDoh Mačkací kostka Nice Berg Swirl",
           "url": "https://www.megaknihy.cz/hry/26345515-schylling-needoh-mackaci-kostka-nice-berg-swirl.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3311,13 +3317,13 @@
         {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3465,12 +3471,6 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Groovy ¡Muñeco de Nieve Brillante! Needoh",
-          "url": "https://lachatamerenguela.com/products/groovy-el-senor-brillante-needoh",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
           "name": "Medusa sensorial NEEDOH!",
           "url": "https://lachatamerenguela.com/products/medusa-sensorial-needoh",
           "status": "out_of_stock",
@@ -3528,6 +3528,12 @@
           "name": "Sploot splash sensorial NEEDOH!",
           "url": "https://lachatamerenguela.com/products/sploot-splash-sensorial-needoh",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Groovy ¡Muñeco de Nieve Brillante! Needoh",
+          "url": "https://lachatamerenguela.com/products/groovy-el-senor-brillante-needoh",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3651,7 +3657,7 @@
         {
           "name": "Glowy Ghost Needoh",
           "url": "https://www.thedyslexiashop.co.uk/products/glowy-ghost-needoh",
-          "status": "out_of_stock",
+          "status": "error",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -4696,7 +4702,7 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "JUKUPOP Viral Squishy Bundles – Includes NeeDoh & 4 More Sensory Toys",
+          "name": "JUKUPOP Viral Squishy Bundle – Includes NeeDoh & 4 More Sensory Toys",
           "url": "https://jukupop.com/products/jukupop-viral-squishy-bundles",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
@@ -4710,6 +4716,12 @@
         {
           "name": "NeeDoh Teenie Swirl Multipack - Mini Squishy Stress Balls Sensory Toy Pack",
           "url": "https://jukupop.com/products/needoh-teenie-swirl-multipack-mini-stress-balls-sensory-toy-pack",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "JUKUPOP Stocking Filler Bundle – Includes NeeDoh & 4 More Sensory Toys",
+          "url": "https://jukupop.com/products/jukupop-stocking-filler-bundle-includes-needoh-4-more-sensory-toys",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
@@ -5538,19 +5550,19 @@
         {
           "name": "NeeDoh stardust needoh schylling",
           "url": "https://cocoloco.nl/product/stardust-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/super-needoh-ripples-115cm-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/magic-colour-egg-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -7236,15 +7248,15 @@
       "country": "🇵🇱 Poland",
       "products": [
         {
-          "name": "Gniotek sensoryczny Schylling kostka lodu Nice Cube NeeDoh Niebieski",
+          "name": "NeeDoh gniotek sensoryczny schylling kostka lodu nice cube needoh niebieski",
           "url": "https://zabawkaiwyprawka.pl/produkt/gniotek-sensoryczny-schylling-kostka-lodu-nice-cube-needoh-niebieski",
-          "status": "in_stock",
+          "status": "error",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "Gniotek sensoryczny Schylling kostka lodu Nice Cube NeeDoh Różowy",
           "url": "https://zabawkaiwyprawka.pl/produkt/gniotek-sensoryczny-schylling-kostka-lodu-nice-cube-needoh-rozowy",
-          "status": "in_stock",
+          "status": "error",
           "last_confirmed_status": "in_stock"
         }
       ]
