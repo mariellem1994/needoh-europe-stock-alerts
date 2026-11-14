@@ -1,5 +1,5 @@
 {
-  "last_checked": "14 Nov 2026, 04:06",
+  "last_checked": "14 Nov 2026, 10:49",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -315,7 +315,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk blauw.html",
           "url": "https://www.spellenrijk.nl/artikel/50653/needoh-classic-needoh-balls-1-stuk-blauw.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -327,7 +327,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk oranje.html",
           "url": "https://www.spellenrijk.nl/artikel/50652/needoh-classic-needoh-balls-1-stuk-oranje.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -442,7 +442,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -598,7 +598,7 @@
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Swirl-assorted/3411630",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -661,7 +661,7 @@
         {
           "name": "NeeDoh Super Fuzz Ball 1 pcs assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Super-Fuzz-Ball-1-pcs-assorted/3411631",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -713,7 +713,7 @@
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -743,7 +743,8 @@
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
-          "status": "unknown"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
@@ -3249,9 +3250,9 @@
       "country": "🇫🇮 Finland",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin stressilelu",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://www.suomalainen.com/products/needoh-polar-glow-penguin-stressilelu",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
@@ -3482,13 +3483,13 @@
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-antistres-needoh-fructe-4187049339",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-atomic-3-culori-pret-pe-bucata-2073208229",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -5833,9 +5834,9 @@
       "country": "🇪🇸 Spain",
       "products": [
         {
-          "name": "Dohjees Needoh",
+          "name": "NeeDoh dohjees needoh",
           "url": "https://brincajugueteria.es/producto/dohjees-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
