@@ -1,5 +1,5 @@
 {
-  "last_checked": "15 Nov 2026, 15:43",
+  "last_checked": "15 Nov 2026, 21:10",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -309,7 +309,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk paars.html",
           "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -5835,9 +5835,9 @@
       "country": "🇪🇸 Spain",
       "products": [
         {
-          "name": "Dohjees Needoh",
+          "name": "NeeDoh dohjees needoh",
           "url": "https://brincajugueteria.es/producto/dohjees-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
