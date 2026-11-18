@@ -1,5 +1,5 @@
 {
-  "last_checked": "17 Nov 2026, 22:25",
+  "last_checked": "18 Nov 2026, 04:09",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -309,7 +309,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk paars.html",
           "url": "https://www.spellenrijk.nl/artikel/50651/needoh-classic-needoh-balls-1-stuk-paars.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -435,13 +435,13 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop is doh-licious. Non-edible gummy with a super squishy texture. Gumdrop is oversized and provides a new tactile experience when squeezed. Avai",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Gumdrop-assorted/3365103",
+          "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
           "status": "unknown"
         },
         {
-          "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
+          "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop is doh-licious. Non-edible gummy with a super squishy texture. Gumdrop is oversized and provides a new tactile experience when squeezed. Avai",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Gumdrop-assorted/3365103",
           "status": "unknown"
         },
         {
@@ -509,13 +509,13 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glow In The Dark 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Glow-In-The-Dark-1pk-assorted/3412031",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -660,7 +660,7 @@
         {
           "name": "NeeDoh Mello Mallo assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Mello-Mallo-assorted/3414038",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2592,31 +2592,31 @@
         {
           "name": "Needoh Conjunto 3 Gatinhos Roxo/Rosa/Laranja",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-roxo-rosa-laranja",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Conjunto 3 Gatinhos Rosa/Roxo/Verde",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-rosa-roxo-verde",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Conjunto 3 Gatinhos Verde/Laranja/Rosa",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-verde-laranja-rosa",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Cogumelo Laranja/Roxo",
           "url": "https://minicool.pt/products/needoh-cogumelo-laranja-roxo",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Bola Anti-Stress Verde",
           "url": "https://minicool.pt/products/needoh-bola-anti-stres-verde",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -4894,8 +4894,8 @@
         {
           "name": "JUKUPOP Viral Squishy Bundle – Includes NeeDoh & 4 More Sensory Toys",
           "url": "https://jukupop.com/products/jukupop-viral-squishy-bundles",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Color Change Cube - Colour Changing Fidget Sensory Toy",
@@ -6136,8 +6136,8 @@
         {
           "name": "NeeDoh Gum Drop Display Case (12 Needoh Gum Drops)",
           "url": "https://mthorshop.com/products/needoh-gum-drop-display-case-12-needoh-gum-drops",
-          "status": "in_stock",
-          "last_confirmed_status": "in_stock"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Groovy Jewel Mini Squishy Fidget Toy Blue",
@@ -6310,8 +6310,8 @@
         {
           "name": "NeeDoh Polar Glow Penguin Squishy Fidget Toy Purple (Random Colored Accessories)",
           "url": "https://mthorshop.com/products/needoh-polar-glow-penguin-squishy-fidget-toy-purple-random-colored-accessories",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Barnyard Fuzzball Squishy Fidget Toy 4-Pack",
