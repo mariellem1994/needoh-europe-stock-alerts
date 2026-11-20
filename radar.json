@@ -1,5 +1,5 @@
 {
-  "last_checked": "20 Nov 2026, 06:58",
+  "last_checked": "20 Nov 2026, 15:39",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -418,6 +418,18 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Snow Ball",
+          "url": "https://www.internet-speelgoedwinkel.nl/snow-ball.html",
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "NeeDoh Swirl Nice Cube",
+          "url": "https://www.internet-speelgoedwinkel.nl/nd-swirlnicecube.html",
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
           "name": "NeeDoh Teenie Jack Glow Lanterns",
           "url": "https://www.internet-speelgoedwinkel.nl/needoh-teenie-jack-glow-lanterns.html",
           "status": "unknown",
@@ -435,25 +447,10 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop is doh-licious. Non-edible gummy with a super squishy texture. Gumdrop is oversized and provides a new tactile experience when squeezed. Avai",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Gumdrop-assorted/3365103",
-          "status": "unknown"
-        },
-        {
           "name": "NeeDoh Peace O Cake assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
-          "status": "unknown"
         },
         {
           "name": "NeeDoh Jelly Hops",
@@ -501,6 +498,21 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
+          "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop is doh-licious. Non-edible gummy with a super squishy texture. Gumdrop is oversized and provides a new tactile experience when squeezed. Avai",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Gumdrop-assorted/3365103",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh Fuzz Ball Flower Power 1pk assorted",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Flower-Power-1pk-assorted/3414039",
+          "status": "unknown"
+        },
+        {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Niceberg-Glitter-Glow/3456451",
           "status": "unknown",
@@ -521,7 +533,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cube-Swirl-assorted/3407588",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -533,7 +545,7 @@
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Classic-1pk-assorted/3414047",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -568,7 +580,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -598,7 +610,7 @@
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted Denne dråbeformede sanselegetøj er fyldt med glitrende gel, som du kan klemme og mase. Den leveres med en holder, hvor du kan placere dråben. Fr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2854,8 +2866,14 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Needoh - 4 Pack",
-          "url": "https://www.mueller.de/p/needoh-4-pack-PPN3187270/",
+          "name": "Needoh Wildcatfuzz Ball sortiert (Keine Auswahl möglich)",
+          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
+          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
           "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
@@ -2866,21 +2884,15 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
-          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
-          "status": "unknown",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "Needoh Wildcatfuzz Ball sortiert (Keine Auswahl möglich)",
-          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
           "name": "Needoh Cool Cats sortiert (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-cool-cats-sortiert-keine-auswahl-moeglich-PPN3211313/",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Needoh - 4 Pack",
+          "url": "https://www.mueller.de/p/needoh-4-pack-PPN3187270/",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -4562,7 +4574,7 @@
         {
           "name": "NeeDoh Sploot Splat",
           "url": "https://thekidcollective.co.uk/products/needoh-sploot-splat",
-          "status": "out_of_stock",
+          "status": "error",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -4574,7 +4586,7 @@
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://thekidcollective.co.uk/products/needoh-nice-cube-swirl",
-          "status": "out_of_stock",
+          "status": "error",
           "last_confirmed_status": "out_of_stock"
         },
         {
