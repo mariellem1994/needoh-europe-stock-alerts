@@ -1,5 +1,5 @@
 {
-  "last_checked": "21 Nov 2026, 04:11",
+  "last_checked": "21 Nov 2026, 12:00",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -333,7 +333,7 @@
         {
           "name": "needoh classic needoh balls 1 stuk groen.html",
           "url": "https://www.spellenrijk.nl/artikel/50650/needoh-classic-needoh-balls-1-stuk-groen.html",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -460,7 +460,7 @@
         {
           "name": "NeeDoh Puff Puff",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Puff-Puff/3452465",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -545,7 +545,7 @@
         {
           "name": "NeeDoh Fuzz Ball Classic 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Fuzz-Ball-Classic-1pk-assorted/3414047",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -568,7 +568,7 @@
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         }
       ]
@@ -592,7 +592,7 @@
         {
           "name": "NeeDoh Niceberg Glitter & Glow Niceberg Glitter & Glow fra Needoh – magisk klem, stræk og sjov! Klem mig! Kram mig! Jeg vender altid tilbage til min form og giver en uimodståelig, ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Niceberg-Glitter-Glow/3456451",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -628,7 +628,8 @@
         {
           "name": "NeeDoh Fuzz Ball Critters - assorted Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækr",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-assorted/3452469",
-          "status": "unknown"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Niceberg Swirl - assorted Squishy terning-fidgetlegetøj med en hvirvlende marmoreffekt",
@@ -2801,6 +2802,11 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
+          "name": "schylling mackaci texturovany needoh 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh mackaci maxi micek fuzz ball",
           "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
           "status": "unknown"
@@ -2813,11 +2819,6 @@
         {
           "name": "schylling needoh barevne mackaci mini micky swirl 4 ks",
           "url": "https://www.bavixo.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling mackaci texturovany needoh 1 ks",
-          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "unknown"
         },
         {
@@ -2868,7 +2869,7 @@
         {
           "name": "Needoh Wildcatfuzz Ball sortiert (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2880,7 +2881,7 @@
         {
           "name": "NEEDOH - GUMDROP (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-gumdrop-keine-auswahl-moeglich-PPN3178000/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3514,13 +3515,13 @@
         {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "set jucarii anti stress needoh mingi de fotbal 3 culori pret pe bucata 4737410753",
           "url": "https://carturesti.ro/jucarii/set-jucarii-anti-stress-needoh-mingi-de-fotbal-3-culori-pret-pe-bucata-4737410753",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3538,7 +3539,7 @@
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-atomic-3-culori-pret-pe-bucata-2073208229",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -7848,14 +7849,14 @@
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
-          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
+          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
+          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
+          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
