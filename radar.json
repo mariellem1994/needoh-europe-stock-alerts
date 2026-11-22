@@ -1,5 +1,5 @@
 {
-  "last_checked": "22 Nov 2026, 03:47",
+  "last_checked": "22 Nov 2026, 11:27",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -697,7 +697,7 @@
         {
           "name": "NeeDoh Squeeza",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Squeeza/3452276",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -786,8 +786,8 @@
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Peace-O-Cake-3-asst-CDU/3452275",
-          "status": "unknown",
-          "last_confirmed_status": "out_of_stock"
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
         },
         {
           "name": "NeeDoh Fuzzy Hugs Bear 3 assorteret CDU",
@@ -2897,15 +2897,15 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
-          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
-          "status": "unknown",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
           "name": "NEEDOH - GUMDROP (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-gumdrop-keine-auswahl-moeglich-PPN3178000/",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
+          "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3539,7 +3539,7 @@
         {
           "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3557,13 +3557,13 @@
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-antistres-needoh-fructe-4187049339",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "jucarie antistres nee doh atomic 3 culori pret pe bucata 2073208229",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-atomic-3-culori-pret-pe-bucata-2073208229",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -7927,14 +7927,14 @@
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
+          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
+          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling Needoh 5x Natahovací nudle, různé barvy - antistresová pomůcka",
-          "url": "https://www.mamiee.cz/p/natahovaci-antistresove-nudle",
+          "name": "Schylling NeeDoh Glowy Ghost Mačkací antistresový duch svítící ve tmě",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-glowy-ghost-mackaci-antistresovy-duch-svitici-ve-tme",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
         },
