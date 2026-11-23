@@ -1,5 +1,5 @@
 {
-  "last_checked": "23 Nov 2026, 04:39",
+  "last_checked": "23 Nov 2026, 14:38",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -447,12 +447,6 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Peace O Cake assorted",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "unknown",
-          "last_confirmed_status": "in_stock"
-        },
-        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -498,6 +492,12 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
+          "name": "NeeDoh Peace O Cake assorted",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
+          "status": "unknown",
+          "last_confirmed_status": "in_stock"
+        },
+        {
           "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
           "status": "unknown"
@@ -539,7 +539,7 @@
         {
           "name": "NeeDoh Nice Cream Cone 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Cream-Cone-3-asst-CDU/3452278",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -675,7 +675,7 @@
         {
           "name": "NeeDoh Peace O Cake assorted",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
@@ -2842,6 +2842,11 @@
           "status": "unknown"
         },
         {
+          "name": "schylling needoh mackaci mini micky fuzz ball",
+          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball",
+          "status": "unknown"
+        },
+        {
           "name": "schylling needoh barevne mackaci mini micky swirl 4 ks",
           "url": "https://www.bavixo.cz/p/schylling-needoh-barevne-mackaci-mini-micky-swirl-4-ks",
           "status": "unknown"
@@ -2854,11 +2859,6 @@
         {
           "name": "schylling needoh mackaci meduza",
           "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-meduza",
-          "status": "unknown"
-        },
-        {
-          "name": "schylling needoh mackaci mini micky fuzz ball",
-          "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-mini-micky-fuzz-ball",
           "status": "unknown"
         }
       ]
@@ -3278,6 +3278,48 @@
         },
         {
           "name": "NEEDOH Nice Cube puristeltava lelu, erilaisia",
+          "url": "https://www.prisma.fi/tuotteet/110701502/needoh-nice-cube-puristeltava-lelu-erilaisia-110701502",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH puristelulelu Fuzz Ball Waves",
+          "url": "https://www.prisma.fi/tuotteet/111211360/needoh-puristelulelu-fuzz-ball-waves-111211360",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH puristelulelu Jelly Squish",
+          "url": "https://www.prisma.fi/tuotteet/111211361/needoh-puristelulelu-jelly-squish-111211361",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Teenie Nice Ice Baby 4 -Pack",
+          "url": "https://www.prisma.fi/tuotteet/111307710/needoh-teenie-nice-ice-baby-4-pack-111307710",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "Needoh Nice berg Swirl",
+          "url": "https://www.prisma.fi/tuotteet/111324833/needoh-nice-berg-swirl-111324833",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH puristelulelu Nice-Icle",
+          "url": "https://www.prisma.fi/tuotteet/111307702/needoh-puristelulelu-nice-icle-111307702",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH puristelulelu Good Vibes Only",
+          "url": "https://www.prisma.fi/tuotteet/111211359/needoh-puristelulelu-good-vibes-only-111211359",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NEEDOH Nice Cube puristeltava lelu, erilaisia",
           "url": "https://www.prisma.fi/tuotteet/110701502/needoh-nice-cube-puristeltava-lelu-erilaisia-110701502?listName=Brand&listNameExtra=needoh",
           "status": "unknown",
           "last_confirmed_status": "out_of_stock"
@@ -3291,31 +3333,31 @@
         {
           "name": "NEEDOH puristelulelu Fuzz Ball Waves",
           "url": "https://www.prisma.fi/tuotteet/111211360/needoh-puristelulelu-fuzz-ball-waves-111211360?listName=Brand&listNameExtra=needoh",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NEEDOH puristelulelu Jelly Squish",
           "url": "https://www.prisma.fi/tuotteet/111211361/needoh-puristelulelu-jelly-squish-111211361?listName=Brand&listNameExtra=needoh",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Teenie Nice Ice Baby 4 -Pack",
           "url": "https://www.prisma.fi/tuotteet/111307710/needoh-teenie-nice-ice-baby-4-pack-111307710?listName=Brand&listNameExtra=needoh",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Nice berg Swirl",
           "url": "https://www.prisma.fi/tuotteet/111324833/needoh-nice-berg-swirl-111324833?listName=Brand&listNameExtra=needoh",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NEEDOH puristelulelu Good Vibes Only",
           "url": "https://www.prisma.fi/tuotteet/111211359/needoh-puristelulelu-good-vibes-only-111211359?listName=Brand&listNameExtra=needoh",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3526,21 +3568,21 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
+          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
           "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3552,7 +3594,7 @@
         {
           "name": "jucarie antistres nee doh dohjees monsters 2073208220",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-dohjees-monsters-2073208220",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -7940,12 +7982,6 @@
           "last_confirmed_status": "in_stock"
         },
         {
-          "name": "Schylling NeeDoh Mini koblížky (posypané míčky), 6 ks",
-          "url": "https://www.mamiee.cz/p/schylling-needoh-mini-koblihy-6-ks-posypane-micky",
-          "status": "in_stock",
-          "last_confirmed_status": "in_stock"
-        },
-        {
           "name": "NeeDoh mačkací heboučká kočička - Schylling Knittens, antistresová pomůcka",
           "url": "https://www.mamiee.cz/p/schylling-needoh-knittens-mackaci-hebka-antistresova-kocka",
           "status": "in_stock",
@@ -8015,6 +8051,12 @@
           "name": "ORIGINAL Schylling NeeDoh Mačkací kostka Nice Cube Candy Swirl, růžovo-bílé mramorování - střední",
           "url": "https://www.mamiee.cz/p/original-schylling-needoh-mackaci-kostka-nice-cube-candy-swirl-ruzovo-bile-mramorovani-stredni",
           "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "Schylling NeeDoh Mini koblížky (posypané míčky), 6 ks",
+          "url": "https://www.mamiee.cz/p/schylling-needoh-mini-koblihy-6-ks-posypane-micky",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
