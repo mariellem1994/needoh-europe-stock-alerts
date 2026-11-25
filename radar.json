@@ -1,5 +1,5 @@
 {
-  "last_checked": "25 Nov 2026, 15:21",
+  "last_checked": "26 Nov 2026, 00:16",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -453,6 +453,12 @@
           "last_confirmed_status": "in_stock"
         },
         {
+          "name": "NeeDoh Candy Swirl Nice Cube CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -500,7 +506,8 @@
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "unknown"
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Gumdrop assorted NeeDoh Gumdrop is doh-licious. Non-edible gummy with a super squishy texture. Gumdrop is oversized and provides a new tactile experience when squeezed. Avai",
@@ -560,12 +567,6 @@
           "name": "NeeDoh Advent Calendar 2026",
           "url": "https://www.proshop.nl/Kerstkalender/NeeDoh-Advent-Calendar-2026/3448124",
           "status": "unknown"
-        },
-        {
-          "name": "NeeDoh Candy Swirl Nice Cube CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Peace O Cake 3 asst CDU",
@@ -748,7 +749,7 @@
         {
           "name": "NeeDoh Fuzz Ball Critters 6 asst. Fuzz Ball Critters fra NEEDOH® er søde. pelsede smådyr. du kan klemme og kramme. Med NEEDOH®’s signatur Fuzz Ball-tekstur og fyldt med den lækre. ",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Fuzz-Ball-Critters-6-asst/3452469",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2634,43 +2635,43 @@
         {
           "name": "Needoh Cogumelo Azul/Rosa",
           "url": "https://minicool.pt/products/needoh-cogumelo-azul-rosa",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Cogumelo Rosa/Laranja",
           "url": "https://minicool.pt/products/needoh-cogumelo-rosa-laranja",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Conjunto 3 Gatinhos Roxo/Rosa/Laranja",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-roxo-rosa-laranja",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Conjunto 3 Gatinhos Rosa/Roxo/Verde",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-rosa-roxo-verde",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Conjunto 3 Gatinhos Verde/Laranja/Rosa",
           "url": "https://minicool.pt/products/needoh-conjunto-3-gatinhos-verde-laranja-rosa",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Cogumelo Laranja/Roxo",
           "url": "https://minicool.pt/products/needoh-cogumelo-laranja-roxo",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Needoh Bola Anti-Stress Verde",
           "url": "https://minicool.pt/products/needoh-bola-anti-stres-verde",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2830,11 +2831,6 @@
       "country": "🇨🇿 Czech Republic",
       "products": [
         {
-          "name": "schylling mackaci texturovany needoh 1 ks",
-          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
-          "status": "unknown"
-        },
-        {
           "name": "schylling needoh mackaci maxi micek fuzz ball",
           "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-maxi-micek-fuzz-ball",
           "status": "unknown"
@@ -2852,6 +2848,11 @@
         {
           "name": "schylling needoh mackaci kostky mini nice ice baby teenie 4 ks",
           "url": "https://www.bavixo.cz/p/schylling-needoh-mackaci-kostky-mini-nice-ice-baby-teenie-4-ks",
+          "status": "unknown"
+        },
+        {
+          "name": "schylling mackaci texturovany needoh 1 ks",
+          "url": "https://www.bavixo.cz/p/schylling-mackaci-texturovany-needoh-1-ks",
           "status": "unknown"
         },
         {
@@ -2895,21 +2896,21 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Needoh Wildcatfuzz Ball sortiert (Keine Auswahl möglich)",
-          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
           "name": "Needoh - 4 Pack",
           "url": "https://www.mueller.de/p/needoh-4-pack-PPN3187270/",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
+          "name": "Needoh Wildcatfuzz Ball sortiert (Keine Auswahl möglich)",
+          "url": "https://www.mueller.de/p/needoh-wildcatfuzz-ball-sortiert-keine-auswahl-moeglich-PPN3211370/",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3609,7 +3610,7 @@
         {
           "name": "set jucarii anti stress needoh mingi de fotbal 3 culori pret pe bucata 4737410753",
           "url": "https://carturesti.ro/jucarii/set-jucarii-anti-stress-needoh-mingi-de-fotbal-3-culori-pret-pe-bucata-4737410753",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -4903,6 +4904,11 @@
           "url": "https://www.toys4you.co.uk/products/needoh-mello-mallo-stress-ball",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh product",
+          "url": "https://www.toys4you.co.uk/products/ktl-nice-ice-cube-squishy-sensory-toy",
+          "status": "unknown"
         }
       ]
     },
@@ -5034,7 +5040,7 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "NeeDoh 2026 Advent Calendar – 24 Mini Fidget & Sensory Toys, Stress Relief & Mindful Play",
+          "name": "(Minor Cosmetic Defects) NeeDoh 2026 Advent Calendar – 24 Mini Fidget & Sensory Toys, Stress Relief & Mindful Play",
           "url": "https://jukupop.com/products/needoh-2026-advent-calendar-24-mini-fidget-sensory-toys-stress-relief-mindful-play",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
