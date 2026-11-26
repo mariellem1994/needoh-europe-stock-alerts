@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Nov 2026, 06:10",
+  "last_checked": "26 Nov 2026, 16:04",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -447,18 +447,6 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
-          "name": "NeeDoh Peace O Cake assorted",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "unknown",
-          "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "NeeDoh Candy Swirl Nice Cube CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
-          "status": "unknown",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -504,6 +492,18 @@
           "last_confirmed_status": "out_of_stock"
         },
         {
+          "name": "NeeDoh Peace O Cake assorted",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
+          "status": "unknown",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "NeeDoh Candy Swirl Nice Cube CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
           "status": "unknown",
@@ -530,13 +530,13 @@
         {
           "name": "NeeDoh Nice Icle 3 asst CDU",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Nice-Icle-3-asst-CDU/3452277",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Glow In The Dark 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Glow-In-The-Dark-1pk-assorted/3412031",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2874,7 +2874,7 @@
         {
           "name": "Needoh",
           "url": "https://www.thimbletoys.com/nl/merken/needoh",
-          "status": "unknown",
+          "status": "in_stock",
           "last_confirmed_status": "in_stock"
         }
       ]
@@ -3590,20 +3590,20 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
+          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
@@ -3616,7 +3616,7 @@
         {
           "name": "jucarie antistres nee doh dohjees monsters 2073208220",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-dohjees-monsters-2073208220",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -7654,6 +7654,12 @@
           "url": "https://mthorshop.com/products/needoh-frosted-dohnut-squishy-fidget-toy-blue",
           "status": "in_stock",
           "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "NeeDoh Teenie Color Change Multicolor Set Squishy Fidget Toy 4-Pack",
+          "url": "https://mthorshop.com/products/needoh-teenie-color-change-multicolor-set-squishy-fidget-toy-4-pack",
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
         }
       ]
     },
@@ -7662,9 +7668,9 @@
       "country": "🇫🇮 Finland",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin squeezable penguin",
+          "name": "NeeDoh needoh polar glow penguin squeezable penguin",
           "url": "https://www.karkkainen.com/en/needoh-polar-glow-penguin-squeezable-penguin",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -8129,6 +8135,12 @@
           "last_confirmed_status": "in_stock"
         },
         {
+          "name": "Schylling NeeDoh Mačkací kostka Nice Cube Candy Swirl",
+          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube-candy-swirl",
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
+        },
+        {
           "name": "Schylling NeeDoh Barevné mačkací míčky FuzzBall 4 ks",
           "url": "https://www.dracek.cz/schylling-needoh-barevne-mackaci-micky-fuzzball-4-ks",
           "status": "in_stock",
@@ -8156,12 +8168,6 @@
           "name": "Schylling Needoh mačkací kostka Nice Cube",
           "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube",
           "status": "in_stock",
-          "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "Schylling NeeDoh Mačkací kostka Nice Cube Candy Swirl",
-          "url": "https://www.dracek.cz/schylling-needoh-mackaci-kostka-nice-cube-candy-swirl",
-          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
