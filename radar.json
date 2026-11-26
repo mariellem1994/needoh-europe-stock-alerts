@@ -1,5 +1,5 @@
 {
-  "last_checked": "26 Nov 2026, 00:16",
+  "last_checked": "26 Nov 2026, 06:10",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -506,7 +506,7 @@
         {
           "name": "NeeDoh Dream Drop 1-pack - assorted This drop-shaped sensory toy is filled with shimmering gel filling that you can squeeze and squish. It comes with a holder where you can place t",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Dream-Drop-1-pack-assorted/3412033",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -536,7 +536,7 @@
         {
           "name": "NeeDoh Glow In The Dark 1pk assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Glow-In-The-Dark-1pk-assorted/3412031",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2874,7 +2874,7 @@
         {
           "name": "Needoh",
           "url": "https://www.thimbletoys.com/nl/merken/needoh",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         }
       ]
@@ -2928,7 +2928,7 @@
         {
           "name": "NeeDoh - Nice Ice Baby Teenie Multi 4-Pack",
           "url": "https://www.mueller.de/p/needoh-nice-ice-baby-teenie-multi-4-pack-PPN3211316/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3610,7 +3610,7 @@
         {
           "name": "set jucarii anti stress needoh mingi de fotbal 3 culori pret pe bucata 4737410753",
           "url": "https://carturesti.ro/jucarii/set-jucarii-anti-stress-needoh-mingi-de-fotbal-3-culori-pret-pe-bucata-4737410753",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
