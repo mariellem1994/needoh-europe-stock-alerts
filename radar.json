@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Nov 2026, 16:24",
+  "last_checked": "28 Nov 2026, 00:42",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -170,8 +170,8 @@
         {
           "name": "NeeDoh Nice Cube Swirl",
           "url": "https://www.cogstoysandgames.ie/products/needoh-nice-cube-swirl",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
+          "status": "in_stock",
+          "last_confirmed_status": "in_stock"
         },
         {
           "name": "Lava Instant Slime",
@@ -449,7 +449,7 @@
         {
           "name": "NeeDoh Peace O Cake assorted",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
@@ -488,7 +488,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -583,7 +583,7 @@
         {
           "name": "NeeDoh Nice Cube assorteret Klem mig! Kram mig! Jeg vil altid vende tilbage til mit firkantede udgangspunkt. Nice Cube terningen er fyldt med en super robust klemmefornemmelse. Prø",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Nice-Cube-assorteret/3391313",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2240,61 +2240,61 @@
         {
           "name": "pelota antiestres gigante super ondas needoh",
           "url": "https://logopedicum.com/producto/pelota-antiestres-gigante-super-ondas-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "pelota peluda antiestres needoh peluda",
           "url": "https://logopedicum.com/producto/pelota-peluda-antiestres-needoh-peluda/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "pack de pelotas antiestres mini arcoiris teenie needoh",
           "url": "https://logopedicum.com/producto/pack-de-pelotas-antiestres-mini-arcoiris-teenie-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "canica antiestres needoh",
           "url": "https://logopedicum.com/producto/canica-antiestres-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "lanzador de pelotas booper needoh",
           "url": "https://logopedicum.com/producto/lanzador-de-pelotas-booper-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "pelota antiestres squeezy peezy needoh",
           "url": "https://logopedicum.com/producto/pelota-antiestres-squeezy-peezy-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "cubito de hielo antiestres needoh",
           "url": "https://logopedicum.com/producto/cubito-de-hielo-antiestres-needoh/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "pelota antiestres needoh brilla en la oscuridad",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-brilla-en-la-oscuridad/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "fidget antiestres macarrones needoh",
           "url": "https://logopedicum.com/producto/fidget-antiestres-macarrones-needoh/",
-          "status": "in_stock",
+          "status": "unknown",
           "last_confirmed_status": "in_stock"
         },
         {
           "name": "pelota antiestres needoh atomica",
           "url": "https://logopedicum.com/producto/pelota-antiestres-needoh-atomica/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3511,93 +3511,93 @@
       "country": "🇫🇮 Finland",
       "products": [
         {
+          "name": "NeeDoh Snow Globe",
+          "url": "https://www.muovitukku.fi/tuote/needoh-snow-globe-puristeltava/",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "needoh super fuzzball",
           "url": "https://www.muovitukku.fi/tuote/needoh-super-fuzzball/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh nice berg swirl",
           "url": "https://www.muovitukku.fi/tuote/needoh-nice-berg-swirl/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh niceberg",
           "url": "https://www.muovitukku.fi/tuote/needoh-niceberg/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh peace o cake stressipallo",
           "url": "https://www.muovitukku.fi/tuote/needoh-peace-o-cake-stressipallo/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh squeezza pizza squishy juustolla",
           "url": "https://www.muovitukku.fi/tuote/needoh-squeezza-pizza-squishy-juustolla/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh color change cube",
           "url": "https://www.muovitukku.fi/tuote/needoh-color-change-cube/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh jelly squish",
           "url": "https://www.muovitukku.fi/tuote/needoh-jelly-squish/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh Nice Cube Glitter Glow",
           "url": "https://www.muovitukku.fi/tuote/nice-cube-glitter-glow/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh fuzz ball 2",
           "url": "https://www.muovitukku.fi/tuote/needoh-fuzz-ball-2/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh mello mallo",
           "url": "https://www.muovitukku.fi/tuote/needoh-mello-mallo/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh nice cube swirl puristeltava",
           "url": "https://www.muovitukku.fi/tuote/needoh-nice-cube-swirl-puristeltava/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh teenie fuzz ball stress ball 4 pack",
           "url": "https://www.muovitukku.fi/tuote/needoh-teenie-fuzz-ball-stress-ball-4-pack/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh joulukalenteri 2026",
           "url": "https://www.muovitukku.fi/tuote/needoh-joulukalenteri-2026/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "needoh nice cube 3 lajitelma",
           "url": "https://www.muovitukku.fi/tuote/needoh-nice-cube-3-lajitelma/",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Snow Globe",
-          "url": "https://www.muovitukku.fi/tuote/needoh-snow-globe-puristeltava/",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3607,20 +3607,20 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
+          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
+          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
@@ -3633,13 +3633,13 @@
         {
           "name": "jucarie antistres nee doh dohjees monsters 2073208220",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-nee-doh-dohjees-monsters-2073208220",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "set 3 jucarii antistres needoh fructe 4187049339",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-antistres-needoh-fructe-4187049339",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -3657,7 +3657,7 @@
         {
           "name": "NeeDoh Teenie Tree Squishmas",
           "url": "https://lolear.es/inicio/15846-tennie-tree-squishmas-needoh-019649517862.html",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -5234,6 +5234,52 @@
           "name": "NeeDoh® Squeeza – Pepperoni Pizza Sensory Squishy Toy",
           "url": "https://jukupop.com/products/needoh®-squeeza-pepperoni-pizza-sensory-squishy-toy",
           "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Nice-sicle",
+          "url": "https://jukupop.com/products/needoh®-nice-sicle",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Fuzz Ball Wild Cats",
+          "url": "https://jukupop.com/products/needoh®-fuzz-ball-wild-cats",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Nice-sicle",
+          "url": "https://jukupop.com/products/needoh%C2%AE-nice-sicle",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh® Fuzz Ball Wild Cats",
+          "url": "https://jukupop.com/products/needoh%C2%AE-fuzz-ball-wild-cats",
+          "status": "unknown"
+        },
+        {
+          "name": "NeeDoh® Melt My Heart – Sensory Squishy Fidget Toy",
+          "url": "https://jukupop.com/products/needoh%C2%AE-melt-my-heart-sensory-squishy-fidget-toy",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Nice Cream Cone – Sensory Squishy Fidget Toy",
+          "url": "https://jukupop.com/products/needoh%C2%AE-nice-cream-cone-sensory-squishy-fidget-toy",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Peace O’ Cake – Sensory Squishy Fidget Toy",
+          "url": "https://jukupop.com/products/needoh%C2%AE-peace-o-cake-sensory-squishy-fidget-toy",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "NeeDoh® Squeeza – Pepperoni Pizza Sensory Squishy Toy",
+          "url": "https://jukupop.com/products/needoh%C2%AE-squeeza-pepperoni-pizza-sensory-squishy-toy",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         }
       ]
