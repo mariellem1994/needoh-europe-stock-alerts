@@ -1,5 +1,5 @@
 {
-  "last_checked": "27 Nov 2026, 00:38",
+  "last_checked": "27 Nov 2026, 06:27",
   "shops": [
     {
       "name": "Cogs Toys & Games",
@@ -447,6 +447,18 @@
       "country": "🇳🇱 Netherlands",
       "products": [
         {
+          "name": "NeeDoh Peace O Cake assorted",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
+          "status": "unknown",
+          "last_confirmed_status": "in_stock"
+        },
+        {
+          "name": "NeeDoh Candy Swirl Nice Cube CDU",
+          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
+          "status": "unknown",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
           "name": "NeeDoh Jelly Hops",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Hops-assorted/3411633",
           "status": "unknown"
@@ -476,7 +488,7 @@
         {
           "name": "NeeDoh Jelly Dohnuts",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Jelly-Dohnuts-asst-CDU/3251573",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -488,18 +500,6 @@
         {
           "name": "NeeDoh Snowball Crunch",
           "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Snowball-Crunch/3365098",
-          "status": "unknown",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Peace O Cake assorted",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Peace-O-Cake-assorted/3452275",
-          "status": "unknown",
-          "last_confirmed_status": "in_stock"
-        },
-        {
-          "name": "NeeDoh Candy Swirl Nice Cube CDU",
-          "url": "https://www.proshop.nl/Kleine-cadeautjes-voor-kinderen/NeeDoh-Candy-Swirl-Nice-Cube-CDU/3452272",
           "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
@@ -755,7 +755,7 @@
         {
           "name": "NeeDoh Smushroom 3 asst. Squishy Shroom fra NEEDOH® er sjove. bløde og ekstra solide svampefigurer. som indbyder til sanselig leg. De kan klemmes. strækkes og formes igen og i...",
           "url": "https://www.proshop.dk/Smaa-gaver-til-boern/NeeDoh-Smushroom-3-asst/3452463",
-          "status": "out_of_stock",
+          "status": "unknown",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2910,7 +2910,7 @@
         {
           "name": "NEEDOH - FUZZ BALL WONDER WAVES (Keine Auswahl möglich)",
           "url": "https://www.mueller.de/p/needoh-fuzz-ball-wonder-waves-keine-auswahl-moeglich-PPN3178005/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
@@ -2928,7 +2928,7 @@
         {
           "name": "NeeDoh - Nice Ice Baby Teenie Multi 4-Pack",
           "url": "https://www.mueller.de/p/needoh-nice-ice-baby-teenie-multi-4-pack-PPN3211316/",
-          "status": "unknown",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -3590,20 +3590,20 @@
       "country": "🇷🇴 Romania",
       "products": [
         {
-          "name": "Set 3 jucarii anti-stres - Needoh - Cool Cats",
+          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
+          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
+          "status": "out_of_stock",
+          "last_confirmed_status": "out_of_stock"
+        },
+        {
+          "name": "set 3 jucarii anti stres needoh cool cats 4737410669",
           "url": "https://carturesti.ro/jucarii/set-3-jucarii-anti-stres-needoh-cool-cats-4737410669",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
-          "name": "Jucarie antistres - NeeDoh - Nice Cube (mai multe culori - pret pe bucata)",
+          "name": "jucarie antistres needoh nice cube mai multe culori pret pe bucata 3968616035",
           "url": "https://carturesti.ro/jucarii/jucarie-antistres-needoh-nice-cube-mai-multe-culori-pret-pe-bucata-3968616035",
-          "status": "out_of_stock",
-          "last_confirmed_status": "out_of_stock"
-        },
-        {
-          "name": "NeeDoh Polar Glow Penguin (EAN 0019649508433)",
-          "url": "https://carturesti.ro/jucarii/jucarie-antistres-reflectorizanta-pinguin-3-culori-pret-pe-bucata-4900197246",
           "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
@@ -6164,19 +6164,19 @@
         {
           "name": "NeeDoh stardust needoh schylling",
           "url": "https://cocoloco.nl/product/stardust-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/super-needoh-ripples-115cm-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "NeeDoh product",
           "url": "https://cocoloco.nl/product/magic-colour-egg-needoh-schylling/",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         }
       ]
@@ -7805,13 +7805,13 @@
         {
           "name": "Schylling gniotki piłki sportowe Hot Shots Teenie Needoh 4 szt.",
           "url": "https://zosiu.pl/pl/p/Schylling-gniotki-pilki-sportowe-Hot-Shots-Teenie-Needoh-4-szt./16017",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
           "name": "Schylling gniotki Kotki sensoryczne 4 szt. Cool Cats Teenie Needoh",
           "url": "https://zosiu.pl/pl/p/Schylling-gniotki-Kotki-sensoryczne-4-szt.-Cool-Cats-Teenie-Needoh/16018",
-          "status": "error",
+          "status": "out_of_stock",
           "last_confirmed_status": "out_of_stock"
         },
         {
